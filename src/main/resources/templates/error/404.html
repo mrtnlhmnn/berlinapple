@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="de">
+<head>
+    <title>BerlinAPPle</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="../static/css/picnic.min.css"
+          th:href="@{css/picnic.min.css}" rel="stylesheet" media="screen"/>
+    <link href="../static/css/main.css"
+          th:href="@{css/main.css}" rel="stylesheet" media="screen"/>
+</head>
+<body>
+<div th:include="fragments/bodyHeader :: bodyHeader"/>
+
+<div class="container">
+    <h1>404</h1>
+    <table>
+        <tr>
+            <td>Datum</td>
+            <td th:text="${timestamp}"/>
+        </tr>
+        <tr>
+            <td>Pfad</td>
+            <td th:text="${path}"/>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
