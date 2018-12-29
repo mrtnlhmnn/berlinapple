@@ -1,5 +1,3 @@
 package de.mrtnlhmnn.berlinapple.data
 
-import java.util.*
-
-data class Movie (val name: String, val description: String, val uuid: String)
+data class Movie (val id: String, val title: String, val description: String)

@@ -14,4 +14,8 @@ data class ID(val id: String) {
             return ID(uuidAsString)
         }
     }
+
+    override fun toString(): String {
+        return "$id"
+    }
 }
