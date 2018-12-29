@@ -10,8 +10,6 @@ import java.time.LocalDateTime
 import java.util.*
 import java.time.format.DateTimeFormatter
 
-
-
 @RestController
 class ProgramParser {
     val filename = "data/program.ics"
@@ -48,12 +46,11 @@ class ProgramParser {
             var description: String = ""
             for (calEntryProps in calEntry.getProperties()) {
                 when {
-                    (calEntryProps.name == sumKey) -> {summary = calEntryProps.value}
+                    (calEntryProps.name == sumKey)  -> {summary     = calEntryProps.value}
                     (calEntryProps.name == descKey) -> {description = calEntryProps.value}
                 }
             }
-
-            val movie = Movie(summary , description, UUID.randomUUID().toString())
+            val movie = Movie(summary , description, ID.create().toString())
 
             // Create Event
             val beginKey = "DTSTART"
@@ -69,22 +66,14 @@ class ProgramParser {
 
             for (calEntryProps in calEntry.getProperties()) {
                 when {
-                    (calEntryProps.name == beginKey) -> {begin = LocalDateTime.parse(calEntryProps.value,dtf)}
-                    (calEntryProps.name == endKey) -> {end = LocalDateTime.parse(calEntryProps.value,dtf)}
+                    (calEntryProps.name == beginKey)    -> {begin    = LocalDateTime.parse(calEntryProps.value, dtf)}
+                    (calEntryProps.name == endKey)      -> {end      = LocalDateTime.parse(calEntryProps.value, dtf)}
                     (calEntryProps.name == locationKey) -> {location = calEntryProps.value}
                 }
             }
             val event = Event(movie, begin, end, location)
 
-            result += event
-            result += "\n"
-            //val event = Event()
-
-            /*for (key in icsKeys) {
-                for (calEntryProps in calEntry.getProperties<Property>(key)) {
-                    result += calEntryProps.name + " = " + calEntryProps.value + "\n"
-                }
-            }*/
+            result = result + event + "\n"
         }
 
         return result
