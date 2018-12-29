@@ -8,19 +8,18 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
 @Configuration
 @EnableWebSecurity
-open class ApplicationSecurityConfiguration : WebSecurityConfigurerAdapter() {
+open class ApplicationSecurityConfiguration(val userRepo: UserRepo) : WebSecurityConfigurerAdapter() {
     @Throws(Exception::class)
     override fun configure(auth: AuthenticationManagerBuilder?) {
-        auth!!
-                .inMemoryAuthentication()
-                .withUser("martin")
-                .password("{noop}berlin")
-                .roles("USER");
-        auth!!
-                .inMemoryAuthentication()
-                .withUser("kristine")
-                .password("{noop}berlin")
-                .roles("USER")
+        val users = arrayOf(User("1", "martin"), User("2", "kristine"))
+        for (user in users) {
+            userRepo.put(user.id, user)
+            auth!!
+                    .inMemoryAuthentication()
+                    .withUser(user.name)
+                    .password("{noop}berlin")
+                    .roles("USER");
+        }
     }
 
     @Throws(Exception::class)

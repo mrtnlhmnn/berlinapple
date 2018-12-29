@@ -34,7 +34,9 @@ class ProgramParser(val movieRepo: MovieRepo, val eventRepo: EventRepo) {
         for (entry in myEventRepo.entries) {
             map.put(entry.key, entry.toString())
         }
-
+//TODO: json geht nicht
+//TODO: ID geht nicht in data class, wenn technischer Key aber besser abgeleitet aus fachlichem Schluessel
+//TODO: UUID mit festem seed
         return map
     }
 
