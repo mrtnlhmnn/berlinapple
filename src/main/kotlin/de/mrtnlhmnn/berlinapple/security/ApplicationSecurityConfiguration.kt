@@ -13,7 +13,12 @@ open class ApplicationSecurityConfiguration : WebSecurityConfigurerAdapter() {
     override fun configure(auth: AuthenticationManagerBuilder?) {
         auth!!
                 .inMemoryAuthentication()
-                .withUser("baer")
+                .withUser("martin")
+                .password("{noop}berlin")
+                .roles("USER");
+        auth!!
+                .inMemoryAuthentication()
+                .withUser("kristine")
                 .password("{noop}berlin")
                 .roles("USER")
     }

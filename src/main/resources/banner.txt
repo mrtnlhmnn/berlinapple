@@ -1,17 +1,5 @@
-bbbbbbbb
-b::::::b                                                    lllllll   iiii                                   AAA               PPPPPPPPPPPPPPPPP   PPPPPPPPPPPPPPPPP   lllllll
-b::::::b                                                    l:::::l  i::::i                                 A:::A              P::::::::::::::::P  P::::::::::::::::P  l:::::l
-b::::::b                                                    l:::::l   iiii                                 A:::::A             P::::::PPPPPP:::::P P::::::PPPPPP:::::P l:::::l
- b:::::b                                                    l:::::l                                       A:::::::A            PP:::::P     P:::::PPP:::::P     P:::::Pl:::::l
- b:::::bbbbbbbbb        eeeeeeeeeeee    rrrrr   rrrrrrrrr    l::::l iiiiiii nnnn  nnnnnnnn               A:::::::::A             P::::P     P:::::P  P::::P     P:::::P l::::l     eeeeeeeeeeee
- b::::::::::::::bb    ee::::::::::::ee  r::::rrr:::::::::r   l::::l i:::::i n:::nn::::::::nn            A:::::A:::::A            P::::P     P:::::P  P::::P     P:::::P l::::l   ee::::::::::::ee
- b::::::::::::::::b  e::::::eeeee:::::eer:::::::::::::::::r  l::::l  i::::i n::::::::::::::nn          A:::::A A:::::A           P::::PPPPPP:::::P   P::::PPPPPP:::::P  l::::l  e::::::eeeee:::::ee
- b:::::bbbbb:::::::be::::::e     e:::::err::::::rrrrr::::::r l::::l  i::::i nn:::::::::::::::n        A:::::A   A:::::A          P:::::::::::::PP    P:::::::::::::PP   l::::l e::::::e     e:::::e
- b:::::b    b::::::be:::::::eeeee::::::e r:::::r     r:::::r l::::l  i::::i   n:::::nnnn:::::n       A:::::A     A:::::A         P::::PPPPPPPPP      P::::PPPPPPPPP     l::::l e:::::::eeeee::::::e
- b:::::b     b:::::be:::::::::::::::::e  r:::::r     rrrrrrr l::::l  i::::i   n::::n    n::::n      A:::::AAAAAAAAA:::::A        P::::P              P::::P             l::::l e:::::::::::::::::e
- b:::::b     b:::::be::::::eeeeeeeeeee   r:::::r             l::::l  i::::i   n::::n    n::::n     A:::::::::::::::::::::A       P::::P              P::::P             l::::l e::::::eeeeeeeeeee
- b:::::b     b:::::be:::::::e            r:::::r             l::::l  i::::i   n::::n    n::::n    A:::::AAAAAAAAAAAAA:::::A      P::::P              P::::P             l::::l e:::::::e
- b:::::bbbbbb::::::be::::::::e           r:::::r            l::::::li::::::i  n::::n    n::::n   A:::::A             A:::::A   PP::::::PP          PP::::::PP          l::::::le::::::::e
- b::::::::::::::::b  e::::::::eeeeeeee   r:::::r            l::::::li::::::i  n::::n    n::::n  A:::::A               A:::::A  P::::::::P          P::::::::P          l::::::l e::::::::eeeeeeee
- b:::::::::::::::b    ee:::::::::::::e   r:::::r            l::::::li::::::i  n::::n    n::::n A:::::A                 A:::::A P::::::::P          P::::::::P          l::::::l  ee:::::::::::::e
- bbbbbbbbbbbbbbbb       eeeeeeeeeeeeee   rrrrrrr            lllllllliiiiiiii  nnnnnn    nnnnnnAAAAAAA                   AAAAAAAPPPPPPPPPP          PPPPPPPPPP          llllllll    eeeeeeeeeeeeee 
+ ______     ______     ______     __         __     __   __     ______     ______   ______   __         ______    
+/\  == \   /\  ___\   /\  == \   /\ \       /\ \   /\ "-.\ \   /\  __ \   /\  == \ /\  == \ /\ \       /\  ___\   
+\ \  __<   \ \  __\   \ \  __<   \ \ \____  \ \ \  \ \ \-.  \  \ \  __ \  \ \  _-/ \ \  _-/ \ \ \____  \ \  __\   
+ \ \_____\  \ \_____\  \ \_\ \_\  \ \_____\  \ \_\  \ \_\\"\_\  \ \_\ \_\  \ \_\    \ \_\    \ \_____\  \ \_____\ 
+  \/_____/   \/_____/   \/_/ /_/   \/_____/   \/_/   \/_/ \/_/   \/_/\/_/   \/_/     \/_/     \/_____/   \/_____/ 

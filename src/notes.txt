@@ -1,0 +1,18 @@
+http://ec2-54-93-75-173.eu-central-1.compute.amazonaws.com:8080
+http://ec2-54-93-75-173.eu-central-1.compute.amazonaws.com:8080/version
+
+winpty docker login -u mrtnlhmnn
+
+docker build . --no-cache
+> XXX
+
+docker run -d -p 8080:8080 XXX
+> YYY
+
+docker commit -m "BerlinAPPle Build" -a "mrtnlhmnn" YYY mrtnlhmnn/berlinapple
+> ZZZ
+
+docker push mrtnlhmnn/berlinapple
+
+--
+docker run -d -p 8080:8080 docker.io/mrtnlhmnn/berlinapple
