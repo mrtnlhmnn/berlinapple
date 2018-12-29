@@ -6,6 +6,11 @@ import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestMethod
 import org.springframework.web.bind.annotation.RestController
+import java.time.LocalDateTime
+import java.util.*
+import java.time.format.DateTimeFormatter
+
+
 
 @RestController
 class ProgramParser {
@@ -35,11 +40,51 @@ class ProgramParser {
         var result = ""
 
         for (calEntry in calendar.getComponents()) {
-            for (key in icsKeys) {
+            // Create Movie
+            val sumKey = "SUMMARY"
+            val descKey = "DESCRIPTION"
+
+            var summary: String = ""
+            var description: String = ""
+            for (calEntryProps in calEntry.getProperties()) {
+                when {
+                    (calEntryProps.name == sumKey) -> {summary = calEntryProps.value}
+                    (calEntryProps.name == descKey) -> {description = calEntryProps.value}
+                }
+            }
+
+            val movie = Movie(summary , description, UUID.randomUUID().toString())
+
+            // Create Event
+            val beginKey = "DTSTART"
+            val endKey = "DTEND"
+            val locationKey = "LOCATION"
+
+            var begin: LocalDateTime = LocalDateTime.MIN
+            var end: LocalDateTime = LocalDateTime.MIN
+            var location: String = ""
+
+            val pattern = "yyyyMMdd'T'HHmmss'Z'"
+            val dtf = DateTimeFormatter.ofPattern(pattern)
+
+            for (calEntryProps in calEntry.getProperties()) {
+                when {
+                    (calEntryProps.name == beginKey) -> {begin = LocalDateTime.parse(calEntryProps.value,dtf)}
+                    (calEntryProps.name == endKey) -> {end = LocalDateTime.parse(calEntryProps.value,dtf)}
+                    (calEntryProps.name == locationKey) -> {location = calEntryProps.value}
+                }
+            }
+            val event = Event(movie, begin, end, location)
+
+            result += event
+            result += "\n"
+            //val event = Event()
+
+            /*for (key in icsKeys) {
                 for (calEntryProps in calEntry.getProperties<Property>(key)) {
                     result += calEntryProps.name + " = " + calEntryProps.value + "\n"
                 }
-            }
+            }*/
         }
 
         return result
