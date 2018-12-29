@@ -65,6 +65,18 @@
             <artifactId>kotlin-stdlib-jdk8</artifactId>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.mnode.ical4j/ical4j -->
+        <dependency>
+            <groupId>org.mnode.ical4j</groupId>
+            <artifactId>ical4j</artifactId>
+            <version>3.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.apache.derby/derby -->
         <dependency>
             <groupId>org.apache.derby</groupId>
