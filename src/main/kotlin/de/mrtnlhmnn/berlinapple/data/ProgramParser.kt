@@ -51,7 +51,7 @@ class ProgramParser(val movieRepo: MovieRepo) {
                     (calEntryProps.name == locationKey) -> {location = calEntryProps.value}
                 }
             }
-            var event = Event(ID.create().toString(), begin, end, location)
+            var event = Event(ID.create(), begin, end, location)
 
             // -----------------------------------------------------------
             // Create Movie
@@ -60,20 +60,21 @@ class ProgramParser(val movieRepo: MovieRepo) {
 
             var summary: String = ""
             var description: String = ""
-            var movieKey: String = ""
             for (calEntryProps in calEntry.getProperties()) {
                 when {
-                    (calEntryProps.name == sumKey)  -> {summary     = calEntryProps.value; movieKey = summary.toLowerCase()}
+                    (calEntryProps.name == sumKey)  -> {summary     = calEntryProps.value }
                     (calEntryProps.name == descKey) -> {description = calEntryProps.value}
                 }
             }
 
-            if (!movieRepo.containsKey(movieKey)) {
-                var movie = Movie(ID.create().toString(), summary, description, 1, mutableListOf(event))
-                movieRepo.put(movieKey, movie)
+            var movie = movieRepo.findByTitleIgnoreCase(summary)
+            if (movie == null) {
+                val id = ID.create()
+
+                movie = Movie(id, summary, description, 1, mutableListOf(event))
+                movieRepo.put(id, movie)
             }
             else {
-                val movie = movieRepo.get(movieKey)
                 movie?.events?.add(event)
             }
         }
