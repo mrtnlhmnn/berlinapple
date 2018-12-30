@@ -7,6 +7,6 @@ if [ -n "${DEBUG}" ]; then
    set -x
 fi
 
-BERLINALE_ARGS=
+BERLINAPPLE_ARGS=
 
-java -jar /app/berlinapple.jar -XmX1G $BERLINALE_ARGS
+java -Xmx1G -jar /app/berlinapple.jar $BERLINAPPLE_ARGS

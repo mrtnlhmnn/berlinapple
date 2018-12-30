@@ -15,4 +15,6 @@ docker commit -m "BerlinAPPle Build" -a "mrtnlhmnn" YYY mrtnlhmnn/berlinapple
 docker push mrtnlhmnn/berlinapple
 
 --
+ssh ec2-user@ec2-54-93-75-173.eu-central-1.compute.amazonaws.com -i orga/berlinapple.pem
+
 docker run -d -p 8080:8080 docker.io/mrtnlhmnn/berlinapple
