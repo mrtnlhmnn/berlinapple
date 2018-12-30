@@ -1,3 +1,3 @@
 package de.mrtnlhmnn.berlinapple.data
 
-data class Movie (val id: String, val title: String, val description: String)
+data class Movie (val id: String, val title: String, val description: String, val events: MutableList<Event>)

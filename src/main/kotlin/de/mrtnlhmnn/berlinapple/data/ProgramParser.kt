@@ -9,9 +9,7 @@ import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
 @RestController
-class ProgramParser(val movieRepo: MovieRepo, val eventRepo: EventRepo) {
-    val filename = "data/program.ics"
-
+class ProgramParser(val movieRepo: MovieRepo) {
     val icsKeys = arrayOf(
             "DTSTART",
             "DTEND",
@@ -27,45 +25,38 @@ class ProgramParser(val movieRepo: MovieRepo, val eventRepo: EventRepo) {
             "TRANSP"
     )
 
-    @RequestMapping(value = ["/listProgram"], method = [RequestMethod.GET], produces = [MediaType.APPLICATION_JSON_VALUE])
-    fun listProgram(): HashMap<String, String?> {
-        val myEventRepo: EventRepo = parseProgramICSFile2Repo()
-        val map = HashMap<String, String?>()
-        for (entry in myEventRepo.entries) {
-            map.put(entry.key, entry.toString())
+    @RequestMapping(value = ["/listProgram"], method = [RequestMethod.GET], produces = [MediaType.TEXT_PLAIN_VALUE])
+    fun listProgram(fileName: String): String {
+        val map = parseProgramICSFile2Repo(fileName)
+//        return map.toString()
+
+
+        val i = map.entries.iterator()
+        if (!i.hasNext())
+            return "{}"
+
+        val sb = StringBuilder()
+        sb.append('{')
+        while (true) {
+            val e = i.next()
+            val key = e.key
+            val value: String = e.value.toString()
+            sb.append(key)
+            sb.append('=')
+            sb.append(value)
+            sb.append('\n')
+            if (!i.hasNext())
+                return sb.append('}').toString()
+            sb.append(',').append(' ')
         }
-//TODO: json geht nicht
-//TODO: ID geht nicht in data class, wenn technischer Key aber besser abgeleitet aus fachlichem Schluessel
-//TODO: UUID mit festem seed
-        return map
     }
 
-    fun parseProgramICSFile2Repo(): EventRepo {
-        val fis = ProgramParser::class.java.classLoader.getResourceAsStream(filename)
+    fun parseProgramICSFile2Repo(fileName: String): MovieRepo {
+        val fis = ProgramParser::class.java.classLoader.getResourceAsStream(fileName)
         val builder = CalendarBuilder()
         val calendar = builder.build(fis)
 
         for (calEntry in calendar.getComponents()) {
-            // Create Movie
-            val sumKey = "SUMMARY"
-            val descKey = "DESCRIPTION"
-
-            var summary: String = ""
-            var description: String = ""
-            for (calEntryProps in calEntry.getProperties()) {
-                when {
-                    (calEntryProps.name == sumKey)  -> {summary     = calEntryProps.value}
-                    (calEntryProps.name == descKey) -> {description = calEntryProps.value}
-                }
-            }
-            var movie = Movie(ID.create().toString(), summary , description)
-            if (!movieRepo.containsKey(movie.title)) {
-                movieRepo.put(movie.title, movie)
-            }
-            else {
-                movie = movieRepo.get(movie.title)!!
-            }
-
             // Create Event
             val beginKey = "DTSTART"
             val endKey = "DTEND"
@@ -85,10 +76,32 @@ class ProgramParser(val movieRepo: MovieRepo, val eventRepo: EventRepo) {
                     (calEntryProps.name == locationKey) -> {location = calEntryProps.value}
                 }
             }
-            var event = Event(ID.create().toString(), movie, begin, end, location)
-            eventRepo.put("event"+event.id, event)
+            var event = Event(ID.create().toString(), begin, end, location)
+
+            // -----------------------------------------------------------
+            // Create Movie
+            val sumKey = "SUMMARY"
+            val descKey = "DESCRIPTION"
+
+            var summary: String = ""
+            var description: String = ""
+            var movieKey: String = ""
+            for (calEntryProps in calEntry.getProperties()) {
+                when {
+                    (calEntryProps.name == sumKey)  -> {summary     = calEntryProps.value; movieKey = summary.toLowerCase()}
+                    (calEntryProps.name == descKey) -> {description = calEntryProps.value}
+                }
+            }
+            if (!movieRepo.containsKey(movieKey)) {
+                var movie = Movie(ID.create().toString(), summary, description, mutableListOf(event))
+                movieRepo.put(movieKey, movie)
+            }
+            else {
+                val movie = movieRepo.get(movieKey)
+                movie?.events?.add(event)
+            }
         }
 
-        return eventRepo
+        return movieRepo
     }
 }
