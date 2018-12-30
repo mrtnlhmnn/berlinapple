@@ -2,13 +2,14 @@ package de.mrtnlhmnn.berlinapple.data
 
 import net.fortuna.ical4j.data.CalendarBuilder
 import org.springframework.http.MediaType
+import org.springframework.stereotype.Component
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestMethod
 import org.springframework.web.bind.annotation.RestController
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-@RestController
+@Component
 class ProgramParser(val movieRepo: MovieRepo) {
     val icsKeys = arrayOf(
             "DTSTART",
@@ -25,33 +26,7 @@ class ProgramParser(val movieRepo: MovieRepo) {
             "TRANSP"
     )
 
-    @RequestMapping(value = ["/listProgram"], method = [RequestMethod.GET], produces = [MediaType.TEXT_PLAIN_VALUE])
-    fun listProgram(fileName: String): String {
-        val map = parseProgramICSFile2Repo(fileName)
-//        return map.toString()
-
-
-        val i = map.entries.iterator()
-        if (!i.hasNext())
-            return "{}"
-
-        val sb = StringBuilder()
-        sb.append('{')
-        while (true) {
-            val e = i.next()
-            val key = e.key
-            val value: String = e.value.toString()
-            sb.append(key)
-            sb.append('=')
-            sb.append(value)
-            sb.append('\n')
-            if (!i.hasNext())
-                return sb.append('}').toString()
-            sb.append(',').append(' ')
-        }
-    }
-
-    fun parseProgramICSFile2Repo(fileName: String): MovieRepo {
+    fun parseProgramICSFile2Repo(fileName: String) {
         val fis = ProgramParser::class.java.classLoader.getResourceAsStream(fileName)
         val builder = CalendarBuilder()
         val calendar = builder.build(fis)
@@ -92,8 +67,9 @@ class ProgramParser(val movieRepo: MovieRepo) {
                     (calEntryProps.name == descKey) -> {description = calEntryProps.value}
                 }
             }
+
             if (!movieRepo.containsKey(movieKey)) {
-                var movie = Movie(ID.create().toString(), summary, description, mutableListOf(event))
+                var movie = Movie(ID.create().toString(), summary, description, 1, mutableListOf(event))
                 movieRepo.put(movieKey, movie)
             }
             else {
@@ -101,7 +77,5 @@ class ProgramParser(val movieRepo: MovieRepo) {
                 movie?.events?.add(event)
             }
         }
-
-        return movieRepo
     }
 }

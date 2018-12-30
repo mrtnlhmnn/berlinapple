@@ -7,5 +7,5 @@ class TestMain
 
 fun main(args: Array<String>) {
     val filename = "data/program.ics"
-    println(message = ProgramParser(MovieRepo()).listProgram(filename))
+    println(message = ProgramParser(MovieRepo()).parseProgramICSFile2Repo(filename))
 }

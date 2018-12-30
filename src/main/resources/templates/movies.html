@@ -12,9 +12,20 @@
 
 <div th:include="fragments/bodyHeader :: bodyHeader"/>
 
-<div class="container">
-    <p><a href="movies">Movie List</a></p>
+<div class="container" th:if="${not #lists.isEmpty(movies)}">
+    <h2>Movie List</h2>
+    <table>
+        <tr>
+            <th>Prio</th>
+            <th>Title</th>
+            <th>Number of Events</th>
+        </tr>
+        <tr th:each="m : ${movies}">
+            <td th:text="${m.prio}"></td>
+            <td th:text="${m.title}"></td>
+            <td th:text="${m.events.size()}"></td>
+        </tr>
+    </table>
 </div>
-
 </body>
 </html>

@@ -1,7 +1,6 @@
 package de.mrtnlhmnn.berlinapple
 
-import de.mrtnlhmnn.berlinapple.security.User
-import de.mrtnlhmnn.berlinapple.security.UserRepo
+import de.mrtnlhmnn.berlinapple.data.ProgramParser
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
@@ -9,6 +8,7 @@ import org.springframework.boot.runApplication
 class BerlinappleApplication
 
 fun main(args: Array<String>) {
-    runApplication<BerlinappleApplication>(*args)
+    val context = runApplication<BerlinappleApplication>(*args)
+    context.getBean(ProgramParser::class.java).parseProgramICSFile2Repo("data/program.ics")
 }
 

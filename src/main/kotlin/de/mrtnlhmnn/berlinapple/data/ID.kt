@@ -6,7 +6,7 @@ data class ID(val id: String) {
         private var counter = 9999L
 
         fun create(): ID {
-            return ID((counter++).toString())
+            return ID((++counter).toString())
         }
     }
 
