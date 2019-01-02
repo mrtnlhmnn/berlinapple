@@ -18,7 +18,7 @@ class MovieController(val movieRepo: MovieRepo) {
     }
 
     @RequestMapping("/movie/{id}")
-    fun findStudent(@PathVariable("id") id: String, model: Model) : String {
+    fun findMovie(@PathVariable("id") id: String, model: Model): String {
         model.addAttribute("movie", movieRepo.get(ID(id)))
         return "movie"
     }
