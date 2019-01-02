@@ -24,8 +24,16 @@
             <td th:text="${movie.title}"></td>
             <td th:text="${movie.description}"></td>
             <td th:text="${movie.prio}"></td>
+            <td>
+                <form action="changePrio" autocomplete="off" method="post">
+                    <input type="hidden" name="id" id="id" required="required" th:value="${movie.id}" class="readonly" />
+                    <input type="text" name="prio" id="prio" required="required" class="readonly"
+                           style="width: 150px;" pattern="[0-9]+"/>
+                    <input type="submit" value="Set prio"/>
+                </form>
+            </td>
         </tr>
-    </table>
+       </table>
 </div>
 </body>
 </html>

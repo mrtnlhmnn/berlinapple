@@ -1,12 +1,15 @@
 package de.mrtnlhmnn.berlinapple.ui
 
 import de.mrtnlhmnn.berlinapple.data.ID
+import de.mrtnlhmnn.berlinapple.data.Movie
 import de.mrtnlhmnn.berlinapple.data.MovieRepo
 import de.mrtnlhmnn.berlinapple.data.ProgramParser
+import org.apache.commons.lang3.math.NumberUtils.toInt
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
-import org.springframework.web.bind.annotation.PathVariable
-import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.*
+import org.springframework.web.servlet.mvc.support.RedirectAttributes
+import org.springframework.web.servlet.view.RedirectView
 
 @Controller
 class MovieController(val movieRepo: MovieRepo) {
@@ -21,5 +24,22 @@ class MovieController(val movieRepo: MovieRepo) {
     fun findMovie(@PathVariable("id") id: String, model: Model): String {
         model.addAttribute("movie", movieRepo.get(ID(id)))
         return "movie"
+    }
+
+    @GetMapping("/movie/changePrio")
+    fun changePrio() = "/movies"
+
+    @PostMapping("/movie/changePrio")
+    fun changePrio(@RequestParam("id") id: String,
+                   @RequestParam("prio") prio: String): RedirectView {
+        return try {
+            val movie = movieRepo.get(ID(id))
+            val newPrio = toInt(prio)
+            movie?.prio = newPrio
+
+            RedirectView("/movies")
+        } catch (exception: Exception) {
+            RedirectView("/")
+        }
     }
 }
