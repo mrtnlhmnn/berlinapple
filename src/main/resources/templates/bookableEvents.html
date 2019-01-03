@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="de">
+<head>
+    <title>BerlinAPPle Movie Details</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="../static/css/vendor/picnic.min.css"
+          th:href="@{../css/vendor/picnic.min.css}" rel="stylesheet" media="screen"/>
+    <link href="../static/css/app/main.css"
+          th:href="@{../css/app/main.css}" rel="stylesheet" media="screen"/>
+</head>
+<body>
+
+<div th:include="fragments/bodyHeader :: bodyHeader"/>
+
+<div class="container" th:if="${movie != null}">
+    <h2>Movie Details</h2>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Prio</th>
+        </tr>
+        <tr>
+            <td th:text="${movie.title}"></td>
+            <td th:text="${movie.description}"></td>
+            <td th:text="${movie.prio}"></td>
+        </tr>
+       </table>
+
+    <h3>Events</h3>
+
+    <table>
+        <tr>
+            <th>From</th>
+            <th>To</th>
+            <th>Location</th>
+        </tr>
+        <tr th:each="event : ${movie.events}">
+            <td th:text="${event.begin}"></td>
+            <td th:text="${event.end}"></td>
+            <td th:text="${event.location}"></td>
+        </tr>
+
+    </table>
+</div>
+</body>
+</html>
