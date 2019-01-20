@@ -25,7 +25,7 @@
             <td th:text="${movie.prio}"></td>
             <td th:text="${movie.title}"></td>
             <td th:text="${movie.events.size()}"></td>
-            <td><a th:href="@{bookableMovies/{id}(id=${movie.id})}">Bookable Events</a></td>
+            <td><a th:href="@{bookableEvents/{id}(id=${movie.id})}">Bookable Events</a></td>
         </tr>
     </table>
 </div>
