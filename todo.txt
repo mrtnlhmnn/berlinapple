@@ -1,4 +1,14 @@
+Features:
 - Responsive fuers Handy
 - Login mit Cookie
 - Seite mit "Liste aller gebuchten Filme, mit 'Undo Book Event'", sortieren nach Event-Zeit
 - 1 oder 2 Tickets
+
+Bugs:
+- Gebuchte Events werden aus Movie im Repository rausgeschmissen. 
+  Reporduzieren: 
+  * event (10.3.) aus Movie 123 buchen. Dieses überlappt sich mit einem Event aus Movie 456. 
+  * auf bookableMovies wird Film 456 noch mit 2 Events angezeigt.
+  * Nun auf die bookableEvent-Seite für Film 456 gehen. Es wird korrekt nur noch ein buchbares Event angezeigt.
+  * Nun zurück auf die bookableMovies Seite: IST: #events für Film 456: 1 SOLL: #events für Film 456: 2
+  * (Ursache wahrscheinlich (s. BookingController), dass ich bookableEvents für die Anzeige nicht in einer Copy eines Movies rausschmeiße, sondern direkt aus der Eventliste eines movie)
