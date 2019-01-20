@@ -1,6 +1,8 @@
 cd /c/lehmann/spielwiese/berlinapple/src/berlinapple
 
-docker build . --no-cache
+mvn install
+
+docker build . --no-cache --force-rm
 > <XXXID>
 
 docker run -d -p 8080:8080 <XXXID>
