@@ -17,7 +17,7 @@ open class ApplicationSecurityConfiguration(val userRepo: UserRepo) : WebSecurit
             auth!!
                     .inMemoryAuthentication()
                     .withUser(user.name)
-                    .password("{noop}berlin")
+                    .password("{bcrypt}\$2a\$10\$OLdoPrOcYLcTQLXQAPH6E.xI2zQ9Slw6BYQCVojvV0G0CDVltaYsu")
                     .roles("USER");
         }
     }
