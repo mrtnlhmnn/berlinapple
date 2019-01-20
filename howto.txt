@@ -1,20 +1,28 @@
-http://ec2-54-93-75-173.eu-central-1.compute.amazonaws.com:8080
-http://ec2-54-93-75-173.eu-central-1.compute.amazonaws.com:8080/version
-
-winpty docker login -u mrtnlhmnn
+cd /c/lehmann/spielwiese/berlinapple/src/berlinapple
 
 docker build . --no-cache
-> XXX
+> <XXXID>
 
-docker run -d -p 8080:8080 XXX
-> YYY
+docker run -d -p 8080:8080 <XXXID>
+> <YYYID>
 
-docker commit -m "BerlinAPPle Build" -a "mrtnlhmnn" YYY mrtnlhmnn/berlinapple
-> ZZZ
+docker commit -m "BerlinAPPle Build" -a "mrtnlhmnn" <YYYID> mrtnlhmnn/berlinapple
+> <ZZZID>
 
+# winpty docker login -u mrtnlhmnn
 docker push mrtnlhmnn/berlinapple
 
 --
+http://ec2-54-93-75-173.eu-central-1.compute.amazonaws.com:8080
+http://ec2-54-93-75-173.eu-central-1.compute.amazonaws.com:8080/version
+
 ssh ec2-user@ec2-54-93-75-173.eu-central-1.compute.amazonaws.com -i orga/berlinapple.pem
+
+docker ps
+docker stop PID
+docker container ls --all
+docker rm <CONTAINERID>
+docker images
+docker rmi <IMAGEID>
 
 docker run -d -p 8080:8080 docker.io/mrtnlhmnn/berlinapple
