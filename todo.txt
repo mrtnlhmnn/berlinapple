@@ -3,12 +3,21 @@ Features:
 - Login mit Cookie
 - Seite mit "Liste aller gebuchten Filme, mit 'Undo Book Event'", sortieren nach Event-Zeit
 - 1 oder 2 Tickets
+- per Konfig nur die fuer uns relevanten Tage
+- alle Listen nach Tagen sortieren (alle für zB Mittwoch zusammen, andere Liste fuer Donnerstag)
+- Prio hoch/runter in Listenansicht (zusätzlich)
+- Zeiten nicht in UTC anzeigen
+- Puffer "eher da sein"
+- Puffer "Weg von Kino2Kino" (außer bei gleichen Kino)
+- Locations (54) um Adressen statisch erweitern
+- (für neue Filme oder anderes wie Essen-gehen): fiktive Buchungen vornehmen
 
 Bugs:
 - Gebuchte Events werden aus Movie im Repository rausgeschmissen. 
-  Reporduzieren: 
+  Reproduzieren:
   * event (10.3.) aus Movie 123 buchen. Dieses überlappt sich mit einem Event aus Movie 456. 
   * auf bookableMovies wird Film 456 noch mit 2 Events angezeigt.
   * Nun auf die bookableEvent-Seite für Film 456 gehen. Es wird korrekt nur noch ein buchbares Event angezeigt.
   * Nun zurück auf die bookableMovies Seite: IST: #events für Film 456: 1 SOLL: #events für Film 456: 2
   * (Ursache wahrscheinlich (s. BookingController), dass ich bookableEvents für die Anzeige nicht in einer Copy eines Movies rausschmeiße, sondern direkt aus der Eventliste eines movie)
+

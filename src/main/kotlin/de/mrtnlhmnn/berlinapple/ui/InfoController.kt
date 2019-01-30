@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class InfoController {
-    @Value(value = "\${kapa.build.version:unknown}")
+    @Value(value = "\${build.version:unknown}")
     private val buildVersion: String? = null
 
-    @Value(value = "\${kapa.build.date:unknown}")
+    @Value(value = "\${build.date:unknown}")
     // note that Maven generates its timestamp in UTC, see here:
     // https://stackoverflow.com/questions/28281988/how-to-have-maven-show-local-timezone-in-maven-build-timestamp
     private val buildDate: String? = null

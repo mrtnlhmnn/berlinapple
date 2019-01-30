@@ -10,11 +10,11 @@ import org.springframework.web.servlet.view.RedirectView
 
 @Controller
 class MovieController(val movieRepo: MovieRepo) {
-    @RequestMapping("/movies")
+    @RequestMapping("/movielist")
     fun listMovies(model: Model): String {
         model.addAttribute("movies",
                 movieRepo.values.toList().sortedByDescending { m -> m.prio })
-        return "movies"
+        return "movielist"
     }
 
     @RequestMapping("/movie/{id}")
@@ -24,7 +24,7 @@ class MovieController(val movieRepo: MovieRepo) {
     }
 
     @GetMapping("/movie/changePrio")
-    fun changePrio() = "/movies"
+    fun changePrio() = "/movielist"
 
     @PostMapping("/movie/changePrio")
     fun changePrio(@RequestParam("id") id: String,
@@ -34,7 +34,7 @@ class MovieController(val movieRepo: MovieRepo) {
             val newPrio = toInt(prio)
             movie?.prio = newPrio
 
-            RedirectView("/movies")
+            RedirectView("/movielist")
         } catch (exception: Exception) {
             RedirectView("/")
         }
