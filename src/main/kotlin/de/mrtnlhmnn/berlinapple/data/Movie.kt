@@ -4,4 +4,5 @@ import java.net.URL
 
 data class Movie (val id: ID, val title: String, val description: String, var prio: Int,
                   val url: URL?,
-                  val events: MutableList<Event>)
+                  val events: MutableList<Event>){
+}

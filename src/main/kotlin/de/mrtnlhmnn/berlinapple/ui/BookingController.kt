@@ -40,17 +40,18 @@ class BookingController(val movieRepo: MovieRepo) {
         val movie = movieRepo.get(ID(id))
         val bookedTimes = getBookedTimes()
 
-        val nonbookeableEvents = ArrayList<Event>()
+        val bookeableEvents = ArrayList<Event>()
 
         for (event in movie!!.events){
-            if ((event.begin intersects bookedTimes) or (event.end intersects bookedTimes))
-                nonbookeableEvents.add(event)
+            if ( ! (event.begin intersects bookedTimes) or (event.end intersects bookedTimes))
+                bookeableEvents.add(event)
         }
 
-        var movieToDisplay = movie.copy()
-        movieToDisplay.events.removeAll(nonbookeableEvents)
 
-        model.addAttribute("movie", movie)
+        // val movieToDisplay = Movie(movie.id, movie.title, movie.description, movie.prio, movie.url,  bookeableEvents)
+        val movieToDisplay = movie.copy(events =  bookeableEvents)
+
+        model.addAttribute("movie", movieToDisplay)
         return "bookableEvents"
     }
 
