@@ -13,7 +13,7 @@
 <div th:include="fragments/bodyHeader :: bodyHeader"/>
 
 <div class="container" th:if="${movie != null}">
-    <h2>Movie Details</h2>
+    <h2>Bookable Movie Details (and its bookable Events)</h2>
     <table>
         <tr>
             <th>Movie ID</th>
@@ -42,7 +42,7 @@
             <th>To</th>
             <th>Location</th>
         </tr>
-        <tr th:each="event : ${movie.events}">
+        <tr th:each="event : ${movie.getSortedEvents()}">
             <td th:text="${event.id}"></td>
             <td th:text="${event.printBegin()}"></td>
             <td th:text="${event.printEnd()}"></td>

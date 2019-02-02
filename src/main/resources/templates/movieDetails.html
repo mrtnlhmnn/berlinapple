@@ -50,7 +50,7 @@
             <th>To</th>
             <th>Location</th>
         </tr>
-       <tr th:each="event : ${movie.getEvents()}">
+       <tr th:each="event : ${movie.getSortedEvents()}">
            <td th:text="${event.id}"></td>
            <td th:text="${event.printBegin()}"></td>
            <td th:text="${event.printEnd()}"></td>

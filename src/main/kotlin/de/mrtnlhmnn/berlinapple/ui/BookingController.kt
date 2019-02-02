@@ -8,7 +8,7 @@ import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.*
 import org.springframework.web.servlet.view.RedirectView
-import java.time.LocalDateTime
+import java.time.ZonedDateTime
 
 @Controller
 class BookingController(val movieRepo: MovieRepo) {
@@ -16,7 +16,10 @@ class BookingController(val movieRepo: MovieRepo) {
     @RequestMapping("/bookableMovies")
     fun listBookableMovies(model: Model): String {
 
-        val movies = movieRepo.values.toList().sortedByDescending { m -> m.prio }.toMutableList()
+        val movies =
+                movieRepo.values.toList()
+                        .sortedBy { it.events.first() }
+                        .sortedByDescending { it.prio }.toMutableList()
 
         // Remove all movies containing an already booked event.
         val bookableMovies = ArrayList<Movie>()
@@ -32,7 +35,7 @@ class BookingController(val movieRepo: MovieRepo) {
         }
         model.addAttribute("movies", bookableMovies)
 
-        return "bookableMovies"
+        return "bookableMovieList"
     }
 
     @RequestMapping("/bookableEvents/{id}")
@@ -52,7 +55,7 @@ class BookingController(val movieRepo: MovieRepo) {
         val movieToDisplay = movie.copy(events =  bookeableEvents)
 
         model.addAttribute("movie", movieToDisplay)
-        return "bookableEvents"
+        return "bookableEventsForOneMovie"
     }
 
 
@@ -77,9 +80,9 @@ class BookingController(val movieRepo: MovieRepo) {
     }
 
 
-    fun getBookedTimes(): List<Pair<LocalDateTime, LocalDateTime>>{
+    fun getBookedTimes(): List<Pair<ZonedDateTime, ZonedDateTime>>{
 
-        var bookedTimes: MutableList<Pair<LocalDateTime, LocalDateTime>> = mutableListOf()
+        var bookedTimes: MutableList<Pair<ZonedDateTime, ZonedDateTime>> = mutableListOf()
 
         for (movie in movieRepo.values){
             for (event in movie.events){
@@ -89,7 +92,7 @@ class BookingController(val movieRepo: MovieRepo) {
         return bookedTimes
     }
 
-    infix fun LocalDateTime.intersects (times: List<Pair<LocalDateTime, LocalDateTime>>) : Boolean {
+    infix fun ZonedDateTime.intersects (times: List<Pair<ZonedDateTime, ZonedDateTime>>) : Boolean {
         for (interval in times){
             if ((this >= interval.first) and (this <= interval.second)) return true
         }

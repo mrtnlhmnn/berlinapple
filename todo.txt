@@ -3,9 +3,9 @@ Features:
 - Login mit Cookie
 - Seite mit "Liste aller gebuchten Filme, mit 'Undo Book Event'", sortieren nach Event-Zeit
 - 1 oder 2 Tickets
-- alle Listen nach Tagen sortieren (alle für zB Mittwoch zusammen, andere Liste fuer Donnerstag)
+- Movie-Listen nach Prio und früh. Event sortieren
+- Event-Listen nach Datum sortieren
 - Prio hoch/runter in Listenansicht (zusätzlich)
-- Zeiten nicht in UTC anzeigen
 - Puffer "eher da sein"
 - Puffer "Weg von Kino2Kino" (außer bei gleichen Kino)
 - Locations (54) um Adressen statisch erweitern

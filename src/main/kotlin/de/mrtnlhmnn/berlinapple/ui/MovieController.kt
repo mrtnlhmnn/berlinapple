@@ -2,6 +2,7 @@ package de.mrtnlhmnn.berlinapple.ui
 
 import de.mrtnlhmnn.berlinapple.data.ID
 import de.mrtnlhmnn.berlinapple.data.MovieRepo
+import de.mrtnlhmnn.berlinapple.data.Prio
 import org.apache.commons.lang3.math.NumberUtils.toInt
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
@@ -13,14 +14,16 @@ class MovieController(val movieRepo: MovieRepo) {
     @RequestMapping("/movielist")
     fun listMovies(model: Model): String {
         model.addAttribute("movies",
-                movieRepo.values.toList().sortedByDescending { m -> m.prio })
-        return "movielist"
+                movieRepo.values.toList()
+                        .sortedBy { it.events.first() }
+                        .sortedByDescending { it.prio })
+        return "movieList"
     }
 
     @RequestMapping("/movie/{id}")
     fun findMovie(@PathVariable("id") id: String, model: Model): String {
         model.addAttribute("movie", movieRepo.get(ID(id)))
-        return "movie"
+        return "movieDetails"
     }
 
     @GetMapping("/movie/changePrio")
@@ -32,7 +35,7 @@ class MovieController(val movieRepo: MovieRepo) {
         return try {
             val movie = movieRepo.get(ID(id))
             val newPrio = toInt(prio)
-            movie?.prio = newPrio
+            movie?.prio = Prio(newPrio)
 
             RedirectView("/movielist")
         } catch (exception: Exception) {

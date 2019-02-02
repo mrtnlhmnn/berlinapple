@@ -10,13 +10,15 @@ import java.time.format.DateTimeFormatter
 
 import org.slf4j.LoggerFactory
 import java.time.LocalDate
+import java.time.ZoneId
+import java.time.ZonedDateTime
 
 @Component
 class ProgramParser(val movieRepo: MovieRepo, val config: BerlinappleConfig) {
 
     private val LOGGER = LoggerFactory.getLogger(this.javaClass)
 
-    private val dateTimePattern = "yyyyMMdd'T'HHmmss'Z'"
+    private val dateTimePattern = "yyyyMMdd'T'HHmmssX"
     private val dateTimePatternFormatter = DateTimeFormatter.ofPattern(dateTimePattern)
     private val datePattern     = "yyyyMMdd"
     private val datePatternFormatter = DateTimeFormatter.ofPattern(datePattern)
@@ -42,20 +44,22 @@ class ProgramParser(val movieRepo: MovieRepo, val config: BerlinappleConfig) {
         var eventNotFilteredCounter = 0;
 
         for (calEntry in calendar.getComponents()) {
-            var begin = LocalDateTime.MIN
-            var end   = LocalDateTime.MIN
-
-            var location = ""
-
-            var summary = ""
+            var begin: ZonedDateTime? = null
+            var end  : ZonedDateTime? = null
+            var location: String? = null
+            var summary:  String? = null
             var description = ""
             var url: URL? = null
 
             // get data from parsed calendar ics file
             for (calEntryProps in calEntry.getProperties()) {
                 when {
-                    (calEntryProps.name == beginKey)    -> {begin    = LocalDateTime.parse(calEntryProps.value, dateTimePatternFormatter)}
-                    (calEntryProps.name == endKey)      -> {end      = LocalDateTime.parse(calEntryProps.value, dateTimePatternFormatter)}
+                    (calEntryProps.name == beginKey)    -> {
+                        begin = ZonedDateTime.parse(calEntryProps.value, dateTimePatternFormatter)
+                    }
+                    (calEntryProps.name == endKey)      -> {
+                        end = ZonedDateTime.parse(calEntryProps.value, dateTimePatternFormatter)
+                    }
                     (calEntryProps.name == locationKey) -> {location = calEntryProps.value}
                     (calEntryProps.name == sumKey)      -> {summary      = calEntryProps.value }
                     (calEntryProps.name == descKey)     -> {description  = calEntryProps.value}
@@ -63,22 +67,24 @@ class ProgramParser(val movieRepo: MovieRepo, val config: BerlinappleConfig) {
                 }
             }
 
-
             eventTotalCounter++
-            if (isInStartEndTimeframe(begin, end, summary)) {
-                eventNotFilteredCounter++
 
-                // Create Event from parsed calendar data
-                val event = Event(ID.createEventID(begin.dayOfMonth.toString()), begin, end, location)
+            if (begin != null && end != null && location != null) {
+                if (isInStartEndTimeframe(begin, end, summary)) {
+                    eventNotFilteredCounter++
 
-                // Find (or create new) Movie and attach the above Event to it
-                var movie = movieRepo.findByTitleIgnoreCase(summary)
-                if (movie == null) {
-                    val movieId = ID.createMovieID()
-                    movie = Movie(movieId, summary, description, 1, url, mutableListOf(event))
-                    movieRepo.put(movieId, movie)
-                } else {
-                    movie.events?.add(event)
+                    // Create Event from parsed calendar data
+                    val event = Event(ID.createEventID(begin.dayOfMonth.toString()), begin, end, location)
+
+                    // Find (or create new) Movie and attach the above Event to it
+                    var movie = movieRepo.findByTitleIgnoreCase(summary)
+                    if (movie == null) {
+                        val movieId = ID.createMovieID()
+                        movie = Movie(movieId, summary, description, Prio(PRIO_NORMAL), url, mutableListOf(event))
+                        movieRepo.put(movieId, movie)
+                    } else {
+                        movie.events.add(event)
+                    }
                 }
             }
         }
@@ -88,7 +94,7 @@ class ProgramParser(val movieRepo: MovieRepo, val config: BerlinappleConfig) {
     }
 
     // check if event is in time frame [ berlinaleStartDateAsLD, berlinaleEndDateAsLD ]
-    private fun isInStartEndTimeframe(eventBegin: LocalDateTime, eventEnd: LocalDateTime, eventSummary: String): Boolean {
+    private fun isInStartEndTimeframe(eventBegin: ZonedDateTime, eventEnd: ZonedDateTime, eventSummary: String?): Boolean {
         val result = eventBegin.toLocalDate().isAfter(berlinaleStartDateAsLD.minusDays(1))
                   && eventBegin.toLocalDate().isBefore(berlinaleEndDateAsLD.plusDays(1))
                   && eventEnd.toLocalDate().isAfter(berlinaleStartDateAsLD.minusDays(1))
