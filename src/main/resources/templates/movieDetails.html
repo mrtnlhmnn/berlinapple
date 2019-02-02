@@ -13,47 +13,50 @@
 <div th:include="fragments/bodyHeader :: bodyHeader"/>
 
 <div class="container" th:if="${movie != null}">
-    <h2>Movie Details</h2>
+    <h2>Movie Details (and its Events)</h2>
     <table>
         <tr>
             <th>Movie ID</th>
             <th>Title</th>
             <th>Description</th>
+            <th>Link</th>
             <th>Prio</th>
         </tr>
         <tr>
             <td th:text="${movie.id}"></td>
             <td th:text="${movie.title}"></td>
             <td th:text="${movie.description}"></td>
+            <td th:if="${movie.url != null}">
+                <a th:href="${movie.url}">Link</a>
+            </td>
             <td th:text="${movie.prio}"></td>
+            <td>
+                <form action="changePrio" autocomplete="off" method="post">
+                    <input type="hidden" name="id" id="id" required="required" th:value="${movie.id}" class="readonly" />
+                    <input type="text" name="prio" id="prio" required="required" class="readonly"
+                           style="width: 150px;" pattern="[0-9]+"/>
+                    <input type="submit" value="Set prio"/>
+                </form>
+            </td>
         </tr>
-       </table>
+   </table>
 
-    <h3>Events</h3>
+    <hr>
 
-    <table>
+   <table>
         <tr>
             <th>Event ID</th>
             <th>From</th>
             <th>To</th>
             <th>Location</th>
         </tr>
-        <tr th:each="event : ${movie.events}">
-            <td th:text="${event.id}"></td>
-            <td th:text="${event.begin}"></td>
-            <td th:text="${event.end}"></td>
-            <td th:text="${event.location}"></td>
-            <td>
-                <form action="bookEvent" autocomplete="off" method="post">
-                    <input type="hidden" name="movieId" id="movieId" required="required" th:value="${movie.id}" class="readonly" />
-                    <input type="hidden" name="eventId" id="eventId" required="required" th:value="${event.id}" class="readonly" />
-                    <input type="submit" value="bookEvent"/>
-                </form>
-            </td>
-
-        </tr>
-
-    </table>
+       <tr th:each="event : ${movie.getEvents()}">
+           <td th:text="${event.id}"></td>
+           <td th:text="${event.printBegin()}"></td>
+           <td th:text="${event.printEnd()}"></td>
+           <td th:text="${event.location}"></td>
+       </tr>
+   </table>
 </div>
 </body>
 </html>
