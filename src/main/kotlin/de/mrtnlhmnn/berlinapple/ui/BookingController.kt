@@ -1,13 +1,12 @@
 package de.mrtnlhmnn.berlinapple.ui
 
-import de.mrtnlhmnn.berlinapple.data.Event
-import de.mrtnlhmnn.berlinapple.data.ID
-import de.mrtnlhmnn.berlinapple.data.Movie
-import de.mrtnlhmnn.berlinapple.data.MovieRepo
+import de.mrtnlhmnn.berlinapple.data.*
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.*
 import org.springframework.web.servlet.view.RedirectView
+import java.time.Duration
+import java.time.Period
 import java.time.ZonedDateTime
 
 @Controller
@@ -17,68 +16,53 @@ class BookingController(val movieRepo: MovieRepo) {
     fun listBookableMovies(model: Model): String {
         val movies = movieRepo.getSortedMovies()
 
-        // Remove all movies containing an already booked event.
         var bookableMovies = mutableListOf<Movie>()
         for (movie in movies) {
-            if (!movie.booked) bookableMovies.add(movie)
+            if (movie.available) bookableMovies.add(movie)
         }
         model.addAttribute("movies", bookableMovies)
 
         return "bookableMovieList"
     }
 
-    @RequestMapping("/bookableEvents/{id}")
-    fun listBookableEvents(@PathVariable("id") id: String, model: Model): String {
-        val movie = movieRepo.get(ID(id))
-        val bookedTimes = getBookedTimes()
-        val bookeableEvents = ArrayList<Event>()
+    @GetMapping("/movie/bookEvent")
+    fun bookEvent() = "/movielist"
 
-        for (event in movie!!.events){
-            if ( ! (event.begin intersects bookedTimes) or (event.end intersects bookedTimes))
-                bookeableEvents.add(event)
-        }
-
-        val movieToDisplay = movie.copy(events =  bookeableEvents)
-
-        model.addAttribute("movie", movieToDisplay)
-        return "bookableEventsForOneMovie"
-    }
-
-    @GetMapping("/bookableEvents/bookEvent")
-    fun book() = "/bookableEvents/{movie.id}"
-
-    @PostMapping("/bookableEvents/bookEvent")
-    fun book(@RequestParam("movieId") movieId: String,
+    @PostMapping("/movie/bookEvent")
+    fun bookEvent(@RequestParam("movieId") movieId: String,
              @RequestParam("eventId") eventId: String): RedirectView {
-        return try {
-            val movie = movieRepo.get(ID(movieId))
-            val events = movie!!.events
+        val eventID = ID(eventId)
+        val movieID = ID(movieId)
 
-            events.forEach{e -> if (e.id == ID(eventId))  e.booked = true  }
+        // fix the event status and all events of its movie
+        var bookedEvent: Event? = null
+        val bookedMovie = movieRepo.get(movieID)
 
-            movieRepo.put(movie.id, movie)
-
-            RedirectView("/bookableMovies")
-        } catch (exception: Exception) {
-            RedirectView("/")
-        }
-    }
-
-    fun getBookedTimes(): List<Pair<ZonedDateTime, ZonedDateTime>>{
-        var bookedTimes: MutableList<Pair<ZonedDateTime, ZonedDateTime>> = mutableListOf()
-
-        for (movie in movieRepo.values){
-            for (event in movie.events){
-                if (event.booked) bookedTimes.add(Pair(event.begin, event.end))
+        bookedMovie.let {
+            val events = it!!.events
+            events.forEach { ev ->
+                if (ev.id == eventID) {
+                    bookedEvent = ev
+                    bookedEvent?.status = EventStatus.BOOKED
+                }
+                else
+                    ev.status = EventStatus.UNAVAILABLE
             }
         }
-        return bookedTimes
-    }
 
-    infix fun ZonedDateTime.intersects (times: List<Pair<ZonedDateTime, ZonedDateTime>>) : Boolean {
-        for (interval in times){
-            if ((this >= interval.first) and (this <= interval.second)) return true
+        // fix all other events of all other movies (especially set all events to unavailable,
+        // if they intersect with the booked event)
+        val movies = movieRepo.getSortedMovies()
+        movies.forEach {
+            if (it != bookedMovie) {
+                val events = it!!.events
+                events.forEach { ev ->
+                    if (ev overlaps bookedEvent)
+                        ev.status = EventStatus.UNAVAILABLE
+                }
+            }
         }
-        return false
+
+        return RedirectView("/bookableMovies")
     }
 }

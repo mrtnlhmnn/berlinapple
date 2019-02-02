@@ -7,10 +7,15 @@ data class Movie (val id: ID, val title: String?, val description: String, var p
                   val events: MutableList<Event>)
 {
     val booked: Boolean
-        get() = isOneEventBooked()
-
-    fun isOneEventBooked(): Boolean {
+        get() = isOneEventOfTheMovieBooked()
+    fun isOneEventOfTheMovieBooked(): Boolean {
         events.forEach { if (it.booked) return true }
+        return false
+    }
+    val available: Boolean
+        get() = isOneEventOfTheMovieAvailable()
+    fun isOneEventOfTheMovieAvailable(): Boolean {
+        events.forEach { if (it.available) return true }
         return false
     }
 

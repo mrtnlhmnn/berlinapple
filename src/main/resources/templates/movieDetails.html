@@ -38,6 +38,7 @@
                     <input type="submit" value="Set prio"/>
                 </form>
             </td>
+
         </tr>
    </table>
 
@@ -55,6 +56,19 @@
            <td th:text="${event.printBegin()}"></td>
            <td th:text="${event.printEnd()}"></td>
            <td th:text="${event.location}"></td>
+           <td th:if="${event.available}">
+               <form action="bookEvent" autocomplete="off" method="post">
+                   <input type="hidden" name="movieId" id="movieId" required="required" th:value="${movie.id}" class="readonly" />
+                   <input type="hidden" name="eventId" id="eventId" required="required" th:value="${event.id}" class="readonly" />
+                   <input type="submit" value="bookEvent"/>
+               </form>
+           </td>
+           <td th:if="${event.booked}">
+               <i>booked!</i>
+           </td>
+           <td th:if="${event.unavailable}">
+               <i>unavailable!</i>
+           </td>
        </tr>
    </table>
 </div>

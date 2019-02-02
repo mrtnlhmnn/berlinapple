@@ -29,7 +29,7 @@
                 <a th:href="${movie.url}">Link</a>
             </td>
             <td th:text="${movie.events.size()}"></td>
-            <td><a th:href="@{bookableEvents/{id}(id=${movie.id})}">Bookable Events</a></td>
+            <td><a th:href="@{movie/{id}(id=${movie.id})}">Details</a></td>
         </tr>
     </table>
 </div>
