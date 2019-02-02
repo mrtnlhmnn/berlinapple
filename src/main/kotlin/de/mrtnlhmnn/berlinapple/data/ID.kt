@@ -3,14 +3,15 @@ package de.mrtnlhmnn.berlinapple.data
 data class ID(val id: String) {
 
     companion object {
-        private var eventCounter = 9999L
-        private var movieCounter =   99L
+        private var counter = 999L
 
-        fun createEventID(): ID {
-            return ID((++eventCounter).toString())
+        private val SEPARATOR = "-"
+
+        fun createEventID(begin: String): ID {
+            return ID("E" + SEPARATOR + begin + SEPARATOR + (++counter).toString())
         }
         fun createMovieID(): ID {
-            return ID((++movieCounter).toString())
+            return ID("M" + SEPARATOR + (++counter).toString())
         }
     }
 

@@ -69,7 +69,7 @@ class ProgramParser(val movieRepo: MovieRepo, val config: BerlinappleConfig) {
                 eventNotFilteredCounter++
 
                 // Create Event from parsed calendar data
-                val event = Event(ID.createEventID(), begin, end, location)
+                val event = Event(ID.createEventID(begin.dayOfMonth.toString()), begin, end, location)
 
                 // Find (or create new) Movie and attach the above Event to it
                 var movie = movieRepo.findByTitleIgnoreCase(summary)
