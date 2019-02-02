@@ -3,7 +3,6 @@ Features:
 - Login mit Cookie
 - Seite mit "Liste aller gebuchten Filme, mit 'Undo Book Event'", sortieren nach Event-Zeit
 - 1 oder 2 Tickets
-- per Konfig nur die fuer uns relevanten Tage
 - alle Listen nach Tagen sortieren (alle für zB Mittwoch zusammen, andere Liste fuer Donnerstag)
 - Prio hoch/runter in Listenansicht (zusätzlich)
 - Zeiten nicht in UTC anzeigen

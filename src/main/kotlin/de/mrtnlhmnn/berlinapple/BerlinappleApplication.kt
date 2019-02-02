@@ -6,13 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class BerlinappleApplication
-
-@Value("programFile:data/program.ics")
-val programICSFileName: String = "data/program.ics"
+class BerlinappleApplication(val config: BerlinappleConfig)
 
 fun main(args: Array<String>) {
     val context = runApplication<BerlinappleApplication>(*args)
-    context.getBean(ProgramParser::class.java).parseProgramICSFile2Repo(programICSFileName)
+    context.getBean(ProgramParser::class.java).parseProgramICSFile2Repo()
 }
 
