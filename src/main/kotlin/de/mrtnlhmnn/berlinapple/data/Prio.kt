@@ -1,16 +1,18 @@
 package de.mrtnlhmnn.berlinapple.data
 
-val PRIO_TOP = 99
-val PRIO_NORMAL = 50
-val PRIO_LOW = 1
-val PRIO_HIDE = 0
-
 data class Prio(val value: Int, val optional: String = ""): Comparable<Prio> {
     override fun compareTo(other: Prio): Int {
         return (value - other.value)
     }
 
     override fun toString() = ""+value
+
+    companion object {
+        val TOP = Prio(99)
+        val NORMAL = Prio(50)
+        val LOW = Prio(1)
+        val HIDE = Prio(0)
+    }
 
     fun isTop() = value == 99
     fun isNormal() = value == 50

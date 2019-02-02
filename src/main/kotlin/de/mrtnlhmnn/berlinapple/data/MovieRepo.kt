@@ -14,4 +14,9 @@ class MovieRepo: HashMap<ID, Movie>() {
         }
         return null
     }
+
+    fun getSortedMovies() = values.toList()
+                .sortedBy { it.events.first() }
+                .sortedByDescending { it.prio }.toMutableList()
+
 }

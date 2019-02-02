@@ -13,10 +13,7 @@ import org.springframework.web.servlet.view.RedirectView
 class MovieController(val movieRepo: MovieRepo) {
     @RequestMapping("/movielist")
     fun listMovies(model: Model): String {
-        model.addAttribute("movies",
-                movieRepo.values.toList()
-                        .sortedBy { it.events.first() }
-                        .sortedByDescending { it.prio })
+        model.addAttribute("movies", movieRepo.getSortedMovies())
         return "movieList"
     }
 

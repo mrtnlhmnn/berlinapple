@@ -5,12 +5,10 @@ import net.fortuna.ical4j.data.CalendarBuilder
 import net.fortuna.ical4j.model.Property
 import org.springframework.stereotype.Component
 import java.net.URL
-import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
 import org.slf4j.LoggerFactory
 import java.time.LocalDate
-import java.time.ZoneId
 import java.time.ZonedDateTime
 
 @Component
@@ -80,7 +78,7 @@ class ProgramParser(val movieRepo: MovieRepo, val config: BerlinappleConfig) {
                     var movie = movieRepo.findByTitleIgnoreCase(summary)
                     if (movie == null) {
                         val movieId = ID.createMovieID()
-                        movie = Movie(movieId, summary, description, Prio(PRIO_NORMAL), url, mutableListOf(event))
+                        movie = Movie(movieId, summary, description, Prio.NORMAL, url, mutableListOf(event))
                         movieRepo.put(movieId, movie)
                     } else {
                         movie.events.add(event)

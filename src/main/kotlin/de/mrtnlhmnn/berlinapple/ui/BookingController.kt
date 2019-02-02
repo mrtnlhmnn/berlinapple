@@ -15,23 +15,12 @@ class BookingController(val movieRepo: MovieRepo) {
 
     @RequestMapping("/bookableMovies")
     fun listBookableMovies(model: Model): String {
-
-        val movies =
-                movieRepo.values.toList()
-                        .sortedBy { it.events.first() }
-                        .sortedByDescending { it.prio }.toMutableList()
+        val movies = movieRepo.getSortedMovies()
 
         // Remove all movies containing an already booked event.
-        val bookableMovies = ArrayList<Movie>()
-        bookableMovies.addAll(movies)
-
+        var bookableMovies = mutableListOf<Movie>()
         for (movie in movies) {
-             for (event in movie.events){
-                 if (event.booked) {
-                     bookableMovies.remove(movie)
-                     break
-                 }
-            }
+            if (!movie.booked) bookableMovies.add(movie)
         }
         model.addAttribute("movies", bookableMovies)
 
@@ -42,7 +31,6 @@ class BookingController(val movieRepo: MovieRepo) {
     fun listBookableEvents(@PathVariable("id") id: String, model: Model): String {
         val movie = movieRepo.get(ID(id))
         val bookedTimes = getBookedTimes()
-
         val bookeableEvents = ArrayList<Event>()
 
         for (event in movie!!.events){
@@ -50,14 +38,11 @@ class BookingController(val movieRepo: MovieRepo) {
                 bookeableEvents.add(event)
         }
 
-
-        // val movieToDisplay = Movie(movie.id, movie.title, movie.description, movie.prio, movie.url,  bookeableEvents)
         val movieToDisplay = movie.copy(events =  bookeableEvents)
 
         model.addAttribute("movie", movieToDisplay)
         return "bookableEventsForOneMovie"
     }
-
 
     @GetMapping("/bookableEvents/bookEvent")
     fun book() = "/bookableEvents/{movie.id}"
@@ -79,9 +64,7 @@ class BookingController(val movieRepo: MovieRepo) {
         }
     }
 
-
     fun getBookedTimes(): List<Pair<ZonedDateTime, ZonedDateTime>>{
-
         var bookedTimes: MutableList<Pair<ZonedDateTime, ZonedDateTime>> = mutableListOf()
 
         for (movie in movieRepo.values){
