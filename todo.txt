@@ -9,7 +9,7 @@ Features:
 - Locations (54) um Adressen statisch erweitern
 - (für neue Filme oder anderes wie Essen-gehen): fiktive Buchungen vornehmen
 - Download einer .ics-Datei für Buchung zur Uebernahme in Kalender
-- Download aller Prios und Status-Werte als eine Art Persistenz
+- Download aller Prios und Status-Werte als eine Art Persistenz (zeitgesteuert, regelmässig nach S3, Laden beim Neustart)
 - Überblicksseite mit allen Buchungen
 
 Bugs:
