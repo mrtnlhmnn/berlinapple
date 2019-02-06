@@ -4,7 +4,7 @@ import java.net.URL
 
 data class Movie (val id: ID, val title: String?, val description: String, var prio: Prio,
                   val url: URL?,
-                  val events: MutableList<Event>)
+                  val events: MutableList<Event>): JSONConvertable
 {
     val booked: Boolean
         get() = isOneEventOfTheMovieBooked()
@@ -12,6 +12,7 @@ data class Movie (val id: ID, val title: String?, val description: String, var p
         events.forEach { if (it.booked) return true }
         return false
     }
+
     val available: Boolean
         get() = isOneEventOfTheMovieAvailable()
     fun isOneEventOfTheMovieAvailable(): Boolean {

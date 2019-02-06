@@ -5,13 +5,9 @@ import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.*
 import org.springframework.web.servlet.view.RedirectView
-import java.time.Duration
-import java.time.Period
-import java.time.ZonedDateTime
 
 @Controller
 class BookingController(val movieRepo: MovieRepo) {
-
     @RequestMapping("/bookableMovies")
     fun listBookableMovies(model: Model): String {
         val movies = movieRepo.getSortedMovies()

@@ -10,25 +10,10 @@ enum class EventStatus  {
 
 data class Event (
         val id: ID,
-        val begin: ZonedDateTime,
-        val end: ZonedDateTime,
+        val begin: ZonedDateTime, val end: ZonedDateTime,
         val location: String,
         var status: EventStatus = EventStatus.AVAILABLE): Comparable<Event>, JSONConvertable
 {
-//TODO verallgemeinert, kann raus, da alles in JsonHelper generisch gebaut ist
-/*
-    companion object {
-        fun toJSON(event: Event): String {
-            val jsonAdapter: JsonAdapter<Event> = jsonBuilder.adapter(Event::class.java)
-            return jsonAdapter.toJson(event)
-        }
-
-        fun fromJSON(json: String): Event? {
-            val jsonAdapter: JsonAdapter<Event> = jsonBuilder.adapter(Event::class.java)
-            return jsonAdapter.fromJson(json)
-        }
-    }
-*/
     fun printBegin(): String {
         val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
         return begin.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)

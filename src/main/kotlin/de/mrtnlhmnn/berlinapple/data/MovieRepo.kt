@@ -3,7 +3,7 @@ package de.mrtnlhmnn.berlinapple.data
 import org.springframework.stereotype.Component
 
 @Component
-class MovieRepo: HashMap<ID, Movie>() {
+class MovieRepo: HashMap<ID, Movie>(), JSONConvertable {
     fun findByTitleIgnoreCase(title: String?): Movie? {
         if (title == null || title == "") return null
 
