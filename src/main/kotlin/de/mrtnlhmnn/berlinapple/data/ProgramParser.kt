@@ -87,7 +87,7 @@ class ProgramParser(val movieRepo: MovieRepo, val config: BerlinappleConfig) {
             }
         }
 
-        LOGGER.info("In total: {} events, left not filtered as between {} and {} are {} events",
+        LOGGER.info("In total: {} events, left after date filter (between {} and {}) are now {} events",
                 eventTotalCounter, berlinaleStartDateAsLD, berlinaleEndDateAsLD, eventNotFilteredCounter)
     }
 
