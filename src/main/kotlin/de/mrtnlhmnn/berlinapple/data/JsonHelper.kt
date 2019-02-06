@@ -33,7 +33,7 @@ inline fun <reified T: JSONConvertable> String.listFromJSON(): List<T>? {
     try {
         val listMovieType: Type = Types.newParameterizedType(List::class.java, T::class.java)
         val movieListAdapter: JsonAdapter<List<T>> = jsonBuilder.adapter(listMovieType)
-        return movieListAdapter.fromJson(this)!!
+        return movieListAdapter.fromJson(this)
     }
     catch (ex: Exception) {
         return null;
