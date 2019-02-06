@@ -16,7 +16,15 @@ class MovieRepo: HashMap<ID, Movie>(), JSONConvertable {
     }
 
     fun getSortedMovies() = values.toList()
-                .sortedBy { it.events.first() }
-                .sortedByDescending { it.prio }.toMutableList()
+            .sortedBy { it.events.first() }
+            .sortedByDescending { it.prio }.toMutableList()
 
+    fun getNumberOfMovies() = this.values.size
+    fun getNumberOfEvents(): Long {
+        var counter = 0L
+        this.values.map{
+            counter += it.events.size
+        }
+        return counter
+    }
 }
