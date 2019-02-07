@@ -1,16 +1,15 @@
 Features:
-- Responsive fuers Handy
-- Login mit Cookie
-- Seite mit "Liste aller gebuchten Filme, mit 'Undo Book Event'", sortieren nach Event-Zeit
-- 1 oder 2 Tickets
-- Prio hoch/runter in Listenansicht (zusätzlich)
+- zeitgesteuert Persistenz der JSONs von Movies/Events, regelmässig nach S3, Laden&Merge beim Neustart
+- Überblicksseite mit allen Buchungen: "Liste aller gebuchten Filme, mit 'Undo Book Event'", sortieren nach Event-Zeit
 - Puffer "eher da sein"
 - Puffer "Weg von Kino2Kino" (außer bei gleichen Kino)
-- Locations (54) um Adressen statisch erweitern
 - (für neue Filme oder anderes wie Essen-gehen): fiktive Buchungen vornehmen
+- Locations (54) um Adressen statisch erweitern
 - Download einer .ics-Datei für Buchung zur Uebernahme in Kalender
-- Download aller Prios und Status-Werte als eine Art Persistenz (zeitgesteuert, regelmässig nach S3, Laden beim Neustart)
-- Überblicksseite mit allen Buchungen
+- Responsive fuers Handy
+- Login mit Cookie
+- 1 oder 2 Tickets
+- Prio hoch/runter in Listenansicht (zusätzlich)
 
 Bugs:
 - Gebuchte Events werden aus Movie im Repository rausgeschmissen. 
