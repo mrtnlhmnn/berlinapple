@@ -21,7 +21,10 @@ data class Event (
         val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
         return begin.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)
     }
-
+    fun printBeginDateTimeForCaldendarFile(): String {
+        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mmZ")
+        return begin.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)
+    }
     fun printBeginTime(): String {
         val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm")
         return begin.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)
@@ -31,7 +34,10 @@ data class Event (
         val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
         return end.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)
     }
-
+    fun printEndDateTimeForCaldendarFile(): String {
+        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mmZ")
+        return end.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)
+    }
     fun printEndTime(): String {
         val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm")
         return end.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)

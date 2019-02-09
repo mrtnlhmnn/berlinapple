@@ -1,7 +1,5 @@
 Features:
-- Laden&Merge der S3-Persistenz beim Neustart
-- Download einer .ics-Datei für Buchung zur Uebernahme in Kalender
-
+- Offline-Toggle ("lese nur von program, merge nicht mit S3-Storage"
 - (für neue Filme oder anderes wie Essen-gehen): fiktive Buchungen vornehmen
 - Responsive fuers Handy
 - Login mit Cookie

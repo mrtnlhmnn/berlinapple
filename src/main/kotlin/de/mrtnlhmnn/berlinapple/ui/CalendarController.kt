@@ -27,7 +27,6 @@ class CalendarController {
 
         if (bookedMovie != null && bookedEvent != null) {
 
-//TODO: Description has linebreaks, hence not set here (need to be quoted)
             val icsText =
 """BEGIN:VCALENDAR
 CALSCALE:GREGORIAN
@@ -40,9 +39,10 @@ X-WR-CALDESC:Berlinapple for the Internationale Filmfestspiele Berlin
 BEGIN:VEVENT
 UID:${movieID}-${bookedEvent.id}
 DTSTAMP:${now}
-CATEGORIES:Internationale Filmfestspiele Berlin
-DTSTART:${bookedEvent.printBeginDateTime()}
-DTEND:${bookedEvent.printEndDateTime()}
+CATEGORIES:Berlinapple for Internationale Filmfestspiele Berlin
+DESCRIPTION:${bookedMovie.url}
+DTSTART:${bookedEvent.printBeginDateTimeForCaldendarFile()}
+DTEND:${bookedEvent.printEndDateTimeForCaldendarFile()}
 LOCATION:${bookedEvent.location?.let{"${it.name} (${it.address})"}}
 SUMMARY:${bookedMovie.title}
 URL:${bookedMovie.url}
