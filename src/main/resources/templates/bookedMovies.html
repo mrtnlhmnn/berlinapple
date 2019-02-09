@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="de">
+<head>
+    <title>BerlinAPPle Movies</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="../static/css/vendor/picnic.min.css"
+          th:href="@{css/vendor/picnic.min.css}" rel="stylesheet" media="screen"/>
+    <link href="../static/css/app/main.css"
+          th:href="@{css/app/main.css}" rel="stylesheet" media="screen"/>
+</head>
+<body>
+
+<div th:include="fragments/bodyHeader :: bodyHeader"/>
+
+<div class="container" th:if="${not #lists.isEmpty(bookedMoviesPerDay)}">
+    <h2>Our List of Booked Movies/Events</h2>
+    <th:block th:each="movieListOfDay : ${bookedMoviesPerDay}">
+        <th:block th:if="${not #lists.isEmpty(movieListOfDay)}">
+           <h3>Bookings for <th:block th:text="${movieListOfDay.get(0).getBookedEvent().getBookingDay()}"></th:block></h3>
+           <table>
+                <tr>
+                    <th>Prio</th>
+                    <th>Title</th>
+                    <th>Link</th>
+                    <th>Booked Event</th>
+                </tr>
+                <tr th:each="movie : ${movieListOfDay}">
+                    <td th:text="${movie.prio}"></td>
+                    <td th:text="${movie.title}"></td>
+                    <td th:if="${movie.url != null}">
+                        <a th:href="${movie.url}" target="_blank">Link</a>
+                    </td>
+                    <td th:text="${movie.getBookedEvent().printBooking()}"></td>
+                </tr>
+            </table>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+        </th:block>
+    </th:block>
+</div>
+</body>
+</html>

@@ -13,35 +13,20 @@
 <div th:include="fragments/bodyHeader :: bodyHeader"/>
 
 <div class="container" th:if="${not #lists.isEmpty(movies)}">
-    <h2>The complete List of Movies</h2>
+    <h2>The List of Bookable Movies/Events</h2>
     <table>
         <tr>
             <th>Prio</th>
-            <th>Booked?</th>
-            <th>Available?</th>
             <th>Title</th>
             <th>Link</th>
             <th># Events</th>
-            <th>Details</th>
+            <th>Bookable Events</th>
         </tr>
         <tr th:each="movie : ${movies}">
             <td th:text="${movie.prio}"></td>
-            <td th:if="${movie.booked}">
-                yes
-            </td>
-            <td th:unless="${movie.booked}">
-                &nbsp;
-            </td>
-            <td th:if="${movie.available}">
-                yes
-            </td>
-            <td th:unless="${movie.available}">
-                no
-            </td>
             <td th:text="${movie.title}"></td>
-            <td th:if="${movie.url == null}">---</td>
             <td th:if="${movie.url != null}">
-                <a th:href="${movie.url}">Link</a>
+                <a th:href="${movie.url}" target="_blank">Link</a>
             </td>
             <td th:text="${movie.events.size()}"></td>
             <td><a th:href="@{movie/{id}(id=${movie.id})}">Details</a></td>

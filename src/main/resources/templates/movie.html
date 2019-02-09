@@ -27,7 +27,7 @@
             <td th:text="${movie.title}"></td>
             <td th:text="${movie.description}"></td>
             <td th:if="${movie.url != null}">
-                <a th:href="${movie.url}">Link</a>
+                <a th:href="${movie.url}" target="_blank">Link</a>
             </td>
             <td th:text="${movie.prio}"></td>
             <td>
@@ -53,8 +53,8 @@
         </tr>
        <tr th:each="event : ${movie.getSortedEvents()}">
            <td th:text="${event.id}"></td>
-           <td th:text="${event.printBegin()}"></td>
-           <td th:text="${event.printEnd()}"></td>
+           <td th:text="${event.printBeginDateTime()}"></td>
+           <td th:text="${event.printEndDateTime()}"></td>
            <td th:text="${event.location}"></td>
            <td th:if="${event.available}">
                <form action="bookEvent" autocomplete="off" method="post">

@@ -1,5 +1,7 @@
 package de.mrtnlhmnn.berlinapple.data
 
+import de.mrtnlhmnn.berlinapple.application.JSONConvertable
+import org.slf4j.LoggerFactory
 import java.net.URL
 
 data class Movie (val id: ID, val title: String?, val description: String, var prio: Prio,
@@ -22,5 +24,18 @@ data class Movie (val id: ID, val title: String?, val description: String, var p
 
     fun getSortedEvents(): MutableList<Event> {
         return events.sortedBy{it.begin}.toMutableList()
+    }
+
+    fun getBookedEvent(): Event {
+        var bookedEvent: Event? = null
+        events.forEach {
+            if (it.booked) {
+                if (bookedEvent == null)
+                    bookedEvent = it
+                else
+                    LoggerFactory.getLogger(this.javaClass).warn("Found more than one event for " + this)
+            }
+        }
+        return bookedEvent!!
     }
 }

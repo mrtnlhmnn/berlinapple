@@ -1,4 +1,4 @@
-package de.mrtnlhmnn.berlinapple.ui
+    package de.mrtnlhmnn.berlinapple.ui
 
 import de.mrtnlhmnn.berlinapple.data.*
 import org.springframework.stereotype.Controller
@@ -18,7 +18,7 @@ class BookingController(val movieRepo: MovieRepo) {
         }
         model.addAttribute("movies", bookableMovies)
 
-        return "bookableMovieList"
+        return "bookableMovies"
     }
 
     @GetMapping("/movie/bookEvent")

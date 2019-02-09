@@ -1,26 +1,16 @@
 package de.mrtnlhmnn.berlinapple.application
 
-import com.amazonaws.services.s3.model.ListObjectsV2Request
 import com.amazonaws.services.s3.model.ObjectMetadata
 import com.amazonaws.services.s3.model.PutObjectRequest
 import com.amazonaws.util.StringUtils
-import com.squareup.moshi.JsonAdapter
-import com.squareup.moshi.Types
 import de.mrtnlhmnn.berlinapple.data.*
 import de.mrtnlhmnn.berlinapple.infrastructure.S3Config
 import org.slf4j.LoggerFactory
-import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.beans.factory.annotation.Value
 import org.springframework.scheduling.annotation.EnableScheduling
 import org.springframework.scheduling.annotation.Scheduled
 import org.springframework.stereotype.Component
-import sun.awt.CharsetString
 import java.io.ByteArrayInputStream
-import java.io.File
-import java.lang.reflect.Type
-import java.net.URL
 import java.time.Instant
-import java.time.ZonedDateTime
 
 @Component
 @EnableScheduling

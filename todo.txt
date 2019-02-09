@@ -1,5 +1,6 @@
 Features:
-- zeitgesteuert Persistenz der JSONs von Movies/Events, regelmässig nach S3, Laden&Merge beim Neustart
+- zeitgesteuert Persistenz der JSONs von Movies/Events, regelmässig nach S3
+- Laden&Merge beim Neustart
 - Überblicksseite mit allen Buchungen: "Liste aller gebuchten Filme, mit 'Undo Book Event'", sortieren nach Event-Zeit
 - Puffer "eher da sein"
 - Puffer "Weg von Kino2Kino" (außer bei gleichen Kino)

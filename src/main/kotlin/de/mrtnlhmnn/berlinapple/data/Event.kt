@@ -1,5 +1,7 @@
 package de.mrtnlhmnn.berlinapple.data
 
+import de.mrtnlhmnn.berlinapple.application.JSONConvertable
+import java.time.LocalDate
 import java.time.ZoneId
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
@@ -14,14 +16,36 @@ data class Event (
         val location: String,
         var status: EventStatus = EventStatus.AVAILABLE): Comparable<Event>, JSONConvertable
 {
-    fun printBegin(): String {
+    fun printBeginDateTime(): String {
         val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
         return begin.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)
     }
 
-    fun printEnd(): String {
+    fun printBeginTime(): String {
+        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm")
+        return begin.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)
+    }
+
+    fun printEndDateTime(): String {
         val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
         return end.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)
+    }
+
+    fun printEndTime(): String {
+        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm")
+        return end.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)
+    }
+
+    fun printBooking(): String {
+        val begin = printBeginTime()
+        val end = printEndTime()
+        val location = location
+        return "${begin} - ${end} at ${location}"
+    }
+
+    fun getBookingDay(): LocalDate? {
+        if (!booked) return null
+        return LocalDate.of(begin.year, begin.month, begin.dayOfMonth)
     }
 
     val booked: Boolean

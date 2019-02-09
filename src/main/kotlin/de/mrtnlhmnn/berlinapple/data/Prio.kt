@@ -1,5 +1,7 @@
 package de.mrtnlhmnn.berlinapple.data
 
+import de.mrtnlhmnn.berlinapple.application.JSONConvertable
+
 data class Prio(val value: Int, val optional: String = ""): Comparable<Prio>, JSONConvertable
 {
     override fun compareTo(other: Prio): Int {

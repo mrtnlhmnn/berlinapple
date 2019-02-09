@@ -10,21 +10,21 @@ import org.springframework.web.bind.annotation.*
 import org.springframework.web.servlet.view.RedirectView
 
 @Controller
-class MovieController(val movieRepo: MovieRepo) {
-    @RequestMapping("/movielist")
+class ProgramController(val movieRepo: MovieRepo) {
+    @RequestMapping("/allMovies")
     fun listMovies(model: Model): String {
         model.addAttribute("movies", movieRepo.getSortedMovies())
-        return "movieList"
+        return "allMovies"
     }
 
     @RequestMapping("/movie/{id}")
     fun findMovie(@PathVariable("id") id: String, model: Model): String {
         model.addAttribute("movie", movieRepo.get(ID(id)))
-        return "movieDetails"
+        return "movie"
     }
 
     @GetMapping("/movie/changePrio")
-    fun changePrio() = "/movielist"
+    fun changePrio() = "/allMovies"
 
     @PostMapping("/movie/changePrio")
     fun changePrio(@RequestParam("id") id: String,
@@ -34,7 +34,7 @@ class MovieController(val movieRepo: MovieRepo) {
             val newPrio = toInt(prio)
             movie?.prio = Prio(newPrio)
 
-            RedirectView("/movielist")
+            RedirectView("/allMovies")
         } catch (exception: Exception) {
             RedirectView("/")
         }

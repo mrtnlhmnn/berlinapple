@@ -1,4 +1,4 @@
-package de.mrtnlhmnn.berlinapple.data
+package de.mrtnlhmnn.berlinapple.application
 
 import com.squareup.moshi.*
 import java.time.Instant
@@ -8,7 +8,8 @@ import java.lang.Exception
 import java.lang.reflect.Type
 import java.net.URL
 import com.squareup.moshi.JsonAdapter
-import com.squareup.moshi.Types.newParameterizedType
+import de.mrtnlhmnn.berlinapple.data.Movie
+import de.mrtnlhmnn.berlinapple.data.MovieRepo
 
 interface JSONConvertable
 
