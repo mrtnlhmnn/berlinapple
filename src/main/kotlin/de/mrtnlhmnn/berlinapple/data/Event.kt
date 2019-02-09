@@ -1,6 +1,7 @@
 package de.mrtnlhmnn.berlinapple.data
 
 import de.mrtnlhmnn.berlinapple.application.JSONConvertable
+import java.net.URL
 import java.time.LocalDate
 import java.time.ZoneId
 import java.time.ZonedDateTime
@@ -13,7 +14,7 @@ enum class EventStatus  {
 data class Event (
         val id: ID,
         val begin: ZonedDateTime, val end: ZonedDateTime,
-        val location: String,
+        val location: Location?,
         var status: EventStatus = EventStatus.AVAILABLE): Comparable<Event>, JSONConvertable
 {
     fun printBeginDateTime(): String {
@@ -36,16 +37,15 @@ data class Event (
         return end.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)
     }
 
-    fun printBooking(): String {
-        val begin = printBeginTime()
-        val end = printEndTime()
-        val location = location
-        return "${begin} - ${end} at ${location}"
-    }
-
     fun getBookingDay(): LocalDate? {
         if (!booked) return null
         return LocalDate.of(begin.year, begin.month, begin.dayOfMonth)
+    }
+
+    fun printBookingTime(): String {
+        val begin = printBeginTime()
+        val end = printEndTime()
+        return "${begin} - ${end}"
     }
 
     val booked: Boolean

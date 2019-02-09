@@ -8,6 +8,8 @@ import java.lang.Exception
 import java.lang.reflect.Type
 import java.net.URL
 import com.squareup.moshi.JsonAdapter
+import de.mrtnlhmnn.berlinapple.data.Location
+import de.mrtnlhmnn.berlinapple.data.LocationRepo
 import de.mrtnlhmnn.berlinapple.data.Movie
 import de.mrtnlhmnn.berlinapple.data.MovieRepo
 
@@ -17,6 +19,7 @@ val jsonBuilder = Moshi.Builder()
         .add(JSONZonedDateTimeTypeAdapter())
         .add(URLTypeAdapter())
         .add(MovieRepoTypeAdapter())
+        .add(LocationRepoTypeAdapter())
         .build()
 
 inline fun <reified T: JSONConvertable> T.toJSON(): String = jsonBuilder.adapter(T::class.java).toJson(this)
@@ -32,11 +35,12 @@ inline fun <reified T: JSONConvertable> String.fromJSON(): T? {
 
 inline fun <reified T: JSONConvertable> String.listFromJSON(): List<T>? {
     try {
-        val listMovieType: Type = Types.newParameterizedType(List::class.java, T::class.java)
-        val movieListAdapter: JsonAdapter<List<T>> = jsonBuilder.adapter(listMovieType)
-        return movieListAdapter.fromJson(this)
+        val listType: Type = Types.newParameterizedType(List::class.java, T::class.java)
+        val listAdapter: JsonAdapter<List<T>> = jsonBuilder.adapter(listType)
+        return listAdapter.fromJson(this)
     }
     catch (ex: Exception) {
+        System.err.println(ex)
         return null;
     }
 }
@@ -65,5 +69,10 @@ private class URLTypeAdapter {
 private class MovieRepoTypeAdapter {
     @ToJson
     fun toJson(movieRepo: MovieRepo): List<Movie> = movieRepo.values.toList()
+}
+
+private class LocationRepoTypeAdapter {
+    @ToJson
+    fun toJson(locationRepo: LocationRepo): List<Location> = locationRepo.values.toList()
 }
 

@@ -8,11 +8,13 @@ import java.net.URL
 import java.time.format.DateTimeFormatter
 
 import org.slf4j.LoggerFactory
+import java.io.InputStream
 import java.time.LocalDate
 import java.time.ZonedDateTime
+import java.util.regex.Pattern
 
 @Component
-class ProgramParser(val movieRepo: MovieRepo, val config: BerlinappleConfig) {
+class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, val config: BerlinappleConfig) {
 
     private val LOGGER = LoggerFactory.getLogger(this.javaClass)
 
@@ -34,61 +36,78 @@ class ProgramParser(val movieRepo: MovieRepo, val config: BerlinappleConfig) {
     private val urlKey      = Property.URL
 
     fun parseProgramICSFile2Repo() {
-        val fis = ProgramParser::class.java.classLoader.getResourceAsStream(config.programICSFileName)
-        val builder = CalendarBuilder()
-        val calendar = builder.build(fis)
+        var fis: InputStream? = null
+        try {
+            fis = ProgramParser::class.java.classLoader.getResourceAsStream(config.programICSFileName)
 
-        var eventTotalCounter = 0;
-        var eventNotFilteredCounter = 0;
+            val builder = CalendarBuilder()
+            val calendar = builder.build(fis)
 
-        for (calEntry in calendar.getComponents()) {
-            var begin: ZonedDateTime? = null
-            var end  : ZonedDateTime? = null
-            var location: String? = null
-            var summary:  String? = null
-            var description = ""
-            var url: URL? = null
+            var eventTotalCounter = 0;
+            var eventNotFilteredCounter = 0;
 
-            // get data from parsed calendar ics file
-            for (calEntryProps in calEntry.getProperties()) {
-                when {
-                    (calEntryProps.name == beginKey)    -> {
-                        begin = ZonedDateTime.parse(calEntryProps.value, dateTimePatternFormatter)
+            for (calEntry in calendar.getComponents()) {
+                var beginZDTFromProgram: ZonedDateTime? = null
+                var endZDTFromProgram: ZonedDateTime? = null
+                var locationStringFromProgram: String? = null
+                var summaryStringFromProgram: String? = null
+                var descriptionStringFromProgram = ""
+                var urlFromProgram: URL? = null
+
+                // get data from parsed calendar ics file
+                for (calEntryProps in calEntry.getProperties()) {
+                    when {
+                        (calEntryProps.name == beginKey) -> {
+                            beginZDTFromProgram = ZonedDateTime.parse(calEntryProps.value, dateTimePatternFormatter)
+                        }
+                        (calEntryProps.name == endKey) -> {
+                            endZDTFromProgram = ZonedDateTime.parse(calEntryProps.value, dateTimePatternFormatter)
+                        }
+                        (calEntryProps.name == locationKey) -> {
+                            locationStringFromProgram = calEntryProps.value
+                        }
+                        (calEntryProps.name == sumKey) -> {
+                            summaryStringFromProgram = calEntryProps.value
+                        }
+                        (calEntryProps.name == descKey) -> {
+                            descriptionStringFromProgram = calEntryProps.value
+                        }
+                        (calEntryProps.name == urlKey) -> {
+                            urlFromProgram = URL(calEntryProps.value); }
                     }
-                    (calEntryProps.name == endKey)      -> {
-                        end = ZonedDateTime.parse(calEntryProps.value, dateTimePatternFormatter)
+                }
+
+                eventTotalCounter++
+
+                if (beginZDTFromProgram != null && endZDTFromProgram != null && locationStringFromProgram != null) {
+                    // only relevant events are used
+                    if (isInStartEndTimeframe(beginZDTFromProgram, endZDTFromProgram, summaryStringFromProgram)) {
+                        eventNotFilteredCounter++
+
+                        // Create Event from parsed calendar data
+                        val location = findLocationInLocationRepo(locationStringFromProgram)
+                        val event = Event(ID.createEventID(beginZDTFromProgram.dayOfMonth.toString()), beginZDTFromProgram, endZDTFromProgram, location)
+
+                        // Find (or create new) Movie and attach the above Event to it
+                        var movie = movieRepo.findByTitleIgnoreCase(summaryStringFromProgram)
+                        if (movie == null) {
+                            val movieId = ID.createMovieID()
+                            movie = Movie(movieId, summaryStringFromProgram, descriptionStringFromProgram, Prio.NORMAL, urlFromProgram, mutableListOf(event))
+                            movieRepo.put(movieId, movie)
+                        }
+                        else {
+                            movie.events.add(event)
+                        }
                     }
-                    (calEntryProps.name == locationKey) -> {location = calEntryProps.value}
-                    (calEntryProps.name == sumKey)      -> {summary      = calEntryProps.value }
-                    (calEntryProps.name == descKey)     -> {description  = calEntryProps.value}
-                    (calEntryProps.name == urlKey)      -> {url          = URL(calEntryProps.value); }
                 }
             }
 
-            eventTotalCounter++
-
-            if (begin != null && end != null && location != null) {
-                if (isInStartEndTimeframe(begin, end, summary)) {
-                    eventNotFilteredCounter++
-
-                    // Create Event from parsed calendar data
-                    val event = Event(ID.createEventID(begin.dayOfMonth.toString()), begin, end, location)
-
-                    // Find (or create new) Movie and attach the above Event to it
-                    var movie = movieRepo.findByTitleIgnoreCase(summary)
-                    if (movie == null) {
-                        val movieId = ID.createMovieID()
-                        movie = Movie(movieId, summary, description, Prio.NORMAL, url, mutableListOf(event))
-                        movieRepo.put(movieId, movie)
-                    } else {
-                        movie.events.add(event)
-                    }
-                }
-            }
+            LOGGER.info("In total: {} events, left after date filter (between {} and {}) are now {} events",
+                    eventTotalCounter, berlinaleStartDateAsLD, berlinaleEndDateAsLD, eventNotFilteredCounter)
         }
-
-        LOGGER.info("In total: {} events, left after date filter (between {} and {}) are now {} events",
-                eventTotalCounter, berlinaleStartDateAsLD, berlinaleEndDateAsLD, eventNotFilteredCounter)
+        finally {
+            if (fis!=null) fis.close();
+        }
     }
 
     // check if event is in time frame [ berlinaleStartDateAsLD, berlinaleEndDateAsLD ]
@@ -103,5 +122,36 @@ class ProgramParser(val movieRepo: MovieRepo, val config: BerlinappleConfig) {
         }
 
         return result
+    }
+
+    private fun findLocationInLocationRepo(locationStringFromProgram: String?): Location? {
+        if (locationStringFromProgram == null) return null
+
+        val locationBestMatch: Location? = null
+
+        for (location in locationRepo.values.toList()) {
+            // exact match?
+            if (   (locationStringFromProgram.equals(location.name, ignoreCase = true))
+                || (locationStringFromProgram.indexOf(location.name, ignoreCase = true) != -1)
+                || (locationStringFromProgram.indexOf(getFirstWord(location.name), ignoreCase = true) != -1)
+                || (location.name.indexOf(locationStringFromProgram, ignoreCase = true) != -1)
+                || (location.name.indexOf(getFirstWord(locationStringFromProgram), ignoreCase = true) != -1)
+            )
+            {
+                return Location(locationStringFromProgram, location.address, location.url)
+            }
+        }
+
+        // fallback if not found
+        return Location(name = locationStringFromProgram, address = null, url = null)
+    }
+
+    private fun getFirstWord(s: String): String {
+        val p = Pattern.compile("[_a-zA-Z]+")
+        val m = p.matcher(s)
+        if (m.find()) {
+            return m.group()
+        }
+        return s
     }
 }

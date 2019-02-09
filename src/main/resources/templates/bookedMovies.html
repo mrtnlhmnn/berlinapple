@@ -23,6 +23,7 @@
                     <th>Title</th>
                     <th>Link</th>
                     <th>Booked Event</th>
+                    <th>Location</th>
                 </tr>
                 <tr th:each="movie : ${movieListOfDay}">
                     <td th:text="${movie.prio}"></td>
@@ -30,7 +31,12 @@
                     <td th:if="${movie.url != null}">
                         <a th:href="${movie.url}" target="_blank">Link</a>
                     </td>
-                    <td th:text="${movie.getBookedEvent().printBooking()}"></td>
+                    <td th:text="${movie.getBookedEvent().printBookingTime()}">
+                    <td>
+                        <a th:href="${movie.getBookedEvent().location.url}" target="_blank">
+                            <th:block th:text="${movie.getBookedEvent().location.toStringWithAddress()}"/>
+                        </a>
+                    </td>
                 </tr>
             </table>
             &nbsp;
