@@ -1,0 +1,140 @@
+[{"name":"ZOO PALAST",
+"address":"Hardenbergstraße 29A, 10623 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=zoo-palast"},
+
+{"name":"ZEUGHAUSKINO","address":
+"Unter den Linden 2, 10117 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=zeughauskino"},
+
+{"name":"KINO UNION",
+"address":"Bölschestraße 69, 12587 Berlin (Friedrichshagen)",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=kino-union"},
+
+{"name":"SPUTNIK KINO",
+"address":"Hasenheide 54, 10967 Berlin (Kreuzberg), Höfe am Südstern",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=sputnik-kino"},
+
+{"name":"SILENT GREEN KULTURQUARTIER",
+"address":"Gerichtstraße 35, 13347 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=silent-green-kulturquartier"},
+
+{"name":"SAVVY CONTEMPORARY",
+"address":"Plantagenstraße 31, 13347 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=savvy-contemporary"},
+
+{"name":"ODEON",
+"address":"Hauptstraße 116, 10827 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=odeon"},
+
+{"name":"LICHTBLICK-KINO",
+"address":"Kastanienallee 77, 10435 Berlin (Prenzlauer Berg)",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=lichtblick-kino"},
+
+{"name":"KINO INTERNATIONAL",
+"address":"Karl-Marx-Allee 33, 10178 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=kino-international"},
+
+{"name":"JVA PLÖTZENSEE",
+"address":"Friedrich-Olbricht-Damm 16, 13627 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=jva-ploetzensee"},
+
+{"name":"HEINRICH-BÖLL-STIFTUNG E.V.",
+"address":"Schumannstraße 8, 10117 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=heinrich-boell-stiftung"},
+
+{"name":"HAUS DER KULTUREN DER WELT HKW",
+"address":"John-Foster-Dulles-Allee 10, 10557 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=haus-der-kulturen-der-welt"},
+
+{"name":"HAUS DER BERLINER FESTSPIELE",
+"address":"Schaperstraße 24, 10719 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=haus-der-berliner-festspiele"},
+
+{"name":"HAU3 HEBBEL AM UFER (HAU3)",
+"address":"Tempelhofer Ufer 10, 10963 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=hau3"},
+
+{"name":"HAU2 HEBBEL AM UFER (HAU2)",
+"address":"Hallesches Ufer 32, 10963 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=hau2"},
+
+{"name":"HAU1 HEBBEL AM UFER (HAU1)",
+"address":"Stresemannstraße 29, 10963 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=hau1"},
+
+{"name":"GROPIUS-MIRROR RESTAURANT",
+"address":"Niederkirchnerstr. 5, 10963 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=gropius-mirror-restaurant"},
+
+{"name":"GROPIUS-BAU",
+"address":"Niederkirchnerstraße 7, 10963 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=gropius-bau"},
+
+{"name":"FRIEDRICHSTADT-PALAST",
+"address":"Friedrichstraße 107, 10117 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=friedrichstadt-palast"},
+
+{"name":"FILMTHEATER AM FRIEDRICHSHAIN",
+"address":"Bötzowstraße 1-5, 10407 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=filmtheater-am-friedrichshain"},
+
+{"name":"DEUTSCHE KINEMATHEK",
+"address":"Filmhaus, Potsdamer Straße 2, 10785 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=deutsche-kinemathek"},
+
+{"name":"DELPHILUX",
+"address":"Yva-Bogen, Kantstraße 10, 10623 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=delphi-lux"},
+
+{"name":"DELPHIFILMPALAST",
+"address":"Kantstraße 12A, 10623 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=delphi-filmpalast"},
+
+{"name":"CUBIX",
+"address":"Rathausstraße 1, 10178 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=cubix"},
+
+{"name":"COLOSSEUM",
+"address":"Schönhauser Allee 123, 10437 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=colosseum"},
+
+{"name":"CITY KINO WEDDING",
+"address":"im Centre Français de Berlin, Müllerstraße 74, 13349 Berlin (Wedding)",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=city-kino-wedding"},
+
+{"name":"CINESTAR IMAX",
+"address":"Potsdamer Str. 4, 10785 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=cinestar-imax"},
+
+{"name":"CINESTAR (SONY CENTER)",
+"address":"Potsdamer Str. 4, 10785 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=cinestar"},
+
+{"name":"CINEMAXX AM POTSDAMER PLATZ",
+"address":"Voxstr. 1, 10785 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=cinemaxx-am-potsdamer-platz"},
+
+{"name":"BOTSCHAFT VON KANADA - MARSHALL MCLUHAN SALON",
+"address":"Leipziger Platz 17, 10117 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=botschaft-von-kanada-marshall-mcluhan-salon"},
+
+{"name":"BLAUER STERN",
+"address":"Hermann-Hesse-Straße 11, 13156 Berlin (Pankow)",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=blauer-stern"},
+
+{"name":"BERLINALE PALAST",
+"address":"Marlene-Dietrich-Platz 1, 10785 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=berlinale-palast"},
+
+{"name":"B-WARE! LADENKINO",
+"address":"Gärtnerstraße 19, 10245 Berlin (Friedrichshain)",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=bware-ladenkino"},
+
+{"name":"AUDI BERLINALE LOUNGE",
+"address":"Marlene-Dietrich-Platz 1, 10785 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=audi-berlinale-lounge"},
+
+{"name":"KINO ARSENAL",
+"address":"Potsdamer Straße 2, 10785 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=kino-arsenal"}
+]

@@ -8,6 +8,9 @@ open class BerlinappleConfig {
     @Value("\${programFile:data/program.ics}")
     val programICSFileName: String = ""
 
+    @Value("\${locationFile:data/locations.txt}")
+    val locationJSONFileName: String = ""
+
     @Value("\${berlinaleStartDate:20190207}")
     val berlinaleStartDate: String = ""
 
