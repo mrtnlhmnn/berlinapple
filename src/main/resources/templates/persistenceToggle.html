@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="de">
+<head>
+    <title>BerlinAPPle Persistence Configurator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="../static/css/vendor/picnic.min.css"
+          th:href="@{../css/vendor/picnic.min.css}" rel="stylesheet" media="screen"/>
+    <link href="../static/css/app/main.css"
+          th:href="@{../css/app/main.css}" rel="stylesheet" media="screen"/>
+</head>
+<body>
+<div th:include="fragments/bodyHeader :: bodyHeader"/>
+
+<div class="container">
+    <h3> Persistence now switched to <th:block th:text="${toggle}"></th:block> </h3>
+</div>
+
+</body>
+</html>

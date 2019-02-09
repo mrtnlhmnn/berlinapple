@@ -19,8 +19,12 @@ class PersistenceScheduler(val movieRepo: MovieRepo, val s3Config: S3Config) {
 
     val keyPrefix: String = "berlinapple2019/movies/movies-"
 
+    var persistenceOn = true
+
     @Scheduled(cron = "\${persistenceSchedule:0 * * * * *}")
     fun saveMoviesToS3() {
+        if ( ! persistenceOn ) return
+
         val movieRepoAsJson = movieRepo.toJSON()
         val bytes = movieRepoAsJson.toByteArray(StringUtils.UTF8)
         val bis = ByteArrayInputStream(bytes)
@@ -43,5 +47,10 @@ class PersistenceScheduler(val movieRepo: MovieRepo, val s3Config: S3Config) {
                 movieRepo.getNumberOfMovies(),
                 movieRepo.getNumberOfEvents(),
                 key, metadata.contentLength)
+    }
+
+    fun turnOnOffPersistence (toggle: Boolean){
+        persistenceOn = toggle
+        LOGGER.info("PersistenceScheduling now switched to {}", persistenceOn)
     }
 }
