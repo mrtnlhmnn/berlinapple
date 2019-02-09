@@ -1,11 +1,9 @@
 Features:
-- zeitgesteuert Persistenz der JSONs von Movies/Events, regelmässig nach S3
-- Laden&Merge beim Neustart
-- Überblicksseite mit allen Buchungen: "Liste aller gebuchten Filme, mit 'Undo Book Event'", sortieren nach Event-Zeit
-- Puffer "eher da sein"
-- Puffer "Weg von Kino2Kino" (außer bei gleichen Kino)
-- (für neue Filme oder anderes wie Essen-gehen): fiktive Buchungen vornehmen
+- Laden&Merge der S3-Persistenz beim Neustart
+- Puffer "eher da sein" (und mehr, wenn anderes Kino)
+- Schedule-nach-S3 hochladen an/abschaltbar über Endpunkt
 - Locations (54) um Adressen statisch erweitern
+- (für neue Filme oder anderes wie Essen-gehen): fiktive Buchungen vornehmen
 - Download einer .ics-Datei für Buchung zur Uebernahme in Kalender
 - Responsive fuers Handy
 - Login mit Cookie
