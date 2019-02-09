@@ -127,8 +127,6 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
     private fun findLocationInLocationRepo(locationStringFromProgram: String?): Location? {
         if (locationStringFromProgram == null) return null
 
-        val locationBestMatch: Location? = null
-
         for (location in locationRepo.values.toList()) {
             // exact match?
             if (   (locationStringFromProgram.equals(location.name, ignoreCase = true))

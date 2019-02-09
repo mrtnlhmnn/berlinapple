@@ -16,6 +16,10 @@
 *.iml
 *.ipr
 
+# local files
+*.ksc
+*.mle
+
 # Compiled class file
 *.class
 
