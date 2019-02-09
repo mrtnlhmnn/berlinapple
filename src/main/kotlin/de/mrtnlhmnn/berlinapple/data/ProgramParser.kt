@@ -85,14 +85,16 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
                         eventNotFilteredCounter++
 
                         // Create Event from parsed calendar data
-                        val location = findLocationInLocationRepo(locationStringFromProgram)
-                        val event = Event(ID.createEventID(beginZDTFromProgram.dayOfMonth.toString()), beginZDTFromProgram, endZDTFromProgram, location)
+                        val location = locationRepo.findLocationByString(locationStringFromProgram)
+                        val event = Event(ID.createEventID(beginZDTFromProgram.dayOfMonth.toString()),
+                                beginZDTFromProgram, endZDTFromProgram, location)
 
                         // Find (or create new) Movie and attach the above Event to it
                         var movie = movieRepo.findByTitleIgnoreCase(summaryStringFromProgram)
                         if (movie == null) {
                             val movieId = ID.createMovieID()
-                            movie = Movie(movieId, summaryStringFromProgram, descriptionStringFromProgram, Prio.NORMAL, urlFromProgram, mutableListOf(event))
+                            movie = Movie(movieId, summaryStringFromProgram, descriptionStringFromProgram,
+                                    Prio.NORMAL, urlFromProgram, mutableListOf(event))
                             movieRepo.put(movieId, movie)
                         }
                         else {
@@ -122,34 +124,5 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
         }
 
         return result
-    }
-
-    private fun findLocationInLocationRepo(locationStringFromProgram: String?): Location? {
-        if (locationStringFromProgram == null) return null
-
-        for (location in locationRepo.values.toList()) {
-            // exact match?
-            if (   (locationStringFromProgram.equals(location.name, ignoreCase = true))
-                || (locationStringFromProgram.indexOf(location.name, ignoreCase = true) != -1)
-                || (locationStringFromProgram.indexOf(getFirstWord(location.name), ignoreCase = true) != -1)
-                || (location.name.indexOf(locationStringFromProgram, ignoreCase = true) != -1)
-                || (location.name.indexOf(getFirstWord(locationStringFromProgram), ignoreCase = true) != -1)
-            )
-            {
-                return Location(locationStringFromProgram, location.address, location.url)
-            }
-        }
-
-        // fallback if not found
-        return Location(name = locationStringFromProgram, address = null, url = null)
-    }
-
-    private fun getFirstWord(s: String): String {
-        val p = Pattern.compile("[_a-zA-Z]+")
-        val m = p.matcher(s)
-        if (m.find()) {
-            return m.group()
-        }
-        return s
     }
 }

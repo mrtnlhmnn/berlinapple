@@ -14,11 +14,12 @@ import java.time.Instant
 
 @Component
 @EnableScheduling
-class PersistenceScheduler(val movieRepo: MovieRepo, val s3Config: S3Config) {
+class PersistenceToS3Scheduler(val movieRepo: MovieRepo, val s3Config: S3Config) {
     private val LOGGER = LoggerFactory.getLogger(this.javaClass)
 
     val keyPrefix: String = "berlinapple2019/movies/movies-"
 
+    //TODO make default configurable
     var persistenceOn = true
 
     @Scheduled(cron = "\${persistenceSchedule:0 * * * * *}")

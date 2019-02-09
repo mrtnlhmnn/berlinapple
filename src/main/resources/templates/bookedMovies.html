@@ -43,6 +43,12 @@
                             <input type="submit" value="unbook"/>
                         </form>
                     </td>
+                    <td>
+                        <form action="calendar" autocomplete="off" method="get">
+                            <input type="hidden" name="movieId" id="movieId1" required="required" th:value="${movie.id}" class="readonly" />
+                            <input type="submit" value="Calendar"/>
+                        </form>
+                    </td>
 
                 </tr>
             </table>

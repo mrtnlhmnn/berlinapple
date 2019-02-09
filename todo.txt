@@ -1,14 +1,16 @@
 Features:
 - Laden&Merge der S3-Persistenz beim Neustart
-- Puffer "eher da sein" (und mehr, wenn anderes Kino)
-- Schedule-nach-S3 hochladen an/abschaltbar über Endpunkt
-- Locations (54) um Adressen statisch erweitern
-- (für neue Filme oder anderes wie Essen-gehen): fiktive Buchungen vornehmen
 - Download einer .ics-Datei für Buchung zur Uebernahme in Kalender
+
+- (für neue Filme oder anderes wie Essen-gehen): fiktive Buchungen vornehmen
 - Responsive fuers Handy
 - Login mit Cookie
-- 1 oder 2 Tickets
 - Prio hoch/runter in Listenansicht (zusätzlich)
+- Anzahlen von Movies und Events und Bookings auf alle Seiten draufschreiben
+- 1 oder 2 Tickets buchen zulassen
+- Mehrfachbuchen eines Movies zulassen
+- Auto-Cleaner für alle S3-Movies-Text (alles was zu alt ist)
+- Local-Profile , zB mit Default "nicht nach S3 speichern"
 
 Bugs:
 - Gebuchte Events werden aus Movie im Repository rausgeschmissen. 
