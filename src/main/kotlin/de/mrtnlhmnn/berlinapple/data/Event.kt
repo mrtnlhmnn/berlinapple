@@ -66,9 +66,11 @@ data class Event (
     // (StartA <= EndB)  and  (EndA >= StartB)
     infix fun overlaps(other: Event?): Boolean {
         if (other == null) return false
-//        return (   (this.begin.isBefore(other.end) || this.begin == other.end)
-//                && (this.end.isAfter(other.begin)  || this.end   == other.begin))
-        return (   (this.begin.isBefore(other.end.plusMinutes(30)))
-                && (this.end.isAfter(other.begin.minusMinutes(30))  ))
+
+        val bufferInMinutes = 30L
+
+//TODO make buffer time configurable
+        return (   (this.begin.isBefore(other.end.plusMinutes(bufferInMinutes)))
+                && (this.end.isAfter(other.begin.minusMinutes(bufferInMinutes))  ))
     }
 }
