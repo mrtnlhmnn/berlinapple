@@ -9,13 +9,21 @@ Features:
 - Mehrfachbuchen eines Movies zulassen
 - Auto-Cleaner für alle S3-Movies-Text (alles was zu alt ist)
 - Local-Profile , zB mit Default "nicht nach S3 speichern"
+- Benutzer/MAndantenfähig machen
+- Kalendereintrag für iPhone supporten: Vermutlich falsches/altes Format VCALENDAR statt Ical, siehe http://fileformats.archiveteam.org/wiki/ICalendar
+- Alle Movies: Sortieren mit Untertabellen, Sprung direkt zu den 50ern
+- berlinapple.de als Domain
+- oder in festivapple.... umnennen?
+- Prio und Sortierung direkt durch Hoch-Runterziehen im Browser in der Tabelle
+- HTML-Page-Title spezifischer machen, zB fuer Details-Seite
+- Farbig in Tabelle: Wettbewerb oder Retrospektive oder Dokumentar ...
+- Länder anzeigen (zB Spanien, Kanada, Island)
+- Test, ob mit leerem S3 alles noch geht (oder bricht Merge ab?)
+- weiteren Status "merken" zulassen, falls man einen Film unbedingt sehen will aber an VVK-Kasse kein Ticket ist -> blockiert Zeitfenster
+- beim Laden automatisch nach Kategorie priorisieren, zB alle Wettbewerb-Filme auf 80 statt 50
 
 Bugs:
-- Gebuchte Events werden aus Movie im Repository rausgeschmissen. 
-  Reproduzieren:
-  * event (10.3.) aus Movie 123 buchen. Dieses überlappt sich mit einem Event aus Movie 456. 
-  * auf bookableMovies wird Film 456 noch mit 2 Events angezeigt.
-  * Nun auf die bookableEvent-Seite für Film 456 gehen. Es wird korrekt nur noch ein buchbares Event angezeigt.
-  * Nun zurück auf die bookableMovies Seite: IST: #events für Film 456: 1 SOLL: #events für Film 456: 2
-  * (Ursache wahrscheinlich (s. BookingController), dass ich bookableEvents für die Anzeige nicht in einer Copy eines Movies rausschmeiße, sondern direkt aus der Eventliste eines movie)
+- _target Links gehen in FF nicht, macht Tabs kaputt
+- Kein Eintrag bei Prio bedeutet 0 -> Verhindern im Browser
+- Chrome auf iPad erlaubt kein Login?!
 
