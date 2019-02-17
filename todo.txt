@@ -1,21 +1,34 @@
 Features:
-- Offline-Toggle ("lese nur von program, merge nicht mit S3-Storage"
-- (für neue Filme oder anderes wie Essen-gehen): fiktive Buchungen vornehmen
+- Bugfix: bookable=yes und available=yes geht vermutlich durch Fehler in unbook
+- unbook und book Buttons gleich nennen
+- Offline-Toggle ("lese nur von program, merge nicht mit S3-Storage")
+- (für neue Filme oder anderes wie Essen-gehen): fiktive Buchungen zum Zeitblockieren vornehmen
+- Zeitmodus: Nur noch Sachen in der Zukunft anzeigen oder Rest ausgrauen/nicht zweigen
 - Responsive fuers Handy
 - Login mit Cookie
-- Prio hoch/runter in Listenansicht (zusätzlich)
-- Anzahlen von Movies und Events und Bookings auf alle Seiten draufschreiben
+- Location überall gleich anzeigen, auch gleich mit Link wie bei Schedule
+- Liste bei Program und bei BookableMovie: Liste der Anzahl Events pro Tag oder wieviel noch available oder ...
+- Anzahlen von Movies und Events und Bookings auf alle Seiten in der Überschrift draufschreiben
 - 1 oder 2 Tickets buchen zulassen
-- Mehrfachbuchen eines Movies zulassen
+- alle Seiten (auch) nach Tagen sortieren so wie schon bei Schedule
+- Tagesfilter implementieren, nur einen Tag zeigen: zB Oben im Header anwählen, dann dynamisch filtern
+- Rausschmeissen auf unsere Tage nicht beim Einlesen sondern erst beim Ausgeben
+- Rausschmeissen auf unsere Tage genauer, nicht nur auf Tagesbasis, zB ab mittags bis mittags
+- halbe Stunde Puffer dynamisch machen, auch von Location abhg machen oder manuell override zulassen
+- Persistence an/aus oben in Header, ggf nur dann persistieren wenn sich Änderungen ergeben haben
+- Persistence aus als Default?
+- Persistence-Schedule dynamisch verlängern, solange keiner was an der App macht
+- Mehrfachbuchen eines Movies (nur bei ausdruecklichem Wunsch) zulassen
+- Vormerken implementieren als "hier noch kein Ticket aber wir gehen zur Vorkasse" - Umgang mit anderen klären, zB Warnen
 - Auto-Cleaner für alle S3-Movies-Text (alles was zu alt ist)
 - Local-Profile , zB mit Default "nicht nach S3 speichern"
-- Benutzer/MAndantenfähig machen
+- Benutzer-/Mandantenfähig machen
 - Kalendereintrag für iPhone supporten: Vermutlich falsches/altes Format VCALENDAR statt Ical, siehe http://fileformats.archiveteam.org/wiki/ICalendar
 - Alle Movies: Sortieren mit Untertabellen, Sprung direkt zu den 50ern
-- berlinapple.de als Domain
-- oder in festivapple.... umnennen?
+- berlinapple.de als Domain ... oder in festivapple.... umnennen?
+- Prio hoch/runter in Listenansicht (zusätzlich)
 - Prio und Sortierung direkt durch Hoch-Runterziehen im Browser in der Tabelle
-- HTML-Page-Title spezifischer machen, zB fuer Details-Seite
+- HTML-Page-Titles spezifischer machen, zB fuer Details-Seite
 - Farbig in Tabelle: Wettbewerb oder Retrospektive oder Dokumentar ...
 - Länder anzeigen (zB Spanien, Kanada, Island)
 - Test, ob mit leerem S3 alles noch geht (oder bricht Merge ab?)
@@ -26,4 +39,3 @@ Bugs:
 - _target Links gehen in FF nicht, macht Tabs kaputt
 - Kein Eintrag bei Prio bedeutet 0 -> Verhindern im Browser
 - Chrome auf iPad erlaubt kein Login?!
-
