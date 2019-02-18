@@ -1,5 +1,6 @@
 package de.mrtnlhmnn.berlinapple.ui
 
+import de.mrtnlhmnn.berlinapple.application.PersistenceConfig
 import de.mrtnlhmnn.berlinapple.data.ID
 import de.mrtnlhmnn.berlinapple.data.MovieRepo
 import de.mrtnlhmnn.berlinapple.data.Prio
@@ -10,10 +11,11 @@ import org.springframework.web.bind.annotation.*
 import org.springframework.web.servlet.view.RedirectView
 
 @Controller
-class ProgramController(val movieRepo: MovieRepo) {
+class ProgramController(val movieRepo: MovieRepo, val persistenceConfig: PersistenceConfig) {
     @RequestMapping("/allMovies")
     fun listMovies(model: Model): String {
         model.addAttribute("movies", movieRepo.getSortedMovies())
+        model.addAttribute("persistenceToggle", persistenceConfig.persistenceToggle)
         return "allMovies"
     }
 

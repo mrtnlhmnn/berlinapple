@@ -14,17 +14,14 @@ import java.time.Instant
 
 @Component
 @EnableScheduling
-class PersistenceToS3Scheduler(val movieRepo: MovieRepo, val s3Config: S3Config) {
+class PersistenceToS3Scheduler(val movieRepo: MovieRepo, val s3Config: S3Config, val persistenceConfig: PersistenceConfig) {
     private val LOGGER = LoggerFactory.getLogger(this.javaClass)
 
     val keyPrefix: String = "berlinapple2019/movies/movies-"
 
-    //TODO make default configurable
-    var persistenceOn = true
-
     @Scheduled(cron = "\${persistenceSchedule:0 * * * * *}")
     fun saveMoviesToS3() {
-        if ( ! persistenceOn ) return
+        if (! persistenceConfig.persistenceToggle) return
 
         val movieRepoAsJson = movieRepo.toJSON()
         val bytes = movieRepoAsJson.toByteArray(StringUtils.UTF8)
@@ -51,7 +48,7 @@ class PersistenceToS3Scheduler(val movieRepo: MovieRepo, val s3Config: S3Config)
     }
 
     fun turnOnOffPersistence (toggle: Boolean){
-        persistenceOn = toggle
-        LOGGER.info("PersistenceScheduling now switched to {}", persistenceOn)
+        persistenceConfig.persistenceToggle = toggle
+        LOGGER.info("PersistenceScheduling now switched to {}", persistenceConfig.persistenceToggle)
     }
 }
