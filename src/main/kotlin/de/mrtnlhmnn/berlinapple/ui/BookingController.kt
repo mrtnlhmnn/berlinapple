@@ -1,4 +1,4 @@
-    package de.mrtnlhmnn.berlinapple.ui
+package de.mrtnlhmnn.berlinapple.ui
 
 import de.mrtnlhmnn.berlinapple.application.BookingHelper
 import de.mrtnlhmnn.berlinapple.data.*
