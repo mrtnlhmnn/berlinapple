@@ -1,41 +1,64 @@
-Features:
-- Bugfix: bookable=yes und available=yes geht vermutlich durch Fehler in unbook
-- unbook und book Buttons gleich nennen
-- Offline-Toggle ("lese nur von program, merge nicht mit S3-Storage")
-- (für neue Filme oder anderes wie Essen-gehen): fiktive Buchungen zum Zeitblockieren vornehmen
-- Zeitmodus: Nur noch Sachen in der Zukunft anzeigen oder Rest ausgrauen/nicht zweigen
-- Responsive fuers Handy
-- Login mit Cookie
-- Location überall gleich anzeigen, auch gleich mit Link wie bei Schedule
-- Liste bei Program und bei BookableMovie: Liste der Anzahl Events pro Tag oder wieviel noch available oder ...
-- Anzahlen von Movies und Events und Bookings auf alle Seiten in der Überschrift draufschreiben
-- 1 oder 2 Tickets buchen zulassen
-- alle Seiten (auch) nach Tagen sortieren so wie schon bei Schedule
-- Tagesfilter implementieren, nur einen Tag zeigen: zB Oben im Header anwählen, dann dynamisch filtern
-- Rausschmeissen auf unsere Tage nicht beim Einlesen sondern erst beim Ausgeben
-- Rausschmeissen auf unsere Tage genauer, nicht nur auf Tagesbasis, zB ab mittags bis mittags
-- halbe Stunde Puffer dynamisch machen, auch von Location abhg machen oder manuell override zulassen
-- Persistence an/aus oben in Header, ggf nur dann persistieren wenn sich Änderungen ergeben haben
-- Persistence aus als Default?
-- Persistence-Schedule dynamisch verlängern, solange keiner was an der App macht
-- Mehrfachbuchen eines Movies (nur bei ausdruecklichem Wunsch) zulassen
-- Vormerken implementieren als "hier noch kein Ticket aber wir gehen zur Vorkasse" - Umgang mit anderen klären, zB Warnen
-- Auto-Cleaner für alle S3-Movies-Text (alles was zu alt ist)
-- Local-Profile , zB mit Default "nicht nach S3 speichern"
-- Benutzer-/Mandantenfähig machen
-- Kalendereintrag für iPhone supporten: Vermutlich falsches/altes Format VCALENDAR statt Ical, siehe http://fileformats.archiveteam.org/wiki/ICalendar
-- Alle Movies: Sortieren mit Untertabellen, Sprung direkt zu den 50ern
-- berlinapple.de als Domain ... oder in festivapple.... umnennen?
-- Prio hoch/runter in Listenansicht (zusätzlich)
-- Prio und Sortierung direkt durch Hoch-Runterziehen im Browser in der Tabelle
-- HTML-Page-Titles spezifischer machen, zB fuer Details-Seite
-- Farbig in Tabelle: Wettbewerb oder Retrospektive oder Dokumentar ...
-- Länder anzeigen (zB Spanien, Kanada, Island)
-- Test, ob mit leerem S3 alles noch geht (oder bricht Merge ab?)
-- weiteren Status "merken" zulassen, falls man einen Film unbedingt sehen will aber an VVK-Kasse kein Ticket ist -> blockiert Zeitfenster
-- beim Laden automatisch nach Kategorie priorisieren, zB alle Wettbewerb-Filme auf 80 statt 50
+Persistence
+[x] Persistence-Toggle per Default auf false
+[x] Persistence aus als Default
+[ ] Persistence an/aus oben in Header anzeigen / an/ausschalten -> 
+     Muss noch in alle Controller, am besten allgemein
+     Und dann von jeder HTML-Seite, die das Fragment bodyHeader einzieht: th:with="persistenceToggle=${persistenceToggle}">
+[ ] Persistence-Schedule dynamisch verlängern, solange keiner was an der App macht
+[ ] Persistence nur dann speichern nach S3, wenn sich überhaupt Änderungen ergeben haben (JSON-String-Vergleich)
+[ ] Offline-Toggle ("lese nur von program, merge nicht mit S3-Storage")
+[ ] Auto-Cleaner für alle S3-Movies-Dateien (alles was zB älter als 48h ist)
+[ ] Test, ob mit leerem S3 alles noch geht (oder bricht Merge ab?)
+[ ] Persistence für Tests auch von/nach lokaler Datei zulassen (letzter Speicherstand 2018er-Berlinale ist in rsrc\persistence-from-s3\movies-1550521800007.txt)
 
-Bugs:
-- _target Links gehen in FF nicht, macht Tabs kaputt
-- Kein Eintrag bei Prio bedeutet 0 -> Verhindern im Browser
-- Chrome auf iPad erlaubt kein Login?!
+Querschnitt & Infrastruktur
+[x] Spring-Profile local einführen
+[ ] Properties-Key-Namen systematischer nennen
+[ ] Maven-Git-Plugin einbauen, wie bei KAPA
+[ ] berlinapple.de als Domain ... oder in festivapple.... umnennen?
+
+Fachliches, Bugs
+[ ] Bugfix: bookable=yes und available=yes geht vermutlich durch Fehler in unbook
+[ ] Zeitmodus: Nur noch Sachen in der Zukunft anzeigen oder Rest ausgrauen/nicht zweigen
+[ ] (für neue Filme oder anderes wie Essen-gehen): fiktive Buchungen zum Zeitblockieren vornehmen
+[ ] Nutzer-spezifische Ansichten, also alle Use-cases für Nutzer ausrichten (zB als Ansicht für Kristine, für Martin)
+[ ] 1 oder 2 Tickets buchen zulassen
+[ ] Liste bei Program und bei BookableMovie: Liste der Anzahl Events pro Tag oder wieviel noch available oder ...
+[ ] Anzahlen von Movies und Events und Bookings auf alle Seiten in der Überschrift draufschreiben
+[ ] alle Seiten (auch) nach Tagen sortieren so wie schon bei Schedule
+[ ] Tagesfilter implementieren, nur einen Tag zeigen: zB Oben im Header anwählen, dann dynamisch filtern
+[ ] Rausschmeissen auf unsere Tage nicht beim Einlesen sondern erst beim Ausgeben
+[ ] Rausschmeissen auf unsere Tage genauer, nicht nur auf Tagesbasis, zB ab mittags bis mittags
+[ ] Vormerken implementieren als "hier noch kein Ticket aber wir gehen zur Vorkasse" , also weiteren Status "merken" zulassen, falls man einen Film unbedingt sehen will aber an VVK-Kasse kein Ticket ist -> blockiert Zeitfenster
+[ ] Alle Movies: Sortieren mit Untertabellen, Sprung direkt zu den 50ern
+[ ] Mehrfachbuchen eines Movies (nur bei ausdruecklichem Wunsch) zulassen
+[ ] Benutzer-/Mandantenfähig machen
+[ ] Kategorie mit in die Daten aufnehmen (aber woher nehmen, wenn nicht in ics-Datei drin)
+[ ] beim Laden automatisch nach Kategorie priorisieren, zB alle Wettbewerb-Filme auf 80 statt 50
+
+Locations
+[ ] Location überall gleich anzeigen, auch gleich mit Link wie bei Schedule
+[ ] Location-Entfernungen einbauen
+[ ] halbe Stunde Puffer dynamisch machen, auch von Location/Entfernung abhg machen oder manuell override zulassen
+[ ] Farbig in Tabelle: Wettbewerb oder Retrospektive oder Dokumentar ...
+[ ] Länder anzeigen (zB Spanien, Kanada, Island)
+
+Kalender
+[ ] Kalendereintrag für iPhone supporten: Vermutlich falsches/altes Format VCALENDAR statt Ical, siehe http://fileformats.archiveteam.org/wiki/ICalendar
+[ ] Kalendereintrag mal ohne X-WR... erzeugen/ausgeben, da das Berlinale-Webseite auch so macht und die Einträge direkt in meinem Kalender landen (ohne Umweg über einen ZWeitkalender)
+	X-WR-TIMEZONE:Europe/Berlin
+	X-WR-CALNAME:Berlinapple for the Internationale Filmfestspiele Berlin
+	X-WR-CALDESC:Berlinapple for the Internationale Filmfestspiele Berlin
+
+Layout
+[ ] Responsive fuers Handy
+[ ] Login mit Cookie
+[ ] Prio hoch/runter in Listenansicht (zusätzlich)
+[ ] Prio und Sortierung direkt durch Hoch-Runterziehen im Browser in der Tabelle
+
+Beautifying
+[x] unbook- und book-Buttons gleich nennen
+[ ] HTML-Page-Titles spezifischer machen, zB fuer Details-Seite
+[ ] _target Links gehen in FF nicht, macht Tabs kaputt
+[ ] Kein Eintrag bei Prio bedeutet 0 -> Verhindern im Browser
+[ ] Chrome auf iPad erlaubt kein Login?!
