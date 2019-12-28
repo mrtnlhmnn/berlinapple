@@ -25,6 +25,7 @@ class PersistenceFromS3Reader(val s3Config: S3Config) {
         val lastMovieListFromS3 = s3FileList.objectSummaries.asSequence()
                 .filter { it.size > 0 }
                 .sortedBy { it.key }
+// TODO: if sequence is empty, an exception occurs here:
                 .last()
 
         LOGGER.info("Now reading {} from S3", lastMovieListFromS3.key)
