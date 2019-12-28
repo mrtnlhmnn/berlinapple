@@ -12,7 +12,7 @@ import java.nio.charset.StandardCharsets
 class PersistenceFromS3Reader(val s3Config: S3Config) {
     private val LOGGER = LoggerFactory.getLogger(this.javaClass)
 
-    val keyPrefix: String = "berlinapple2019/movies/movies-"
+    val keyPrefix: String = "berlinapple2020/movies/movies-"
 
     fun getLastMovieListFromS3(): List<Movie> {
         val movieListAsString = readLastMovieListPersistenceFromS3()
