@@ -9,4 +9,4 @@ fi
 
 BERLINAPPLE_ARGS=
 
-java -Xmx1G -jar /app/berlinapple.jar $BERLINAPPLE_ARGS
+java -showversion -Xmx1G -jar /app/berlinapple.jar $BERLINAPPLE_ARGS
