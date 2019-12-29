@@ -7,6 +7,6 @@ import org.springframework.boot.runApplication
 class BerlinappleApplication(val config: BerlinappleConfig)
 
 fun main(args: Array<String>) {
-    val context = runApplication<BerlinappleApplication>(*args)
+    runApplication<BerlinappleApplication>(*args)
 }
 
