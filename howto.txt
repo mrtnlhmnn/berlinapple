@@ -7,24 +7,26 @@ mvn install
 
 #
 # BerlinAPPle Java Base Image
-#
+# only, if java_base images changes)
 
-# in Bash (only, if java_base images changes)
-cd /c/lehmann/spielwiese/berlinapple/src/berlinapple/infrastructure/berlinapple_java_base
+# in Bash
 
-docker build . --no-cache --force-rm
-> <XXXID>
+cd /c/lehmann/spielwiese/berlinapple/src/berlinapple
 
-docker run -d -p 9090:8080 <XXXID>
-> <YYYID>
+docker build . -f Dockerfile.java_base --no-cache --force-rm
+> <AAAID>
 
-docker commit -m "BerlinAPPle Java Base Build" -a "mrtnlhmnn" <YYYID> mrtnlhmnn/berlinapple_java_base
-> <ZZZID>
+docker run -d -p 9090:8080 <AAAID>
+> <BBBID>
+
+docker commit -m "BerlinAPPle Java Base Build" -a "mrtnlhmnn" <BBBID> mrtnlhmnn/berlinapple_java_base
 
 # optional (Attention: Do not copy pw directly from activ'aid to shell!)
 # winpty docker login -u mrtnlhmnn
 
 docker push mrtnlhmnn/berlinapple_java_base
+
+docker stop <BBBID>
 
 ###############################################################################################################
 
@@ -33,27 +35,33 @@ docker push mrtnlhmnn/berlinapple_java_base
 #
 
 # in Bash
+
 cd /c/lehmann/spielwiese/berlinapple/src/berlinapple
 
-docker build . --no-cache --force-rm
+docker build . -f Dockerfile --no-cache --force-rm
 > <XXXID>
 
 docker run -d -p 8080:8080 <XXXID>
 > <YYYID>
 
 docker commit -m "BerlinAPPle Build" -a "mrtnlhmnn" <YYYID> mrtnlhmnn/berlinapple
-> <ZZZID>
 
 # optional (Attention: Do not copy pw directly from activ'aid to shell!)
 # winpty docker login -u mrtnlhmnn
 
 docker push mrtnlhmnn/berlinapple
 
+docker stop <YYYID>
+
 ###############################################################################################################
+
+#
+# Deploy and run on AWS EC2 instance
+#
 
 ssh ec2-user@ec2-3-122-251-177.eu-central-1.compute.amazonaws.com -i /c/lehmann/spielwiese/berlinapple/orga/berlinapple.pem
 
-# optional, if docker daemon not running
+# optional, only if docker daemon not running on the EC2 instance
 # sudo service docker start
 
 sudo docker ps
@@ -64,11 +72,21 @@ sudo docker images
 sudo docker rmi <IMAGEID>
 
 sudo docker run -d -p 8080:8080 docker.io/mrtnlhmnn/berlinapple
+> <ZZZID>
+
+# Watch logs
+watch sudo docker logs <ZZZID>
+
+# Or login, check /app/logs there
+sudo docker exec -it <ZZZID> bash
 
 ###############################################################################################################
+
+#
+# Browser
+#
 
 # if 8080 is not accessible => need to make it HTTP available in AWS!
 
 http://ec2-3-122-251-177.eu-central-1.compute.amazonaws.com:8080
 http://ec2-3-122-251-177.eu-central-1.compute.amazonaws.com:8080/version
-
