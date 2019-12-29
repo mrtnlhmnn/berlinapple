@@ -17,7 +17,7 @@
 
     <th:block th:each="movieListOfDay : ${bookedMoviesPerDay}">
         <th:block th:if="${not #lists.isEmpty(movieListOfDay)}">
-           <h3><link th:text="${movieListOfDay.size()}"/> Bookings for <th:block th:text="${movieListOfDay.get(0).getBookedEvent().getBookingDay()}"></th:block></h3>
+           <h3><th:block th:text="${movieListOfDay.size()}"/> Bookings for <th:block th:text="${movieListOfDay.get(0).getBookedEvent().getBookingDay()}"></th:block></h3>
            <table>
                 <tr>
                     <th>Prio</th>

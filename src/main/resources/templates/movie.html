@@ -13,7 +13,7 @@
 <div th:include="fragments/bodyHeader :: bodyHeader"/>
 
 <div class="container" th:if="${movie != null}">
-    <h2>Movie Details (and all its <link th:text="${movie.getSortedEvents().size()}"/> Events)</h2>
+    <h2>Movie Details (and all its <th:block th:text="${movie.getSortedEvents().size()}"/> Events)</h2>
     <table>
         <tr>
             <th>Movie ID</th>
@@ -53,9 +53,14 @@
         </tr>
        <tr th:each="event : ${movie.getSortedEvents()}">
            <td th:text="${event.id}"></td>
+
            <td th:text="${event.printBeginDateTime()}"></td>
            <td th:text="${event.printEndDateTime()}"></td>
-           <td th:text="${event.location}"></td>
+
+           <td><a th:href="${event.location.url}" target="_blank">
+               <th:block th:text="${event.location.toStringWithAddress()}"/>
+           </a></td>
+
            <td th:if="${event.available}">
                <form action="bookEvent" autocomplete="off" method="post">
                    <input type="hidden" name="movieId" id="movieId" required="required" th:value="${movie.id}" class="readonly" />

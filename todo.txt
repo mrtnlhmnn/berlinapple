@@ -38,11 +38,11 @@ Fachliches, Bugs
 [ ] beim Laden automatisch nach Kategorie priorisieren, zB alle Wettbewerb-Filme auf 80 statt 50
 
 Locations
-[ ] Location überall gleich anzeigen, auch gleich mit Link wie bei Schedule
+[x] Location überall gleich anzeigen, auch gleich mit Link wie bei Schedule
 [ ] Location-Entfernungen einbauen
 [ ] halbe Stunde Puffer dynamisch machen, auch von Location/Entfernung abhg machen oder manuell override zulassen
 [ ] Farbig in Tabelle: Wettbewerb oder Retrospektive oder Dokumentar ...
-[ ] Länder anzeigen (zB Spanien, Kanada, Island)
+[ ] Länder anzeigen (zB Spanien, Kanada, Island, aber das steht nur unformatiert in der Description)
 
 Kalender
 [ ] Kalendereintrag für iPhone supporten: Vermutlich falsches/altes Format VCALENDAR statt Ical, siehe http://fileformats.archiveteam.org/wiki/ICalendar
