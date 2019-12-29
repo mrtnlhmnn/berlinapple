@@ -57,11 +57,13 @@ class BookingController(val movieRepo: MovieRepo, val bookingHelper: BookingHelp
         val bookedMoviesAndEvents: MutableList<Pair<Movie, Event>> = mutableListOf()
 
         movies.forEach {
-            // reset availability
-            val events = it.events
-            events.forEach { ev ->
-                if (ev.status == EventStatus.UNAVAILABLE)
-                    ev.status = EventStatus.AVAILABLE
+            // reset availability - only for movies that are NOT booked! Events of booked movies must remain unavailable.
+            if ( ! it.booked) {
+                val events = it.events
+                events.forEach { ev ->
+                    if (ev.status == EventStatus.UNAVAILABLE)
+                        ev.status = EventStatus.AVAILABLE
+                }
             }
             // collect booked movies and events...
             if(it.booked) bookedMoviesAndEvents.add(Pair(it, it.getBookedEvent()))
