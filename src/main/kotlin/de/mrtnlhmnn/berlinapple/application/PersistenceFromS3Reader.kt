@@ -15,23 +15,23 @@ class PersistenceFromS3Reader(val s3Config: S3Config) {
     val keyPrefix: String = "berlinapple2020/movies/movies-"
 
     fun getLastMovieListFromS3(): List<Movie> {
-        val movieListAsString = readLastMovieListPersistenceFromS3()
-        val movieList = movieListAsString.listFromJSON<Movie>()
-        return movieList?: emptyList()
+        val movieListAsString: String? = readLastMovieListPersistenceFromS3()
+        return movieListAsString?.listFromJSON<Movie>() ?: emptyList()
     }
 
-    private fun readLastMovieListPersistenceFromS3 (): String {
+    private fun readLastMovieListPersistenceFromS3 (): String? {
         val s3FileList = s3Config.s3Client().listObjectsV2(s3Config.s3BucketName, keyPrefix)
         val lastMovieListFromS3 = s3FileList.objectSummaries.asSequence()
                 .filter { it.size > 0 }
                 .sortedBy { it.key }
-// TODO: if sequence is empty, an exception occurs here:
-                .last()
+                .lastOrNull()
+        if (lastMovieListFromS3 == null) {
+            LOGGER.info("Could not find any movie list on S3")
+            return null
+        }
 
         LOGGER.info("Now reading {} from S3", lastMovieListFromS3.key)
-
         val s3Object = s3Config.s3Client().getObject(s3Config.s3BucketName, lastMovieListFromS3.key)
-
         var inputStream: InputStream? = null
         try {
             inputStream = s3Object.objectContent
