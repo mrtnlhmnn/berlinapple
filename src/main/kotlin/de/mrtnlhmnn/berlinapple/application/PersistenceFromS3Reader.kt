@@ -12,15 +12,13 @@ import java.nio.charset.StandardCharsets
 class PersistenceFromS3Reader(val s3Config: S3Config) {
     private val LOGGER = LoggerFactory.getLogger(this.javaClass)
 
-    val keyPrefix: String = "berlinapple2020/movies/movies-"
-
     fun getLastMovieListFromS3(): List<Movie> {
         val movieListAsString: String? = readLastMovieListPersistenceFromS3()
         return movieListAsString?.listFromJSON<Movie>() ?: emptyList()
     }
 
     private fun readLastMovieListPersistenceFromS3 (): String? {
-        val s3FileList = s3Config.s3Client().listObjectsV2(s3Config.s3BucketName, keyPrefix)
+        val s3FileList = s3Config.s3Client().listObjectsV2(s3Config.s3BucketName, s3Config.movieKeyPrefix)
         val lastMovieListFromS3 = s3FileList.objectSummaries.asSequence()
                 .filter { it.size > 0 }
                 .sortedBy { it.key }

@@ -17,8 +17,6 @@ import java.time.Instant
 class PersistenceToS3Scheduler(val movieRepo: MovieRepo, val s3Config: S3Config, val persistenceConfig: PersistenceConfig) {
     private val LOGGER = LoggerFactory.getLogger(this.javaClass)
 
-    val keyPrefix: String = "berlinapple2019/movies/movies-"
-
     @Scheduled(cron = "\${persistenceSchedule:0 * * * * *}")
     fun saveMoviesToS3() {
         if (! persistenceConfig.persistenceToggle) return
@@ -28,7 +26,7 @@ class PersistenceToS3Scheduler(val movieRepo: MovieRepo, val s3Config: S3Config,
         val bis = ByteArrayInputStream(bytes)
 
         val now = Instant.now().toEpochMilli().toString()
-        val key = keyPrefix + now + ".txt"
+        val key = s3Config.movieKeyPrefix + now + ".txt"
 
         val metadata = ObjectMetadata()
         metadata.contentLength = bytes.size.toLong()

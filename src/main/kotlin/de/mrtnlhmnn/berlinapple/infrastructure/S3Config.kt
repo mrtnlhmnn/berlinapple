@@ -25,6 +25,9 @@ open class S3Config {
     @Value("\${aws.s3.bucketname}")
     val s3BucketName: String? = null
 
+    @Value("\${aws.s3.movie.keyprefix}")
+    val movieKeyPrefix: String? = "berlinapple2020/movies/movies-"
+
     @Bean
     open fun s3Client(): AmazonS3 {
         val amazonS3: AmazonS3
