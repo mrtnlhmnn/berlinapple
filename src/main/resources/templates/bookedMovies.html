@@ -13,10 +13,11 @@
 <div th:include="fragments/bodyHeader :: bodyHeader"/>
 
 <div class="container" th:if="${not #lists.isEmpty(bookedMoviesPerDay)}">
-    <h2>Our List of Booked Movies/Events</h2>
+    <h2>Our Schedule with all our Bookings</h2>
+
     <th:block th:each="movieListOfDay : ${bookedMoviesPerDay}">
         <th:block th:if="${not #lists.isEmpty(movieListOfDay)}">
-           <h3>Bookings for <th:block th:text="${movieListOfDay.get(0).getBookedEvent().getBookingDay()}"></th:block></h3>
+           <h3><link th:text="${movieListOfDay.size()}"/> Bookings for <th:block th:text="${movieListOfDay.get(0).getBookedEvent().getBookingDay()}"></th:block></h3>
            <table>
                 <tr>
                     <th>Prio</th>

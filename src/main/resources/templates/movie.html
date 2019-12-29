@@ -13,7 +13,7 @@
 <div th:include="fragments/bodyHeader :: bodyHeader"/>
 
 <div class="container" th:if="${movie != null}">
-    <h2>Movie Details (and its Events)</h2>
+    <h2>Movie Details (and all its <link th:text="${movie.getSortedEvents().size()}"/> Events)</h2>
     <table>
         <tr>
             <th>Movie ID</th>

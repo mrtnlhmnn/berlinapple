@@ -9,31 +9,32 @@ Persistence
 [ ] Offline-Toggle ("lese nur von program, merge nicht mit S3-Storage")
 [ ] Auto-Cleaner für alle S3-Movies-Dateien (alles was zB älter als 48h ist)
 [ ] Test, ob mit leerem S3 alles noch geht (oder bricht Merge ab?)
-[ ] Persistence für Tests auch von/nach lokaler Datei zulassen (letzter Speicherstand 2018er-Berlinale ist in rsrc\persistence-from-s3\movies-1550521800007.txt)
+[ ] Persistence für Tests auch von/nach lokaler Datei zulassen
+[x] Bugfix: mit nicht existierender movies...-Datei startet die App nicht
 
 Querschnitt & Infrastruktur
 [x] Spring-Profile local einführen
 [ ] Properties-Key-Namen systematischer nennen
 [ ] Maven-Git-Plugin einbauen, wie bei KAPA
-[ ] berlinapple.de als Domain ... oder in festivapple.... umnennen?
+[ ] berlinapple.de als Domain
 
 Fachliches, Bugs
-[ ] Bugfix: bookable=yes und available=yes geht vermutlich durch Fehler in unbook
+[x] Bugfix: bookable=yes und available=yes geht, vermutlich durch Fehler in unbook
 [ ] Zeitmodus: Nur noch Sachen in der Zukunft anzeigen oder Rest ausgrauen/nicht zweigen
 [ ] (für neue Filme oder anderes wie Essen-gehen): fiktive Buchungen zum Zeitblockieren vornehmen
-[ ] Nutzer-spezifische Ansichten, also alle Use-cases für Nutzer ausrichten (zB als Ansicht für Kristine, für Martin)
 [ ] 1 oder 2 Tickets buchen zulassen
+[ ] Nutzer-spezifische Ansichten, also alle Use-cases für Nutzer ausrichten (zB als Ansicht für Kristine, für Martin)
+[ ] Benutzer-/Mandantenfähig machen (am Login festmachen?)
 [ ] Liste bei Program und bei BookableMovie: Liste der Anzahl Events pro Tag oder wieviel noch available oder ...
-[ ] Anzahlen von Movies und Events und Bookings auf alle Seiten in der Überschrift draufschreiben
+[x] Anzahlen von Movies und Events und Bookings auf alle Seiten in der Überschrift draufschreiben
 [ ] alle Seiten (auch) nach Tagen sortieren so wie schon bei Schedule
 [ ] Tagesfilter implementieren, nur einen Tag zeigen: zB Oben im Header anwählen, dann dynamisch filtern
-[ ] Rausschmeissen auf unsere Tage nicht beim Einlesen sondern erst beim Ausgeben
-[ ] Rausschmeissen auf unsere Tage genauer, nicht nur auf Tagesbasis, zB ab mittags bis mittags
+[ ] Rausschmeissen auf unsere Tage: nicht beim Einlesen sondern erst beim Ausgeben
+[ ] Rausschmeissen auf unsere Tage: genauer, nicht nur auf Tagesbasis, zB ab mittags bis mittags
 [ ] Vormerken implementieren als "hier noch kein Ticket aber wir gehen zur Vorkasse" , also weiteren Status "merken" zulassen, falls man einen Film unbedingt sehen will aber an VVK-Kasse kein Ticket ist -> blockiert Zeitfenster
 [ ] Alle Movies: Sortieren mit Untertabellen, Sprung direkt zu den 50ern
 [ ] Mehrfachbuchen eines Movies (nur bei ausdruecklichem Wunsch) zulassen
-[ ] Benutzer-/Mandantenfähig machen
-[ ] Kategorie mit in die Daten aufnehmen (aber woher nehmen, wenn nicht in ics-Datei drin)
+[ ] Kategorie mit in die Daten aufnehmen (aber woher nehmen, wenn nicht in ics-Datei drin?)
 [ ] beim Laden automatisch nach Kategorie priorisieren, zB alle Wettbewerb-Filme auf 80 statt 50
 
 Locations
