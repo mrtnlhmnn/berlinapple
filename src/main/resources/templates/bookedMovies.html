@@ -12,6 +12,10 @@
 
 <div th:include="fragments/bodyHeader :: bodyHeader"/>
 
+<div class="container" th:if="${#lists.isEmpty(bookedMoviesPerDay)}">
+    <h2>Our Schedule with all our Bookings ... is empty!</h2>
+</div>
+
 <div class="container" th:if="${not #lists.isEmpty(bookedMoviesPerDay)}">
     <h2>Our Schedule with all our Bookings</h2>
 

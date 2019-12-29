@@ -14,30 +14,34 @@ class ScheduleController(val movieRepo: MovieRepo, val bookingHelper: BookingHel
         val bookedMovies = movieRepo.values.toList()
                 .filter { it.booked }
                 .sortedBy { it.getBookedEvent().begin }
-        val bookedMoviesPerDay: ArrayList<ArrayList<Movie>> = arrayListOf(arrayListOf())
-        var idx = 0
-        var initial = true
-        var movieBefore: Movie? = null
-        for (movie in bookedMovies) {
-            if (!initial) {
-                if (movie.getBookedEvent().getBookingDay()!!.isAfter(
-                    movieBefore!!.getBookedEvent().getBookingDay())) {
-                    idx++
+
+        if (bookedMovies.isEmpty()) {
+            model.addAttribute("bookedMoviesPerDay", emptyList<Movie>())
+        }
+        else {
+            var idx = 0
+            var initial = true
+            var movieBefore: Movie? = null
+
+            val bookedMoviesPerDay: MutableList<MutableList<Movie>> = arrayListOf(arrayListOf())
+            for (movie in bookedMovies) {
+                if (!initial) {
+                    if (movie.getBookedEvent().getBookingDay()!!.isAfter(
+                        movieBefore!!.getBookedEvent().getBookingDay())) {
+                        idx++
+                    }
+                }
+                initial = false
+                movieBefore = movie
+
+                if (bookedMoviesPerDay.size == idx) {
+                    bookedMoviesPerDay.add(arrayListOf(movie))
+                } else {
+                    bookedMoviesPerDay.get(idx).add(movie)
                 }
             }
-            initial = false
-            movieBefore = movie
-
-            if (bookedMoviesPerDay.size == idx) {
-                bookedMoviesPerDay.add(arrayListOf(movie))
-            }
-            else {
-                bookedMoviesPerDay.get(idx).add(movie)
-            }
+            model.addAttribute("bookedMoviesPerDay", bookedMoviesPerDay)
         }
-
-        model.addAttribute("bookedMoviesPerDay", bookedMoviesPerDay)
-
         return "bookedMovies"
     }
 }

@@ -12,6 +12,10 @@
 
 <div th:include="fragments/bodyHeader :: bodyHeader"/>
 
+<div class="container" th:if="${#lists.isEmpty(movies)}">
+    <h2>The List of Bookable Movies/Events ... is empty!</h2>
+</div>
+
 <div class="container" th:if="${not #lists.isEmpty(movies)}">
     <h2>The List of <th:block th:text="${movies.size()}"/> Bookable Movies/Events</h2>
     <table>
