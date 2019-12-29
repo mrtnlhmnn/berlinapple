@@ -5,6 +5,33 @@ mvn install
 
 ###############################################################################################################
 
+#
+# BerlinAPPle Java Base Image
+#
+
+# in Bash (only, if java_base images changes)
+cd /c/lehmann/spielwiese/berlinapple/src/berlinapple/infrastructure/berlinapple_java_base
+
+docker build . --no-cache --force-rm
+> <XXXID>
+
+docker run -d -p 9090:8080 <XXXID>
+> <YYYID>
+
+docker commit -m "BerlinAPPle Java Base Build" -a "mrtnlhmnn" <YYYID> mrtnlhmnn/berlinapple_java_base
+> <ZZZID>
+
+# optional (Attention: Do not copy pw directly from activ'aid to shell!)
+# winpty docker login -u mrtnlhmnn
+
+docker push mrtnlhmnn/berlinapple_java_base
+
+###############################################################################################################
+
+#
+# BerlinAPPle Image
+#
+
 # in Bash
 cd /c/lehmann/spielwiese/berlinapple/src/berlinapple
 
@@ -17,7 +44,7 @@ docker run -d -p 8080:8080 <XXXID>
 docker commit -m "BerlinAPPle Build" -a "mrtnlhmnn" <YYYID> mrtnlhmnn/berlinapple
 > <ZZZID>
 
-# optional (Attention: Do not copy directly from activ'aid to shell!)
+# optional (Attention: Do not copy pw directly from activ'aid to shell!)
 # winpty docker login -u mrtnlhmnn
 
 docker push mrtnlhmnn/berlinapple
@@ -40,7 +67,8 @@ sudo docker run -d -p 8080:8080 docker.io/mrtnlhmnn/berlinapple
 
 ###############################################################################################################
 
-# if 8080 is not accessible => need to make it available in AWS!
+# if 8080 is not accessible => need to make it HTTP available in AWS!
 
 http://ec2-3-122-251-177.eu-central-1.compute.amazonaws.com:8080
 http://ec2-3-122-251-177.eu-central-1.compute.amazonaws.com:8080/version
+
