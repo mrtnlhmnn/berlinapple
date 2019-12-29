@@ -23,7 +23,6 @@
             <th>Prio</th>
             <th>Title</th>
             <th>Link</th>
-            <th># Events</th>
             <th>Bookable Events</th>
         </tr>
         <tr th:each="movie : ${movies}">
@@ -32,7 +31,7 @@
             <td th:if="${movie.url != null}">
                 <a th:href="${movie.url}" target="_blank">Link</a>
             </td>
-            <td th:text="${movie.events.size()}"></td>
+            <td th:text="${movie.numberOfEventsAvailable()}"></td>
             <td><a th:href="@{movie/{id}(id=${movie.id})}">Details</a></td>
         </tr>
     </table>

@@ -9,18 +9,16 @@ data class Movie (val id: ID, val title: String?, val description: String, var p
                   val events: MutableList<Event>): JSONConvertable
 {
     val booked: Boolean
-        get() = isOneEventOfTheMovieBooked()
-    fun isOneEventOfTheMovieBooked(): Boolean {
+        get() = isOneEventBooked()
+    fun isOneEventBooked(): Boolean {
         events.forEach { if (it.booked) return true }
         return false
     }
 
     val available: Boolean
-        get() = isOneEventOfTheMovieAvailable()
-    fun isOneEventOfTheMovieAvailable(): Boolean {
-        events.forEach { if (it.available) return true }
-        return false
-    }
+        get() = isOneEventAvailable()
+    fun numberOfEventsAvailable(): Int = events.count { it.available }
+    fun isOneEventAvailable(): Boolean = numberOfEventsAvailable() > 0
 
     fun getSortedEvents(): MutableList<Event> {
         return events.sortedBy{it.begin}.toMutableList()

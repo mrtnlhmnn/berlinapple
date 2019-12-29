@@ -17,7 +17,7 @@
 </div>
 
 <div class="container" th:if="${not #lists.isEmpty(bookedMoviesPerDay)}">
-    <h2>Our Schedule with all our Bookings</h2>
+    <h2>Our Schedule with all our <th:block th:text="${totalBookings}"/> Bookings</h2>
 
     <th:block th:each="movieListOfDay : ${bookedMoviesPerDay}">
         <th:block th:if="${not #lists.isEmpty(movieListOfDay)}">

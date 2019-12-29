@@ -17,6 +17,7 @@ class ScheduleController(val movieRepo: MovieRepo, val bookingHelper: BookingHel
 
         if (bookedMovies.isEmpty()) {
             model.addAttribute("bookedMoviesPerDay", emptyList<Movie>())
+            model.addAttribute("totalBookings", 0)
         }
         else {
             var idx = 0
@@ -41,6 +42,7 @@ class ScheduleController(val movieRepo: MovieRepo, val bookingHelper: BookingHel
                 }
             }
             model.addAttribute("bookedMoviesPerDay", bookedMoviesPerDay)
+            model.addAttribute("totalBookings", bookedMovies.size)
         }
         return "bookedMovies"
     }
