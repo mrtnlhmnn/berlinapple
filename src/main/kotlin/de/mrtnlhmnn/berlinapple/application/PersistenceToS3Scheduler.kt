@@ -16,16 +16,25 @@ import java.time.Instant
 @EnableScheduling
 class PersistenceToS3Scheduler(val movieRepo: MovieRepo,
                                val s3Config: S3Config,
-                               val persistenceConfig: PersistenceConfig,
-                               val bookingHelper: BookingHelper) {
+                               val persistenceConfig: PersistenceConfig) {
     private val LOGGER = LoggerFactory.getLogger(this.javaClass)
 
+    // ---------------------------------------------------------------------------------------------------
+
+    // remember the latest change
+
     private var timeStampOfLatestSave: Instant? = null
+    private var timeStampOfLatestChange = Instant.now()
+
+    fun changed() { timeStampOfLatestChange = Instant.now() }
+    private fun hasChanged() = ( timeStampOfLatestSave == null || timeStampOfLatestChange.isAfter(timeStampOfLatestSave) )
+
+    // ---------------------------------------------------------------------------------------------------
 
     @Scheduled(cron = "\${persistenceSchedule:0 * * * * *}")
     fun saveMoviesToS3() {
         if (! needToSaveToS3()) {
-            LOGGER.info("PersistenceScheduler is not saving to S3, because forbidden or not necessary (as no changes done)")
+            LOGGER.info("PersistenceScheduler is not saving to S3, because toggled to false - or not necessary (as no changes done)")
         }
         else {
             val movieRepoAsJson = movieRepo.toJSON()
@@ -61,6 +70,5 @@ class PersistenceToS3Scheduler(val movieRepo: MovieRepo,
         LOGGER.info("PersistenceScheduler toggle now switched to {}", persistenceConfig.persistenceToggle)
     }
 
-    fun needToSaveToS3(): Boolean =
-            (persistenceConfig.persistenceToggle && bookingHelper.hasChangedSince(timeStampOfLatestSave))
+    fun needToSaveToS3(): Boolean = (persistenceConfig.persistenceToggle && hasChanged())
 }

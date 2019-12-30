@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping
 
 @Controller
-class PersistenceController(val persistenceScheduler: PersistenceToS3Scheduler) {
+class PersistenceToggleController(val persistenceScheduler: PersistenceToS3Scheduler) {
 
     @RequestMapping("/persistence/{toggle}")
     fun togglePersistence(@PathVariable("toggle") toggle: String, model: Model): String {

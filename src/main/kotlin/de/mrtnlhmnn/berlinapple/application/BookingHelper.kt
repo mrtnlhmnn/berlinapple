@@ -5,14 +5,8 @@ import org.springframework.stereotype.Component
 import java.time.Instant
 
 @Component
-class BookingHelper(val movieRepo: MovieRepo) {
-
-    // remember the latest change
-    private var latestChange = Instant.now()
-    private fun changed() { latestChange = Instant.now() }
-    fun hasChangedSince(timestamp: Instant?) = ( timestamp == null || latestChange.isAfter(timestamp) )
-
-    // ---------------------------------------------------------------------------------------------------
+class BookingHelper(val movieRepo: MovieRepo,
+                    val persistenceToS3Scheduler: PersistenceToS3Scheduler) {
 
     fun bookEvent(bookedMovie: Movie, bookedEventID: ID){
         // fix the event status and all events of its movie
@@ -33,7 +27,7 @@ class BookingHelper(val movieRepo: MovieRepo) {
 
         setAllOverlappingEventsToUnvailable(bookedMovie, bookedEvent)
 
-        changed()
+        persistenceToS3Scheduler.changed()
     }
 
     // ---------------------------------------------------------------------------------------------------
@@ -67,7 +61,7 @@ class BookingHelper(val movieRepo: MovieRepo) {
             setAllOverlappingEventsToUnvailable(it.first, it.second)
         }
 
-        changed()
+        persistenceToS3Scheduler.changed()
     }
 
     // ---------------------------------------------------------------------------------------------------
