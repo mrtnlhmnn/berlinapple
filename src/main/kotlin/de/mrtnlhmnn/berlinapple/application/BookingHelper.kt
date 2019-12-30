@@ -1,8 +1,8 @@
 package de.mrtnlhmnn.berlinapple.application
 
 import de.mrtnlhmnn.berlinapple.data.*
+import de.mrtnlhmnn.berlinapple.infrastructure.PersistenceToS3Scheduler
 import org.springframework.stereotype.Component
-import java.time.Instant
 
 @Component
 class BookingHelper(val movieRepo: MovieRepo,

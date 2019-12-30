@@ -1,6 +1,6 @@
 package de.mrtnlhmnn.berlinapple.ui
 
-import de.mrtnlhmnn.berlinapple.application.PersistenceToS3Scheduler
+import de.mrtnlhmnn.berlinapple.infrastructure.PersistenceToS3Scheduler
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.PathVariable

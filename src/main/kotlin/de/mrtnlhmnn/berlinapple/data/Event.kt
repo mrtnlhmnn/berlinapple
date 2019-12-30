@@ -1,6 +1,6 @@
 package de.mrtnlhmnn.berlinapple.data
 
-import de.mrtnlhmnn.berlinapple.application.JSONConvertable
+import de.mrtnlhmnn.berlinapple.infrastructure.JSONConvertable
 import java.net.URL
 import java.time.LocalDate
 import java.time.ZoneId

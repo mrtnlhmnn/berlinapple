@@ -2,15 +2,16 @@ package de.mrtnlhmnn.berlinapple.application
 
 import de.mrtnlhmnn.berlinapple.data.LocationParser
 import de.mrtnlhmnn.berlinapple.data.MovieRepo
-import de.mrtnlhmnn.berlinapple.data.ProgramParser
+import de.mrtnlhmnn.berlinapple.infrastructure.PersistenceFromS3Reader
+import de.mrtnlhmnn.berlinapple.infrastructure.ProgramParser
 import org.springframework.stereotype.Component
 
 @Component
 class DataInitializer(
-        val locationParser: LocationParser,
-        val programParser: ProgramParser,
-        val persistenceFromS3Reader: PersistenceFromS3Reader,
-        val movieRepo: MovieRepo)
+        private val locationParser: LocationParser,
+        private val programParser: ProgramParser,
+        private val persistenceFromS3Reader: PersistenceFromS3Reader,
+        private val movieRepo: MovieRepo)
 {
     init {
         // parse location file and fill the location repo
@@ -28,7 +29,7 @@ class DataInitializer(
 //TODO One could override the hashCode() from Movie and Event and NOT use the ID there!
             movieRepo.get(movieFromS3.id)?.let { movieFromProgram ->
                 movieFromProgram.prio = movieFromS3.prio
-                movieFromProgram.events.removeAll { true } // delete all events
+                movieFromProgram.events.removeAll { true }
                 movieFromProgram.events.addAll(movieFromS3.events) // brute-force replace from S3. not nice
             }
         }

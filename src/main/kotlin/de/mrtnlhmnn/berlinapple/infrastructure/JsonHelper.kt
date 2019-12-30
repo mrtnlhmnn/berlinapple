@@ -1,4 +1,4 @@
-package de.mrtnlhmnn.berlinapple.application
+package de.mrtnlhmnn.berlinapple.infrastructure
 
 import com.squareup.moshi.*
 import java.time.Instant

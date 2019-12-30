@@ -1,10 +1,9 @@
-package de.mrtnlhmnn.berlinapple.application
+package de.mrtnlhmnn.berlinapple.infrastructure
 
 import com.amazonaws.services.s3.model.ObjectMetadata
 import com.amazonaws.services.s3.model.PutObjectRequest
 import com.amazonaws.util.StringUtils
 import de.mrtnlhmnn.berlinapple.data.*
-import de.mrtnlhmnn.berlinapple.infrastructure.S3Config
 import org.slf4j.LoggerFactory
 import org.springframework.scheduling.annotation.EnableScheduling
 import org.springframework.scheduling.annotation.Scheduled

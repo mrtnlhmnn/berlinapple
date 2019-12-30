@@ -1,6 +1,6 @@
 package de.mrtnlhmnn.berlinapple.data
 
-import de.mrtnlhmnn.berlinapple.application.JSONConvertable
+import de.mrtnlhmnn.berlinapple.infrastructure.JSONConvertable
 import java.net.URL
 
 data class Location (val name: String, val address: String?, val url: URL?): JSONConvertable {

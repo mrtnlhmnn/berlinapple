@@ -1,7 +1,6 @@
-package de.mrtnlhmnn.berlinapple.application
+package de.mrtnlhmnn.berlinapple.infrastructure
 
 import de.mrtnlhmnn.berlinapple.data.*
-import de.mrtnlhmnn.berlinapple.infrastructure.S3Config
 import org.apache.commons.io.IOUtils
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Component

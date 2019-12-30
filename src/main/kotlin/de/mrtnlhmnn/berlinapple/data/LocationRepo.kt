@@ -1,6 +1,6 @@
 package de.mrtnlhmnn.berlinapple.data
 
-import de.mrtnlhmnn.berlinapple.application.JSONConvertable
+import de.mrtnlhmnn.berlinapple.infrastructure.JSONConvertable
 import org.springframework.stereotype.Component
 import java.util.regex.Pattern
 

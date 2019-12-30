@@ -1,7 +1,6 @@
 package de.mrtnlhmnn.berlinapple.ui
 
-import de.mrtnlhmnn.berlinapple.application.PersistenceConfig
-import de.mrtnlhmnn.berlinapple.application.PersistenceToS3Scheduler
+import de.mrtnlhmnn.berlinapple.infrastructure.PersistenceToS3Scheduler
 import de.mrtnlhmnn.berlinapple.data.ID
 import de.mrtnlhmnn.berlinapple.data.MovieRepo
 import de.mrtnlhmnn.berlinapple.data.Prio
