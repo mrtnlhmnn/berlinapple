@@ -1,8 +1,8 @@
 #############################################################################################################
 programFile=data/program.ics
 locationFile=data/locations.txt
-berlinaleStartDate=20190214
-berlinaleEndDate=20190217
+berlinaleStartDateTime=20190214T1400
+berlinaleEndDateTime=20190217T1800
 persistenceSchedule=0 0/30 * * * *
 persistence.savetos3.toggle=false
 
