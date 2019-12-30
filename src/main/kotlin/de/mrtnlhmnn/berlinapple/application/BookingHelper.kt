@@ -67,17 +67,26 @@ class BookingHelper(val movieRepo: MovieRepo,
     // ---------------------------------------------------------------------------------------------------
 
     private fun setAllOverlappingEventsToUnvailable(bookedMovie: Movie, bookedEvent: Event?){
-        // fix all other events of all other movies (especially set all events to unavailable,
+        setAllOverlappingEventsToStatus(bookedMovie, bookedEvent, EventStatus.UNAVAILABLE)
+    }
+
+    private fun setAllOverlappingEventsToPoteniallyUnvailable(bookmarkedMovie: Movie, bookmarkedEvent: Event?){
+        setAllOverlappingEventsToStatus(bookmarkedMovie, bookmarkedEvent, EventStatus.POTENTIALLY_UNAVAILABLE)
+    }
+
+    private fun setAllOverlappingEventsToStatus(markedMovie: Movie, markedEvent: Event?, status: EventStatus){
+        // fix all other events of all other movies (especially set all events to status,
         //     if they intersect with the booked event)
         val movies = movieRepo.getSortedMovies()
         movies.forEach { movie ->
-            if (movie != bookedMovie) {
+            if (movie != markedMovie) {
                 val events = movie.events
                 events.forEach { event ->
-                    if (event overlaps bookedEvent)
-                        event.status = EventStatus.UNAVAILABLE
+                    if (event overlaps markedEvent)
+                        event.status = status
                 }
             }
         }
     }
+
 }

@@ -8,7 +8,7 @@ import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 
 enum class EventStatus  {
-    AVAILABLE, UNAVAILABLE, BOOKED
+    AVAILABLE, UNAVAILABLE, POTENTIALLY_UNAVAILABLE, BOOKED
 }
 
 data class Event (
@@ -60,6 +60,8 @@ data class Event (
         get() = status == EventStatus.AVAILABLE
     val unavailable: Boolean
         get() = status == EventStatus.UNAVAILABLE
+    val potentiallyUnavailable: Boolean
+        get() = status == EventStatus.POTENTIALLY_UNAVAILABLE
 
     // compare by begin date/time
     override fun compareTo(other: Event): Int {
