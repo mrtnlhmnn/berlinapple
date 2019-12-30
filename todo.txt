@@ -51,11 +51,8 @@ Locations
 
 Kalender
 [x] Kalendereintrag für Outlook checken: Stimmt die Zeitzone?
-[ ] Kalendereintrag für iPhone supporten: Vermutlich falsches/altes Format VCALENDAR statt Ical, siehe http://fileformats.archiveteam.org/wiki/ICalendar
-[ ] Kalendereintrag mal ohne X-WR... erzeugen/ausgeben, da das Berlinale-Webseite auch so macht und die Einträge direkt in meinem Kalender landen (ohne Umweg über einen ZWeitkalender)
-	X-WR-TIMEZONE:Europe/Berlin
-	X-WR-CALNAME:Berlinapple for the Internationale Filmfestspiele Berlin
-	X-WR-CALDESC:Berlinapple for the Internationale Filmfestspiele Berlin
+[x] Kalendereintrag für iPhone supporten. Zeitzone muss in UTC angegeben sein
+[ ] Kalendereintrag ohne X-WR-TIMEZONE, X-WR-CALNAME, X-WR-CALDESC erzeugen/ausgeben, damit die Einträge direkt in meinem Kalender landen (ohne Umweg über einen Zweitkalender)
 
 Layout
 [ ] Responsive fuers Handy

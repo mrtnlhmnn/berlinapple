@@ -1,7 +1,6 @@
 package de.mrtnlhmnn.berlinapple.data
 
 import de.mrtnlhmnn.berlinapple.infrastructure.JSONConvertable
-import java.net.URL
 import java.time.LocalDate
 import java.time.ZoneId
 import java.time.ZonedDateTime
@@ -17,13 +16,15 @@ data class Event (val begin: ZonedDateTime, val end: ZonedDateTime,
 {
     val id = ID.createEventID(begin.dayOfMonth.toString())
 
+//TODO Refactor all 6 formatters (actually: 3, as they are redundant) out of the methods, but then JSON serializer needs to be aware not to store them!
+
     fun printBeginDateTime(): String {
         val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
         return begin.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)
     }
-    fun printBeginDateTimeForCaldendarFile(): String {
-        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mmZ")
-        return begin.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)
+    fun printBeginDateTimeForCalendarFile(): String {
+        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyyMMdd'T'HHmmssX")
+        return begin.withZoneSameInstant(ZoneId.of("UTC")).format(formatter)
     }
     fun printBeginTime(): String {
         val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm")
@@ -34,9 +35,9 @@ data class Event (val begin: ZonedDateTime, val end: ZonedDateTime,
         val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
         return end.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)
     }
-    fun printEndDateTimeForCaldendarFile(): String {
-        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mmZ")
-        return end.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)
+    fun printEndDateTimeForCalendarFile(): String {
+        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyyMMdd'T'HHmmssX")
+        return end.withZoneSameInstant(ZoneId.of("UTC")).format(formatter)
     }
     fun printEndTime(): String {
         val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm")

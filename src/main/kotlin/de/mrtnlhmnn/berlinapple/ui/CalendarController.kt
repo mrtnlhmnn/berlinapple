@@ -3,14 +3,13 @@ package de.mrtnlhmnn.berlinapple.ui
 import de.mrtnlhmnn.berlinapple.data.ID
 import de.mrtnlhmnn.berlinapple.data.MovieRepo
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.beans.factory.annotation.Value
-import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestMethod
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
-import org.springframework.web.servlet.view.RedirectView
 import java.time.Instant
+import java.time.ZoneId
+import java.time.format.DateTimeFormatter
 
 @RestController
 class CalendarController {
@@ -23,29 +22,35 @@ class CalendarController {
 
         val bookedMovie = movieRepo?.get(movieID)
         val bookedEvent = bookedMovie?.getBookedEvent()
-        val now = Instant.now().toString()
+
+        val now = Instant.now().atZone(ZoneId.of("UTC"))
+        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyyMMdd'T'HHmmssX")
+        val nowAsString = now.format(formatter)
 
         if (bookedMovie != null && bookedEvent != null) {
 
             val icsText =
 """BEGIN:VCALENDAR
+PRODID:BerlinAPPle
+VERSION:2.0
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-PRODID:berlinAPPle
-VERSION:2.0
-X-WR-TIMEZONE:Europe/Berlin
-X-WR-CALNAME:BerlinAPPle for the Internationale Filmfestspiele Berlin
 X-WR-CALDESC:BerlinAPPle for the Internationale Filmfestspiele Berlin
+X-WR-CALNAME:BerlinAPPle for the Internationale Filmfestspiele Berlin
+X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-UID:${movieID}-${bookedEvent.id}
-DTSTAMP:${now}
-CATEGORIES:BerlinAPPle for Internationale Filmfestspiele Berlin
-DESCRIPTION:${bookedMovie.url}
-DTSTART:${bookedEvent.printBeginDateTimeForCaldendarFile()}
-DTEND:${bookedEvent.printEndDateTimeForCaldendarFile()}
+DTSTART:${bookedEvent.printBeginDateTimeForCalendarFile()}
+DTEND:${bookedEvent.printEndDateTimeForCalendarFile()}
+DTSTAMP:${nowAsString}
+UID:${movieID}#${bookedEvent.id}
+CREATED:${nowAsString}
+DESCRIPTION:Berlinale, see ${bookedMovie.url}
+LAST-MODIFIED:${nowAsString}
 LOCATION:${bookedEvent.location?.let{"${it.name} (${it.address})"}}
-SUMMARY:${bookedMovie.title}
-URL:${bookedMovie.url}
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Berlinale: ${bookedMovie.title}
+TRANSP:OPAQUE
 END:VEVENT
 END:VCALENDAR""".trimIndent()
 
