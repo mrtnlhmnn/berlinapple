@@ -1,10 +1,4 @@
 ###############################################################################################################
-
-# in IntelliJ
-mvn install
-
-###############################################################################################################
-
 #
 # BerlinAPPle Java Base Image
 # only, if java_base images changes)
@@ -29,13 +23,14 @@ docker push mrtnlhmnn/berlinapple_java_base
 docker stop <BBBID>
 
 ###############################################################################################################
-
 #
 # BerlinAPPle Image
 #
 
-# in Bash
+# in IntelliJ
+mvn install
 
+# in Bash
 cd /c/lehmann/spielwiese/berlinapple/src/berlinapple
 
 docker build . -f Dockerfile --no-cache --force-rm
@@ -54,7 +49,6 @@ docker push mrtnlhmnn/berlinapple
 docker stop <YYYID>
 
 ###############################################################################################################
-
 #
 # Deploy and run on AWS EC2 instance
 #
@@ -81,7 +75,6 @@ watch sudo docker logs <ZZZID>
 sudo docker exec -it <ZZZID> bash
 
 ###############################################################################################################
-
 #
 # Browser
 #
