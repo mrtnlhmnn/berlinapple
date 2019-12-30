@@ -5,8 +5,8 @@ import de.mrtnlhmnn.berlinapple.infrastructure.PersistenceToS3Scheduler
 import org.springframework.stereotype.Component
 
 @Component
-class BookingHelper(val movieRepo: MovieRepo,
-                    val persistenceToS3Scheduler: PersistenceToS3Scheduler) {
+class BookingService(val movieRepo: MovieRepo,
+                     val persistenceToS3Scheduler: PersistenceToS3Scheduler) {
 
     fun bookEvent(bookedMovie: Movie, bookedEventID: ID){
         // fix the event status and all events of its movie

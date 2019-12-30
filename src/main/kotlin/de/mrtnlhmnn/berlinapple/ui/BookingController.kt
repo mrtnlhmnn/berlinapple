@@ -1,6 +1,6 @@
 package de.mrtnlhmnn.berlinapple.ui
 
-import de.mrtnlhmnn.berlinapple.application.BookingHelper
+import de.mrtnlhmnn.berlinapple.application.BookingService
 import de.mrtnlhmnn.berlinapple.data.*
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*
 import org.springframework.web.servlet.view.RedirectView
 
 @Controller
-class BookingController(val movieRepo: MovieRepo, val bookingHelper: BookingHelper) {
+class BookingController(val movieRepo: MovieRepo, val bookingService: BookingService) {
     @RequestMapping("/bookableMovies")
     fun listBookableMovies(model: Model): String {
         var bookableMovies = mutableListOf<Movie>()
@@ -32,7 +32,7 @@ class BookingController(val movieRepo: MovieRepo, val bookingHelper: BookingHelp
         val bookedMovie = movieRepo.get(ID(movieId))
 
         if (bookedMovie != null)
-            bookingHelper.bookEvent(bookedMovie, ID(eventId))
+            bookingService.bookEvent(bookedMovie, ID(eventId))
 
         return RedirectView("/bookableMovies")
     }
@@ -48,7 +48,7 @@ class BookingController(val movieRepo: MovieRepo, val bookingHelper: BookingHelp
         val movieToUnbook = movieRepo.get(ID(movieId))
 
         if (movieToUnbook != null)
-            bookingHelper.unbookEvent(movieToUnbook)
+            bookingService.unbookEvent(movieToUnbook)
 
         return RedirectView("/bookedMovies")
     }
