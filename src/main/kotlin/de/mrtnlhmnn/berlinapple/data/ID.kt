@@ -6,15 +6,10 @@ data class ID(var id: String) {
         private var eventCounter = 999L
         private val SEPARATOR = "-"
 
-        fun createEventID(begin: String): ID {
-            return ID("E" + SEPARATOR + begin + SEPARATOR + (++eventCounter).toString())
-        }
+        fun createEventID(begin: String) = ID("E" + SEPARATOR + begin + SEPARATOR + (++eventCounter).toString())
 
-        private fun hash(s: String) = String.format("%016X", Math.abs(s.hashCode()))
-
-        fun createMovieID(s: String): ID {
-            return ID("M" + SEPARATOR + hash(s))
-        }
+        private fun hashAndHex(s: String) = String.format("%016X", Math.abs(s.hashCode()))
+        fun createMovieID(s: String) = ID("M" + SEPARATOR + hashAndHex(s))
     }
 
     override fun toString(): String = "$id"
