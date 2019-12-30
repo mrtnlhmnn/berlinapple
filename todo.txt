@@ -38,6 +38,9 @@ Fachliches, Bugs
 [ ] Kategorie mit in die Daten aufnehmen (aber woher nehmen, wenn nicht in ics-Datei drin?)
 [ ] beim Laden automatisch nach Kategorie priorisieren, zB alle Wettbewerb-Filme auf 80 statt 50
 [x] in BookableMovies nur die Anzahl der Bookable Events anzeigen (statt die Gesamtzahl)
+[ ] In der Movies-Datei in S3 landen alle Filme. Es reichen eigentlich die mit einem Event.booked = true. Die Available-Status muss man dann aber auch fixen
+[x] Movies-Datei nicht als .txt sondern als .json speichern
+[x] Prio's Attribut "optional" kann weg
 
 Locations
 [x] Location überall gleich anzeigen, auch gleich mit Link wie bei Schedule

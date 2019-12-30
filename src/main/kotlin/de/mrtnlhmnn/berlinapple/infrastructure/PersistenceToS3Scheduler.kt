@@ -33,7 +33,7 @@ class PersistenceToS3Scheduler(val movieRepo: MovieRepo,
     @Scheduled(cron = "\${persistenceSchedule:0 * * * * *}")
     fun saveMoviesToS3() {
         if (! needToSaveToS3()) {
-            LOGGER.info("PersistenceScheduler is not saving to S3, because toggled to false - or not necessary (as no changes done)")
+            LOGGER.info("PersistenceScheduler is not saving to S3, because toggled to false - or not necessary, as no changes done")
         }
         else {
             val movieRepoAsJson = movieRepo.toJSON()
@@ -41,7 +41,7 @@ class PersistenceToS3Scheduler(val movieRepo: MovieRepo,
             val bis = ByteArrayInputStream(bytes)
 
             val now = Instant.now().toEpochMilli().toString()
-            val s3Key = s3Config.movieKeyPrefix + now + ".txt"
+            val s3Key = s3Config.movieKeyPrefix + now + ".json"
 
             val metadata = ObjectMetadata()
             metadata.contentLength = bytes.size.toLong()

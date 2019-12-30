@@ -2,8 +2,7 @@ package de.mrtnlhmnn.berlinapple.data
 
 import de.mrtnlhmnn.berlinapple.infrastructure.JSONConvertable
 
-data class Prio(val value: Int, val optional: String = ""): Comparable<Prio>, JSONConvertable
-{
+data class Prio(val value: Int): Comparable<Prio>, JSONConvertable  {
     override fun compareTo(other: Prio): Int {
         return (value - other.value)
     }
@@ -23,4 +22,3 @@ data class Prio(val value: Int, val optional: String = ""): Comparable<Prio>, JS
     fun isLow()    = this == LOW
     fun isHide()   = this == HIDE
 }
-

@@ -13,7 +13,7 @@ class PersistenceFromS3Reader(val s3Config: S3Config) {
 
     fun getLastMovieListFromS3(): List<Movie> {
         val movieListAsString: String? = readLastMovieListPersistenceFromS3()
-        return movieListAsString?.listFromJSON<Movie>() ?: emptyList()
+        return movieListAsString?.listFromJSON() ?: emptyList()
     }
 
     private fun readLastMovieListPersistenceFromS3 (): String? {
@@ -32,8 +32,7 @@ class PersistenceFromS3Reader(val s3Config: S3Config) {
         var inputStream: InputStream? = null
         try {
             inputStream = s3Object.objectContent
-            val lastMovieListFromS3AsString = IOUtils.toString(inputStream, StandardCharsets.UTF_8)
-            return lastMovieListFromS3AsString
+            return IOUtils.toString(inputStream, StandardCharsets.UTF_8)
         }
         finally {
             if (inputStream != null) inputStream.close()

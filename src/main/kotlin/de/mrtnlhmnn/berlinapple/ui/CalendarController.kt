@@ -31,15 +31,15 @@ class CalendarController {
 """BEGIN:VCALENDAR
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-PRODID:berlinapple
+PRODID:berlinAPPle
 VERSION:2.0
 X-WR-TIMEZONE:Europe/Berlin
-X-WR-CALNAME:Berlinapple for the Internationale Filmfestspiele Berlin
-X-WR-CALDESC:Berlinapple for the Internationale Filmfestspiele Berlin
+X-WR-CALNAME:BerlinAPPle for the Internationale Filmfestspiele Berlin
+X-WR-CALDESC:BerlinAPPle for the Internationale Filmfestspiele Berlin
 BEGIN:VEVENT
 UID:${movieID}-${bookedEvent.id}
 DTSTAMP:${now}
-CATEGORIES:Berlinapple for Internationale Filmfestspiele Berlin
+CATEGORIES:BerlinAPPle for Internationale Filmfestspiele Berlin
 DESCRIPTION:${bookedMovie.url}
 DTSTART:${bookedEvent.printBeginDateTimeForCaldendarFile()}
 DTEND:${bookedEvent.printEndDateTimeForCaldendarFile()}
