@@ -88,8 +88,7 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
 
                         // Create Event from parsed calendar data
                         val location = locationRepo.findLocationByString(locationStringFromProgram)
-                        val event = Event(ID.createEventID(beginZDTFromProgram.dayOfMonth.toString()),
-                                beginZDTFromProgram, endZDTFromProgram, location)
+                        val event = Event(beginZDTFromProgram, endZDTFromProgram, location)
 
                         // Find (or create new) Movie and attach the above Event to it
                         var movie = movieRepo.findByTitleIgnoreCase(summaryStringFromProgram)

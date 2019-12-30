@@ -11,7 +11,7 @@ class MovieRepo: HashMap<ID, Movie>(), JSONConvertable {
         val movies = this.values.toList()
 
         for (movie in movies) {
-            if (movie.title?.toLowerCase() == title.toLowerCase()) return movie
+            if (movie.title.toLowerCase() == title.toLowerCase()) return movie
         }
         return null
     }

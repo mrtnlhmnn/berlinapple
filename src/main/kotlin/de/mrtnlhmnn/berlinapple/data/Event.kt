@@ -11,12 +11,12 @@ enum class EventStatus  {
     AVAILABLE, UNAVAILABLE, POTENTIALLY_UNAVAILABLE, BOOKED
 }
 
-data class Event (
-        val id: ID,
-        val begin: ZonedDateTime, val end: ZonedDateTime,
-        val location: Location?,
-        var status: EventStatus = EventStatus.AVAILABLE): Comparable<Event>, JSONConvertable
+data class Event (val begin: ZonedDateTime, val end: ZonedDateTime,
+                  val location: Location?,
+                  var status: EventStatus = EventStatus.AVAILABLE): Comparable<Event>, JSONConvertable
 {
+    val id = ID.createEventID(begin.dayOfMonth.toString())
+
     fun printBeginDateTime(): String {
         val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
         return begin.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)
