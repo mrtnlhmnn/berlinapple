@@ -11,68 +11,44 @@ import org.springframework.web.servlet.view.RedirectView
 class BookingController(val movieRepo: MovieRepo, val bookingHelper: BookingHelper) {
     @RequestMapping("/bookableMovies")
     fun listBookableMovies(model: Model): String {
-        val movies = movieRepo.getSortedMovies()
-
         var bookableMovies = mutableListOf<Movie>()
-        for (movie in movies) {
+        for (movie in movieRepo.getSortedMovies()) {
             if (movie.available) bookableMovies.add(movie)
         }
-        model.addAttribute("movies", bookableMovies)
 
+        model.addAttribute("movies", bookableMovies)
         return "bookableMovies"
     }
+
+    // ---------------------------------------------------------------------------------------------------
 
     @GetMapping("/movie/bookEvent")
     fun bookEvent() = "/movielist"
 
     @PostMapping("/movie/bookEvent")
     fun bookEvent(@RequestParam("movieId") movieId: String,
-             @RequestParam("eventId") eventId: String): RedirectView {
-        val eventID = ID(eventId)
-        val movieID = ID(movieId)
-
+                  @RequestParam("eventId") eventId: String): RedirectView {
         // fix the event status and all events of its movie
-        val bookedMovie = movieRepo.get(movieID)
-        bookingHelper.bookEvent(bookedMovie, eventID)
+        val bookedMovie = movieRepo.get(ID(movieId))
+
+        if (bookedMovie != null)
+            bookingHelper.bookEvent(bookedMovie, ID(eventId))
 
         return RedirectView("/bookableMovies")
     }
+
+    // ---------------------------------------------------------------------------------------------------
 
     @GetMapping("/unbookMovie")
     fun unbookEvent() = "/bookedMovies"
 
     @PostMapping("/unbookMovie")
-    fun unbookMovie(@RequestParam("movieId") movieId: String): RedirectView {
+    fun unbookEvent(@RequestParam("movieId") movieId: String): RedirectView {
         // mark all events in unbooked movie as available
-        val movieID = ID(movieId)
-        val unbookedMovie = movieRepo.get(movieID)
+        val movieToUnbook = movieRepo.get(ID(movieId))
 
-        unbookedMovie.let {
-            val events = it!!.events
-            events.forEach { ev -> ev.status = EventStatus.AVAILABLE }
-        }
-
-        // reset all availabilities of all movies and at the same time collect list of booked movies and events...
-        val movies = movieRepo.getSortedMovies()
-        val bookedMoviesAndEvents: MutableList<Pair<Movie, Event>> = mutableListOf()
-
-        movies.forEach {
-            // reset availability - only for movies that are NOT booked! Events of booked movies must remain unavailable.
-            if ( ! it.booked) {
-                val events = it.events
-                events.forEach { ev ->
-                    if (ev.status == EventStatus.UNAVAILABLE)
-                        ev.status = EventStatus.AVAILABLE
-                }
-            }
-            // collect booked movies and events...
-            if(it.booked) bookedMoviesAndEvents.add(Pair(it, it.getBookedEvent()))
-        }
-
-        // ... then fix them again them according to booked events
-        bookedMoviesAndEvents.forEach {
-            bookingHelper.fixAllEvents(it.first, it.second)
-        }
+        if (movieToUnbook != null)
+            bookingHelper.unbookEvent(movieToUnbook)
 
         return RedirectView("/bookedMovies")
     }

@@ -24,9 +24,10 @@ class PersistenceToS3Scheduler(val movieRepo: MovieRepo,
 
     @Scheduled(cron = "\${persistenceSchedule:0 * * * * *}")
     fun saveMoviesToS3() {
-        LOGGER.info("PersistenceScheduler starting again")
-
-        if (needToSaveToS3()) {
+        if (! needToSaveToS3()) {
+            LOGGER.info("PersistenceScheduler is not saving to S3, because forbidden or not necessary (as no changes done)")
+        }
+        else {
             val movieRepoAsJson = movieRepo.toJSON()
             val bytes = movieRepoAsJson.toByteArray(StringUtils.UTF8)
             val bis = ByteArrayInputStream(bytes)
@@ -46,7 +47,7 @@ class PersistenceToS3Scheduler(val movieRepo: MovieRepo,
                 bis.close()
             }
 
-            LOGGER.info("Writing {} movies with {} events as JSON file to S3 ... (bucket {}, key {}, {} bytes)",
+            LOGGER.info("PersistenceScheduler is writing {} movies with {} events as JSON file to S3 ... (to bucket/key {}/{}, {} bytes)",
                     movieRepo.getNumberOfMovies(),
                     movieRepo.getNumberOfEvents(),
                     s3Config.s3BucketName,
