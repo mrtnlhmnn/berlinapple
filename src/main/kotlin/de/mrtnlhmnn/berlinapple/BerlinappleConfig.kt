@@ -11,9 +11,9 @@ open class BerlinappleConfig {
     @Value("\${locationFile:data/locations.txt}")
     val locationJSONFileName: String = ""
 
-    @Value("\${berlinaleStartDate:20190207}")
-    val berlinaleStartDate: String = ""
+    @Value("\${berlinaleStartDateTime:20190207T1400}")
+    val berlinaleStartDateTime: String = ""
 
-    @Value("\${berlinaleEndDate:20190217}")
-    val berlinaleEndDate: String = ""
+    @Value("\${berlinaleEndDateTime:20190217T1800}")
+    val berlinaleEndDateTime: String = ""
 }

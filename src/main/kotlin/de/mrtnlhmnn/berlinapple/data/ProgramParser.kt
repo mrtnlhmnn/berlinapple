@@ -9,22 +9,24 @@ import java.time.format.DateTimeFormatter
 
 import org.slf4j.LoggerFactory
 import java.io.InputStream
-import java.time.LocalDate
+import java.time.LocalDateTime
 import java.time.ZonedDateTime
-import java.util.regex.Pattern
 
 @Component
 class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, val config: BerlinappleConfig) {
 
     private val LOGGER = LoggerFactory.getLogger(this.javaClass)
 
-    private val dateTimePattern = "yyyyMMdd'T'HHmmssX"
-    private val dateTimePatternFormatter = DateTimeFormatter.ofPattern(dateTimePattern)
-    private val datePattern     = "yyyyMMdd"
-    private val datePatternFormatter = DateTimeFormatter.ofPattern(datePattern)
+    // For Calendar entries
+    private val dateTimePatternCal = "yyyyMMdd'T'HHmmssX"
+    private val dateTimePatternFormatterCal = DateTimeFormatter.ofPattern(dateTimePatternCal)
 
-    val berlinaleStartDateAsLD = LocalDate.parse(config.berlinaleStartDate, datePatternFormatter)
-    val berlinaleEndDateAsLD   = LocalDate.parse(config.berlinaleEndDate,   datePatternFormatter)
+    // For begin / end of Berlinale Time Frame
+    private val dateTimePattern = "yyyyMMdd'T'HHmm"
+    private val dateTimePatternFormatter = DateTimeFormatter.ofPattern(dateTimePattern)
+
+    val berlinaleStartDateAsLDT = LocalDateTime.parse(config.berlinaleStartDateTime, dateTimePatternFormatter)
+    val berlinaleEndDateAsLDT   = LocalDateTime.parse(config.berlinaleEndDateTime,   dateTimePatternFormatter)
 
 
     // ----------------------------------------------------
@@ -58,10 +60,10 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
                 for (calEntryProps in calEntry.getProperties()) {
                     when {
                         (calEntryProps.name == beginKey) -> {
-                            beginZDTFromProgram = ZonedDateTime.parse(calEntryProps.value, dateTimePatternFormatter)
+                            beginZDTFromProgram = ZonedDateTime.parse(calEntryProps.value, dateTimePatternFormatterCal)
                         }
                         (calEntryProps.name == endKey) -> {
-                            endZDTFromProgram = ZonedDateTime.parse(calEntryProps.value, dateTimePatternFormatter)
+                            endZDTFromProgram = ZonedDateTime.parse(calEntryProps.value, dateTimePatternFormatterCal)
                         }
                         (calEntryProps.name == locationKey) -> {
                             locationStringFromProgram = calEntryProps.value
@@ -105,7 +107,7 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
             }
 
             LOGGER.info("In total: {} events, left after date filter (between {} and {}) are now {} events",
-                    eventTotalCounter, berlinaleStartDateAsLD, berlinaleEndDateAsLD, eventNotFilteredCounter)
+                    eventTotalCounter, berlinaleStartDateAsLDT, berlinaleEndDateAsLDT, eventNotFilteredCounter)
         }
         finally {
             if (fis!=null) fis.close();
@@ -114,10 +116,10 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
 
     // check if event is in time frame [ berlinaleStartDateAsLD, berlinaleEndDateAsLD ]
     private fun isInStartEndTimeframe(eventBegin: ZonedDateTime, eventEnd: ZonedDateTime, eventSummary: String?): Boolean {
-        val result = eventBegin.toLocalDate().isAfter(berlinaleStartDateAsLD.minusDays(1))
-                  && eventBegin.toLocalDate().isBefore(berlinaleEndDateAsLD.plusDays(1))
-                  && eventEnd.toLocalDate().isAfter(berlinaleStartDateAsLD.minusDays(1))
-                  && eventEnd.toLocalDate().isBefore(berlinaleEndDateAsLD.plusDays(1))
+        val result = eventBegin.toLocalDateTime().isAfter(berlinaleStartDateAsLDT.minusHours(1))
+                  && eventBegin.toLocalDateTime().isBefore(berlinaleEndDateAsLDT.plusHours(1))
+                  && eventEnd.toLocalDateTime().isAfter(berlinaleStartDateAsLDT.minusHours(1))
+                  && eventEnd.toLocalDateTime().isBefore(berlinaleEndDateAsLDT.plusHours(1))
 
         if (!result) {
             LOGGER.debug("Filtered out {} event with start={} and end={}", eventSummary, eventBegin, eventEnd)
