@@ -5,7 +5,7 @@ Persistence
      Muss noch in alle Controller, am besten allgemein
      Und dann von jeder HTML-Seite, die das Fragment bodyHeader einzieht: th:with="persistenceToggle=${persistenceToggle}">
 [ ] Persistence-Schedule dynamisch verlängern, solange keiner was an der App macht
-[ ] Persistence nur dann speichern nach S3, wenn sich überhaupt Änderungen ergeben haben (JSON-String-Vergleich)
+[ ] Persistence nur dann speichern nach S3, wenn sich überhaupt Änderungen ergeben haben
 [ ] Offline-Toggle ("lese nur von program, merge nicht mit S3-Storage")
 [ ] Auto-Cleaner für alle S3-Movies-Dateien (alles was zB älter als 48h ist)
 [ ] Test, ob mit leerem S3 alles noch geht (oder bricht Merge ab?)
