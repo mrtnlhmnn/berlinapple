@@ -50,6 +50,7 @@ Locations
 [ ] Länder anzeigen (zB Spanien, Kanada, Island, aber das steht nur unformatiert in der Description)
 
 Kalender
+[x] Kalendereintrag für Outlook checken: Stimmt die Zeitzone?
 [ ] Kalendereintrag für iPhone supporten: Vermutlich falsches/altes Format VCALENDAR statt Ical, siehe http://fileformats.archiveteam.org/wiki/ICalendar
 [ ] Kalendereintrag mal ohne X-WR... erzeugen/ausgeben, da das Berlinale-Webseite auch so macht und die Einträge direkt in meinem Kalender landen (ohne Umweg über einen ZWeitkalender)
 	X-WR-TIMEZONE:Europe/Berlin
