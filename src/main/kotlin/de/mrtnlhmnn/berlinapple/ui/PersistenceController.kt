@@ -13,7 +13,7 @@ class PersistenceController(val persistenceScheduler: PersistenceToS3Scheduler) 
     fun togglePersistence(@PathVariable("toggle") toggle: String, model: Model): String {
         var toggleVal = false
         if (toggle == "on") toggleVal = true
-        persistenceScheduler.turnOnOffPersistence(toggleVal)
+        persistenceScheduler.togglePersistence(toggleVal)
 
         model.addAttribute("toggle", toggleVal)
         return "persistenceToggle"
