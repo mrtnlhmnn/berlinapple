@@ -1,9 +1,10 @@
 package de.mrtnlhmnn.berlinapple.application
 
-import de.mrtnlhmnn.berlinapple.data.LocationParser
+import de.mrtnlhmnn.berlinapple.data.ID
+import de.mrtnlhmnn.berlinapple.infrastructure.LocationParser
 import de.mrtnlhmnn.berlinapple.data.MovieRepo
+import de.mrtnlhmnn.berlinapple.data.ProgramParser
 import de.mrtnlhmnn.berlinapple.infrastructure.PersistenceFromS3Reader
-import de.mrtnlhmnn.berlinapple.infrastructure.ProgramParser
 import org.springframework.stereotype.Component
 
 @Component
@@ -25,14 +26,13 @@ class DataInitializer(
 
         // merge prios and event status from S3 (override the values from program)
         for (movieFromS3 in movieListFromS3) {
-//TODO If one changes the program.ics, the IDs for Movies and Events will change, so matching via ID will not work here
-//TODO One could override the hashCode() from Movie and Event and NOT use the ID there!
-            movieRepo.get(movieFromS3.id)?.let { movieFromProgram ->
+            movieRepo.get(movieFromS3)?.let { movieFromProgram ->
                 movieFromProgram.prio = movieFromS3.prio
+
+                // brute-force replace from S3 - not nice
                 movieFromProgram.events.removeAll { true }
-                movieFromProgram.events.addAll(movieFromS3.events) // brute-force replace from S3. not nice
+                movieFromProgram.events.addAll(movieFromS3.events)
             }
         }
     }
 }
-

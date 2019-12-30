@@ -5,7 +5,7 @@ Persistence
      Muss noch in alle Controller, am besten allgemein
      Und dann von jeder HTML-Seite, die das Fragment bodyHeader einzieht: th:with="persistenceToggle=${persistenceToggle}">
 [ ] Persistence-Schedule dynamisch verlängern, solange keiner was an der App macht
-[ ] Persistence nur dann speichern nach S3, wenn sich überhaupt Änderungen ergeben haben
+[x] Persistence nur dann speichern nach S3, wenn sich überhaupt Änderungen ergeben haben (Prios, Booking oder UnBooking)
 [ ] Offline-Toggle ("lese nur von program, merge nicht mit S3-Storage")
 [ ] Auto-Cleaner für alle S3-Movies-Dateien (alles was zB älter als 48h ist)
 [ ] Test, ob mit leerem S3 alles noch geht (oder bricht Merge ab?)
@@ -20,6 +20,7 @@ Querschnitt & Infrastruktur
 
 Fachliches, Bugs
 [x] Bugfix: bookable=yes und available=yes geht, vermutlich durch Fehler in unbook
+[x] ID-Generator basiert auf korrekter Reihenfolge. Bei Änderungen (oder weniger Filmen wg. Zeitfilter ändern sich IDs, weswegen das Einlesen der Movie-Datei dazu führt, dass Prios weg sind, da sie nicht mehr zugeordnet werden können)
 [ ] Zeitmodus: Nur noch Sachen in der Zukunft anzeigen oder Rest ausgrauen/nicht zweigen
 [ ] (für neue Filme oder anderes wie Essen-gehen): fiktive Buchungen zum Zeitblockieren vornehmen
 [ ] 1 oder 2 Tickets buchen zulassen

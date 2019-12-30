@@ -28,4 +28,8 @@ class MovieRepo: HashMap<ID, Movie>(), JSONConvertable {
         }
         return counter
     }
+
+    fun get(movie: Movie) = get(movie.id)
+    fun addOrUpdate(movie: Movie) = put(movie.id, movie)
+    fun remove(movie: Movie) = remove(movie.id)
 }

@@ -1,13 +1,17 @@
 package de.mrtnlhmnn.berlinapple.data
 
-import de.mrtnlhmnn.berlinapple.application.JSONConvertable
+import de.mrtnlhmnn.berlinapple.infrastructure.JSONConvertable
 import org.slf4j.LoggerFactory
 import java.net.URL
 
-data class Movie (val id: ID, val title: String?, val description: String, var prio: Prio,
-                  val url: URL?,
-                  val events: MutableList<Event>): JSONConvertable
+data class Movie (val title: String,
+                  val description: String,
+                  var prio: Prio,
+                  val url: URL?): JSONConvertable
 {
+    val id = ID.createMovieID(title)
+    val events: MutableList<Event> = mutableListOf()
+
     val booked: Boolean
         get() = isOneEventBooked()
     fun isOneEventBooked(): Boolean {
@@ -36,4 +40,12 @@ data class Movie (val id: ID, val title: String?, val description: String, var p
         }
         return bookedEvent!!
     }
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (javaClass != other?.javaClass) return false
+        return (id == (other as Movie).id)
+    }
+
+    override fun hashCode(): Int = id.hashCode()
 }

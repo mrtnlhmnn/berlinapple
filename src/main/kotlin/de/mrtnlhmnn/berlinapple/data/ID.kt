@@ -1,17 +1,26 @@
 package de.mrtnlhmnn.berlinapple.data
 
-data class ID(val id: String) {
+data class ID(var id: String) {
 
     companion object {
-        private var counter = 999L
-
+        private var eventCounter = 999L
         private val SEPARATOR = "-"
 
-        fun createEventID(begin: String): ID {
-            return ID("E" + SEPARATOR + begin + SEPARATOR + (++counter).toString())
+        private fun hash(s: String): String {
+            val hash = Math.abs(s.hashCode())
+            val hashString = String.format("%016X", hash)
+            return hashString
         }
-        fun createMovieID(): ID {
-            return ID("M" + SEPARATOR + (++counter).toString())
+
+
+        fun createEventID(begin: String): ID {
+            return ID("E" + SEPARATOR + begin + SEPARATOR + (++eventCounter).toString())
+        }
+        fun createLegacyMovieID(): ID {
+            return ID("M" + SEPARATOR + (++eventCounter).toString())
+        }
+        fun createMovieID(s: String): ID {
+            return ID("M" + SEPARATOR + hash(s))
         }
     }
 

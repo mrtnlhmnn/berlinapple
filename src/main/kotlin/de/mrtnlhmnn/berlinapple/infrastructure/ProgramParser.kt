@@ -30,12 +30,12 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
 
 
     // ----------------------------------------------------
-    private val beginKey    = Property.DTSTART
-    private val endKey      = Property.DTEND
-    private val locationKey = Property.LOCATION
-    private val sumKey      = Property.SUMMARY
-    private val descKey     = Property.DESCRIPTION
-    private val urlKey      = Property.URL
+    private val beginKey       = Property.DTSTART
+    private val endKey         = Property.DTEND
+    private val locationKey    = Property.LOCATION
+    private val summaryKey     = Property.SUMMARY
+    private val descriptionKey = Property.DESCRIPTION
+    private val urlKey         = Property.URL
 
     fun parseProgramICSFile2Repo() {
         var fis: InputStream? = null
@@ -52,7 +52,7 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
                 var beginZDTFromProgram: ZonedDateTime? = null
                 var endZDTFromProgram: ZonedDateTime? = null
                 var locationStringFromProgram: String? = null
-                var summaryStringFromProgram: String? = null
+                var summaryStringFromProgram = ""
                 var descriptionStringFromProgram = ""
                 var urlFromProgram: URL? = null
 
@@ -68,10 +68,10 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
                         (calEntryProps.name == locationKey) -> {
                             locationStringFromProgram = calEntryProps.value
                         }
-                        (calEntryProps.name == sumKey) -> {
+                        (calEntryProps.name == summaryKey) -> {
                             summaryStringFromProgram = calEntryProps.value
                         }
-                        (calEntryProps.name == descKey) -> {
+                        (calEntryProps.name == descriptionKey) -> {
                             descriptionStringFromProgram = calEntryProps.value
                         }
                         (calEntryProps.name == urlKey) -> {
@@ -94,14 +94,12 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
                         // Find (or create new) Movie and attach the above Event to it
                         var movie = movieRepo.findByTitleIgnoreCase(summaryStringFromProgram)
                         if (movie == null) {
-                            val movieId = ID.createMovieID()
-                            movie = Movie(movieId, summaryStringFromProgram, descriptionStringFromProgram,
-                                    Prio.NORMAL, urlFromProgram, mutableListOf(event))
-                            movieRepo.put(movieId, movie)
+                            val newMovie = Movie(summaryStringFromProgram, descriptionStringFromProgram,
+                                    Prio.NORMAL, urlFromProgram)
+                            movieRepo.addOrUpdate(newMovie)
+                            movie = newMovie
                         }
-                        else {
-                            movie.events.add(event)
-                        }
+                        movie.events.add(event)
                     }
                 }
             }
@@ -110,7 +108,7 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
                     eventTotalCounter, berlinaleStartDateAsLDT, berlinaleEndDateAsLDT, eventNotFilteredCounter)
         }
         finally {
-            if (fis!=null) fis.close();
+            fis?.close();
         }
     }
 
