@@ -19,6 +19,7 @@
 # local files
 *.ksc
 *.mle
+application*.properties
 
 # Compiled class file
 *.class
