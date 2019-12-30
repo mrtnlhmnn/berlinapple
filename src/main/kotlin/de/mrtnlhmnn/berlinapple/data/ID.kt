@@ -6,19 +6,12 @@ data class ID(var id: String) {
         private var eventCounter = 999L
         private val SEPARATOR = "-"
 
-        private fun hash(s: String): String {
-            val hash = Math.abs(s.hashCode())
-            val hashString = String.format("%016X", hash)
-            return hashString
-        }
-
-
         fun createEventID(begin: String): ID {
             return ID("E" + SEPARATOR + begin + SEPARATOR + (++eventCounter).toString())
         }
-        fun createLegacyMovieID(): ID {
-            return ID("M" + SEPARATOR + (++eventCounter).toString())
-        }
+
+        private fun hash(s: String) = String.format("%016X", Math.abs(s.hashCode()))
+
         fun createMovieID(s: String): ID {
             return ID("M" + SEPARATOR + hash(s))
         }
