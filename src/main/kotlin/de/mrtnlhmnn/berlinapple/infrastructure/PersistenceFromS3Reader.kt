@@ -27,7 +27,7 @@ class PersistenceFromS3Reader(val s3Config: S3Config) {
             return null
         }
 
-        LOGGER.info("Now reading {} from S3", lastMovieListFromS3.key)
+        LOGGER.info("Now reading {}/{} from S3", s3Config.s3BucketName, lastMovieListFromS3.key)
         val s3Object = s3Config.s3Client().getObject(s3Config.s3BucketName, lastMovieListFromS3.key)
         var inputStream: InputStream? = null
         try {
