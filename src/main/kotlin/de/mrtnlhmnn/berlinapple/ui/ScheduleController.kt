@@ -7,7 +7,7 @@ import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.*
 
 @Controller
-class ScheduleController(val movieRepo: MovieRepo, val bookingService: BookingService) {
+class ScheduleController(val movieRepo: MovieRepo, val dayRepo: DayRepo, val bookingService: BookingService) {
     @RequestMapping("/bookedMovies")
     fun listBookedMovies(model: Model,
                          @RequestParam(required=false, name="filterDay") filterDay: String?): String {
@@ -50,8 +50,7 @@ class ScheduleController(val movieRepo: MovieRepo, val bookingService: BookingSe
             model.addAttribute("totalBookings", bookedMovies.size)
         }
 
-//TODO hardcoded
-        model.addAttribute("days", listOf("20190214", "20190215", "20190216", "20190217"))
+        model.addAttribute("days", dayRepo.getDaysAsStrings())
 
         return "bookedMovies"
     }

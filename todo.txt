@@ -67,3 +67,4 @@ Beautifying
 [ ] _target Links gehen in FF nicht, macht Tabs kaputt
 [ ] Kein Eintrag bei Prio bedeutet 0 -> Verhindern im Browser
 [ ] Chrome auf iPad erlaubt kein Login?!
+[ ] Schedule-Page: Alle Tabellen ausrichten, mit fixierten Breiten

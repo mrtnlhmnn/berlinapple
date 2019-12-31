@@ -1,5 +1,6 @@
 package de.mrtnlhmnn.berlinapple.ui
 
+import de.mrtnlhmnn.berlinapple.data.DayRepo
 import de.mrtnlhmnn.berlinapple.infrastructure.PersistenceToS3Scheduler
 import de.mrtnlhmnn.berlinapple.data.MovieRepo
 import de.mrtnlhmnn.berlinapple.data.Prio
@@ -10,14 +11,13 @@ import org.springframework.web.bind.annotation.*
 import org.springframework.web.servlet.view.RedirectView
 
 @Controller
-class MoviesController(val movieRepo: MovieRepo, val persistenceScheduler: PersistenceToS3Scheduler) {
+class MoviesController(val movieRepo: MovieRepo, val dayRepo: DayRepo, val persistenceScheduler: PersistenceToS3Scheduler) {
     @RequestMapping("/allMovies")
     fun allMovies(model: Model,
                   @RequestParam(required=false, name="filterDay") filterDay: String?): String {
         model.addAttribute("movies", movieRepo.getFilteredSortedMovies(filterDay))
-//TODO hardcoded
-        model.addAttribute("days", listOf("20190214", "20190215", "20190216", "20190217"))
-            return "allMovies"
+        model.addAttribute("days", dayRepo.getDaysAsStrings())
+        return "allMovies"
     }
 
     // ---------------------------------------------------------------------------------------------------
@@ -25,8 +25,7 @@ class MoviesController(val movieRepo: MovieRepo, val persistenceScheduler: Persi
     @RequestMapping("/movie/{id}")
     fun getMovie(@PathVariable("id") id: String, model: Model): String {
         model.addAttribute("movie", movieRepo.get(id))
-//TODO hardcoded
-        model.addAttribute("days", listOf("20190214", "20190215", "20190216", "20190217"))
+        model.addAttribute("days", dayRepo.getDaysAsStrings())
         return "movie"
     }
 

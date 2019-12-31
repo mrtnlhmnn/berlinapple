@@ -1,5 +1,6 @@
 package de.mrtnlhmnn.berlinapple.ui
 
+import de.mrtnlhmnn.berlinapple.data.DayRepo
 import de.mrtnlhmnn.berlinapple.infrastructure.PersistenceToS3Scheduler
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
@@ -7,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping
 
 @Controller
-class PersistenceToggleController(val persistenceScheduler: PersistenceToS3Scheduler) {
+class PersistenceToggleController(val dayRepo: DayRepo, val persistenceScheduler: PersistenceToS3Scheduler) {
 
     @RequestMapping("/persistence/{toggle}")
     fun togglePersistence(@PathVariable("toggle") toggle: String, model: Model): String {
@@ -16,8 +17,7 @@ class PersistenceToggleController(val persistenceScheduler: PersistenceToS3Sched
         persistenceScheduler.togglePersistence(toggleVal)
 
         model.addAttribute("toggle", toggleVal)
-//TODO hardcoded
-        model.addAttribute("days", listOf("20190214", "20190215", "20190216", "20190217"))
+        model.addAttribute("days", dayRepo.getDaysAsStrings())
         return "persistenceToggle"
     }
 }

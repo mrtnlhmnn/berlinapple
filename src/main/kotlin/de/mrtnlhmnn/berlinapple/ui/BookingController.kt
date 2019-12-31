@@ -8,16 +8,13 @@ import org.springframework.web.bind.annotation.*
 import org.springframework.web.servlet.view.RedirectView
 
 @Controller
-class BookingController(val movieRepo: MovieRepo, val bookingService: BookingService) {
+class BookingController(val movieRepo: MovieRepo, val dayRepo: DayRepo, val bookingService: BookingService) {
     @RequestMapping("/bookableMovies")
     fun listBookableMovies(model: Model,
                            @RequestParam(required=false, name="filterDay") filterDay: String?): String {
         val bookableMovies = movieRepo.getFilteredSortedMovies(filterDay).filter { it.available }
         model.addAttribute("movies", bookableMovies)
-
-//TODO hardcoded
-        model.addAttribute("days", listOf("20190214", "20190215", "20190216", "20190217"))
-
+        model.addAttribute("days", dayRepo.getDaysAsStrings())
         return "bookableMovies"
     }
 

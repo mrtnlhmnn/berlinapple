@@ -76,16 +76,15 @@ data class Event (val begin: ZonedDateTime, val end: ZonedDateTime,
     infix fun overlaps(other: Event?): Boolean {
         if (other == null) return false
 
-        val bufferInMinutes = 30L
-
 //TODO make buffer time configurable
+        val bufferInMinutes = 30L
         return (   (this.begin.isBefore(other.end.plusMinutes(bufferInMinutes)))
                 && (this.end.isAfter(other.begin.minusMinutes(bufferInMinutes))  ))
     }
 
-    // only check, if event starts on a given date (in format 'yyyyMMdd')
+    // only check, if event starts on a given date (in format 'yyyy-MM-dd')
     fun startsOn(date: String): Boolean {
-        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyyMMdd")
+        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd")
         return (begin.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter) == date)
     }
 }
