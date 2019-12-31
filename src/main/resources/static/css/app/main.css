@@ -20,9 +20,9 @@
 .brand.day {
     color: #ff0000;
     font-weight: normal;
-    font-size: large;
+    font-size: small;
 }
 .footer {
     margin: 25px;
-    font-size: 60%;
+    font-size: small;
 }

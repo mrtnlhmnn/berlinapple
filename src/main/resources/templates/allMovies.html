@@ -14,15 +14,12 @@
 
 <! -- ========================================================================================================== -->
 
-
-<! -- ========================================================================================================== -->
-
 <div class="container" th:if="${#lists.isEmpty(movies)}">
-    <h2>The Program - Complete List of all Movies ... is empty!</h2>
+    <h1>The Program - List of Movies ... is empty!</h1>
 </div>
 
 <div class="container" th:if="${not #lists.isEmpty(movies)}">
-    <h2>The Program - Complete List of all <th:block th:text="${movies.size()}"/> Movies</h2>
+    <h1>The Program - List of <th:block th:text="${movies.size()}"/> Movies</h1>
     <table>
         <tr>
             <th>Prio</th>
