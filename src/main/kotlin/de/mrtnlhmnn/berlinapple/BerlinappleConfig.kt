@@ -16,4 +16,10 @@ open class BerlinappleConfig {
 
     @Value("\${berlinaleEndDateTime:20190217T1800}")
     val berlinaleEndDateTime: String = ""
+
+    @Value("\${build.version}")
+    val buildVersion: String = ""
+
+    @Value("\${build.date}")
+    val buildDate: String = ""
 }

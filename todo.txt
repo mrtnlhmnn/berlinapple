@@ -12,12 +12,6 @@ Persistence
 [ ] Persistence für Tests auch von/nach lokaler Datei zulassen
 [x] Bugfix: mit nicht existierender movies...-Datei startet die App nicht
 
-Querschnitt & Infrastruktur
-[x] Spring-Profile local einführen
-[/] Properties-Key-Namen systematischer nennen
-[ ] Maven-Git-Plugin einbauen, wie bei KAPA
-[ ] berlinapple.de als Domain und AWS dahin umlenken
-
 Fachliches, Bugs
 [x] Bugfix: bookable=yes und available=yes geht, vermutlich durch Fehler in unbook
 [x] ID-Generator basiert auf korrekter Reihenfolge beim Einlesen, da Zähler hochgezählt wird. Bei Änderungen (oder weniger Filmen wg. Zeitfilter ändern sich IDs, weswegen das Einlesen der Movie-Datei dazu führt, dass Prios weg sind, da sie nicht mehr zugeordnet werden können)
@@ -68,3 +62,11 @@ Beautifying
 [ ] Kein Eintrag bei Prio bedeutet 0 -> Verhindern im Browser
 [ ] Chrome auf iPad erlaubt kein Login?!
 [ ] Schedule-Page: Alle Tabellen ausrichten, mit fixierten Breiten
+[x] Fusszeile auf index-Seite mit build.version and build.date
+
+Querschnitt & Infrastruktur
+[x] Spring-Profile local einführen
+[/] Properties-Key-Namen systematischer nennen
+[/] Maven-Git-Plugin einbauen, wie bei KAPA
+[ ] berlinapple.de als Domain und AWS dahin umlenken
+[ ] Läuft wirklich eine Apache Derby DB mit?
