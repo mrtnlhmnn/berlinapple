@@ -59,9 +59,10 @@ Beautifying
 [x] unbook- und book-Buttons gleich nennen
 [ ] HTML-Page-Titles spezifischer machen, zB fuer Details-Seite
 [ ] _target Links gehen in FF nicht, macht Tabs kaputt
-[ ] Kein Eintrag bei Prio bedeutet 0 -> Verhindern im Browser
-[ ] Chrome auf iPad erlaubt kein Login?!
-[ ] Schedule-Page: Alle Tabellen ausrichten, mit fixierten Breiten
+[ ] Kein Eintrag bei Prio bedeutet 0 -> Verhindern im Browser oder Default als 50
+[/] Chrome auf iPad erlaubt kein Login?! - nicht reproduzierbar
+[x] Schedule-Page: Alle Tages-Tabellen ausrichten, mit fixierten Breiten
+[x] Program- und Bookable-Pages: mehrere Tabellen, nach Prio-Klasse (99-90, 89-80, ...) sortiert, alle im Layout gleich ausgerichtet wie bei Schedule
 [x] Fusszeile auf index-Seite mit build.version and build.date
 
 Querschnitt & Infrastruktur
