@@ -28,7 +28,7 @@ build.date=@maven.build.timestamp@
 #############################################################################################################
 ############ Actuator endpoints /health /info /metrics /prometheus /logfile
 #############################################################################################################
-management.endpoints.enabled-by-default=true
+management.endpoints.enabled-by-default=false
 management.endpoint.metrics.enabled=false
 management.endpoint.logfile.enabled=true
 management.endpoint.health.enabled=true
@@ -36,5 +36,3 @@ management.endpoint.health.show-details=always
 management.endpoint.info.enabled=true
 management.endpoint.prometheus.enabled=false
 management.endpoints.web.exposure.include=logfile,health,info
-
-
