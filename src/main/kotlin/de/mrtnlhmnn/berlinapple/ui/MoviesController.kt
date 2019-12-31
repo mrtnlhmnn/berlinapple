@@ -25,7 +25,6 @@ class MoviesController(val movieRepo: MovieRepo, val dayRepo: DayRepo, val persi
     @RequestMapping("/movie/{id}")
     fun getMovie(@PathVariable("id") id: String, model: Model): String {
         model.addAttribute("movie", movieRepo.get(id))
-        model.addAttribute("days", dayRepo.getDaysAsStrings())
         return "movie"
     }
 

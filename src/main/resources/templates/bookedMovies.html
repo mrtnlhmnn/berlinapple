@@ -33,9 +33,11 @@
                     <th class="scheduleBookedEvent">Booked Event</th>
                     <th class="scheduleLocation">Location</th>
                 </tr>
-                <tr th:each="movie : ${movieListOfDay}" >
+                <tr th:each="movie : ${movieListOfDay}">
                     <td th:text="${movie.prio}"></td>
-                    <td th:text="${movie.title}"></td>
+                    <td>
+                        <a th:href="@{movie/{id}(id=${movie.id})}"><th:block th:text="${movie.title}"/></a>
+                    </td>
                     <td th:if="${movie.url != null}">
                         <a th:href="${movie.url}" target="_blank">Link</a>
                     </td>

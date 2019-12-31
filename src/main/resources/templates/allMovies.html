@@ -27,8 +27,7 @@
             <th>Available?</th>
             <th>Title</th>
             <th>Link</th>
-            <th># Events</th>
-            <th>Details</th>
+            <th>Events</th>
         </tr>
         <tr th:each="movie : ${movies}">
             <td th:text="${movie.prio}"></td>
@@ -44,8 +43,9 @@
             <td th:unless="${movie.available}">
                 no
             </td>
-            <td th:text="${movie.title}"></td>
-            <td th:if="${movie.url == null}">---</td>
+            <td>
+                <a th:href="@{movie/{id}(id=${movie.id})}"><th:block th:text="${movie.title}"/></a>
+            </td>
             <td th:if="${movie.url != null}">
                 <a th:href="${movie.url}" target="_blank">Link</a>
             </td>
