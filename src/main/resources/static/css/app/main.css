@@ -20,7 +20,7 @@
 .brand.day {
     color: #ff0000;
     font-weight: normal;
-    font-size: small;
+    font-size: large;
 }
 .footer {
     margin: 25px;
@@ -31,30 +31,31 @@
     table-layout: fixed;
 }
 .schedulePrio {
-    width: 5%;
+    width: 4%;
     min-width: 10px;
 }
 .scheduleTitle {
     width: 35%;
-    min-width: 50px;
+    min-width: 45px;
 }
 .scheduleLink {
     width: 5%;
     min-width: 10px;
 }
 .scheduleBookedEvent {
-    width: 10%;
+    width: 12%;
     min-width: 15px;
 }
 .scheduleLocation {
-    width: 30%;
+    width: 25%;
     min-width: 50px;
 }
 .scheduleUnbookButton {
-    width: 15%;
-    min-width: 20px;
+    width: 10%;
 }
-.scheduleCalenderButton {
-    width: 15%;
-    min-width: 20px;
+.scheduleUnbookmarkButton {
+    width: 10%;
+}
+.scheduleCalendarButton {
+    width: 10%;
 }

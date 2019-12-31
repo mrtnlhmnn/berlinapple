@@ -21,7 +21,7 @@ class CalendarController {
         val movieID = ID(movieId)
 
         val bookedMovie = movieRepo?.get(movieID)
-        val bookedEvent = bookedMovie?.getBookedEvent()
+        val bookedEvent = bookedMovie?.getBookedOrBookmarkedEvent()
 
         val now = Instant.now().atZone(ZoneId.of("UTC"))
         val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyyMMdd'T'HHmmssX")

@@ -32,6 +32,30 @@ class BookingService(val movieRepo: MovieRepo,
 
     // ---------------------------------------------------------------------------------------------------
 
+    fun bookmarkEvent(bookmarkedMovie: Movie, bookmarkedEventID: ID){
+        // fix the event status and all events of its movie
+        var bookmarkedEvent: Event? = null
+
+        bookmarkedMovie.let { movie ->
+            val events = movie!!.events
+            events.forEach { event ->
+                if (event.id == bookmarkedEventID) {
+                    bookmarkedEvent = event
+                    bookmarkedEvent?.status = EventStatus.BOOKMARKED
+                }
+                else {
+                    event.status = EventStatus.UNAVAILABLE
+                }
+            }
+        }
+
+        setAllOverlappingEventsToPoteniallyUnvailable(bookmarkedMovie, bookmarkedEvent)
+
+        persistenceToS3Scheduler.changed()
+    }
+
+    // ---------------------------------------------------------------------------------------------------
+
     fun unbookEvent(movieToUnbook: Movie){
         movieToUnbook.let {
             val events = it.events
@@ -41,22 +65,31 @@ class BookingService(val movieRepo: MovieRepo,
         // reset all availabilities of all movies and at the same time collect list of booked movies and events...
         val movies = movieRepo.getSortedMovies()
         val bookedMoviesAndEvents: MutableList<Pair<Movie, Event>> = mutableListOf()
+        val bookmarkedMoviesAndEvents: MutableList<Pair<Movie, Event>> = mutableListOf()
 
         movies.forEach { movie ->
-            // reset availability - only for movies that are NOT booked! Events of booked movies must remain unavailable.
-            if ( ! movie.booked) {
+            // reset availability - only for movies that are NOT booked or bookmarked!
+            // Events of booked or bookmarked movies must remain unavailable.
+            if ( ! (movie.booked || movie.bookmarked) ) {
                 movie.events.forEach { event ->
-                    if (event.status == EventStatus.UNAVAILABLE)
+                    if (event.status == EventStatus.UNAVAILABLE || event.status == EventStatus.POTENTIALLY_UNAVAILABLE)
                         event.status =  EventStatus.AVAILABLE
                 }
             }
             else {
                 // collect booked movies and events...
-                bookedMoviesAndEvents.add(Pair(movie, movie.getBookedEvent()))
+                if (movie.booked)
+                    bookedMoviesAndEvents.add(Pair(movie, movie.getBookedEvent()))
+                if (movie.bookmarked)
+                    bookmarkedMoviesAndEvents.add(Pair(movie, movie.getBookmarkedEvent()))
             }
          }
 
-        // ... then fix them again them according to booked events
+        // ... then fix them again  according to booked events
+        bookmarkedMoviesAndEvents.forEach {
+            setAllOverlappingEventsToPoteniallyUnvailable(it.first, it.second)
+        }
+
         bookedMoviesAndEvents.forEach {
             setAllOverlappingEventsToUnvailable(it.first, it.second)
         }
@@ -83,6 +116,7 @@ class BookingService(val movieRepo: MovieRepo,
                 val events = movie.events
                 events.forEach { event ->
                     if (event overlaps markedEvent)
+                        if (event.status != EventStatus.UNAVAILABLE) // Unavailable is strongest!
                         event.status = status
                 }
             }

@@ -7,7 +7,7 @@ import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 
 enum class EventStatus  {
-    AVAILABLE, UNAVAILABLE, POTENTIALLY_UNAVAILABLE, BOOKED
+    AVAILABLE, UNAVAILABLE, POTENTIALLY_UNAVAILABLE, BOOKED, BOOKMARKED
 }
 
 data class Event (val begin: ZonedDateTime, val end: ZonedDateTime,
@@ -45,7 +45,7 @@ data class Event (val begin: ZonedDateTime, val end: ZonedDateTime,
     }
 
     fun getBookingDay(): LocalDate? {
-        if (!booked) return null
+        if (! (booked || bookmarked) ) return null
         return LocalDate.of(begin.year, begin.month, begin.dayOfMonth)
     }
 
@@ -57,6 +57,8 @@ data class Event (val begin: ZonedDateTime, val end: ZonedDateTime,
 
     val booked: Boolean
         get() = status == EventStatus.BOOKED
+    val bookmarked: Boolean
+        get() = status == EventStatus.BOOKMARKED
     val available: Boolean
         get() = status == EventStatus.AVAILABLE
     val unavailable: Boolean

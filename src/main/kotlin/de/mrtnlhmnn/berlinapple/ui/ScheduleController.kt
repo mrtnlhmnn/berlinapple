@@ -11,16 +11,16 @@ class ScheduleController(val movieRepo: MovieRepo, val dayRepo: DayRepo, val boo
     @RequestMapping("/bookedMovies")
     fun listBookedMovies(model: Model,
                          @RequestParam(required=false, name="filterDay") filterDay: String?): String {
-        val bookedMovies = movieRepo.getMovies({ it.booked })
-                .sortedBy { it.getBookedEvent().begin }
+        val bookedOrBookmarkedMovies = movieRepo.getMovies({ it.booked || it.bookmarked })
+                .sortedBy { it.getBookedOrBookmarkedEvent().begin }
                 .filter {
                     (filterDay == null) ||
                     // at least one of the movie's events is on the given date
-                    it.getBookedEvent().startsOn(filterDay)
+                    it.getBookedOrBookmarkedEvent().startsOn(filterDay)
                 }
 
 //TODO refactor this:
-        if (bookedMovies.isEmpty()) {
+        if (bookedOrBookmarkedMovies.isEmpty()) {
             model.addAttribute("bookedMoviesPerDay", emptyList<Movie>())
             model.addAttribute("totalBookings", 0)
         }
@@ -30,10 +30,10 @@ class ScheduleController(val movieRepo: MovieRepo, val dayRepo: DayRepo, val boo
             var movieBefore: Movie? = null
 
             val bookedMoviesPerDay: MutableList<MutableList<Movie>> = arrayListOf(arrayListOf())
-            for (movie in bookedMovies) {
+            for (movie in bookedOrBookmarkedMovies) {
                 if (!initial) {
-                    if (movie.getBookedEvent().getBookingDay()!!.isAfter(
-                        movieBefore!!.getBookedEvent().getBookingDay())) {
+                    if (movie.getBookedOrBookmarkedEvent().getBookingDay()!!.isAfter(
+                        movieBefore!!.getBookedOrBookmarkedEvent().getBookingDay())) {
                         idx++
                     }
                 }
@@ -47,7 +47,7 @@ class ScheduleController(val movieRepo: MovieRepo, val dayRepo: DayRepo, val boo
                 }
             }
             model.addAttribute("bookedMoviesPerDay", bookedMoviesPerDay)
-            model.addAttribute("totalBookings", bookedMovies.size)
+            model.addAttribute("totalBookings", bookedOrBookmarkedMovies.size)
         }
 
         model.addAttribute("days", dayRepo.getDaysAsStrings())

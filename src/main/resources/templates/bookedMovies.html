@@ -21,8 +21,9 @@
 
     <th:block th:each="movieListOfDay : ${bookedMoviesPerDay}">
         <th:block th:if="${not #lists.isEmpty(movieListOfDay)}">
+
            <h3><th:block th:text="${movieListOfDay.size()}"/>
-               Bookings for <th:block th:text="${movieListOfDay.get(0).getBookedEvent().getBookingDay()}">
+               Bookings for <th:block th:text="${movieListOfDay.get(0).getBookedOrBookmarkedEvent().getBookingDay()}">
            </th:block></h3>
            <table class="schedule">
                 <tr>
@@ -32,25 +33,34 @@
                     <th class="scheduleBookedEvent">Booked Event</th>
                     <th class="scheduleLocation">Location</th>
                 </tr>
-                <tr th:each="movie : ${movieListOfDay}">
+                <tr th:each="movie : ${movieListOfDay}" >
                     <td th:text="${movie.prio}"></td>
                     <td th:text="${movie.title}"></td>
                     <td th:if="${movie.url != null}">
                         <a th:href="${movie.url}" target="_blank">Link</a>
                     </td>
-                    <td th:text="${movie.getBookedEvent().printBookingTime()}"></td>
+                    <td th:text="${movie.getBookedOrBookmarkedEvent().printBookingTime()}"></td>
                     <td>
-                        <a th:href="${movie.getBookedEvent().location.url}" target="_blank">
-                            <th:block th:text="${movie.getBookedEvent().location.toStringWithAddress()}"/>
+                        <a th:href="${movie.getBookedOrBookmarkedEvent().location.url}" target="_blank">
+                            <th:block th:text="${movie.getBookedOrBookmarkedEvent().location.toStringWithAddress()}"/>
                         </a>
                     </td>
-                    <td class="scheduleUnbookButton">
+
+                    <td th:if="${movie.booked}" class="scheduleUnbookButton">
                         <form action="unbookMovie" autocomplete="off" method="post">
                             <input type="hidden" name="movieId" id="movieId" required="required" th:value="${movie.id}" class="readonly" />
                             <input type="submit" value="unbook"/>
                         </form>
                     </td>
-                    <td class="scheduleCalenderButton">
+
+                    <td th:if="${movie.bookmarked}" class="scheduleUnbookmarkButton">
+                        <form action="unbookmarkMovie" autocomplete="off" method="post">
+                            <input type="hidden" name="movieId" id="movieId" required="required" th:value="${movie.id}" class="readonly" />
+                            <input type="submit" value="unbookmark"/>
+                        </form>
+                    </td>
+
+                    <td class="scheduleCalendarButton">
                         <form action="calendar" autocomplete="off" method="get">
                             <input type="hidden" name="movieId" id="movieId1" required="required" th:value="${movie.id}" class="readonly" />
                             <input type="submit" value="Calendar"/>
