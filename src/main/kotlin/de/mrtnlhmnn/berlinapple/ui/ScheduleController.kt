@@ -11,12 +11,13 @@ class ScheduleController(val movieRepo: MovieRepo, val dayRepo: DayRepo, val boo
     @RequestMapping("/bookedMovies")
     fun listBookedMovies(model: Model,
                          @RequestParam(required=false, name="filterDay") filterDay: String?): String {
-        val bookedOrBookmarkedMovies = movieRepo.getMovies({ it.booked || it.bookmarked })
-                .sortedBy { it.getBookedOrBookmarkedEvent().begin }
+        val bookedOrBookmarkedMovies =
+                movieRepo.getMovies({ it.booked || it.bookmarked })
+                .sortedBy { it.getBookedOrBookmarkedEvent()!!.begin }
                 .filter {
                     (filterDay == null) ||
                     // at least one of the movie's events is on the given date
-                    it.getBookedOrBookmarkedEvent().startsOn(filterDay)
+                    it.getBookedOrBookmarkedEvent()!!.startsOn(filterDay)
                 }
 
 //TODO refactor this:
@@ -32,8 +33,8 @@ class ScheduleController(val movieRepo: MovieRepo, val dayRepo: DayRepo, val boo
             val bookedMoviesPerDay: MutableList<MutableList<Movie>> = arrayListOf(arrayListOf())
             for (movie in bookedOrBookmarkedMovies) {
                 if (!initial) {
-                    if (movie.getBookedOrBookmarkedEvent().getBookingDay()!!.isAfter(
-                        movieBefore!!.getBookedOrBookmarkedEvent().getBookingDay())) {
+                    if (movie.getBookedOrBookmarkedEvent()!!.getBookingDay()!!.isAfter(
+                        movieBefore!!.getBookedOrBookmarkedEvent()!!.getBookingDay())) {
                         idx++
                     }
                 }

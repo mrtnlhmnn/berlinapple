@@ -56,7 +56,9 @@ class BookingService(val movieRepo: MovieRepo,
 
     // ---------------------------------------------------------------------------------------------------
 
-    fun unbookEvent(movieToUnbook: Movie){
+    fun unbookmarkEvent(movieToUnbookmark: Movie) = unbookEvent(movieToUnbookmark)
+
+    fun unbookEvent(movieToUnbook: Movie) {
         movieToUnbook.let {
             val events = it.events
             events.forEach { ev -> ev.status = EventStatus.AVAILABLE }
@@ -79,9 +81,9 @@ class BookingService(val movieRepo: MovieRepo,
             else {
                 // collect booked movies and events...
                 if (movie.booked)
-                    bookedMoviesAndEvents.add(Pair(movie, movie.getBookedEvent()))
+                    bookedMoviesAndEvents.add(Pair(movie, movie.getBookedEvent()!!))
                 if (movie.bookmarked)
-                    bookmarkedMoviesAndEvents.add(Pair(movie, movie.getBookmarkedEvent()))
+                    bookmarkedMoviesAndEvents.add(Pair(movie, movie.getBookmarkedEvent()!!))
             }
          }
 

@@ -42,9 +42,9 @@ class BookingController(val movieRepo: MovieRepo, val dayRepo: DayRepo, val book
 
     @PostMapping("/movie/bookmarkEvent")
     fun bookmarkEvent(@RequestParam("movieId") movieId: String,
-                  @RequestParam("eventId") eventId: String): RedirectView {
+                     @RequestParam("eventId") eventId: String): RedirectView {
         // fix the event status and all events of its movie
-        val bookedMovie = movieRepo.get(ID(movieId))
+        val bookedMovie = movieRepo.get(movieId)
 
         if (bookedMovie != null)
             bookingService.bookmarkEvent(bookedMovie, ID(eventId))
@@ -79,7 +79,7 @@ class BookingController(val movieRepo: MovieRepo, val dayRepo: DayRepo, val book
         val movieToUnbook = movieRepo.get(movieId)
 
         if (movieToUnbook != null)
-            bookingService.unbookEvent(movieToUnbook)
+            bookingService.unbookmarkEvent(movieToUnbook)
 
         return RedirectView("/bookedMovies")
     }

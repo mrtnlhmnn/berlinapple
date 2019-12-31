@@ -35,52 +35,14 @@ data class Movie (val title: String,
         return events.sortedBy{it.begin}.toMutableList()
     }
 
-    fun getBookedEvent(): Event {
-        var bookedEvent: Event? = null
-        events.forEach {
-            if (it.booked) {
-                if (bookedEvent == null)
-                    bookedEvent = it
-                else
-                    LoggerFactory.getLogger(this.javaClass).warn("Found more than one event for " + this)
-            }
-        }
-        return bookedEvent!!
-    }
-
-    fun getBookmarkedEvent(): Event {
-        var bookmarkedEvent: Event? = null
-        events.forEach {
-            if (it.bookmarked) {
-                if (bookmarkedEvent == null)
-                    bookmarkedEvent = it
-                else
-                    LoggerFactory.getLogger(this.javaClass).warn("Found more than one event for " + this)
-            }
-        }
-        return bookmarkedEvent!!
-    }
-
-
-    fun getBookedOrBookmarkedEvent(): Event {
-        var bookedOrBookmarkedEvent: Event? = null
-        events.forEach {
-            if (it.booked || it.bookmarked) {
-                if (bookedOrBookmarkedEvent == null)
-                    bookedOrBookmarkedEvent = it
-                else
-                    LoggerFactory.getLogger(this.javaClass).warn("Found more than one event for " + this)
-            }
-        }
-        return bookedOrBookmarkedEvent!!
-    }
+    fun getBookedEvent(): Event? = getEvent{ it.booked }.firstOrNull()
+    fun getBookmarkedEvent(): Event? = getEvent { it.bookmarked }.firstOrNull()
+    fun getBookedOrBookmarkedEvent(): Event? = getEvent { it.booked || it.bookmarked }.firstOrNull()
+    private fun getEvent(predicate: (Event) -> Boolean) = events.filter(predicate)
 
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (javaClass != other?.javaClass) return false
         return (id == (other as Movie).id)
     }
-
-
-
 }
