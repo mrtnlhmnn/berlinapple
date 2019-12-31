@@ -24,13 +24,13 @@
            <h3><th:block th:text="${movieListOfDay.size()}"/>
                Bookings for <th:block th:text="${movieListOfDay.get(0).getBookedEvent().getBookingDay()}">
            </th:block></h3>
-           <table>
+           <table class="schedule">
                 <tr>
-                    <th>Prio</th>
-                    <th>Title</th>
-                    <th>Link</th>
-                    <th>Booked Event</th>
-                    <th>Location</th>
+                    <th class="schedulePrio">Prio</th>
+                    <th class="scheduleTitle">Title</th>
+                    <th class="scheduleLink">Link</th>
+                    <th class="scheduleBookedEvent">Booked Event</th>
+                    <th class="scheduleLocation">Location</th>
                 </tr>
                 <tr th:each="movie : ${movieListOfDay}">
                     <td th:text="${movie.prio}"></td>
@@ -44,13 +44,13 @@
                             <th:block th:text="${movie.getBookedEvent().location.toStringWithAddress()}"/>
                         </a>
                     </td>
-                    <td>
+                    <td class="scheduleUnbookButton">
                         <form action="unbookMovie" autocomplete="off" method="post">
                             <input type="hidden" name="movieId" id="movieId" required="required" th:value="${movie.id}" class="readonly" />
                             <input type="submit" value="unbook"/>
                         </form>
                     </td>
-                    <td>
+                    <td class="scheduleCalenderButton">
                         <form action="calendar" autocomplete="off" method="get">
                             <input type="hidden" name="movieId" id="movieId1" required="required" th:value="${movie.id}" class="readonly" />
                             <input type="submit" value="Calendar"/>

@@ -26,3 +26,35 @@
     margin: 25px;
     font-size: small;
 }
+.schedule {
+    width: 100%;
+    table-layout: fixed;
+}
+.schedulePrio {
+    width: 5%;
+    min-width: 10px;
+}
+.scheduleTitle {
+    width: 35%;
+    min-width: 50px;
+}
+.scheduleLink {
+    width: 5%;
+    min-width: 10px;
+}
+.scheduleBookedEvent {
+    width: 10%;
+    min-width: 15px;
+}
+.scheduleLocation {
+    width: 30%;
+    min-width: 50px;
+}
+.scheduleUnbookButton {
+    width: 15%;
+    min-width: 20px;
+}
+.scheduleCalenderButton {
+    width: 15%;
+    min-width: 20px;
+}
