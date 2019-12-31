@@ -23,9 +23,9 @@ Fachliches, Bugs
 [ ] Liste bei Program und bei BookableMovie: Liste der Anzahl Events pro Tag oder wieviel noch available oder ...
 [x] Anzahlen von Movies und Events und Bookings auf alle Seiten in der Überschrift draufschreiben (und auch wenn leer)
 [ ] alle Seiten (auch) nach Tagen sortieren so wie schon bei Schedule
-[ ] Tagesfilter implementieren, nur einen Tag zeigen: zB Oben im Header anwählen, dann dynamisch filtern
+[x] Tagesfilter implementieren, nur einen Tag zeigen: zB Oben im Header anwählen, dann dynamisch filtern
 [/] Rausschmeissen auf unsere Tage: nicht beim Einlesen sondern erst beim Ausgeben
-[x] Rausschmeissen auf unsere Tage: genauer, nicht nur auf Tagesbasis, zB ab mittags bis mittags
+[x] Rausschmeissen auf unsere Tage mit Uhrzeit, nicht nur auf Tagesbasis, zB ab mittags bis mittags
 [ ] Vormerken implementieren als "hier noch kein Ticket aber wir gehen zur Vorkasse" , also weiteren Status "merken" zulassen, falls man einen Film unbedingt sehen will aber an VVK-Kasse kein Ticket ist -> blockiert Zeitfenster
 [ ] Alle Movies: Sortieren mit Untertabellen, Sprung direkt zu den 50ern
 [/] Mehrfachbuchen eines Movies (nur bei ausdruecklichem Wunsch) zulassen

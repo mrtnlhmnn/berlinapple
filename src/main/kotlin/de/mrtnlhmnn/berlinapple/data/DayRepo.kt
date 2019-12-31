@@ -24,8 +24,6 @@ class DayRepo(val config: BerlinappleConfig) {
         }
     }
 
-    fun getDays() = days.toList()
-
     fun getDaysAsStrings() = days.map {
         val dateTimePattern = "yyyy-MM-dd"
         val formatter = DateTimeFormatter.ofPattern(dateTimePattern)
