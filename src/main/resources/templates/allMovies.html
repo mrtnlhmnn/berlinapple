@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="de">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:td="http://www.thymeleaf.org" lang="de">
 <head>
     <title>BerlinAPPle Movies</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -10,7 +10,12 @@
 </head>
 <body>
 
-<div th:include="fragments/bodyHeader :: bodyHeader"/>
+<div th:replace="fragments/bodyHeader :: bodyHeader(${ days })"/>
+
+<! -- ========================================================================================================== -->
+
+
+<! -- ========================================================================================================== -->
 
 <div class="container" th:if="${#lists.isEmpty(movies)}">
     <h2>The Program - Complete List of all Movies ... is empty!</h2>

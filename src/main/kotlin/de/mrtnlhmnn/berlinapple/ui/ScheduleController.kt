@@ -9,10 +9,15 @@ import org.springframework.web.bind.annotation.*
 @Controller
 class ScheduleController(val movieRepo: MovieRepo, val bookingService: BookingService) {
     @RequestMapping("/bookedMovies")
-    fun listBookedMovies(model: Model): String {
-        val bookedMovies = movieRepo.values.toList()
-                .filter { it.booked }
+    fun listBookedMovies(model: Model,
+                         @RequestParam(required=false, name="filterDay") filterDay: String?): String {
+        val bookedMovies = movieRepo.getMovies({ it.booked })
                 .sortedBy { it.getBookedEvent().begin }
+                .filter {
+                    (filterDay == null) ||
+                    // at least one of the movie's events is on the given date
+                    it.events.filter { it.isOn(filterDay) }.isNotEmpty()
+                }
 
         if (bookedMovies.isEmpty()) {
             model.addAttribute("bookedMoviesPerDay", emptyList<Movie>())
@@ -42,6 +47,8 @@ class ScheduleController(val movieRepo: MovieRepo, val bookingService: BookingSe
             }
             model.addAttribute("bookedMoviesPerDay", bookedMoviesPerDay)
             model.addAttribute("totalBookings", bookedMovies.size)
+//TODO hardcoded
+            model.addAttribute("days", listOf("20190214", "20190215", "20190216", "20190217"))
         }
         return "bookedMovies"
     }

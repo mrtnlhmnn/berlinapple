@@ -16,6 +16,8 @@ class PersistenceToggleController(val persistenceScheduler: PersistenceToS3Sched
         persistenceScheduler.togglePersistence(toggleVal)
 
         model.addAttribute("toggle", toggleVal)
+//TODO hardcoded
+        model.addAttribute("days", listOf("20190214", "20190215", "20190216", "20190217"))
         return "persistenceToggle"
     }
 }

@@ -1,4 +1,24 @@
+.header {
+    margin: 25px;
+}
+.nav.black {
+    background-color: #000000;
+}
 .container {
     margin: 25px;
-    font-size: 125%;
+}
+.main {
+    margin: 25px;
+    font-size: 500%;
+    font-weight: bold;
+}
+.brand.link {
+    color: #ffffff;
+    font-weight: normal;
+    font-size: large;
+}
+.brand.day {
+    color: #ff0000;
+    font-weight: normal;
+    font-size: large;
 }

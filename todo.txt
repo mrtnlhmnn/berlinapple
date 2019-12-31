@@ -16,11 +16,11 @@ Querschnitt & Infrastruktur
 [x] Spring-Profile local einführen
 [/] Properties-Key-Namen systematischer nennen
 [ ] Maven-Git-Plugin einbauen, wie bei KAPA
-[ ] berlinapple.de als Domain
+[ ] berlinapple.de als Domain und AWS dahin umlenken
 
 Fachliches, Bugs
 [x] Bugfix: bookable=yes und available=yes geht, vermutlich durch Fehler in unbook
-[x] ID-Generator basiert auf korrekter Reihenfolge. Bei Änderungen (oder weniger Filmen wg. Zeitfilter ändern sich IDs, weswegen das Einlesen der Movie-Datei dazu führt, dass Prios weg sind, da sie nicht mehr zugeordnet werden können)
+[x] ID-Generator basiert auf korrekter Reihenfolge beim Einlesen, da Zähler hochgezählt wird. Bei Änderungen (oder weniger Filmen wg. Zeitfilter ändern sich IDs, weswegen das Einlesen der Movie-Datei dazu führt, dass Prios weg sind, da sie nicht mehr zugeordnet werden können)
 [ ] Zeitmodus: Nur noch Sachen in der Zukunft anzeigen oder Rest ausgrauen/nicht zweigen
 [ ] (für neue Filme oder anderes wie Essen-gehen): fiktive Buchungen zum Zeitblockieren vornehmen
 [ ] 1 oder 2 Tickets buchen zulassen
@@ -30,17 +30,18 @@ Fachliches, Bugs
 [x] Anzahlen von Movies und Events und Bookings auf alle Seiten in der Überschrift draufschreiben (und auch wenn leer)
 [ ] alle Seiten (auch) nach Tagen sortieren so wie schon bei Schedule
 [ ] Tagesfilter implementieren, nur einen Tag zeigen: zB Oben im Header anwählen, dann dynamisch filtern
-[ ] Rausschmeissen auf unsere Tage: nicht beim Einlesen sondern erst beim Ausgeben
-[ ] Rausschmeissen auf unsere Tage: genauer, nicht nur auf Tagesbasis, zB ab mittags bis mittags
+[/] Rausschmeissen auf unsere Tage: nicht beim Einlesen sondern erst beim Ausgeben
+[x] Rausschmeissen auf unsere Tage: genauer, nicht nur auf Tagesbasis, zB ab mittags bis mittags
 [ ] Vormerken implementieren als "hier noch kein Ticket aber wir gehen zur Vorkasse" , also weiteren Status "merken" zulassen, falls man einen Film unbedingt sehen will aber an VVK-Kasse kein Ticket ist -> blockiert Zeitfenster
 [ ] Alle Movies: Sortieren mit Untertabellen, Sprung direkt zu den 50ern
-[ ] Mehrfachbuchen eines Movies (nur bei ausdruecklichem Wunsch) zulassen
+[/] Mehrfachbuchen eines Movies (nur bei ausdruecklichem Wunsch) zulassen
 [ ] Kategorie mit in die Daten aufnehmen (aber woher nehmen, wenn nicht in ics-Datei drin?)
-[ ] beim Laden automatisch nach Kategorie priorisieren, zB alle Wettbewerb-Filme auf 80 statt 50
+[ ] beim Laden automatisch nach Kategorie priorisieren, zB alle Wettbewerb-Filme auf 80 statt 50 (aber woher Kategorie nehmen?)
 [x] in BookableMovies nur die Anzahl der Bookable Events anzeigen (statt die Gesamtzahl)
 [ ] In der Movies-Datei in S3 landen alle Filme. Es reichen eigentlich die mit einem Event.booked = true. Die Available-Status muss man dann aber auch fixen
 [x] Movies-Datei nicht als .txt sondern als .json speichern
-[x] Prio's Attribut "optional" kann weg
+[x] Prio's Attribut "optional" kann weg. Keine Ahnung, wofür das war. Alte JSON-Daten weiterhin einlesbar?
+[ ] Unbooken von Movies auch bei Movie-Details-Seite zulassen
 
 Locations
 [x] Location überall gleich anzeigen, auch gleich mit Link wie bei Schedule
@@ -50,8 +51,8 @@ Locations
 [ ] Länder anzeigen (zB Spanien, Kanada, Island, aber das steht nur unformatiert in der Description)
 
 Kalender
+[x] Kalendereintrag für iPhone supporten. Zeitzone aller Datum/Zeit-Attribute muss in UTC angegeben sein
 [x] Kalendereintrag für Outlook checken: Stimmt die Zeitzone?
-[x] Kalendereintrag für iPhone supporten. Zeitzone muss in UTC angegeben sein
 [ ] Kalendereintrag ohne X-WR-TIMEZONE, X-WR-CALNAME, X-WR-CALDESC erzeugen/ausgeben, damit die Einträge direkt in meinem Kalender landen (ohne Umweg über einen Zweitkalender)
 
 Layout

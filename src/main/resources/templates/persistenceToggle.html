@@ -9,7 +9,8 @@
           th:href="@{../css/app/main.css}" rel="stylesheet" media="screen"/>
 </head>
 <body>
-<div th:include="fragments/bodyHeader :: bodyHeader"/>
+
+<div th:replace="fragments/bodyHeader :: bodyHeader(${ days })"/>
 
 <div class="container">
     <h3> Persistence now switched to <th:block th:text="${toggle}"></th:block> </h3>

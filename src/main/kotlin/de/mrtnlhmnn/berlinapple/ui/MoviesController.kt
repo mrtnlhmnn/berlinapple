@@ -1,7 +1,6 @@
 package de.mrtnlhmnn.berlinapple.ui
 
 import de.mrtnlhmnn.berlinapple.infrastructure.PersistenceToS3Scheduler
-import de.mrtnlhmnn.berlinapple.data.ID
 import de.mrtnlhmnn.berlinapple.data.MovieRepo
 import de.mrtnlhmnn.berlinapple.data.Prio
 import org.apache.commons.lang3.math.NumberUtils.toInt
@@ -13,16 +12,21 @@ import org.springframework.web.servlet.view.RedirectView
 @Controller
 class MoviesController(val movieRepo: MovieRepo, val persistenceScheduler: PersistenceToS3Scheduler) {
     @RequestMapping("/allMovies")
-    fun listMovies(model: Model): String {
-        model.addAttribute("movies", movieRepo.getSortedMovies())
-        return "allMovies"
+    fun allMovies(model: Model,
+                  @RequestParam(required=false, name="filterDay") filterDay: String?): String {
+        model.addAttribute("movies", movieRepo.getFilteredSortedMovies(filterDay))
+//TODO hardcoded
+        model.addAttribute("days", listOf("20190214", "20190215", "20190216", "20190217"))
+            return "allMovies"
     }
 
     // ---------------------------------------------------------------------------------------------------
 
     @RequestMapping("/movie/{id}")
-    fun findMovie(@PathVariable("id") id: String, model: Model): String {
-        model.addAttribute("movie", movieRepo.get(ID(id)))
+    fun getMovie(@PathVariable("id") id: String, model: Model): String {
+        model.addAttribute("movie", movieRepo.get(id))
+//TODO hardcoded
+        model.addAttribute("days", listOf("20190214", "20190215", "20190216", "20190217"))
         return "movie"
     }
 
@@ -35,7 +39,7 @@ class MoviesController(val movieRepo: MovieRepo, val persistenceScheduler: Persi
     fun changeMoviePrio(@RequestParam("id") id: String,
                         @RequestParam("prio") prio: String): RedirectView {
         return try {
-            val movie = movieRepo.get(ID(id))
+            val movie = movieRepo.get(id)
             val newPrio = toInt(prio)
             movie?.prio = Prio(newPrio)
             persistenceScheduler.changed()

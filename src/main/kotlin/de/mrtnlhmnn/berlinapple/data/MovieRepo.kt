@@ -1,5 +1,6 @@
 package de.mrtnlhmnn.berlinapple.data
 
+import com.amazonaws.services.s3.model.analytics.AnalyticsFilterPredicate
 import de.mrtnlhmnn.berlinapple.infrastructure.JSONConvertable
 import org.springframework.stereotype.Component
 
@@ -16,9 +17,20 @@ class MovieRepo: HashMap<ID, Movie>(), JSONConvertable {
         return null
     }
 
+    fun getMovies() = values
+    fun getMovies(predicate: (Movie) -> Boolean) = values.filter(predicate)
+
     fun getSortedMovies() = values.toList()
-            .sortedBy { it.events.first() }
-            .sortedByDescending { it.prio }.toMutableList()
+        .sortedBy { it.events.first() }
+        .sortedByDescending { it.prio }.toMutableList()
+    fun getFilteredSortedMovies(predicate: (Movie) -> Boolean) = getSortedMovies().filter(predicate)
+//TODO refactor this:
+    fun getFilteredSortedMovies(filterDay: String?) =
+        getSortedMovies().filter {
+            (filterDay == null) ||
+            // at least one of the movie's events is on the given date
+            it.events.filter { it.isOn(filterDay) }.isNotEmpty()
+        }
 
     fun getNumberOfMovies() = this.values.size
     fun getNumberOfEvents(): Long {
@@ -30,6 +42,6 @@ class MovieRepo: HashMap<ID, Movie>(), JSONConvertable {
     }
 
     fun get(movie: Movie) = get(movie.id)
+    fun get(id: String) = get(ID(id))
     fun addOrUpdate(movie: Movie) = put(movie.id, movie)
-    fun remove(movie: Movie) = remove(movie.id)
 }

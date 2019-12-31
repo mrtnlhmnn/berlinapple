@@ -8,24 +8,35 @@
 </head>
 
 <body>
-    <div th:fragment="bodyHeader">
-        <nav>
-            <a href="/" th:href="@{/}" class="brand">
+    <div class="header" th:fragment="bodyHeader(days)">
+        <nav class="nav black">
+            <a href="/" th:href="@{/}" class="brand link">
                 <span>Home</span>
             </a>
-            <a href="allMovies" th:href="@{/allMovies}" class="brand">
+            <a href="allMovies" th:href="@{/allMovies}" class="brand link">
                 <span>The Program</span>
             </a>
-            <a href="bookableMovies" th:href="@{/bookableMovies}" class="brand">
+            <a href="bookableMovies" th:href="@{/bookableMovies}" class="brand link">
                 <span>Bookable Movies</span>
             </a>
-            <a href="bookedMovies" th:href="@{/bookedMovies}" class="brand">
+            <a href="bookedMovies" th:href="@{/bookedMovies}" class="brand link">
                 <span>Our Schedule</span>
             </a>
+
+            &nbsp;
+            &nbsp;
+            &nbsp;
+
+            <td:block th:each="day : ${days}">
+                <a th:href="@{''(filterDay=${day})}" class="brand day">
+                    <td th:text="${day.toString()}" class="brand day"/>
+                </a>
+            </td:block>
         </nav>
-        <br/>
-        <br/>
+        <br>
     </div>
 <hr>
+&nbsp;
+<br>
 </body>
 </html>

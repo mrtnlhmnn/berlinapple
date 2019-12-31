@@ -19,28 +19,28 @@ data class Event (val begin: ZonedDateTime, val end: ZonedDateTime,
 //TODO Refactor all 6 formatters (actually: 3, as they are redundant) out of the methods, but then JSON serializer needs to be aware not to store them!
 
     fun printBeginDateTime(): String {
-        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
+        val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
         return begin.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)
     }
     fun printBeginDateTimeForCalendarFile(): String {
-        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyyMMdd'T'HHmmssX")
+        val formatter = DateTimeFormatter.ofPattern("yyyyMMdd'T'HHmmssX")
         return begin.withZoneSameInstant(ZoneId.of("UTC")).format(formatter)
     }
     fun printBeginTime(): String {
-        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm")
+        val formatter = DateTimeFormatter.ofPattern("HH:mm")
         return begin.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)
     }
 
     fun printEndDateTime(): String {
-        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
+        val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
         return end.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)
     }
     fun printEndDateTimeForCalendarFile(): String {
-        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyyMMdd'T'HHmmssX")
+        val formatter = DateTimeFormatter.ofPattern("yyyyMMdd'T'HHmmssX")
         return end.withZoneSameInstant(ZoneId.of("UTC")).format(formatter)
     }
     fun printEndTime(): String {
-        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm")
+        val formatter = DateTimeFormatter.ofPattern("HH:mm")
         return end.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter)
     }
 
@@ -81,5 +81,11 @@ data class Event (val begin: ZonedDateTime, val end: ZonedDateTime,
 //TODO make buffer time configurable
         return (   (this.begin.isBefore(other.end.plusMinutes(bufferInMinutes)))
                 && (this.end.isAfter(other.begin.minusMinutes(bufferInMinutes))  ))
+    }
+
+    // only check, if event starts on a given date (in format 'yyyyMMdd')
+    fun isOn(date: String): Boolean {
+        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyyMMdd")
+        return (begin.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter) == date)
     }
 }

@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<div th:include="fragments/bodyHeader :: bodyHeader"/>
+<div th:replace="fragments/bodyHeader :: bodyHeader(${ days })"/>
 
 <div class="container" th:if="${#lists.isEmpty(movies)}">
     <h2>The List of Bookable Movies/Events ... is empty!</h2>
