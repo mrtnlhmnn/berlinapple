@@ -16,9 +16,10 @@ class ScheduleController(val movieRepo: MovieRepo, val bookingService: BookingSe
                 .filter {
                     (filterDay == null) ||
                     // at least one of the movie's events is on the given date
-                    it.events.filter { it.isOn(filterDay) }.isNotEmpty()
+                    it.getBookedEvent().startsOn(filterDay)
                 }
 
+//TODO refactor this:
         if (bookedMovies.isEmpty()) {
             model.addAttribute("bookedMoviesPerDay", emptyList<Movie>())
             model.addAttribute("totalBookings", 0)
@@ -47,9 +48,11 @@ class ScheduleController(val movieRepo: MovieRepo, val bookingService: BookingSe
             }
             model.addAttribute("bookedMoviesPerDay", bookedMoviesPerDay)
             model.addAttribute("totalBookings", bookedMovies.size)
-//TODO hardcoded
-            model.addAttribute("days", listOf("20190214", "20190215", "20190216", "20190217"))
         }
+
+//TODO hardcoded
+        model.addAttribute("days", listOf("20190214", "20190215", "20190216", "20190217"))
+
         return "bookedMovies"
     }
 }

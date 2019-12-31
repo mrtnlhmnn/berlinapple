@@ -1,6 +1,5 @@
 package de.mrtnlhmnn.berlinapple.data
 
-import com.amazonaws.services.s3.model.analytics.AnalyticsFilterPredicate
 import de.mrtnlhmnn.berlinapple.infrastructure.JSONConvertable
 import org.springframework.stereotype.Component
 
@@ -29,7 +28,7 @@ class MovieRepo: HashMap<ID, Movie>(), JSONConvertable {
         getSortedMovies().filter {
             (filterDay == null) ||
             // at least one of the movie's events is on the given date
-            it.events.filter { it.isOn(filterDay) }.isNotEmpty()
+            it.events.filter { it.startsOn(filterDay) }.isNotEmpty()
         }
 
     fun getNumberOfMovies() = this.values.size

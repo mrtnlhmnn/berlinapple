@@ -84,7 +84,7 @@ data class Event (val begin: ZonedDateTime, val end: ZonedDateTime,
     }
 
     // only check, if event starts on a given date (in format 'yyyyMMdd')
-    fun isOn(date: String): Boolean {
+    fun startsOn(date: String): Boolean {
         val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyyMMdd")
         return (begin.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter) == date)
     }
