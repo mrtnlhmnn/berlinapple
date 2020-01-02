@@ -35,8 +35,8 @@ PRODID:BerlinAPPle
 VERSION:2.0
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALDESC:BerlinAPPle for the Internationale Filmfestspiele Berlin
-X-WR-CALNAME:BerlinAPPle for the Internationale Filmfestspiele Berlin
+X-WR-CALDESC:BerlinAPPle
+X-WR-CALNAME:BerlinAPPle
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
 DTSTART:${bookedEvent.printBeginDateTimeForCalendarFile()}

@@ -31,8 +31,8 @@
             <td>
                 <form action="changePrio" autocomplete="off" method="post">
                     <input type="hidden" name="id"  id="id"    required="required" th:value="${movie.id}" class="readonly" />
-                    <input type="text"   name="prio" id="prio" required="required" maxlength="2" class="readonly" style="width: 40px;" pattern="[0-9]+"/>
-                    <input type="submit" value="Set prio"/>
+                    <input type="text"   name="prio" id="prio" required="required" maxlength="2" class="readonly" style="width: 50px;" pattern="[0-9]+"/>
+                    <input type="submit" value="set prio" class="BAbutton"/>
                 </form>
             </td>
 
@@ -47,6 +47,7 @@
             <th class="eventFromTo">From</th>
             <th class="eventFromTo">To</th>
             <th class="eventLocation">Location</th>
+            <th class="eventStatus">Status</th>
         </tr>
        <tr th:each="event : ${movie.getSortedEvents()}">
            <td th:text="${event.id}"></td>
@@ -58,53 +59,47 @@
                <th:block th:text="${event.location.toStringWithAddress()}"/>
            </a></td>
 
-           <td th:if="${event.bookmarked}">
-               <i>bookmarked!</i>
-           </td>
-           <td th:if="${event.booked}">
-               <i>booked!</i>
-           </td>
-           <td th:if="${event.unavailable}">
-               <i>unavailable!</i>
-           </td>
-           <td th:if="${event.potentiallyUnavailable}">
-               <i>potentially unavailable!</i>
+           <td th:switch="true">
+               <p th:case="${event.bookmarked}">bookmarked</p>
+               <p th:if="${event.booked}">booked</p>
+               <p th:if="${event.unavailable}">unavailable!</p>
+               <p th:if="${event.potentiallyUnavailable}">potentially unavailable!</p>
            </td>
 
            <td th:if="${event.available} or ${event.bookmarked}">
                <form action="/movie/bookEvent" autocomplete="off" method="post">
                    <input type="hidden" name="movieId" id="movieId1a" required="required" th:value="${movie.id}" class="readonly" />
                    <input type="hidden" name="eventId" id="eventId1a" required="required" th:value="${event.id}" class="readonly" />
-                   <input type="submit" value="book"/>
+                   <input type="submit" value="book"  class="BAbutton"/>
                </form>
            </td>
            <td th:if="${event.unavailable} and (not (${movie.booked} or ${movie.bookmarked}))">
                <form action="/movie/bookEvent" autocomplete="off" method="post">
                    <input type="hidden" name="movieId" id="movieId1b" required="required" th:value="${movie.id}" class="readonly" />
                    <input type="hidden" name="eventId" id="eventId1b" required="required" th:value="${event.id}" class="readonly" />
-                   <input type="submit" value="force book"/>
+                   <input type="submit" value="force book" class="BAbutton red"/>
                </form>
            </td>
            <td th:if="${event.booked}">
                <form action="/movie/unbookEvent" autocomplete="off" method="post">
                    <input type="hidden" name="movieId" id="movieId2" required="required" th:value="${movie.id}" class="readonly" />
                    <input type="hidden" name="eventId" id="eventId2" required="required" th:value="${event.id}" class="readonly" />
-                   <input type="submit" value="unbook"/>
+                   <input type="submit" value="unbook"  class="BAbutton"/>
                </form>
            </td>
 
-           <td th:if="${event.available} ">
+           <td th:if="${event.available}">
                <form action="/movie/bookmarkEvent" autocomplete="off" method="post">
                    <input type="hidden" name="movieId" id="movieId3" required="required" th:value="${movie.id}" class="readonly" />
                    <input type="hidden" name="eventId" id="eventId3" required="required" th:value="${event.id}" class="readonly" />
-                   <input type="submit" value="bookmark"/>
+                   <input type="submit" value="bookmark" class="BAbutton"/>
                </form>
            </td>
            <td th:if="${event.bookmarked}">
                <form action="/movie/unbookmarkEvent" autocomplete="off" method="post">
                    <input type="hidden" name="movieId" id="movieId4" required="required" th:value="${movie.id}" class="readonly" />
                    <input type="hidden" name="eventId" id="eventId4" required="required" th:value="${event.id}" class="readonly" />
-                   <input type="submit" value="unbookmark"/>
+                   <input type="submit" value="unbookmark"  class="BAbutton"/>
                </form>
            </td>
        </tr>

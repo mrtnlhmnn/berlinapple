@@ -28,8 +28,8 @@
             <th class="movieTitleLong">Title</th>
             <th class="movieLink">Link</th>
             <th class="events">Events</th>
-            <th class="available">Available</th>
-            <th class="booked">Booked?</th>
+            <th class="available">available</th>
+            <th class="booked">booked?</th>
         </tr>
         <tr th:each="movie : ${movies}">
             <td th:text="${movie.prio}"></td>
@@ -47,7 +47,11 @@
             <td th:unless="${movie.booked}">
                 &nbsp;
             </td>
-            <td><a th:href="@{movie/{id}(id=${movie.id})}">Details</a></td>
+            <td>
+                <form th:action="@{movie/{id}(id=${movie.id})}" autocomplete="off" method="get">
+                    <input type="submit" value="Details" class="BAbutton"/>
+                </form>
+            </td>
         </tr>
     </table>
 </div>

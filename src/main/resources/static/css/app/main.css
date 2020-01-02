@@ -39,24 +39,24 @@
     table-layout: fixed;
 }
 .movieID {
-    width: 15%;
+    width: 12%;
     min-width: 10px;
 }
 .moviePrio {
-    width: 4%;
+    width: 5%;
     min-width: 10px;
 }
 .movieTitleMedium {
-    width: 35%;
-    min-width: 45px;
+    width: 33%;
+    min-width: 40px;
 }
 .movieTitleLong {
-    width: 60%;
-    min-width: 45px;
+    width: 55%;
+    min-width: 40px;
 }
 .movieDescription {
-    width: 60%;
-    min-width: 45px;
+    width: 56%;
+    min-width: 40px;
 }
 .movieLink {
     width: 5%;
@@ -80,26 +80,30 @@
 }
 .movieLocation {
     width: 25%;
-    min-width: 50px;
+    min-width: 45px;
 }
 .eventID {
-    width: 15%;
+    width: 12%;
     min-width: 10px;
 }
 .eventFromTo {
-    width: 15%;
+    width: 13%;
     min-width: 10px;
 }
 .eventLocation {
-    width: 25%;
+    width: 30%;
     min-width: 50px;
 }
-.unbookButton {
+.eventStatus {
     width: 10%;
+    min-width: 15px;
 }
-.unbookmarkButton {
-    width: 10%;
+.BAbutton {
+    min-width: 120px;
 }
-.calendarButton {
-    width: 10%;
+.BAbutton.red {
+    background-color: #ff4136;
+}
+.BAbutton.green {
+    background-color: #2ecc40;
 }

@@ -53,24 +53,24 @@
                         </a>
                     </td>
 
-                    <td th:if="${movie.booked}" class="unbookButton">
+                    <td th:if="${movie.booked}">
                         <form action="/movie/unbookEvent" autocomplete="off" method="post">
                             <input type="hidden" name="movieId" id="movieId" required="required" th:value="${movie.id}" class="readonly" />
-                            <input type="submit" value="unbook"/>
+                            <input type="submit" value="unbook" class="BAbutton"/>
                         </form>
                     </td>
 
-                    <td th:if="${movie.bookmarked}" class="unbookmarkButton">
+                    <td th:if="${movie.bookmarked}">
                         <form action="/movie/unbookmarkEvent" autocomplete="off" method="post">
                             <input type="hidden" name="movieId" id="movieId1" required="required" th:value="${movie.id}" class="readonly" />
-                            <input type="submit" value="unbookmark"/>
+                            <input type="submit" value="unbookmark" class="BAbutton"/>
                         </form>
                     </td>
 
-                    <td class="calendarButton">
+                    <td>
                         <form action="calendar" autocomplete="off" method="get">
                             <input type="hidden" name="movieId" id="movieId2" required="required" th:value="${movie.id}" class="readonly" />
-                            <input type="submit" value="Calendar"/>
+                            <input type="submit" value="Calendar" class="BAbutton green"/>
                         </form>
                     </td>
                 </tr>
