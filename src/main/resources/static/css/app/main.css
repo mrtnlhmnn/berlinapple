@@ -6,6 +6,7 @@
 }
 .container {
     margin: 25px;
+    font-size: 90%;
 }
 .main {
     margin: 25px;
@@ -39,7 +40,7 @@
     table-layout: fixed;
 }
 .movieID {
-    width: 12%;
+    width: 10%;
     min-width: 10px;
 }
 .moviePrio {
@@ -47,15 +48,15 @@
     min-width: 10px;
 }
 .movieTitleMedium {
-    width: 33%;
+    width: 30%;
     min-width: 40px;
 }
 .movieTitleLong {
-    width: 55%;
+    width: 50%;
     min-width: 40px;
 }
 .movieDescription {
-    width: 56%;
+    width: 49%;
     min-width: 40px;
 }
 .movieLink {
@@ -63,15 +64,15 @@
     min-width: 10px;
 }
 .events {
-    width: 8%;
+    width: 10%;
     min-width: 10px;
 }
 .available {
-    width: 8%;
+    width: 10%;
     min-width: 10px;
 }
 .booked {
-    width: 8%;
+    width: 10%;
     min-width: 10px;
 }
 .bookedEvent {
@@ -83,15 +84,15 @@
     min-width: 45px;
 }
 .eventID {
-    width: 12%;
+    width: 10%;
     min-width: 10px;
 }
 .eventFromTo {
-    width: 13%;
+    width: 12%;
     min-width: 10px;
 }
 .eventLocation {
-    width: 30%;
+    width: 25%;
     min-width: 50px;
 }
 .eventStatus {
@@ -99,7 +100,7 @@
     min-width: 15px;
 }
 .BAbutton {
-    min-width: 120px;
+    min-width: 110px;
 }
 .BAbutton.red {
     background-color: #ff4136;
