@@ -112,7 +112,7 @@ class BookingService(val movieRepo: MovieRepo,
     private fun setAllOverlappingEventsToStatus(markedMovie: Movie, markedEvent: Event?, status: EventStatus){
         // fix all other events of all other movies (especially set all events to status,
         //     if they intersect with the booked event)
-        val movies = movieRepo.getSortedMovies()
+        val movies = movieRepo.getSortedMovies().filter { !( it.booked || it.bookmarked )}
         movies.forEach { movie ->
             if (movie != markedMovie) {
                 val events = movie.events

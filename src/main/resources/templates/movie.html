@@ -73,9 +73,16 @@
 
            <td th:if="${event.available} or ${event.bookmarked}">
                <form action="/movie/bookEvent" autocomplete="off" method="post">
-                   <input type="hidden" name="movieId" id="movieId1" required="required" th:value="${movie.id}" class="readonly" />
-                   <input type="hidden" name="eventId" id="eventId1" required="required" th:value="${event.id}" class="readonly" />
+                   <input type="hidden" name="movieId" id="movieId1a" required="required" th:value="${movie.id}" class="readonly" />
+                   <input type="hidden" name="eventId" id="eventId1a" required="required" th:value="${event.id}" class="readonly" />
                    <input type="submit" value="book"/>
+               </form>
+           </td>
+           <td th:if="${event.unavailable} and (not (${movie.booked} or ${movie.bookmarked}))">
+               <form action="/movie/bookEvent" autocomplete="off" method="post">
+                   <input type="hidden" name="movieId" id="movieId1b" required="required" th:value="${movie.id}" class="readonly" />
+                   <input type="hidden" name="eventId" id="eventId1b" required="required" th:value="${event.id}" class="readonly" />
+                   <input type="submit" value="force book"/>
                </form>
            </td>
            <td th:if="${event.booked}">
