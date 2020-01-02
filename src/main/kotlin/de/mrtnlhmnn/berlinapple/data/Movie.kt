@@ -45,4 +45,8 @@ data class Movie (val title: String,
         if (javaClass != other?.javaClass) return false
         return (id == (other as Movie).id)
     }
+
+    override fun hashCode(): Int {
+        return id.hashCode()
+    }
 }

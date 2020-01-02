@@ -14,7 +14,7 @@ data class Event (val begin: ZonedDateTime, val end: ZonedDateTime,
                   val location: Location?,
                   var status: EventStatus = EventStatus.AVAILABLE): Comparable<Event>, JSONConvertable
 {
-    val id = ID.createEventID(begin.dayOfMonth.toString())
+    val id = ID.createEventID(begin.toString() + location?.let{it.toString()})
 
 //TODO Refactor all 6 formatters (actually: 3, as they are redundant) out of the methods, but then JSON serializer needs to be aware not to store them!
 
@@ -88,5 +88,15 @@ data class Event (val begin: ZonedDateTime, val end: ZonedDateTime,
     fun startsOn(date: String): Boolean {
         val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd")
         return (begin.withZoneSameInstant(ZoneId.of("Europe/Berlin")).format(formatter) == date)
+    }
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (javaClass != other?.javaClass) return false
+        return (id == (other as Event).id)
+    }
+
+    override fun hashCode(): Int {
+        return id.hashCode()
     }
 }

@@ -8,23 +8,26 @@ import org.springframework.stereotype.Component
 class BookingService(val movieRepo: MovieRepo,
                      val persistenceToS3Scheduler: PersistenceToS3Scheduler) {
 
-    fun bookEvent(bookedMovie: Movie, bookedEventID: ID){
+    fun fixStatusEvents(movie: Movie, bookedEvent: Event) {
+        movie.events
+                .filter  { it != bookedEvent }
+                .forEach { it.status = EventStatus.UNAVAILABLE }
+    }
+
+    fun bookEvent(bookedMovie: Movie, bookedEventID: ID) {
         // fix the event status and all events of its movie
         var bookedEvent: Event? = null
 
-        bookedMovie.let { movie ->
-            val events = movie!!.events
-            events.forEach { event ->
-                if (event.id == bookedEventID) {
+        bookedMovie.events.forEach { event ->
+            when (event.id) {
+                bookedEventID -> {
                     bookedEvent = event
-                    bookedEvent?.status = EventStatus.BOOKED
+                    event.status = EventStatus.BOOKED
                 }
-                else {
+                else ->
                     event.status = EventStatus.UNAVAILABLE
-                }
             }
         }
-
         setAllOverlappingEventsToUnvailable(bookedMovie, bookedEvent)
 
         persistenceToS3Scheduler.changed()
@@ -36,20 +39,17 @@ class BookingService(val movieRepo: MovieRepo,
         // fix the event status and all events of its movie
         var bookmarkedEvent: Event? = null
 
-        bookmarkedMovie.let { movie ->
-            val events = movie!!.events
-            events.forEach { event ->
-                if (event.id == bookmarkedEventID) {
+        bookmarkedMovie.events.forEach { event ->
+            when (event.id) {
+                bookmarkedEventID -> {
                     bookmarkedEvent = event
-                    bookmarkedEvent?.status = EventStatus.BOOKMARKED
+                    event.status = EventStatus.BOOKMARKED
                 }
-                else {
+                else ->
                     event.status = EventStatus.UNAVAILABLE
-                }
             }
         }
-
-        setAllOverlappingEventsToPoteniallyUnvailable(bookmarkedMovie, bookmarkedEvent)
+        setAllOverlappingEventsToPotentiallyUnvailable(bookmarkedMovie, bookmarkedEvent)
 
         persistenceToS3Scheduler.changed()
     }
@@ -89,7 +89,7 @@ class BookingService(val movieRepo: MovieRepo,
 
         // ... then fix them again  according to booked events
         bookmarkedMoviesAndEvents.forEach {
-            setAllOverlappingEventsToPoteniallyUnvailable(it.first, it.second)
+            setAllOverlappingEventsToPotentiallyUnvailable(it.first, it.second)
         }
 
         bookedMoviesAndEvents.forEach {
@@ -105,7 +105,7 @@ class BookingService(val movieRepo: MovieRepo,
         setAllOverlappingEventsToStatus(bookedMovie, bookedEvent, EventStatus.UNAVAILABLE)
     }
 
-    private fun setAllOverlappingEventsToPoteniallyUnvailable(bookmarkedMovie: Movie, bookmarkedEvent: Event?){
+    private fun setAllOverlappingEventsToPotentiallyUnvailable(bookmarkedMovie: Movie, bookmarkedEvent: Event?){
         setAllOverlappingEventsToStatus(bookmarkedMovie, bookmarkedEvent, EventStatus.POTENTIALLY_UNAVAILABLE)
     }
 

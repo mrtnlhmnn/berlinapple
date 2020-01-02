@@ -1,5 +1,6 @@
 package de.mrtnlhmnn.berlinapple.application
 
+import de.mrtnlhmnn.berlinapple.data.Event
 import de.mrtnlhmnn.berlinapple.data.ID
 import de.mrtnlhmnn.berlinapple.infrastructure.LocationParser
 import de.mrtnlhmnn.berlinapple.data.MovieRepo
@@ -12,7 +13,8 @@ class DataInitializer(
         private val locationParser: LocationParser,
         private val programParser: ProgramParser,
         private val persistenceFromS3Reader: PersistenceFromS3Reader,
-        private val movieRepo: MovieRepo)
+        private val movieRepo: MovieRepo,
+        private val bookingService: BookingService)
 {
     init {
         // parse location file and fill the location repo
@@ -29,9 +31,15 @@ class DataInitializer(
             movieRepo.get(movieFromS3)?.let { movieFromProgram ->
                 movieFromProgram.prio = movieFromS3.prio
 
-                // brute-force replace from S3 - not nice
-                movieFromProgram.events.removeAll { true }
-                movieFromProgram.events.addAll(movieFromS3.events)
+                // merge events and their state correctly
+                for (eventInMovieFromProgram in movieFromProgram.events) {
+                    val eventFromS3 = movieFromS3.events.findLast { it == eventInMovieFromProgram }
+                    eventFromS3?.let { eventInMovieFromProgram.status = it.status }
+                }
+
+                if (movieFromProgram.booked || movieFromProgram.bookmarked) {
+                    bookingService.fixStatusEvents(movieFromProgram, movieFromProgram.getBookedOrBookmarkedEvent()!!)
+                }
             }
         }
     }
