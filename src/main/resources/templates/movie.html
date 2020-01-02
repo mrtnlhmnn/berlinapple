@@ -60,10 +60,11 @@
            </a></td>
 
            <td th:switch="true">
+               <p th:case="${event.available}">available!</p>
+               <p th:case="${event.booked}">booked</p>
                <p th:case="${event.bookmarked}">bookmarked</p>
-               <p th:if="${event.booked}">booked</p>
-               <p th:if="${event.unavailable}">unavailable!</p>
-               <p th:if="${event.potentiallyUnavailable}">potentially unavailable!</p>
+               <p th:case="${event.unavailable}">unavailable!</p>
+               <p th:case="${event.potentiallyUnavailable}">potentially unavailable!</p>
            </td>
 
            <td th:if="${event.available} or ${event.bookmarked}">
