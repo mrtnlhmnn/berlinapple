@@ -30,13 +30,13 @@
                <th:block th:text="${movieListOfDay.size()}"/> Events
                on <th:block th:text="${movieListOfDay.get(0).getBookedOrBookmarkedEvent().getBookingDay()}">
            </th:block></h3>
-           <table class="movieList">
+           <table class="BAmovieList">
                 <tr>
-                    <th class="moviePrio">Prio</th>
-                    <th class="movieTitleMedium">Title</th>
-                    <th class="movieLink">Link</th>
-                    <th class="bookedEvent">Booked Event</th>
-                    <th class="movieLocation">Location</th>
+                    <th class="BAmoviePrio">Prio</th>
+                    <th class="BAmovieTitleMedium">Title</th>
+                    <th class="BAmovieLink">Link</th>
+                    <th class="BAbookedEvent">Booked Event</th>
+                    <th class="BAmovieLocation">Location</th>
                 </tr>
                 <tr th:each="movie : ${movieListOfDay}">
                     <td th:text="${movie.prio}"></td>
@@ -63,7 +63,7 @@
                     <td th:if="${movie.bookmarked}">
                         <form action="/movie/unbookmarkEvent" autocomplete="off" method="post">
                             <input type="hidden" name="movieId" id="movieId1" required="required" th:value="${movie.id}" class="readonly" />
-                            <input type="submit" value="unbookmark" class="BAbutton"/>
+                            <input type="submit" value="unbookmark" class="BAbutton lightblue"/>
                         </form>
                     </td>
 

@@ -22,14 +22,14 @@
     <h1>Bookable are <th:block th:text="${movies.size()}"/> Movies
         <th:block th:if="${filterDay}!=null"> on <th:block th:text="${filterDay}"/></th:block></h1>
     </h1>
-    <table class="movieList">
+    <table class="BAmovieList">
         <tr>
-            <th class="moviePrio">Prio</th>
-            <th class="movieTitleLong">Title</th>
-            <th class="movieLink">Link</th>
-            <th class="events">Events</th>
-            <th class="available">available</th>
-            <th class="booked">booked?</th>
+            <th class="BAmoviePrio">Prio</th>
+            <th class="BAmovieTitleLong">Title</th>
+            <th class="BAmovieLink">Link</th>
+            <th class="BAevents">Events</th>
+            <th class="BAavailable">available</th>
+            <th class="BAbooked">booked?</th>
         </tr>
         <tr th:each="movie : ${movies}">
             <td th:text="${movie.prio}"></td>

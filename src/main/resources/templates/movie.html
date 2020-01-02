@@ -14,12 +14,12 @@
 
 <div class="container" th:if="${movie != null}">
     <h1><th:block th:text="${movie.title}"/></h1>
-    <table class="movieDetails">
+    <table class="BAmovieDetails">
         <tr>
-            <th class="movieID">Movie ID</th>
-            <th class="movieDescription">Description</th>
-            <th class="movieLink">Link</th>
-            <th class="moviePrio">Prio</th>
+            <th class="BAmovieID">Movie ID</th>
+            <th class="BAmovieDescription">Description</th>
+            <th class="BAmovieLink">Link</th>
+            <th class="BAmoviePrio">Prio</th>
         </tr>
         <tr>
             <td th:text="${movie.id}"></td>
@@ -41,13 +41,13 @@
 
 <hr>
 
-   <table class="bookedEventDetails">
+   <table class="BAbookedEventDetails">
         <tr>
-            <th class="eventID">Event ID</th>
-            <th class="eventFromTo">From</th>
-            <th class="eventFromTo">To</th>
-            <th class="eventLocation">Location</th>
-            <th class="eventStatus">Status</th>
+            <th class="BAeventID">Event ID</th>
+            <th class="BAeventFromTo">From</th>
+            <th class="BAeventFromTo">To</th>
+            <th class="BAeventLocation">Location</th>
+            <th class="BAeventStatus">Status</th>
         </tr>
        <tr th:each="event : ${movie.getSortedEvents()}">
            <td th:text="${event.id}"></td>
@@ -93,14 +93,14 @@
                <form action="/movie/bookmarkEvent" autocomplete="off" method="post">
                    <input type="hidden" name="movieId" id="movieId3" required="required" th:value="${movie.id}" class="readonly" />
                    <input type="hidden" name="eventId" id="eventId3" required="required" th:value="${event.id}" class="readonly" />
-                   <input type="submit" value="bookmark" class="BAbutton"/>
+                   <input type="submit" value="bookmark" class="BAbutton lightblue"/>
                </form>
            </td>
            <td th:if="${event.bookmarked}">
                <form action="/movie/unbookmarkEvent" autocomplete="off" method="post">
                    <input type="hidden" name="movieId" id="movieId4" required="required" th:value="${movie.id}" class="readonly" />
                    <input type="hidden" name="eventId" id="eventId4" required="required" th:value="${event.id}" class="readonly" />
-                   <input type="submit" value="unbookmark"  class="BAbutton"/>
+                   <input type="submit" value="unbookmark"  class="BAbutton lightblue"/>
                </form>
            </td>
        </tr>

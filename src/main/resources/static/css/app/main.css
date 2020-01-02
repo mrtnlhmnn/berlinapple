@@ -8,7 +8,7 @@
     margin: 15px;
     font-size: 85%;
 }
-.main {
+.BAmain {
     margin: 15px;
     font-size: 500%;
     font-weight: bold;
@@ -23,79 +23,79 @@
     font-weight: normal;
     font-size: large;
 }
-.footer {
+.BAfooter {
     margin: 25px;
     font-size: small;
 }
-.movieList {
+.BAmovieList {
     width: 100%;
     table-layout: fixed;
 }
-.movieDetails {
+.BAmovieDetails {
     width: 100%;
     table-layout: fixed;
 }
-.bookedEventDetails {
+.BAbookedEventDetails {
     width: 100%;
     table-layout: fixed;
 }
-.movieID {
+.BAmovieID {
     width: 15%;
     min-width: 10px;
 }
-.moviePrio {
+.BAmoviePrio {
     width: 6%;
     min-width: 10px;
 }
-.movieTitleMedium {
+.BAmovieTitleMedium {
     width: 30%;
     min-width: 40px;
 }
-.movieTitleLong {
+.BAmovieTitleLong {
     width: 50%;
     min-width: 40px;
 }
-.movieDescription {
+.BAmovieDescription {
     width: 48%;
     min-width: 40px;
 }
-.movieLink {
+.BAmovieLink {
     width: 8%;
     min-width: 10px;
 }
-.events {
+.BAevents {
     width: 8%;
     min-width: 10px;
 }
-.available {
+.BAavailable {
     width: 8%;
     min-width: 10px;
 }
-.booked {
+.BAbooked {
     width: 8%;
     min-width: 10px;
 }
-.bookedEvent {
+.BAbookedEvent {
     width: 12%;
     min-width: 15px;
 }
-.movieLocation {
+.BAmovieLocation {
     width: 23%;
     min-width: 45px;
 }
-.eventID {
+.BAeventID {
     width: 15%;
     min-width: 10px;
 }
-.eventFromTo {
+.BAeventFromTo {
     width: 12%;
     min-width: 15px;
 }
-.eventLocation {
+.BAeventLocation {
     width: 24%;
     min-width: 50px;
 }
-.eventStatus {
+.BAeventStatus {
     width: 14%;
     min-width: 15px;
 }
@@ -107,4 +107,7 @@
 }
 .BAbutton.green {
     background-color: #2ecc40;
+}
+.BAbutton.lightblue {
+    background-color: #5897fb;
 }
