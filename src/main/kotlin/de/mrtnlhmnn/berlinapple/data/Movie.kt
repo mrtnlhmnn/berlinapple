@@ -28,7 +28,7 @@ data class Movie (val title: String,
 
     val available: Boolean
         get() = isOneEventAvailable()
-    fun numberOfEventsAvailable(): Int = events.count { it.available || it.bookmarked}
+    fun numberOfEventsAvailable(): Int = events.count { it.available || it.bookmarked }
     fun isOneEventAvailable(): Boolean = numberOfEventsAvailable() > 0
 
     fun getSortedEvents(): MutableList<Event> {

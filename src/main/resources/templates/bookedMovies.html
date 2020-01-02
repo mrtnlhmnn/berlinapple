@@ -13,25 +13,30 @@
 <div th:replace="fragments/bodyHeader :: bodyHeader(${ days })"/>
 
 <div class="container" th:if="${#lists.isEmpty(bookedMoviesPerDay)}">
-    <h1>Our Schedule ... is still empty!</h1>
+    <h1>Our Schedule is still empty
+      <th:block th:if="${filterDay}!=null"> on <th:block th:text="${filterDay}"/></th:block></h1>
+    </h1>
 </div>
 
 <div class="container" th:if="${not #lists.isEmpty(bookedMoviesPerDay)}">
-    <h1>Our Schedule - with all our <th:block th:text="${totalBookings}"/> Bookings</h1>
+    <h1>Our Schedule contains <th:block th:text="${totalBookings}"/> Booked Events
+        <th:block th:if="${filterDay}!=null"> on <th:block th:text="${filterDay}"/></th:block></h1>
+    </h1>
 
     <th:block th:each="movieListOfDay : ${bookedMoviesPerDay}">
         <th:block th:if="${not #lists.isEmpty(movieListOfDay)}">
 
-           <h3><th:block th:text="${movieListOfDay.size()}"/>
-               Bookings for <th:block th:text="${movieListOfDay.get(0).getBookedOrBookmarkedEvent().getBookingDay()}">
+           <h3>
+               <th:block th:text="${movieListOfDay.size()}"/> Events
+               on <th:block th:text="${movieListOfDay.get(0).getBookedOrBookmarkedEvent().getBookingDay()}">
            </th:block></h3>
-           <table class="schedule">
+           <table class="movieList">
                 <tr>
-                    <th class="schedulePrio">Prio</th>
-                    <th class="scheduleTitle">Title</th>
-                    <th class="scheduleLink">Link</th>
-                    <th class="scheduleBookedEvent">Booked Event</th>
-                    <th class="scheduleLocation">Location</th>
+                    <th class="moviePrio">Prio</th>
+                    <th class="movieTitleMedium">Title</th>
+                    <th class="movieLink">Link</th>
+                    <th class="bookedEvent">Booked Event</th>
+                    <th class="movieLocation">Location</th>
                 </tr>
                 <tr th:each="movie : ${movieListOfDay}">
                     <td th:text="${movie.prio}"></td>
@@ -48,27 +53,26 @@
                         </a>
                     </td>
 
-                    <td th:if="${movie.booked}" class="scheduleUnbookButton">
-                        <form action="unbookMovie" autocomplete="off" method="post">
+                    <td th:if="${movie.booked}" class="unbookButton">
+                        <form action="/movie/unbookEvent" autocomplete="off" method="post">
                             <input type="hidden" name="movieId" id="movieId" required="required" th:value="${movie.id}" class="readonly" />
                             <input type="submit" value="unbook"/>
                         </form>
                     </td>
 
-                    <td th:if="${movie.bookmarked}" class="scheduleUnbookmarkButton">
-                        <form action="unbookmarkMovie" autocomplete="off" method="post">
-                            <input type="hidden" name="movieId" id="movieId" required="required" th:value="${movie.id}" class="readonly" />
+                    <td th:if="${movie.bookmarked}" class="unbookmarkButton">
+                        <form action="/movie/unbookmarkEvent" autocomplete="off" method="post">
+                            <input type="hidden" name="movieId" id="movieId1" required="required" th:value="${movie.id}" class="readonly" />
                             <input type="submit" value="unbookmark"/>
                         </form>
                     </td>
 
-                    <td class="scheduleCalendarButton">
+                    <td class="calendarButton">
                         <form action="calendar" autocomplete="off" method="get">
-                            <input type="hidden" name="movieId" id="movieId1" required="required" th:value="${movie.id}" class="readonly" />
+                            <input type="hidden" name="movieId" id="movieId2" required="required" th:value="${movie.id}" class="readonly" />
                             <input type="submit" value="Calendar"/>
                         </form>
                     </td>
-
                 </tr>
             </table>
             &nbsp;

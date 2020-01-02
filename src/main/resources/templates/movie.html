@@ -14,17 +14,15 @@
 
 <div class="container" th:if="${movie != null}">
     <h1><th:block th:text="${movie.title}"/></h1>
-    <table>
+    <table class="movieDetails">
         <tr>
-            <th>Movie ID</th>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Link</th>
-            <th>Prio</th>
+            <th class="movieID">Movie ID</th>
+            <th class="movieDescription">Description</th>
+            <th class="movieLink">Link</th>
+            <th class="moviePrio">Prio</th>
         </tr>
         <tr>
             <td th:text="${movie.id}"></td>
-            <td th:text="${movie.title}"></td>
             <td th:text="${movie.description}"></td>
             <td th:if="${movie.url != null}">
                 <a th:href="${movie.url}" target="_blank">Link</a>
@@ -32,9 +30,8 @@
             <td th:text="${movie.prio}"></td>
             <td>
                 <form action="changePrio" autocomplete="off" method="post">
-                    <input type="hidden" name="id" id="id" required="required" th:value="${movie.id}" class="readonly" />
-                    <input type="text" name="prio" id="prio" required="required" class="readonly"
-                           style="width: 150px;" pattern="[0-9]+"/>
+                    <input type="hidden" name="id"  id="id"    required="required" th:value="${movie.id}" class="readonly" />
+                    <input type="text"   name="prio" id="prio" required="required" maxlength="2" class="readonly" style="width: 40px;" pattern="[0-9]+"/>
                     <input type="submit" value="Set prio"/>
                 </form>
             </td>
@@ -44,12 +41,12 @@
 
 <hr>
 
-   <table>
+   <table class="bookedEventDetails">
         <tr>
-            <th>Event ID</th>
-            <th>From</th>
-            <th>To</th>
-            <th>Location</th>
+            <th class="eventID">Event ID</th>
+            <th class="eventFromTo">From</th>
+            <th class="eventFromTo">To</th>
+            <th class="eventLocation">Location</th>
         </tr>
        <tr th:each="event : ${movie.getSortedEvents()}">
            <td th:text="${event.id}"></td>
@@ -61,20 +58,6 @@
                <th:block th:text="${event.location.toStringWithAddress()}"/>
            </a></td>
 
-           <td th:if="${event.available} or ${event.bookmarked}">
-               <form action="bookEvent" autocomplete="off" method="post">
-                   <input type="hidden" name="movieId" id="movieId" required="required" th:value="${movie.id}" class="readonly" />
-                   <input type="hidden" name="eventId" id="eventId" required="required" th:value="${event.id}" class="readonly" />
-                   <input type="submit" value="book"/>
-               </form>
-           </td>
-           <td th:if="${event.available} ">
-               <form action="bookmarkEvent" autocomplete="off" method="post">
-                   <input type="hidden" name="movieId" id="movieId" required="required" th:value="${movie.id}" class="readonly" />
-                   <input type="hidden" name="eventId" id="eventId" required="required" th:value="${event.id}" class="readonly" />
-                   <input type="submit" value="bookmark"/>
-               </form>
-           </td>
            <td th:if="${event.bookmarked}">
                <i>bookmarked!</i>
            </td>
@@ -86,6 +69,36 @@
            </td>
            <td th:if="${event.potentiallyUnavailable}">
                <i>potentially unavailable!</i>
+           </td>
+
+           <td th:if="${event.available} or ${event.bookmarked}">
+               <form action="/movie/bookEvent" autocomplete="off" method="post">
+                   <input type="hidden" name="movieId" id="movieId1" required="required" th:value="${movie.id}" class="readonly" />
+                   <input type="hidden" name="eventId" id="eventId1" required="required" th:value="${event.id}" class="readonly" />
+                   <input type="submit" value="book"/>
+               </form>
+           </td>
+           <td th:if="${event.booked}">
+               <form action="/movie/unbookEvent" autocomplete="off" method="post">
+                   <input type="hidden" name="movieId" id="movieId2" required="required" th:value="${movie.id}" class="readonly" />
+                   <input type="hidden" name="eventId" id="eventId2" required="required" th:value="${event.id}" class="readonly" />
+                   <input type="submit" value="unbook"/>
+               </form>
+           </td>
+
+           <td th:if="${event.available} ">
+               <form action="/movie/bookmarkEvent" autocomplete="off" method="post">
+                   <input type="hidden" name="movieId" id="movieId3" required="required" th:value="${movie.id}" class="readonly" />
+                   <input type="hidden" name="eventId" id="eventId3" required="required" th:value="${event.id}" class="readonly" />
+                   <input type="submit" value="bookmark"/>
+               </form>
+           </td>
+           <td th:if="${event.bookmarked}">
+               <form action="/movie/unbookmarkEvent" autocomplete="off" method="post">
+                   <input type="hidden" name="movieId" id="movieId4" required="required" th:value="${movie.id}" class="readonly" />
+                   <input type="hidden" name="eventId" id="eventId4" required="required" th:value="${event.id}" class="readonly" />
+                   <input type="submit" value="unbookmark"/>
+               </form>
            </td>
        </tr>
    </table>

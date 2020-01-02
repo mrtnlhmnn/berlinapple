@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:td="http://www.thymeleaf.org" lang="de">
 <head>
-    <title>BerlinAPPle Movies</title>
+    <title>BerlinAPPle Program</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link href="../static/css/vendor/picnic.min.css"
           th:href="@{css/vendor/picnic.min.css}" rel="stylesheet" media="screen"/>
@@ -15,34 +15,26 @@
 <! -- ========================================================================================================== -->
 
 <div class="container" th:if="${#lists.isEmpty(movies)}">
-    <h1>The Program - List of Movies ... is empty!</h1>
+    <h1>Program is empty
+        <th:block th:if="${filterDay}!=null"> on <th:block th:text="${filterDay}"/></th:block>
+    </h1>
 </div>
 
 <div class="container" th:if="${not #lists.isEmpty(movies)}">
-    <h1>The Program - List of <th:block th:text="${movies.size()}"/> Movies</h1>
-    <table>
+    <h1>Program contains <th:block th:text="${movies.size()}"/> Movies
+        <th:block th:if="${filterDay}!=null"> on <th:block th:text="${filterDay}"/></th:block>
+    </h1>
+    <table class="movieList">
         <tr>
-            <th>Prio</th>
-            <th>Booked?</th>
-            <th>Available?</th>
-            <th>Title</th>
-            <th>Link</th>
-            <th>Events</th>
+            <th class="moviePrio">Prio</th>
+            <th class="movieTitleLong">Title</th>
+            <th class="movieLink">Link</th>
+            <th class="events">Events</th>
+            <th class="available">Available</th>
+            <th class="booked">Booked?</th>
         </tr>
         <tr th:each="movie : ${movies}">
             <td th:text="${movie.prio}"></td>
-            <td th:if="${movie.booked}">
-                yes
-            </td>
-            <td th:unless="${movie.booked}">
-                &nbsp;
-            </td>
-            <td th:if="${movie.available}">
-                yes
-            </td>
-            <td th:unless="${movie.available}">
-                no
-            </td>
             <td>
                 <a th:href="@{movie/{id}(id=${movie.id})}"><th:block th:text="${movie.title}"/></a>
             </td>
@@ -50,6 +42,13 @@
                 <a th:href="${movie.url}" target="_blank">Link</a>
             </td>
             <td th:text="${movie.events.size()}"></td>
+            <td th:text="${movie.numberOfEventsAvailable()}"></td>
+            <td th:if="${movie.booked}">
+                yes
+            </td>
+            <td th:unless="${movie.booked}">
+                &nbsp;
+            </td>
             <td><a th:href="@{movie/{id}(id=${movie.id})}">Details</a></td>
         </tr>
     </table>

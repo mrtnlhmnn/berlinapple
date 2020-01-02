@@ -26,36 +26,80 @@
     margin: 25px;
     font-size: small;
 }
-.schedule {
+.movieList {
     width: 100%;
     table-layout: fixed;
 }
-.schedulePrio {
+.movieDetails {
+    width: 100%;
+    table-layout: fixed;
+}
+.bookedEventDetails {
+    width: 100%;
+    table-layout: fixed;
+}
+.movieID {
+    width: 15%;
+    min-width: 10px;
+}
+.moviePrio {
     width: 4%;
     min-width: 10px;
 }
-.scheduleTitle {
+.movieTitleMedium {
     width: 35%;
     min-width: 45px;
 }
-.scheduleLink {
+.movieTitleLong {
+    width: 60%;
+    min-width: 45px;
+}
+.movieDescription {
+    width: 60%;
+    min-width: 45px;
+}
+.movieLink {
     width: 5%;
     min-width: 10px;
 }
-.scheduleBookedEvent {
+.events {
+    width: 8%;
+    min-width: 10px;
+}
+.available {
+    width: 8%;
+    min-width: 10px;
+}
+.booked {
+    width: 8%;
+    min-width: 10px;
+}
+.bookedEvent {
     width: 12%;
     min-width: 15px;
 }
-.scheduleLocation {
+.movieLocation {
     width: 25%;
     min-width: 50px;
 }
-.scheduleUnbookButton {
+.eventID {
+    width: 15%;
+    min-width: 10px;
+}
+.eventFromTo {
+    width: 15%;
+    min-width: 10px;
+}
+.eventLocation {
+    width: 25%;
+    min-width: 50px;
+}
+.unbookButton {
     width: 10%;
 }
-.scheduleUnbookmarkButton {
+.unbookmarkButton {
     width: 10%;
 }
-.scheduleCalendarButton {
+.calendarButton {
     width: 10%;
 }
