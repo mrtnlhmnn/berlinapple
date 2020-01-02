@@ -15,6 +15,7 @@ class BookingController(val movieRepo: MovieRepo, val dayRepo: DayRepo, val book
         val bookableMovies = movieRepo.getFilteredSortedMovies(filterDay).filter { it.available }
         model.addAttribute("movies", bookableMovies)
         model.addAttribute("days", dayRepo.getDaysAsStrings())
+        if (filterDay != null) model.addAttribute("filterDay", filterDay)
         return "bookableMovies"
     }
 
@@ -44,20 +45,20 @@ class BookingController(val movieRepo: MovieRepo, val dayRepo: DayRepo, val book
     fun bookmarkEvent(@RequestParam("movieId") movieId: String,
                      @RequestParam("eventId") eventId: String): RedirectView {
         // fix the event status and all events of its movie
-        val bookedMovie = movieRepo.get(movieId)
+        val bookmarkedMovie = movieRepo.get(movieId)
 
-        if (bookedMovie != null)
-            bookingService.bookmarkEvent(bookedMovie, ID(eventId))
+        if (bookmarkedMovie != null)
+            bookingService.bookmarkEvent(bookmarkedMovie, ID(eventId))
 
         return RedirectView("/bookableMovies")
     }
 
     // ---------------------------------------------------------------------------------------------------
 
-    @GetMapping("/unbookMovie")
+    @GetMapping("/movie/unbookEvent")
     fun unbookEvent() = "/bookedMovies"
 
-    @PostMapping("/unbookMovie")
+    @PostMapping("/movie/unbookEvent")
     fun unbookEvent(@RequestParam("movieId") movieId: String): RedirectView {
         // mark all events in unbooked movie as available
         val movieToUnbook = movieRepo.get(movieId)
@@ -70,16 +71,16 @@ class BookingController(val movieRepo: MovieRepo, val dayRepo: DayRepo, val book
 
     // ---------------------------------------------------------------------------------------------------
 
-    @GetMapping("/unbookmarkMovie")
+    @GetMapping("/movie/unbookmarkEvent")
     fun unbookmarkEvent() = "/bookedMovies"
 
-    @PostMapping("/unbookmarkMovie")
+    @PostMapping("/movie/unbookmarkEvent")
     fun unbookmarkEvent(@RequestParam("movieId") movieId: String): RedirectView {
         // mark all events in unbooked movie as available
-        val movieToUnbook = movieRepo.get(movieId)
+        val movieToUnbookmark = movieRepo.get(movieId)
 
-        if (movieToUnbook != null)
-            bookingService.unbookmarkEvent(movieToUnbook)
+        if (movieToUnbookmark != null)
+            bookingService.unbookmarkEvent(movieToUnbookmark)
 
         return RedirectView("/bookedMovies")
     }

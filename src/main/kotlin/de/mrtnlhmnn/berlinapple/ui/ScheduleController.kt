@@ -52,6 +52,7 @@ class ScheduleController(val movieRepo: MovieRepo, val dayRepo: DayRepo, val boo
         }
 
         model.addAttribute("days", dayRepo.getDaysAsStrings())
+        if (filterDay != null) model.addAttribute("filterDay", filterDay)
 
         return "bookedMovies"
     }
