@@ -75,3 +75,7 @@ Querschnitt & Infrastruktur
 [ ] Läuft wirklich eine Apache Derby DB mit?
 [ ] Auf https umstellen S. https://www.tutorialspoint.com/spring_boot/spring_boot_enabling_https.htm, https in AWS: ???
 [ ] Auf Java 11 umstellen
+
+Technik
+[ ] Migration nach Java 11
+[ ] Migration nach Graal
