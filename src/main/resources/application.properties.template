@@ -1,6 +1,6 @@
 #############################################################################################################
 programFile=data/program.ics
-locationFile=data/locations.txt
+locationFile=data/locations.json
 berlinaleStartDateTime=20200221T1300
 berlinaleEndDateTime=20200225T2000
 persistenceSchedule=0 0/30 * * * *
