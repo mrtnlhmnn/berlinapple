@@ -2,9 +2,41 @@
 "address":"Hardenbergstraße 29A, 10623 Berlin",
 "url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=zoo-palast"},
 
-{"name":"ZEUGHAUSKINO","address":
-"Unter den Linden 2, 10117 Berlin",
+{"name":"ZEUGHAUSKINO",
+"address":"Unter den Linden 2, 10117 Berlin",
 "url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=zeughauskino"},
+
+{"name":"XENON KINO",
+"address":"Kolonnenstraße 5-6, 10827 Berlin",
+"url":"https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=xenon-kino"},
+
+{"name":"URANIA",
+"address":"An der Urania 17, 10787 Berlin",
+"url":"https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=urania"},
+
+{"name":"THALIA PROGRAMMKINO (POTSDAM)",
+"address":"Rudolf-Breitscheid-Straße 50, 14482 Potsdam",
+"url":"https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=thalia-programmkino"},
+
+{"name":"SILENT GREEN KULTURQUARTIER",
+"address":"Gerichtstraße 35, 13347 Berlin",
+"url":"https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=silent-green-kulturquartier"},
+
+{"name":"NEUE KAMMERSPIELE",
+"address":"Karl-Marx-Straße 18, 14532 Kleinmachnow",
+"url":"https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=neue-kammerspiele"},
+
+{"name":"MOVIEMENTO",
+"address":"Kottbusser Damm 22, 10967 Berlin",
+"url":"https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=moviemento"},
+
+{"name":"MAGENTA TV LOUNGE",
+"address":"Hardenbergstraße 29A, 10623 Berlin",
+"url":"https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=magenta-tv-lounge"},
+
+{"name":"FILMRAUSCHPALAST",
+"address":"Lehrter Str. 35, 10557 Berlin",
+"url":"https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=filmrauschpalast"},
 
 {"name":"KINO UNION",
 "address":"Bölschestraße 69, 12587 Berlin (Friedrichshagen)",
@@ -122,13 +154,13 @@
 "address":"Hermann-Hesse-Straße 11, 13156 Berlin (Pankow)",
 "url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=blauer-stern"},
 
-{"name":"BERLINALE PALAST",
-"address":"Marlene-Dietrich-Platz 1, 10785 Berlin",
-"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=berlinale-palast"},
-
 {"name":"B-WARE! LADENKINO",
 "address":"Gärtnerstraße 19, 10245 Berlin (Friedrichshain)",
 "url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=bware-ladenkino"},
+
+{"name":"BERLINALE PALAST",
+"address":"Marlene-Dietrich-Platz 1, 10785 Berlin",
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=berlinale-palast"},
 
 {"name":"AUDI BERLINALE LOUNGE",
 "address":"Marlene-Dietrich-Platz 1, 10785 Berlin",
@@ -136,5 +168,9 @@
 
 {"name":"KINO ARSENAL",
 "address":"Potsdamer Straße 2, 10785 Berlin",
-"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=kino-arsenal"}
+"url":"https://www.berlinale.de/de/service/festival_map/index.html?loc=kino-arsenal"},
+
+{"name": "AKADEMIE DER KUENSTE",
+"address":"Hanseatenweg 10, 10557 Berlin",
+"url":"https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=akademie-der-kuenste"}
 ]
