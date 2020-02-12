@@ -30,7 +30,7 @@ class PersistenceToS3Scheduler(val movieRepo: MovieRepo,
 
     // ---------------------------------------------------------------------------------------------------
 
-    @Scheduled(cron = "\${persistenceSchedule:0 * * * * *}")
+    @Scheduled(cron = "\${persistenceSchedule:0 0/5 * * * *}")
     fun saveMoviesToS3() {
         if (! needToSaveToS3()) {
             LOGGER.debug("PersistenceScheduler is not saving to S3, because toggled to false - or not necessary, as no changes done")
