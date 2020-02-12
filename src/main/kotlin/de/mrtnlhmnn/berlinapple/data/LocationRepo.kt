@@ -14,12 +14,9 @@ class LocationRepo: HashMap<String, Location>(), JSONConvertable {
         if (locationStringFromProgram == null) return null
 
         for (location in this.values.toList()) {
-            // exact match?
             if (   (locationStringFromProgram.equals(location.name, ignoreCase = true))
-                || (locationStringFromProgram.indexOf(location.name, ignoreCase = true) != -1)
-                || (locationStringFromProgram.indexOf(getFirstWord(location.name), ignoreCase = true) != -1)
-                || (location.name.indexOf(locationStringFromProgram, ignoreCase = true) != -1)
-                || (location.name.indexOf(getFirstWord(locationStringFromProgram), ignoreCase = true) != -1)
+                || (locationStringFromProgram.startsWith(location.name, ignoreCase = true))
+                || (location.name.startsWith(locationStringFromProgram))
             )
             {
                 return Location(locationStringFromProgram, location.address, location.url)
@@ -31,14 +28,5 @@ class LocationRepo: HashMap<String, Location>(), JSONConvertable {
                 "Please check location.txt, might want to add ${locationStringFromProgram} ...")
 
         return Location(name = locationStringFromProgram, address = null, url = null)
-    }
-
-    private fun getFirstWord(s: String): String {
-        val p = Pattern.compile("[_a-zA-Z]+")
-        val m = p.matcher(s)
-        if (m.find()) {
-            return m.group()
-        }
-        return s
     }
 }
