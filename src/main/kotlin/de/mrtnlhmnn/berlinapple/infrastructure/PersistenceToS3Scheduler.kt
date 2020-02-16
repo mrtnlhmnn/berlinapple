@@ -69,5 +69,8 @@ class PersistenceToS3Scheduler(val movieRepo: MovieRepo,
         LOGGER.info("PersistenceScheduler toggle now switched to {}", persistenceConfig.persistenceToggle)
     }
 
-    fun needToSaveToS3(): Boolean = (persistenceConfig.persistenceToggle && hasChanged())
+    fun needToSaveToS3(): Boolean =
+               !persistenceConfig.offline
+            && persistenceConfig.persistenceToggle
+            && hasChanged()
 }

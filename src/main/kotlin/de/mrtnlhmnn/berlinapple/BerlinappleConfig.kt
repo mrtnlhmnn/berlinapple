@@ -11,11 +11,15 @@ open class BerlinappleConfig {
     @Value("\${locationFile:data/locations.json}")
     val locationJSONFileName: String = ""
 
+
     @Value("\${berlinaleStartDateTime:20200221T1300}")
+//TODO Implement fallback if not set (or let the application crash at start time)
     val berlinaleStartDateTime: String = ""
 
     @Value("\${berlinaleEndDateTime:20200225T2000}")
+//TODO Implement fallback if not set (or let the application crash at start time)
     val berlinaleEndDateTime: String = ""
+
 
     @Value("\${build.version}")
     val buildVersion: String = ""

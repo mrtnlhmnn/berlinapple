@@ -16,6 +16,10 @@ import java.time.Instant
 
 @Configuration
 class PersistenceConfig {
+
+    @Value("\${offline:false}")
+    val offline = false
+
     @Value(value = "\${persistence.savetos3.toggle:false}")
     var persistenceToggle: Boolean = false
 }
