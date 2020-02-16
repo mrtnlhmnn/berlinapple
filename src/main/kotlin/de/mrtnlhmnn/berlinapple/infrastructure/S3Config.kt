@@ -22,6 +22,10 @@ open class S3Config {
     @Value("\${aws.s3.region:eu-central-1}")
     private val s3Region: String? = null
 
+
+    @Value("\${offline:false}")
+    val offline = false
+
     @Value("\${aws.s3.bucketname}")
     val s3BucketName: String? = null
 
