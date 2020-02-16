@@ -29,7 +29,8 @@ Fachliches, Bugs
 [ ] Vormerken implementieren als "hier noch kein Ticket aber wir gehen zur Vorkasse" , also weiteren Status "merken" zulassen, falls man einen Film unbedingt sehen will aber an VVK-Kasse kein Ticket ist -> blockiert Zeitfenster
 [ ] Alle Movies: Sortieren mit Untertabellen, Sprung direkt zu den 50ern
 [/] Mehrfachbuchen eines Movies (nur bei ausdruecklichem Wunsch) zulassen
-[ ] Kategorie mit in die Daten aufnehmen (aber woher nehmen, wenn nicht in ics-Datei drin? -> Doch, steht in der Description wie "Wettbewerb" oder "Encounters" oder "Panorama" -> per Volltextsuche finden)
+[x] Kategorie mit in die Daten aufnehmen (steht versteckt in der Description drin, als "Wettbewerb" oder "Encounters" oder "Panorama" -> per Volltextsuche finden, pfff)
+[ ] Kategorie in Listen über Farbdarstellung der Zeile hervorheben (zB wichtigere Kategorie in rot oder orange, unwichtigere in blau oder grau)
 [ ] beim Laden automatisch nach Kategorie priorisieren, zB alle Wettbewerb-Filme auf 80 statt 50 (aber woher Kategorie nehmen?)
 [x] in BookableMovies nur die Anzahl der Bookable Events anzeigen (statt die Gesamtzahl)
 [ ] In der Movies-Datei in S3 landen alle Filme. Es reichen eigentlich die mit einem Event.booked = true. Die Available-Status muss man dann aber auch fixen
@@ -39,13 +40,16 @@ Fachliches, Bugs
 [ ] Details-Links als Pseudo-Buttons anzeigen
 [ ] Ansicht für Zeiten, die avail/booked/bookmarked sind - in Schedule-Seite integrieren
 [ ] zwei gleichzeitige Logins erkennen und vor gegenseitigem Überschreiben der Prios waren (per asynchronem Web-Socket-Zeuchs)
+[ ] Priorisierung in der Liste mit Pfeil-hoch/runter-Buttons ändern können
+[ ] In Detailseite die Anzahl der potentiellen Überlappungen pro Event hinschreiben: Dann kann man das zuerst wählen, was die wenigsten hat. Ggf. sogar die Überlappungsmovies dort verlinken
+[ ] Filterung der Listen: Event-Spalte zeigt aktuell die Gesamtzahl , nicht die für den gefilterten Tag
 
 Locations
 [x] Location überall gleich anzeigen, auch gleich mit Link wie bei Schedule
 [ ] Location-Entfernungen einbauen
 [ ] halbe Stunde Puffer aktuell hardcoded - dynamisch machen, auch von Location/Entfernung abhg machen oder manuell override zulassen
 [ ] Farbig in Tabelle: Wettbewerb oder Retrospektive oder Dokumentar ...
-[ ] Länder anzeigen (zB Spanien, Kanada, Island, aber das steht nur unformatiert in der Description)
+[ ] Länder anzeigen (zB Spanien, Kanada, Island, aber das steht nur unformatiert in der Description -> per Volltextsuche, wie Kategorie, siehe MovieCategory)
 
 Kalender
 [x] Kalendereintrag für iPhone supporten. Zeitzone aller Datum/Zeit-Attribute muss in UTC angegeben sein
