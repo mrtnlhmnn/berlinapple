@@ -14,6 +14,8 @@ class BookingController(val movieRepo: MovieRepo, val dayRepo: DayRepo, val book
                            @RequestParam(required=false, name="filterDay") filterDay: String?): String {
         val bookableMovies = movieRepo.getFilteredSortedMovies(filterDay).filter { it.available }
         model.addAttribute("movies", bookableMovies)
+        model.addAttribute("numMovies", bookableMovies.size)
+        model.addAttribute("numEvents", movieRepo.getNumberOfEvents(bookableMovies))
         model.addAttribute("days", dayRepo.getDaysAsStrings())
         if (filterDay != null) model.addAttribute("filterDay", filterDay)
         return "bookableMovies"

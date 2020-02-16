@@ -33,13 +33,15 @@
            <table class="BAmovieList">
                 <tr>
                     <th class="BAmoviePrio">Prio</th>
+                    <th class="BAmovieCategoryWide">Category</th>
                     <th class="BAmovieTitleMedium">Title</th>
                     <th class="BAmovieLink">Link</th>
                     <th class="BAbookedEvent">Booked Event</th>
-                    <th class="BAmovieLocation">Location</th>
+                    <th class="BAmovieLocationShort">Location</th>
                 </tr>
                 <tr th:each="movie : ${movieListOfDay}">
                     <td th:text="${movie.prio}"></td>
+                    <td th:text="${movie.category?.toString()}"></td>
                     <td>
                         <a th:href="@{movie/{id}(id=${movie.id})}"><th:block th:text="${movie.title}"/></a>
                     </td>

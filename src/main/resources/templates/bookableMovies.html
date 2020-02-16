@@ -19,12 +19,13 @@
 </div>
 
 <div class="container" th:if="${not #lists.isEmpty(movies)}">
-    <h1>Bookable are <th:block th:text="${movies.size()}"/> Movies
+    <h1>Bookable are <th:block th:text="${numMovies}"/> Movies with <th:block th:text="${numEvents}"/> Events
         <th:block th:if="${filterDay}!=null"> on <th:block th:text="${filterDay}"/></th:block></h1>
     </h1>
     <table class="BAmovieList">
         <tr>
             <th class="BAmoviePrio">Prio</th>
+            <th class="BAmovieCategoryWide">Category</th>
             <th class="BAmovieTitleLong">Title</th>
             <th class="BAmovieLink">Link</th>
             <th class="BAevents">Events</th>
@@ -33,6 +34,7 @@
         </tr>
         <tr th:each="movie : ${movies}">
             <td th:text="${movie.prio}"></td>
+            <td th:text="${movie.category?.toString()}"></td>
             <td>
                 <a th:href="@{movie/{id}(id=${movie.id})}"><th:block th:text="${movie.title}"/></a>
             </td>

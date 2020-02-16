@@ -16,6 +16,8 @@ class MoviesController(val movieRepo: MovieRepo, val dayRepo: DayRepo, val persi
     fun allMovies(model: Model,
                   @RequestParam(required=false, name="filterDay") filterDay: String?): String {
         model.addAttribute("movies", movieRepo.getFilteredSortedMovies(filterDay))
+        model.addAttribute("numMovies", movieRepo.getNumberOfMovies(filterDay))
+        model.addAttribute("numEvents", movieRepo.getNumberOfEvents(filterDay))
         model.addAttribute("days", dayRepo.getDaysAsStrings())
         if (filterDay != null) model.addAttribute("filterDay", filterDay)
         return "allMovies"

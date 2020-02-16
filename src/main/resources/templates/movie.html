@@ -17,12 +17,14 @@
     <table class="BAmovieDetails">
         <tr>
             <th class="BAmovieID">Movie ID</th>
+            <th class="BAmovieCategoryShort">Category</th>
             <th class="BAmovieDescription">Description</th>
             <th class="BAmovieLink">Link</th>
             <th class="BAmoviePrio">Prio</th>
         </tr>
         <tr>
             <td th:text="${movie.id}"></td>
+            <td th:text="${movie.category?.toString()}"></td>
             <td th:text="${movie.description}"></td>
             <td th:if="${movie.url != null}">
                 <a th:href="${movie.url}" target="_blank">Link</a>
