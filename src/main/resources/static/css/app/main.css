@@ -40,24 +40,32 @@
     table-layout: fixed;
 }
 .BAmovieID {
-    width: 15%;
+    width: 12%;
     min-width: 10px;
 }
 .BAmoviePrio {
     width: 6%;
     min-width: 10px;
 }
+.BAmovieCategoryWide {
+    width: 12%;
+    min-width: 12px;
+}
+.BAmovieCategoryShort {
+    width: 8%;
+    min-width: 10px;
+}
 .BAmovieTitleMedium {
-    width: 30%;
-    min-width: 40px;
+    width: 28%;
+    min-width: 38px;
 }
 .BAmovieTitleLong {
-    width: 50%;
-    min-width: 40px;
+    width: 30%;
+    min-width: 35px;
 }
 .BAmovieDescription {
-    width: 48%;
-    min-width: 40px;
+    width: 38%;
+    min-width: 38px;
 }
 .BAmovieLink {
     width: 8%;
@@ -83,8 +91,12 @@
     width: 23%;
     min-width: 45px;
 }
-.BAeventID {
+.BAmovieLocationShort {
     width: 15%;
+    min-width: 30px;
+}
+.BAeventID {
+    width: 12%;
     min-width: 10px;
 }
 .BAeventFromTo {
@@ -96,7 +108,7 @@
     min-width: 50px;
 }
 .BAeventStatus {
-    width: 14%;
+    width: 12%;
     min-width: 15px;
 }
 .BAbutton {
