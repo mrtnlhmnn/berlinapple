@@ -29,7 +29,7 @@ Fachliches, Bugs
 [ ] Vormerken implementieren als "hier noch kein Ticket aber wir gehen zur Vorkasse" , also weiteren Status "merken" zulassen, falls man einen Film unbedingt sehen will aber an VVK-Kasse kein Ticket ist -> blockiert Zeitfenster
 [ ] Alle Movies: Sortieren mit Untertabellen, Sprung direkt zu den 50ern
 [/] Mehrfachbuchen eines Movies (nur bei ausdruecklichem Wunsch) zulassen
-[ ] Kategorie mit in die Daten aufnehmen (aber woher nehmen, wenn nicht in ics-Datei drin?)
+[ ] Kategorie mit in die Daten aufnehmen (aber woher nehmen, wenn nicht in ics-Datei drin? -> Doch, steht in der Description wie "Wettbewerb" oder "Encounters" oder "Panorama" -> per Volltextsuche finden)
 [ ] beim Laden automatisch nach Kategorie priorisieren, zB alle Wettbewerb-Filme auf 80 statt 50 (aber woher Kategorie nehmen?)
 [x] in BookableMovies nur die Anzahl der Bookable Events anzeigen (statt die Gesamtzahl)
 [ ] In der Movies-Datei in S3 landen alle Filme. Es reichen eigentlich die mit einem Event.booked = true. Die Available-Status muss man dann aber auch fixen
@@ -38,6 +38,7 @@ Fachliches, Bugs
 [ ] Unbooken und Unbookmarken von Movies auf allen Seiten zulassen
 [ ] Details-Links als Pseudo-Buttons anzeigen
 [ ] Ansicht für Zeiten, die avail/booked/bookmarked sind - in Schedule-Seite integrieren
+[ ] zwei gleichzeitige Logins erkennen und vor gegenseitigem Überschreiben der Prios waren (per asynchronem Web-Socket-Zeuchs)
 
 Locations
 [x] Location überall gleich anzeigen, auch gleich mit Link wie bei Schedule
