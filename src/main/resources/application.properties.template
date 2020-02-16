@@ -1,4 +1,5 @@
 #############################################################################################################
+offline=false
 programFile=data/program.ics
 locationFile=data/locations.json
 berlinaleStartDateTime=20200221T1300
