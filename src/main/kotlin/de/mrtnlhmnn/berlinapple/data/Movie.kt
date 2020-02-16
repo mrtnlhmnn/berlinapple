@@ -7,7 +7,8 @@ import java.net.URL
 data class Movie (val title: String,
                   val description: String,
                   var prio: Prio,
-                  val url: URL?): JSONConvertable
+                  val url: URL?,
+                  val category: MovieCategory? = null): JSONConvertable
 {
     val id = ID.createMovieID(title)
     val events: MutableList<Event> = mutableListOf()
