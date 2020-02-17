@@ -23,22 +23,23 @@ enum class MovieCategory(val categoryName: String) {
     RetrospektiveEvent("Retrospektive Event"),
     BerlinaleSpecialGala("Berlinale Special Gala"),
     BerlinaleSpecial("Berlinale Special"),
-    BerlinaleSpecialWithTypo("BerlinaleSpecial"),
+    BerlinaleSpecialWithTypo("BerlinaleSpecial"),  // Typo, grrr
     PerspektiveDeutschesKino("Perspektive Deutsches Kino"),
-    BerlinaleGoesKiez("Berlinale Goes Kiez");
+    BerlinaleGoesKiez("Berlinale Goes Kiez"),
+    UNKNOWN( /* do not show anything */ "" );
 
-    override fun toString(): String = categoryName
+    override fun toString() = categoryName
 
     companion object {
-        val DELIMITER = "\n"
-
-        fun findCategory(description: String): MovieCategory? {
-            enumValues<MovieCategory>().forEach { cat ->
-                // try to find any of the category strings as shown above in the description
-                // as unfortunately it is not provided otherwise in the ics files ...
-                if (description.contains(DELIMITER + cat.toString() + DELIMITER, false)) return cat
-            }
-            return null
+        fun findCategory(description: String): MovieCategory {
+            enumValues<MovieCategory>()
+                .filter { it != UNKNOWN } // need to as "" can be found in any description
+                .forEach { cat ->
+                    // try to find any of the category strings as shown above in the description
+                    // as unfortunately it is not provided otherwise in the ics files ...
+                    if (description.contains(MOVIE_DESCRIPTION_DELIMITER + cat.toString(), false)) return cat
+                }
+            return UNKNOWN
         }
     }
 }

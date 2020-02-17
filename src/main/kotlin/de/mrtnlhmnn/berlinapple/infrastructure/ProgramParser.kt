@@ -90,14 +90,11 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
                         val location = locationRepo.findLocationByString(locationStringFromProgram)
                         val event = Event(beginZDTFromProgram, endZDTFromProgram, location)
 
-                        // try to find the category in the description
-                        val categoryFromProgram = MovieCategory.findCategory(descriptionStringFromProgram)
-
                         // Find (or create new) Movie and attach the above Event to it
                         var movie = movieRepo.findByTitleIgnoreCase(summaryStringFromProgram)
                         if (movie == null) {
                             val newMovie = Movie(summaryStringFromProgram, descriptionStringFromProgram,
-                                    Prio.NORMAL, urlFromProgram, categoryFromProgram)
+                                    Prio.NORMAL, urlFromProgram)
                             movieRepo.addOrUpdate(newMovie)
                             movie = newMovie
                         }

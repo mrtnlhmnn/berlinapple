@@ -1,17 +1,38 @@
 package de.mrtnlhmnn.berlinapple.data
 
 import de.mrtnlhmnn.berlinapple.infrastructure.JSONConvertable
-import org.slf4j.LoggerFactory
 import java.net.URL
 
+const val MOVIE_DESCRIPTION_DELIMITER = " | "
+
 data class Movie (val title: String,
-                  val description: String,
+                  val rawDescription: String,
                   var prio: Prio,
-                  val url: URL?,
-                  val category: MovieCategory? = null): JSONConvertable
+                  val url: URL?): JSONConvertable
 {
     val id = ID.createMovieID(title)
     val events: MutableList<Event> = mutableListOf()
+
+    val description: String
+        get() = replaceURLinDescriptionAndAddDelimiters(rawDescription)
+
+    private fun replaceURLinDescriptionAndAddDelimiters(s: String): String {
+
+        return try {
+            val tmp = s.substringBefore("\nhttps://")  // delete URL
+                       .replace("\n", MOVIE_DESCRIPTION_DELIMITER)           // replace all \n by |
+
+            // ... and now replace last delimiter at the end (if any found)
+            val lastIndexOfDELIM = tmp.lastIndexOf(MOVIE_DESCRIPTION_DELIMITER)
+            if (lastIndexOfDELIM == -1) tmp else tmp.substring(0, lastIndexOfDELIM)
+        }
+        catch (ex: Exception) {
+            s // Paranoia fallback to the original string
+        }
+    }
+
+    val category: MovieCategory
+        get() = MovieCategory.findCategory(description)
 
     val booked: Boolean
         get() = isOneEventBooked()
