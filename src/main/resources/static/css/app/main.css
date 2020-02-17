@@ -56,8 +56,8 @@
     min-width: 10px;
 }
 .BAmovieTitleMedium {
-    width: 28%;
-    min-width: 38px;
+    width: 22%;
+    min-width: 32px;
 }
 .BAmovieTitleLong {
     width: 30%;
@@ -68,8 +68,8 @@
     min-width: 38px;
 }
 .BAmovieLink {
-    width: 8%;
-    min-width: 10px;
+    width: 7%;
+    min-width: 9px;
 }
 .BAevents {
     width: 8%;
@@ -108,8 +108,8 @@
     min-width: 50px;
 }
 .BAeventStatus {
-    width: 12%;
-    min-width: 15px;
+    width: 11%;
+    min-width: 12px;
 }
 .BAbutton {
     min-width: 102px;
