@@ -43,6 +43,11 @@ Fachliches, Bugs
 [ ] Priorisierung in der Liste mit Pfeil-hoch/runter-Buttons ändern können
 [ ] In Detailseite die Anzahl der potentiellen Überlappungen pro Event hinschreiben: Dann kann man das zuerst wählen, was die wenigsten hat. Ggf. sogar die Überlappungsmovies dort verlinken
 [ ] Filterung der Listen: Event-Spalte zeigt aktuell die Gesamtzahl , nicht die für den gefilterten Tag
+[ ] Filter auf Datum/Uhrzeit: Ende-Uhrzeit muss gegen die Movie-Endezeit (nicht gegen die Anfangszeit) geprüft werden (aktuelle Implementierung ProgramParser.isInStartEndTimeframe() ist merkwürdig)
+[ ] force book ist aktuell nur für Bookings, aber nicht für Bookmarks implementiert -> nicht konsistent
+[ ] Mehr als ein Event eines Movies bookmarken (wollen wir das wirklich?)
+[ ] Auf Schedule-Seite die Filme rot markieren, die Überlappung haben (weil diese durch force book erzwungen worden ist)
+[ ] Titelleiste auf iPad bricht bei 5 Filter-Tagen häßlich um (Tagesliste dann über zwei Zeilen)
 
 Locations
 [x] Location überall gleich anzeigen, auch gleich mit Link wie bei Schedule
