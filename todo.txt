@@ -37,7 +37,7 @@ Fachliches, Bugs
 [x] Movies-Datei nicht als .txt sondern als .json speichern
 [x] Prio's Attribut "optional" kann weg. Keine Ahnung, wofür das war. Alte JSON-Daten weiterhin einlesbar?
 [ ] Unbooken und Unbookmarken von Movies auf allen Seiten zulassen
-[ ] Details-Links als Pseudo-Buttons anzeigen
+[x] Details-Links als Pseudo-Buttons anzeigen
 [ ] Ansicht für Zeiten, die avail/booked/bookmarked sind - in Schedule-Seite integrieren
 [ ] zwei gleichzeitige Logins erkennen und vor gegenseitigem Überschreiben der Prios waren (per asynchronem Web-Socket-Zeuchs)
 [ ] Priorisierung in der Liste mit Pfeil-hoch/runter-Buttons ändern können
@@ -45,13 +45,22 @@ Fachliches, Bugs
 [ ] Filterung der Listen: Event-Spalte zeigt aktuell die Gesamtzahl , nicht die für den gefilterten Tag
 [ ] Filter auf Datum/Uhrzeit: Ende-Uhrzeit muss gegen die Movie-Endezeit (nicht gegen die Anfangszeit) geprüft werden (aktuelle Implementierung ProgramParser.isInStartEndTimeframe() ist merkwürdig)
 [ ] force book ist aktuell nur für Bookings, aber nicht für Bookmarks implementiert -> nicht konsistent
-[ ] Mehr als ein Event eines Movies bookmarken (wollen wir das wirklich?)
 [ ] Auf Schedule-Seite die Filme rot markieren, die Überlappung haben (weil diese durch force book erzwungen worden ist)
 [ ] Titelleiste auf iPad bricht bei 5 Filter-Tagen häßlich um (Tagesliste dann über zwei Zeilen)
+[ ] Mehr als ein Event eines Movies bookmarken (wollen wir das wirklich -> ja, siehe nächster Eintrag)
+[ ] Beliebig bookmarken können: Jedes Event bookmarkable machen, außer Film ist schon gebookt
+[ ] Abhängigkeiten zu Event rein und raus modellieren: Index aufbauen. Abhängigkeiten auch anzeigen und navigierbar machen
+[ ] In allen Listen nach allen Spalten sortieren können, auch mehrfach "zuerst nach X, dann nach Y": Einmal Klick ab, zweiter Klick aufsteigend, dritter: Sortierung raus
+[ ] Filter nach Tag besser anzeigen
+[ ] Filter nach Location erlauben
+[ ] neue Liste: alle Events "flachgeklopft", auch Filter nach Tag und nach Location ermöglichen
+[ ] Event-ID nicht selbst generieren, sondern aus der URL rausgreppen
+[ ] bei gebookmarkten Events auch gleich Booken erlauben
 
 Locations
 [x] Location überall gleich anzeigen, auch gleich mit Link wie bei Schedule
 [ ] Location-Entfernungen einbauen
+[ ] Locationgruppen bilden (zB ist Cubix 5 quasi Cubix 10)
 [ ] halbe Stunde Puffer aktuell hardcoded - dynamisch machen, auch von Location/Entfernung abhg machen oder manuell override zulassen
 [ ] Farbig in Tabelle: Wettbewerb oder Retrospektive oder Dokumentar ...
 [ ] Länder anzeigen (zB Spanien, Kanada, Island, aber das steht nur unformatiert in der Description -> per Volltextsuche, wie Kategorie, siehe MovieCategory)
@@ -60,6 +69,7 @@ Kalender
 [x] Kalendereintrag für iPhone supporten. Zeitzone aller Datum/Zeit-Attribute muss in UTC angegeben sein
 [x] Kalendereintrag für Outlook checken: Stimmt die Zeitzone?
 [ ] Kalendereintrag ohne X-WR-TIMEZONE, X-WR-CALNAME, X-WR-CALDESC erzeugen/ausgeben, damit die Einträge direkt in meinem Kalender landen (ohne Umweg über einen Zweitkalender)
+[ ] Warum eigentlich eine neue ICS-Datei generieren? Warum nciht die Inhalte aus dem Program einfach übernehmen?
 
 Layout
 [ ] Responsive fuers Handy
