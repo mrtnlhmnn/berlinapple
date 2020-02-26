@@ -78,13 +78,25 @@ sudo docker exec -it <ZZZID> bash
 
 ###############################################################################################################
 #
-# Browser
+# Web access via HTTP
 #
 
-# if port 8080 is not accessible => need to make it HTTP available in AWS!
+# Currently, all EC2 instances are stopped
+# Need to start a new one, so the AWS's URL (*) below will change!
 
-# Need to add a "Security Group" with HTTP traffic (prob. both for inbound and outbound) and 
+# Then HTTP on port 8080 will most probably not be accessible => 
+#   Need to make it HTTP available in AWS! So add a "Security Group" with 
+#   HTTP traffic (prob. both for inbound and outbound) and 
 #   add it to the EC2 instance (Actions > Networking > Change Security Groups)
 
+# Now this should be working
 http://ec2-52-58-166-180.eu-central-1.compute.amazonaws.com/
 http://ec2-52-58-166-180.eu-central-1.compute.amazonaws.com/version
+
+
+# Now change redirect from berlinapple.de. So go to 
+https://mein.ionos.de/domains
+
+# Change the redirect URL to the new URL from
+http://ec2-52-58-166-180.eu-central-1.compute.amazonaws.com:80/
+# to the new URL (*)
