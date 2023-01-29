@@ -5,6 +5,6 @@ RUN yum -y update \
   && yum clean all \
   && rm -rf /var/cache/yum
 
-RUN JVM_PATH=/usr/lib/jvm/java-17-amazon-corretto-devel
+RUN JVM_PATH=/usr/lib/jvm/java-17-amazon-corretto.x86_64
 
-ENV JAVA_HOME /usr/lib/jvm/java-17-amazon-corretto-devel
+ENV JAVA_HOME /usr/lib/jvm/java-17-amazon-corretto.x86_64
