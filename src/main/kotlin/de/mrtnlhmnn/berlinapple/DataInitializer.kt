@@ -1,7 +1,5 @@
 package de.mrtnlhmnn.berlinapple.application
 
-import de.mrtnlhmnn.berlinapple.data.Event
-import de.mrtnlhmnn.berlinapple.data.ID
 import de.mrtnlhmnn.berlinapple.infrastructure.LocationParser
 import de.mrtnlhmnn.berlinapple.data.MovieRepo
 import de.mrtnlhmnn.berlinapple.data.ProgramParser

@@ -58,6 +58,7 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
 
                 // get data from parsed calendar ics file
                 for (calEntryProps in calEntry.getProperties()) {
+//TODO use calEntry.getProperty() to ask for a property directly (but internally it iterates as well :-( )
                     when {
                         (calEntryProps.name == beginKey) -> {
                             beginZDTFromProgram = ZonedDateTime.parse(calEntryProps.value, dateTimePatternFormatterCal)
