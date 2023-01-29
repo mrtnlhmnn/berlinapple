@@ -6,7 +6,7 @@
 
 # in Bash
 
-cd /c/lehmann/spielwiese/berlinapple/src/berlinapple
+cd /b/berlinapple
 
 docker build . -f Dockerfile.java_base -t mrtnlhmnn/berlinapple_java_base:latest --no-cache --force-rm
 
@@ -25,7 +25,7 @@ docker push mrtnlhmnn/berlinapple_java_base
 mvn install
 
 # in Bash
-cd /c/lehmann/spielwiese/berlinapple/src/berlinapple
+cd /b/berlinapple
 
 docker build . -f Dockerfile -t mrtnlhmnn/berlinapple:latest --no-cache --force-rm
 
