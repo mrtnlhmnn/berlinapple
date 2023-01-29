@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.9.RELEASE</version>
+        <version>2.7.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>de.mrtnlhmnn</groupId>
@@ -15,8 +15,8 @@
     <description>BerlinAPPle</description>
 
     <properties>
-        <java.version>1.8</java.version>
-        <kotlin.version>1.3.61</kotlin.version>
+        <java.version>17</java.version>
+        <kotlin.version>1.6.0</kotlin.version>
         <aws-java-sdk-s3.version>1.11.665</aws-java-sdk-s3.version>
         <gson-version>2.8.5</gson-version>
     </properties>
@@ -65,6 +65,13 @@
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib-jdk8</artifactId>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.11.0</version>
         </dependency>
 
         <dependency>
