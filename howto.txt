@@ -1,30 +1,24 @@
 ###############################################################################################################
 #
-# BerlinAPPle Java Base Image
+# A)
+# BerlinAPPle Docker Java Base Image
 # only, if java_base images changes)
 
 # in Bash
 
 cd /c/lehmann/spielwiese/berlinapple/src/berlinapple
 
-docker build . -f Dockerfile.java_base --no-cache --force-rm
-> <AAAID>
-
-docker run -d -p 9090:8080 <AAAID>
-> <BBBID>
-
-docker commit -m "BerlinAPPle Java Base Build" -a "mrtnlhmnn" <BBBID> mrtnlhmnn/berlinapple_java_base
+docker build . -f Dockerfile.java_base -t mrtnlhmnn/berlinapple_java_base:latest --no-cache --force-rm
 
 # optional (Attention: Do not copy pw directly from activ'aid to shell!)
 # winpty docker login -u mrtnlhmnn
 
 docker push mrtnlhmnn/berlinapple_java_base
 
-docker stop <BBBID>
-
 ###############################################################################################################
 #
-# BerlinAPPle Image
+# B)
+# BerlinAPPle Docker Image
 #
 
 # in IntelliJ
@@ -33,27 +27,50 @@ mvn install
 # in Bash
 cd /c/lehmann/spielwiese/berlinapple/src/berlinapple
 
-docker build . -f Dockerfile --no-cache --force-rm
-> <XXXID>
-
-docker run -d -p 8080:8080 <XXXID>
-> <YYYID>
-
-docker commit -m "BerlinAPPle Build" -a "mrtnlhmnn" <YYYID> mrtnlhmnn/berlinapple
+docker build . -f Dockerfile -t mrtnlhmnn/berlinapple:latest --no-cache --force-rm
 
 # optional (Attention: Do not copy pw directly from activ'aid to shell!)
 # winpty docker login -u mrtnlhmnn
 
 docker push mrtnlhmnn/berlinapple
 
-docker stop <YYYID>
+###############################################################################################################
+#
+# C)
+# Create AWS EC2 instance
+#
+
+1) Login
+https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Feu-central-1.console.aws.amazon.com%2Fec2%2Fv2%2Fhome%3Fregion%3Deu-central-1%26state%3DhashArgs%2523Instances%253Asort%253DinstanceId%26isauthcode%3Dtrue&client_id=arn%3Aaws%3Aiam%3A%3A015428540659%3Auser%2Fec2&forceMobileApp=0&code_challenge=t5HoiXNn0t79zebaq1zp4rZZg-y3jc_5jWGfL45-_GE&code_challenge_method=SHA-256
+
+with mrtn...@gmx.de
+
+2) EC2, Launch Instance
+- EC2
+- t2.micro
+- Key pair name: berlinapple auswählen
+- HTTPS, HTTP und SSH alles auswählen
+
+3) Login per SSH
+ssh ec2-user@ec2-3-75-193-211.eu-central-1.compute.amazonaws.com -i /c/lehmann/spielwiese/berlinapple/orga/berlinapple.pem
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0777 for '/c/lehmann/spielwiese/berlinapple/orga/berlinapple.pem' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+Load key "/c/lehmann/spielwiese/berlinapple/orga/berlinapple.pem": bad permissions
+ec2-user@ec2-3-75-193-211.eu-central-1.compute.amazonaws.com: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
+
+-> Permissions due not work for Windows files, copy/move then to WSL filesystem like ~/berlinapple kopieren - and then chmod 700
+
 
 ###############################################################################################################
 #
+# D)
 # Deploy and run on AWS EC2 instance
 #
-
-ssh ec2-user@ec2-52-58-166-180.eu-central-1.compute.amazonaws.com -i /c/lehmann/spielwiese/berlinapple/orga/berlinapple.pem
 
 # optional, if no docker installed
 # sudo yum install -y docker
@@ -78,25 +95,31 @@ sudo docker exec -it <ZZZID> bash
 
 ###############################################################################################################
 #
+# E)
 # Web access via HTTP
 #
 
 # Currently, all EC2 instances are stopped
 # Need to start a new one, so the AWS's URL (*) below will change!
 
+# What to use? This should be fine: 
+#     A "t2.micro" is more than enough for our needs.
+#     Amazon Linux 2 AMI (HVM), SSD Volume Type - ami-0df0e7600ad0913a9 (64-bit x86) / ami-0a3ab28b9d065f7c5 (64-bit Arm)
+#     64-bit (x86)
+
 # Then HTTP on port 8080 will most probably not be accessible => 
 #   Need to make it HTTP available in AWS! So add a "Security Group" with 
 #   HTTP traffic (prob. both for inbound and outbound) and 
 #   add it to the EC2 instance (Actions > Networking > Change Security Groups)
 
-# Now this should be working
-http://ec2-52-58-166-180.eu-central-1.compute.amazonaws.com/
-http://ec2-52-58-166-180.eu-central-1.compute.amazonaws.com/version
+# Now these URLs (or similar *) should be working:
+http://ec2-3-75-193-211.eu-central-1.compute.amazonaws.com/
+http://ec2-3-75-193-211.eu-central-1.compute.amazonaws.com/version
 
 
-# Now change redirect from berlinapple.de. So go to 
+# If all is working, change the redirect from berlinapple.de. So go to 
 https://mein.ionos.de/domains
 
 # Change the redirect URL to the new URL from
-http://ec2-52-58-166-180.eu-central-1.compute.amazonaws.com:80/
+http://ec2-3-75-193-211.eu-central-1.compute.amazonaws.com :80/
 # to the new URL (*)
