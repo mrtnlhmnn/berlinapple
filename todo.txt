@@ -91,11 +91,12 @@ Querschnitt & Infrastruktur
 [x] Spring-Profile local einführen
 [/] Properties-Key-Namen systematischer nennen
 [/] Maven-Git-Plugin einbauen, wie bei KAPA
-[ ] berlinapple.de als Domain und AWS dahin umlenken
+[x] berlinapple.de als Domain und AWS dahin umlenken
 [ ] Läuft wirklich eine Apache Derby DB mit?
 [ ] Auf https umstellen S. https://www.tutorialspoint.com/spring_boot/spring_boot_enabling_https.htm, https in AWS: ???
-[ ] Auf Java 11 umstellen
 
 Technik
-[ ] Migration nach Java 11
+[ ] Migration nach Java 17
+[ ] Update auf Kotlin aktuelle Version
+[ ] Update auf Spring 2.7.7 oder 3
 [ ] Migration nach Graal

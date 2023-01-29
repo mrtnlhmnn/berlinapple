@@ -1,0 +1,4 @@
+1) Locations
+- download manually the info from https://www.berlinale.de/de/service/lageplan/lageplan.html?cat=venues
+- put data to .../resources/data/locations.json
+
