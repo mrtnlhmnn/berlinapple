@@ -30,7 +30,7 @@ open class S3Config {
     val s3BucketName: String? = null
 
     @Value("\${aws.s3.movie.keyprefix}")
-    val movieKeyPrefix: String? = "berlinapple2020/movies/movies-"
+    val movieKeyPrefix: String? = "berlinapple2023/movies/movies-"
 
     @Bean
     open fun s3Client(): AmazonS3 {

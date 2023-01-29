@@ -2,14 +2,14 @@
 offline=false
 programFile=data/program.ics
 locationFile=data/locations.json
-berlinaleStartDateTime=20200221T1300
-berlinaleEndDateTime=20200225T2000
-persistenceSchedule=0 0/30 * * * *
-persistence.savetos3.toggle=false
+berlinaleStartDateTime=20230217T1200
+berlinaleEndDateTime=20230220T1900
+persistenceSchedule=0 0/5 * * * *
+persistence.savetos3.toggle=true
 
 #############################################################################################################
 aws.s3.bucketname=berlinapple
-aws.s3.movie.keyprefix=berlinapple2020/movies/movies-
+aws.s3.movie.keyprefix=berlinapple2023/movies/movies-
 
 # change here: https://console.aws.amazon.com/iam/home#/security_credentials
 aws.s3.access_key=TODO

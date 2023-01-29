@@ -12,11 +12,11 @@ open class BerlinappleConfig {
     val locationJSONFileName: String = ""
 
 
-    @Value("\${berlinaleStartDateTime:20200221T1300}")
+    @Value("\${berlinaleStartDateTime:20230217T1200}")
 //TODO Implement fallback if not set (or let the application crash at start time)
     val berlinaleStartDateTime: String = ""
 
-    @Value("\${berlinaleEndDateTime:20200225T2000}")
+    @Value("\${berlinaleEndDateTime:20230220T1900}")
 //TODO Implement fallback if not set (or let the application crash at start time)
     val berlinaleEndDateTime: String = ""
 
