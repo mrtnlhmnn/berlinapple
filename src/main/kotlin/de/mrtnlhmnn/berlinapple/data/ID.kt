@@ -11,4 +11,4 @@ data class ID(val id: String) {
     override fun toString(): String = "$id"
 }
 
-private inline fun String.hashAndHex() = String.format("%08X", Math.abs(hashCode()))
+private fun String.hashAndHex() = String.format("%08X", Math.abs(hashCode()))

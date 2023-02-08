@@ -34,9 +34,7 @@ open class S3Config {
 
     @Bean
     open fun s3Client(): AmazonS3 {
-        val amazonS3: AmazonS3
-
-        amazonS3 = if (StringUtils.isEmpty(awsAccessKey) || StringUtils.isEmpty(awsSecretKey)) {
+        val amazonS3 = if (!StringUtils.hasLength(awsAccessKey) || !StringUtils.hasLength(awsSecretKey)) {
             AmazonS3ClientBuilder.standard()
                     .withRegion(Regions.fromName(s3Region))
                     .build()

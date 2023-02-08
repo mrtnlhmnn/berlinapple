@@ -25,9 +25,11 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
     private val dateTimePattern = "yyyyMMdd'T'HHmm"
     private val dateTimePatternFormatter = DateTimeFormatter.ofPattern(dateTimePattern)
 
-    val berlinaleStartDateAsLDT = LocalDateTime.parse(config.berlinaleStartDateTime, dateTimePatternFormatter)
-    val berlinaleEndDateAsLDT   = LocalDateTime.parse(config.berlinaleEndDateTime,   dateTimePatternFormatter)
+    private val berlinaleStartDateAsLDT = LocalDateTime.parse(config.berlinaleStartDateTime, dateTimePatternFormatter)
+    private val berlinaleEndDateAsLDT   = LocalDateTime.parse(config.berlinaleEndDateTime,   dateTimePatternFormatter)
 
+    public var eventTotalCounter = 0;
+    public var eventNotFilteredCounter = 0;
 
     // ----------------------------------------------------
     private val beginKey       = Property.DTSTART
@@ -45,10 +47,10 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
             val builder = CalendarBuilder()
             val calendar = builder.build(fis)
 
-            var eventTotalCounter = 0;
-            var eventNotFilteredCounter = 0;
 
-            for (calEntry in calendar.getComponents()) {
+
+            // get all data from parsed calendar ics file
+            for (calEntry in calendar.components) {
                 var beginZDTFromProgram: ZonedDateTime? = null
                 var endZDTFromProgram: ZonedDateTime? = null
                 var locationStringFromProgram: String? = null
@@ -56,9 +58,8 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
                 var descriptionStringFromProgram = ""
                 var urlFromProgram: URL? = null
 
-                // get data from parsed calendar ics file
-                for (calEntryProps in calEntry.getProperties()) {
-//TODO use calEntry.getProperty() to ask for a property directly (but internally it iterates as well :-( )
+                // get next data from parsed calendar ics file
+                for (calEntryProps in calEntry.properties) {
                     when {
                         (calEntryProps.name == beginKey) -> {
                             beginZDTFromProgram = ZonedDateTime.parse(calEntryProps.value, dateTimePatternFormatterCal)

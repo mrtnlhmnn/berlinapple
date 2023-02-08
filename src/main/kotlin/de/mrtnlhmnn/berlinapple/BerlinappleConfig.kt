@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.annotation.Configuration
 
 @Configuration
-open class BerlinappleConfig {
+class BerlinappleConfig {
     @Value("\${programFile:data/program.ics}")
     val programICSFileName: String = ""
 
