@@ -49,7 +49,7 @@
     "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=fsk-kino"
   },
 
-  { "name": "HAU Hebbel am Ufer (HAU1)",
+  { "name": "HAU Hebbel am Ufer",
     "address": "Stresemannstraße 29, 10963 Berlin",
     "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=hau1"
   },
@@ -68,8 +68,17 @@
     "address": "Karl-Marx-Allee 33, 10178 Berlin",
     "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=kino-international"
   },
+  { "name": "International",
+    "address": "Karl-Marx-Allee 33, 10178 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=kino-international"
+  },
 
   { "name": "silent green Kulturquartier",
+    "address": "Gerichtstraße 35, 13347 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=silent-green-kulturquartier"
+  },
+
+  { "name": "Werkstattkino@silent green Kulturquartier",
     "address": "Gerichtstraße 35, 13347 Berlin",
     "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=silent-green-kulturquartier"
   },
@@ -107,5 +116,25 @@
   { "name": "Zoo Palast",
     "address": "Hardenbergstraße 29A, 10623 Berlin",
     "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=zoo-palast"
+  },
+
+  { "name": "Botschaft von Kanada",
+    "address": "Marshall McLuhan Salon, nähe Potsdamer Platz, Berlin",
+    "url": "https://goo.gl/maps/B8hmAadRpmLJoUMr8"
+  },
+
+  { "name": "Deutsche Kinemathek - 4. OG",
+    "address": "Potsdamer Platz, Berlin",
+    "url": "https://www.deutsche-kinemathek.de/de/besuch/anfahrt"
+  },
+
+  { "name": "https://www.manifestomarket.com/berlin/potsdamer-platz/de/",
+    "address": "Potsdamer Platz, Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=zoo-palast"
+  },
+
+  { "name": "SAVVY Contemporary",
+    "address": "Reinickendorfer Straße 17 13347 Berlin",
+    "url": "https://savvy-contemporary.com/"
   }
 ]

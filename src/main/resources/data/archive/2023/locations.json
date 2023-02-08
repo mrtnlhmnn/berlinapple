@@ -1,0 +1,111 @@
+[
+  { "name": "Akademie der Künste (Hanseatenweg)",
+    "address": "Hanseatenweg 10, 10557 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=akademie-der-kuenste"
+  },
+
+  { "name": "Kino Arsenal",
+    "address": "Potsdamer Straße 2, 10785 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=kino-arsenal"
+  },
+
+  { "name": "Berlinale Palast",
+    "address": "Marlene-Dietrich-Platz 1, 10785 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=berlinale-palast"
+  },
+
+  { "name": "Blauer Stern",
+    "address": "Hermann-Hesse-Straße 11, 13156 Berlin (Pankow)",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=blauer-stern"
+  },
+
+  { "name": "Bundesplatz-Kino",
+    "address": "Bundesplatz 14, 10715 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=bundesplatz-kino"
+  },
+
+  { "name": "CinemaxX am Potsdamer Platz",
+    "address": "Voxstr. 1, 10785 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=cinemaxx-am-potsdamer-platz"
+  },
+
+  { "name": "Cubix",
+    "address": "Rathausstraße 1, 10178 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=cubix"
+  },
+
+  { "name": "Delphi Filmpalast",
+    "address": "Kantstraße 12A, 10623 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=delphi-filmpalast"
+  },
+
+  { "name": "Filmtheater am Friedrichshain",
+    "address": "Bötzowstraße 1-5, 10407 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=filmtheater-am-friedrichshain"
+  },
+
+  { "name": "fsk Kino",
+    "address": "Segitzdamm 2, 10969 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=fsk-kino"
+  },
+
+  { "name": "HAU Hebbel am Ufer (HAU1)",
+    "address": "Stresemannstraße 29, 10963 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=hau1"
+  },
+
+  { "name": "Haus der Berliner Festspiele",
+    "address": "Schaperstraße 24, 10719 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=haus-der-berliner-festspiele"
+  },
+
+  { "name": "IL KINO",
+    "address": "Nansenstraße 22, 12047 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=il-kino"
+  },
+
+  { "name": "Kino International",
+    "address": "Karl-Marx-Allee 33, 10178 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=kino-international"
+  },
+
+  { "name": "silent green Kulturquartier",
+    "address": "Gerichtstraße 35, 13347 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=silent-green-kulturquartier"
+  },
+
+  { "name": "Thalia - Das Programmkino",
+    "address": "Rudolf-Breitscheid-Straße 50, 14482 Potsdam",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=thalia-programmkino"
+  },
+
+  { "name": "Cineplex Titania",
+    "address": "Gutsmuthsstraße 27/28, 12163 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=titania"
+  },
+
+  { "name": "UCI Luxe Gropius Passagen",
+    "address": "Johannisthaler Chaussee 295, 12351 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=uci-gropius-passagen"
+  },
+
+  { "name": "Urania",
+    "address": "An der Urania 17, 10787 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=urania"
+  },
+
+  { "name": "Verti Music Hall",
+    "address": "Mercedes-Platz 2, 10243 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=verti-music-hall"
+  },
+
+  { "name": "Zeiss-Großplanetarium",
+    "address": "Prenzlauer Allee 80, 10405 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=zeiss-grossplanetarium"
+  },
+
+  { "name": "Zoo Palast",
+    "address": "Hardenbergstraße 29A, 10623 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan/lageplan.html?loc=zoo-palast"
+  }
+]

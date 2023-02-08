@@ -1,4 +1,65 @@
-1) Locations
-- download manually the info from https://www.berlinale.de/de/service/lageplan/lageplan.html?cat=venues
+I) Locations
+    - download manually the info from https://www.berlinale.de/de/service/lageplan/lageplan.html?cat=venues
 - put data to .../resources/data/locations.json
 
+-------------------------------------------------------------------------------------------------------------------
+
+II) Program
+
+1) Download all HTML-pages manually in the browser from https://www.berlinale.de/de/programm/berlinale-programm.html
+2) grep -h 'ical.html' *.html|cut -d '"' -f 2 | sort  > download.txt
+
+3) Download the ics file does not work with wget or curl (no idea why)
+so instead: load download.txt to freedownloadmanager and start the download of all ics files
+
+4) cut the VCALENDAR header and footer, only keep the VEVENT part
+
+a) cat > vcalendarDelete.sh
+tail -n +10 $1 | head -n -1
+EOF
+
+b) delete all blanks in the ics filenames (eg with Totalcommander)
+
+c) find . -name "*.ics" | xargs -i ./vcalendarDelete.sh {} > result1.txt
+
+d) add header
+cat > header.txt
+BEGIN:VCALENDAR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//www.berlinale.de//NONSGML iCalcreator 2.6//
+VERSION:2.0
+X-WR-TIMEZONE:Europe/Berlin
+SUMMARY:73. Berlinale
+URL:https://www.berlinale.de/
+DESCRIPTION:73. Berlinale
+EOF
+
+e) add footer
+cat > footer.txt
+END:VCALENDAR
+EOF
+
+f) cat header.txt result1.txt footer.txt > result.txt
+
+----
+-> Final result is in result.txt
+
+-------------------------------------------------------------------------------------------------------------------
+
+III) Test the ics file - use the ProgramParserTest to see if the file can be loaded and all events are there
+
+a) grep "BEGIN:EVENT" | wc -l on the file to grep the number of evens
+
+b) correct ProgramParserTest asserts
+
+c) If errors in the form
+net.fortuna.ical4j.data.ParserException: Error at line 8.946:Invalid factory key: [ ]
+come up, then the line number of the ics file is given (here: number 8946).
+
+Typically the parser cannot cope with DESCRIPTION texts which are multiline texts. In the lines 2,3, ...
+the text starts with a blank. If the following character is a : or a = , this will fail -> manually correct
+
+-------------------------------------------------------------------------------------------------------------------
+
+IV) Add locations fallbacks like Cubix 5, Cubix 6, etc. to the locations file manually
