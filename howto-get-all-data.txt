@@ -62,4 +62,5 @@ the text starts with a blank. If the following character is a : or a = , this wi
 
 -------------------------------------------------------------------------------------------------------------------
 
-IV) Add locations fallbacks like Cubix 5, Cubix 6, etc. to the locations file manually
+IV) Add missing locations manually (any Kino with prefix like "Cubix" for "Cubix 1,2,3..." is done automatically
+but some Kinos are missing on the locations list or written differently.

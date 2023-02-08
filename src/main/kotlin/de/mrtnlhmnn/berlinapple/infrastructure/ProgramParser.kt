@@ -28,8 +28,8 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
     private val berlinaleStartDateAsLDT = LocalDateTime.parse(config.berlinaleStartDateTime, dateTimePatternFormatter)
     private val berlinaleEndDateAsLDT   = LocalDateTime.parse(config.berlinaleEndDateTime,   dateTimePatternFormatter)
 
-    public var eventTotalCounter = 0;
-    public var eventNotFilteredCounter = 0;
+    var eventTotalCounter = 0;
+    var eventNotFilteredCounter = 0;
 
     // ----------------------------------------------------
     private val beginKey       = Property.DTSTART
@@ -39,6 +39,7 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
     private val descriptionKey = Property.DESCRIPTION
     private val urlKey         = Property.URL
 
+//TODO get this method testable - extract the filter stuff out; check if the event numbers are correct
     fun parseProgramICSFile2Repo() {
         var fis: InputStream? = null
         try {
@@ -47,10 +48,9 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
             val builder = CalendarBuilder()
             val calendar = builder.build(fis)
 
-
-
             // get all data from parsed calendar ics file
             for (calEntry in calendar.components) {
+                //TODO put these parameters to a separate class
                 var beginZDTFromProgram: ZonedDateTime? = null
                 var endZDTFromProgram: ZonedDateTime? = null
                 var locationStringFromProgram: String? = null
@@ -109,6 +109,7 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
                     eventTotalCounter, berlinaleStartDateAsLDT, berlinaleEndDateAsLDT, eventNotFilteredCounter)
         }
         finally {
+            //TODO use try-with-resources, see https://www.baeldung.com/kotlin/try-with-resources
             fis?.close();
         }
     }
