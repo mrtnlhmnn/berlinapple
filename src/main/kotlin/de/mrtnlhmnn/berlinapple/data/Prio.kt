@@ -10,10 +10,10 @@ data class Prio(val value: Int): Comparable<Prio>, JSONConvertable  {
     override fun toString() = value.toString()
 
     companion object {
-//TODO check when one needs const val, when only val?
         val TOP    = Prio(99)
         val NORMAL = Prio(50)
-        val LOW    = Prio(1)
+        val LOW    = Prio(5)
+        val NURFUERAKKREDITIERTE = Prio(1)
         val HIDE   = Prio(0)
     }
 

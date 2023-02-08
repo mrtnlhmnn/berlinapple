@@ -98,8 +98,13 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
                         // Find (or create new) Movie and attach the above Event to it
                         var movie = movieRepo.findByTitleIgnoreCase(summaryStringFromProgram)
                         if (movie == null) {
-                            val newMovie = Movie(summaryStringFromProgram, descriptionStringFromProgram,
-                                    Prio.NORMAL, urlFromProgram)
+                            val prio = if (descriptionStringFromProgram.contains("Nur für Akkreditierte")) {
+                                Prio.NURFUERAKKREDITIERTE
+                            } else {
+                                Prio.NORMAL
+                            }
+
+                            val newMovie = Movie(summaryStringFromProgram, descriptionStringFromProgram, prio, urlFromProgram)
                             movieRepo.addOrUpdate(newMovie)
                             movie = newMovie
                         }
