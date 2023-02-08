@@ -26,6 +26,8 @@ enum class MovieCategory(val categoryName: String) {
     BerlinaleSpecialWithTypo("BerlinaleSpecial"),  // Typo, grrr
     PerspektiveDeutschesKino("Perspektive Deutsches Kino"),
     BerlinaleGoesKiez("Berlinale Goes Kiez"),
+    Hommage("Hommage"),
+    PerspektiveMatch("Perspektive Match"),
     UNKNOWN( /* do not show anything */ "" );
 
     override fun toString() = categoryName
