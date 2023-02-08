@@ -47,7 +47,14 @@ f) cat header.txt result1.txt footer.txt > result.txt
 
 -------------------------------------------------------------------------------------------------------------------
 
-III) Test the ics file - use the ProgramParserTest to see if the file can be loaded and all events are there
+III) Sources:
+- Check the MovieCategory enum
+- Change the start and end dates in the application.properties
+
+-------------------------------------------------------------------------------------------------------------------
+
+IV) Test the ics file - use the ProgramParserTest to see if the file can be loaded and all events are there
+Note: Format still seem ok with more than 75 characters are in one line?!
 
 a) grep "BEGIN:EVENT" | wc -l on the file to grep the number of evens
 
@@ -56,11 +63,13 @@ b) correct ProgramParserTest asserts
 c) If errors in the form
 net.fortuna.ical4j.data.ParserException: Error at line 8.946:Invalid factory key: [ ]
 come up, then the line number of the ics file is given (here: number 8946).
-
-Typically the parser cannot cope with DESCRIPTION texts which are multiline texts. In the lines 2,3, ...
+-> Typically the parser cannot cope with DESCRIPTION texts which are multiline texts. In the lines 2,3, ...
 the text starts with a blank. If the following character is a : or a = , this will fail -> manually correct
+
+d) Also, SUMMARY over two lines does not work properly: The URL on the next line is than added to the Summary
+-> Runtime problems, where the link is not show in the film list and the prio 50 is the link. -> manually correct
 
 -------------------------------------------------------------------------------------------------------------------
 
-IV) Add missing locations manually (any Kino with prefix like "Cubix" for "Cubix 1,2,3..." is done automatically
+V) Add missing locations manually (any Kino with prefix like "Cubix" for "Cubix 1,2,3..." is done automatically
 but some Kinos are missing on the locations list or written differently.

@@ -8,10 +8,10 @@
 
 cd /b/berlinapple
 
-docker build . -f Dockerfile.java_base -t mrtnlhmnn/berlinapple_java_base:latest --no-cache --force-rm
+docker build . -f Dockerfile.java_base -t mrtnlhmnn/berlinapple_java_base --no-cache --force-rm
 
 # optional (Attention: Do not copy pw directly from activ'aid to shell!)
-# winpty docker login -u mrtnlhmnn
+# docker login -u mrtnlhmnn
 
 docker push mrtnlhmnn/berlinapple_java_base
 
@@ -27,12 +27,12 @@ mvn install
 # in Bash
 cd /b/berlinapple
 
-docker build . -f Dockerfile -t mrtnlhmnn/berlinapple:20230205 --no-cache --force-rm
+docker build . -f Dockerfile -t mrtnlhmnn/berlinapple --no-cache --force-rm
 
 # optional (Attention: Do not copy pw directly from activ'aid to shell!)
-# winpty docker login -u mrtnlhmnn
+# docker login -u mrtnlhmnn
 
-docker push mrtnlhmnn/berlinapple:20230205
+docker push mrtnlhmnn/berlinapple
 
 ###############################################################################################################
 #
@@ -60,7 +60,7 @@ with mrtn...@gmx.de
 - HTTPS, HTTP and SSH -> select all
 
 3) Login per SSH
-ssh ec2-user@ec2-3-71-12-3.eu-central-1.compute.amazonaws.com -i /c/lehmann/spielwiese/berlinapple/orga/berlinapple.pem
+ssh ec2-user@ec2-3-65-11-118.eu-central-1.compute.amazonaws.com -i /c/lehmann/spielwiese/berlinapple/orga/berlinapple.pem
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
@@ -69,7 +69,7 @@ Permissions 0777 for '/c/lehmann/spielwiese/berlinapple/orga/berlinapple.pem' ar
 It is required that your private key files are NOT accessible by others.
 This private key will be ignored.
 Load key "/c/lehmann/spielwiese/berlinapple/orga/berlinapple.pem": bad permissions
-ec2-user@ec2-3-71-12-3.eu-central-1.compute.amazonaws.com: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
+ec2-user@ec2-3-65-11-118.eu-central-1.compute.amazonaws.com: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
 
 -> Permissions due not work for Windows files, copy/move then to WSL filesystem like ~/berlinapple kopieren - and then chmod 700
 
@@ -108,8 +108,8 @@ sudo docker exec -it <ZZZID> bash
 #
 
 # Now these URLs (or similar *) should be working:
-http://ec2-3-71-12-3.eu-central-1.compute.amazonaws.com/
-http://ec2-3-71-12-3.eu-central-1.compute.amazonaws.com/version
+http://ec2-3-65-11-118.eu-central-1.compute.amazonaws.com/
+http://ec2-3-65-11-118.eu-central-1.compute.amazonaws.com/version
 
 ###############################################################################################################
 #

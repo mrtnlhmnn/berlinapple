@@ -1,6 +1,7 @@
-package de.mrtnlhmnn.berlinapple.data
+package de.mrtnlhmnn.berlinapple.infrastructure
 
 import de.mrtnlhmnn.berlinapple.BerlinappleConfig
+import de.mrtnlhmnn.berlinapple.data.*
 import net.fortuna.ical4j.data.CalendarBuilder
 import net.fortuna.ical4j.model.Property
 import org.springframework.stereotype.Component
@@ -39,7 +40,8 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
     private val descriptionKey = Property.DESCRIPTION
     private val urlKey         = Property.URL
 
-//TODO get this method testable - extract the filter stuff out; check if the event numbers are correct
+//TODO break up this method, make it testable - extract the filter stuff out; check if the event numbers are correct
+//do not pass in the repos but ask for the result to make this method testable
     fun parseProgramICSFile2Repo() {
         var fis: InputStream? = null
         try {
@@ -60,6 +62,7 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
 
                 // get next data from parsed calendar ics file
                 for (calEntryProps in calEntry.properties) {
+//TODO check if any of these values is still null in the end (might be ok for some , like URL but not for time values)
                     when {
                         (calEntryProps.name == beginKey) -> {
                             beginZDTFromProgram = ZonedDateTime.parse(calEntryProps.value, dateTimePatternFormatterCal)

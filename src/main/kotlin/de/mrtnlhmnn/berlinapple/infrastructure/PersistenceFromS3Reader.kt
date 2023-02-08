@@ -37,7 +37,7 @@ class PersistenceFromS3Reader(val s3Config: S3Config) {
             return IOUtils.toString(inputStream, StandardCharsets.UTF_8)
         }
         finally {
-            if (inputStream != null) inputStream.close()
+            inputStream?.close()
         }
     }
 }

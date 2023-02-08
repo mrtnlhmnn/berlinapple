@@ -1,8 +1,6 @@
 package de.mrtnlhmnn.berlinapple.infrastructure
 
-import de.mrtnlhmnn.berlinapple.data.LocationRepo
 import de.mrtnlhmnn.berlinapple.data.MovieRepo
-import de.mrtnlhmnn.berlinapple.data.ProgramParser
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test

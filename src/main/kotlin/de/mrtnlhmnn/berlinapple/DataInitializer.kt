@@ -2,17 +2,17 @@ package de.mrtnlhmnn.berlinapple.application
 
 import de.mrtnlhmnn.berlinapple.infrastructure.LocationParser
 import de.mrtnlhmnn.berlinapple.data.MovieRepo
-import de.mrtnlhmnn.berlinapple.data.ProgramParser
+import de.mrtnlhmnn.berlinapple.infrastructure.ProgramParser
 import de.mrtnlhmnn.berlinapple.infrastructure.PersistenceFromS3Reader
 import org.springframework.stereotype.Component
 
 @Component
 class DataInitializer(
-        private val locationParser: LocationParser,
-        private val programParser: ProgramParser,
-        private val persistenceFromS3Reader: PersistenceFromS3Reader,
-        private val movieRepo: MovieRepo,
-        private val bookingService: BookingService)
+    private val locationParser: LocationParser,
+    private val programParser: ProgramParser,
+    private val persistenceFromS3Reader: PersistenceFromS3Reader,
+    private val movieRepo: MovieRepo,
+    private val bookingService: BookingService)
 {
     init {
         // parse location file and fill the location repo
