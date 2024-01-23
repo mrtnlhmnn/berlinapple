@@ -11,6 +11,7 @@ Persistence
 [ ] Test, ob mit leerem S3 alles noch geht (oder bricht Merge ab?)
 [ ] Persistence für Tests auch von/nach lokaler Datei zulassen
 [x] Bugfix: mit nicht existierender movies...-Datei startet die App nicht
+[ ] Beim Schließen der Anwendung nochmal speichern (sonst sind ggf. letzte Änderungen weg)
 
 Fachliches, Bugs
 [x] Bugfix: bookable=yes und available=yes geht, vermutlich durch Fehler in unbook
@@ -96,7 +97,7 @@ Querschnitt & Infrastruktur
 [ ] Auf https umstellen S. https://www.tutorialspoint.com/spring_boot/spring_boot_enabling_https.htm, https in AWS: ???
 
 Technik
-[ ] Migration nach Java 17
+[x] Migration nach Java 17
 [ ] Update auf Kotlin aktuelle Version
-[ ] Update auf Spring 2.7.7 oder 3
+[ ] Update auf Spring Boot 3
 [ ] Migration nach Graal

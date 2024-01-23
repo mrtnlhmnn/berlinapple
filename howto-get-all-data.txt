@@ -1,5 +1,7 @@
 I) Locations
-    - download manually the info from https://www.berlinale.de/de/service/lageplan/lageplan.html?cat=venues
+    - download manually the info from
+        https://www.berlinale.de/de/service/lageplan.html
+        https://www.berlinale.de/de/service/lageplan/lageplan.html?cat=venues
 - put data to .../resources/data/locations.json
 
 -------------------------------------------------------------------------------------------------------------------
@@ -30,9 +32,9 @@ METHOD:PUBLISH
 PRODID:-//www.berlinale.de//NONSGML iCalcreator 2.6//
 VERSION:2.0
 X-WR-TIMEZONE:Europe/Berlin
-SUMMARY:73. Berlinale
+SUMMARY:74. Berlinale
 URL:https://www.berlinale.de/
-DESCRIPTION:73. Berlinale
+DESCRIPTION:74. Berlinale
 EOF
 
 e) add footer
@@ -58,16 +60,20 @@ Note: Format still seem ok with more than 75 characters are in one line?!
 
 a) grep "BEGIN:EVENT" | wc -l on the file to grep the number of evens
 
-b) correct ProgramParserTest asserts
+b) Use IcsFileCleaner to glue all description multiline lines to one line.
 
-c) If errors in the form
+b) correct ProgramParserTest asserts to new year
+
+c) If ical4j errors in the form
 net.fortuna.ical4j.data.ParserException: Error at line 8.946:Invalid factory key: [ ]
 come up, then the line number of the ics file is given (here: number 8946).
 -> Typically the parser cannot cope with DESCRIPTION texts which are multiline texts. In the lines 2,3, ...
 the text starts with a blank. If the following character is a : or a = , this will fail -> manually correct
+-> might be away because of b)
 
 d) Also, SUMMARY over two lines does not work properly: The URL on the next line is than added to the Summary
--> Runtime problems, where the link is not show in the film list and the prio 50 is the link. -> manually correct
+-> Runtime problems, where the link is not show in the film list and the prio 50 is the link. -> manually correct,
+-> correct IcsFileCleaner for that
 
 -------------------------------------------------------------------------------------------------------------------
 

@@ -29,8 +29,8 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
     private val berlinaleStartDateAsLDT = LocalDateTime.parse(config.berlinaleStartDateTime, dateTimePatternFormatter)
     private val berlinaleEndDateAsLDT   = LocalDateTime.parse(config.berlinaleEndDateTime,   dateTimePatternFormatter)
 
-    var eventTotalCounter = 0;
-    var eventNotFilteredCounter = 0;
+    var eventsTotalCounter = 0;
+    var eventsFilteredByTimeCounter = 0;
 
     // ----------------------------------------------------
     private val beginKey       = Property.DTSTART
@@ -84,12 +84,12 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
                     }
                 }
 
-                eventTotalCounter++
+                eventsTotalCounter++
 
                 if (beginZDTFromProgram != null && endZDTFromProgram != null && locationStringFromProgram != null) {
-                    // only relevant events are used
+                    // only relevant events are used, filtered by time
                     if (isInStartEndTimeframe(beginZDTFromProgram, endZDTFromProgram, summaryStringFromProgram)) {
-                        eventNotFilteredCounter++
+                        eventsFilteredByTimeCounter++
 
                         // Create Event from parsed calendar data
                         val location = locationRepo.findLocationByString(locationStringFromProgram)
@@ -114,7 +114,7 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
             }
 
             LOGGER.info("In total: {} events, left after date filter (between {} and {}) are now {} events",
-                    eventTotalCounter, berlinaleStartDateAsLDT, berlinaleEndDateAsLDT, eventNotFilteredCounter)
+                    eventsTotalCounter, berlinaleStartDateAsLDT, berlinaleEndDateAsLDT, eventsFilteredByTimeCounter)
         }
         finally {
             //TODO use try-with-resources, see https://www.baeldung.com/kotlin/try-with-resources

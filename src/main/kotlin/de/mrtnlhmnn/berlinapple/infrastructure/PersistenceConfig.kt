@@ -1,6 +1,5 @@
 package de.mrtnlhmnn.berlinapple.infrastructure
 
-import de.mrtnlhmnn.berlinapple.data.*
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.annotation.Configuration
 
