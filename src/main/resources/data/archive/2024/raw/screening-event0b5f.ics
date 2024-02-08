@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:34326566-3631-4739-b234-346466376233
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:31363332-6635-4338-b562-656239366131
+DTSTAMP:20240208T210640Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Turn in the Wound\nvon Abel Ferrara\nVereinigtes Königreich / D
+ eutschland / Italien / USA 2024\nUkrainisch\, Englisch\nUntertitel: Englis
+ ch\nmit Volodymyr Oleksandrovyč Zelenskyj\, Andrei Yermak\, Patti Smith\nB
+ erlinale Special\nWeltpremiere | Dokumentarische Form\n77 Min\n\nhttps://w
+ ww.berlinale.de/de/programm/detail.html?film_id=202415631
+DTSTART;TZID=Europe/Berlin:20240218T130000
+DTEND;TZID=Europe/Berlin:20240218T141700
+LOCATION:Zoo Palast 2
+SUMMARY:Turn in the Wound
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415631
+END:VEVENT
+END:VCALENDAR

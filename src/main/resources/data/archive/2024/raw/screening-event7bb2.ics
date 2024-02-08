@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:31306430-3337-4432-a536-363839333137
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:35306163-3261-4739-a663-636239363338
+DTSTAMP:20240208T210612Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Bester Film der Sektion Encounters | Best Film in the Encounter
+ s Section\nEncounters\n\nVorführung des Preisträgerfilms\nEncounters\n120 
+ Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202415671
+DTSTART;TZID=Europe/Berlin:20240225T120000
+DTEND;TZID=Europe/Berlin:20240225T140000
+LOCATION:Akademie der Künste
+SUMMARY:Vorführung des Preisträgerfilms
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415671
+END:VEVENT
+END:VCALENDAR

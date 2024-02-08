@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:66393164-3163-4562-b236-313733656263
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:63613032-6637-4134-a261-353166663265
+DTSTAMP:20240208T210706Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:I Hear You: For a Language of Trust on Set\nEnglisch\nmit Eliza
+  Hittman\, Ira Sachs\, Paula Alamillo\nBerlinale Talents Event\n90 Min\n\n
+ https://www.berlinale.de/de/programm/detail.html?film_id=202415743
+DTSTART;TZID=Europe/Berlin:20240219T143000
+DTEND;TZID=Europe/Berlin:20240219T160000
+LOCATION:HAU Hebbel am Ufer (HAU2)
+SUMMARY:I Hear You: For a Language of Trust on Set
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415743
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:36396137-3530-4230-b165-376233386131
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:61376164-3263-4162-b733-653334393835
+DTSTAMP:20240208T210610Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Kplus Kurzfilme 2 | Kplus Short Films 2\nUntertitel: Englisch\n
+ Generation Kplus\nVorstellung und anschließendes Filmgespräch mit Gebärden
+ dolmetscher*in | Deutsche Einsprache\n\nPorzellan | Porcelain\nvon Annika 
+ Birgel\nDeutschland 2024\nDeutsch\nmit Nell Marie Haack\, Liv Heleen Haack
+ \, Niklas Leifert\nGeneration Kplus\nWeltpremiere | empfohlen ab 12 Jahren
+ \n16 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=20240
+ 3921\n\nSukoun | Amplified | In die Stille\nvon Dina Naser\nJordanien / Äg
+ ypten / Palästina 2024\nArabisch\, Jordanische Gebärdensprache\nmit Malak 
+ Nassar\, Suhad Khatib\, Nadeem Al-Rimawi\, Hanna George Sakkab\nGeneration
+  Kplus\nWeltpremiere | empfohlen ab 12 Jahren\n19 Min\n\nhttps://www.berli
+ nale.de/de/programm/detail.html?film_id=202403617\n\nUli\nvon Mariana Gil 
+ Ríos\nKolumbien 2023\nSpanisch\nmit Ulith Giraldo\, María Camila Alarcón\,
+  Amelia Mejía Escobar\, Emanuel Vélez Hernández\nGeneration Kplus\nInterna
+ tionale Premiere | empfohlen ab 12 Jahren\n17 Min\n\nhttps://www.berlinale
+ .de/de/programm/detail.html?film_id=202411276\n\nPapillon | Butterfly | Sc
+ hmetterling\nvon Florence Miailhe\nFrankreich 2024\nFranzösisch\, Arabisch
+ \, Deutsch\nmit Fayçal Zafi\, Yassine Mestaoui\, Alexandre Liebe\, Johanne
+ s Olivier Hamm\, Hocine Ben\nGeneration Kplus\nWeltpremiere | Animation | 
+ empfohlen ab 12 Jahren\n15 Min\n\nhttps://www.berlinale.de/de/programm/det
+ ail.html?film_id=202413056\n\nA Summer’s End Poem | Sommer\, Ende\nvon Lam
+  Can-zhao\nVolksrepublik China / Schweiz / Malaysia 2024\nMin Nan\nmit Cai
+  Jingbo\, Cai Liyu\, Lan Zhongqing\nGeneration Kplus\nWeltpremiere | empfo
+ hlen ab 12 Jahren\n15 Min\n\nhttps://www.berlinale.de/de/programm/detail.h
+ tml?film_id=202403603
+DTSTART;TZID=Europe/Berlin:20240222T093000
+DTEND;TZID=Europe/Berlin:20240222T105200
+LOCATION:Filmtheater am Friedrichshain
+SUMMARY:Kplus Kurzfilme 2 | Kplus Short Films 2
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202403921
+END:VEVENT
+END:VCALENDAR

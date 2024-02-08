@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:64383034-3162-4430-b262-313266353766
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:39613938-6561-4637-b461-313136306137
+DTSTAMP:20240208T210427Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Unsichtbare Tage oder Die Legende von den weißen Krokodilen | I
+ nvisible Days\, or the Legend of the White Crocodiles\nvon Eva Hiller\nDeu
+ tschland 1991\nDeutsch\nmit Renan Demirkan\, Meghan Gay\nRetrospektive\nDo
+ kumentarische Form\nEnglische Sprachfassung\n77 Min\n\nhttps://www.berlina
+ le.de/de/programm/detail.html?film_id=202414613
+DTSTART;TZID=Europe/Berlin:20240222T123000
+DTEND;TZID=Europe/Berlin:20240222T134700
+LOCATION:Cubix 6
+SUMMARY:Unsichtbare Tage oder Die Legende von den weißen Krokodilen | Invis
+ ible Days\, or the Legend of the White Crocodiles
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414613
+END:VEVENT
+END:VCALENDAR

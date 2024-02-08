@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:37633939-3331-4935-b863-366438363766
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:66643038-6233-4462-b764-393364306238
+DTSTAMP:20240208T210707Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Honorary Golden Bear: In Conversation with Martin Scorsese\nEng
+ lisch\nmit Martin Scorsese\, Joanna Hogg\nBerlinale Talents Event\n90 Min
+ \n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202415747
+DTSTART;TZID=Europe/Berlin:20240221T170000
+DTEND;TZID=Europe/Berlin:20240221T183000
+LOCATION:HAU Hebbel am Ufer (HAU1)
+SUMMARY:Honorary Golden Bear: In Conversation with Martin Scorsese
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415747
+END:VEVENT
+END:VCALENDAR

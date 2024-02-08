@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:34313965-6366-4262-b632-643365343834
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:66653562-6236-4237-b164-313933306566
+DTSTAMP:20240208T210426Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Supermarkt | Supermarket\nvon Roland Klick\nBundesrepublik Deut
+ schland 1974\nDeutsch\nUntertitel: Englisch\nmit Charly Wierzejewski\, Eva
+  Mattes\, Michael Degen\, Walter Kohut\, Hans-Michael Rehberg\nRetrospekti
+ ve\nAltersfreigabe FSK 16\n80 Min\n\nhttps://www.berlinale.de/de/programm/
+ detail.html?film_id=202414617
+DTSTART;TZID=Europe/Berlin:20240223T190000
+DTEND;TZID=Europe/Berlin:20240223T202000
+LOCATION:Cubix 6
+SUMMARY:Supermarkt | Supermarket
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414617
+END:VEVENT
+END:VCALENDAR

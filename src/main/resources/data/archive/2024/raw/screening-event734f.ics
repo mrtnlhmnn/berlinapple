@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:32363662-3666-4361-b235-626332656664
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:62633533-3766-4632-a631-353462653261
+DTSTAMP:20240208T210548Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Last Swim\nvon Sasha Nathwani\nVereinigtes Königreich 2024\nEng
+ lisch\, Farsi\nUntertitel: Deutsch\nmit Deba Hekmat\, Narges Rashidi\, Jay
+  Lycurgo\, Solly McLeod\, Lydia Fleming\nGeneration 14plus\nWeltpremiere |
+  Debütfilm | empfohlen ab 14 Jahren\n100 Min\n\nhttps://www.berlinale.de/d
+ e/programm/detail.html?film_id=202405846
+DTSTART;TZID=Europe/Berlin:20240217T183000
+DTEND;TZID=Europe/Berlin:20240217T201000
+LOCATION:Cineplex Titania
+SUMMARY:Last Swim
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202405846
+END:VEVENT
+END:VCALENDAR

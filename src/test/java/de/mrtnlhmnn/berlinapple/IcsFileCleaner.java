@@ -8,6 +8,8 @@ import java.io.IOException;
 // parses and cleans the ics file - multiline strings starting with " " in the description are moved to the same line
 public class IcsFileCleaner {
     public static void main(String[] args) throws IOException {
+
+//TODO release lock on file - use try with resources?!
         boolean inDescription = false;
 
         String fileName = "src/main/resources/data/program.ics";

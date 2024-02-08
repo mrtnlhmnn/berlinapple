@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:66313038-6366-4165-a131-356438356537
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:62643235-3431-4633-b532-356630386637
+DTSTAMP:20240208T210535Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Reas\nvon Lola Arias\nArgentinien / Deutschland / Schweiz 2024
+ \nSpanisch\nUntertitel: Englisch\nmit Yoseli Arias\, Ignacio Amador Rodrig
+ uez\, Estefy Harcastle\, Carla Canteros\, Noelia Perez\nForum\nWeltpremier
+ e | Dokumentarische Form\n82 Min\n\nhttps://www.berlinale.de/de/programm/d
+ etail.html?film_id=202404553
+DTSTART;TZID=Europe/Berlin:20240222T220000
+DTEND;TZID=Europe/Berlin:20240222T232200
+LOCATION:Arsenal 1
+SUMMARY:Reas
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202404553
+END:VEVENT
+END:VCALENDAR

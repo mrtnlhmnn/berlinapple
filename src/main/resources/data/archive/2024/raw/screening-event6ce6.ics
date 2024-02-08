@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:34376535-6633-4263-a430-616665643861
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:30323533-6631-4839-b535-333139393534
+DTSTAMP:20240208T210638Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Une famille | A Family\nvon Christine Angot\nFrankreich 2024\nF
+ ranzösisch\nUntertitel: Englisch\nEncounters\nWeltpremiere | Debütfilm | D
+ okumentarische Form\n82 Min\n\nhttps://www.berlinale.de/de/programm/detail
+ .html?film_id=202410732
+DTSTART;TZID=Europe/Berlin:20240220T130000
+DTEND;TZID=Europe/Berlin:20240220T142200
+LOCATION:Cubix 8
+SUMMARY:Une famille | A Family
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202410732
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:38643863-3734-4235-b465-396236306466
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:64323939-6234-4237-b431-306466383338
+DTSTAMP:20240208T210425Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Teddy Talents Talks: What’s Seen But Not Said\nEnglisch\nmit Le
+ van Akin\, Bishop Black\, Philipp Fussenegger\, Susanne Heuer\, Vic Carmen
+  Sonne\nBerlinale Talents Event\n90 Min\n\nhttps://www.berlinale.de/de/pro
+ gramm/detail.html?film_id=202415553
+DTSTART;TZID=Europe/Berlin:20240220T143000
+DTEND;TZID=Europe/Berlin:20240220T160000
+LOCATION:HAU Hebbel am Ufer (HAU2)
+SUMMARY:Teddy Talents Talks: What’s Seen But Not Said
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415553
+END:VEVENT
+END:VCALENDAR

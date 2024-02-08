@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:35373532-3266-4861-b732-323865633033
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:35366133-3166-4537-b166-373036383735
+DTSTAMP:20240208T210556Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:L’ homme-vertige | L’ homme-vertige : Tales of a City\nvon Mala
+ ury Eloi Paisley\nFrankreich 2024\nFranzösisch\, Guadeloupe-Kreolisch\nUnt
+ ertitel: Englisch\nForum\nWeltpremiere | Debütfilm | Dokumentarische Form
+ \n93 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=20240
+ 6554
+DTSTART;TZID=Europe/Berlin:20240220T123000
+DTEND;TZID=Europe/Berlin:20240220T140300
+LOCATION:HKW 2 - Safi Faye Saal
+SUMMARY:L’ homme-vertige | L’ homme-vertige : Tales of a City
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202406554
+END:VEVENT
+END:VCALENDAR

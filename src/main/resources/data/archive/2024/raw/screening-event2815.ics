@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:32643562-3731-4563-a262-663966346565
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:32656266-6566-4437-a163-353836353133
+DTSTAMP:20240208T210456Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Teaches of Peaches\nvon Philipp Fussenegger\, Judy Landkammer\n
+ Deutschland 2024\nEnglisch\, Deutsch\nmit Peaches\, Leslie Feist\, Chilly 
+ Gonzales\, Shirley Manson\, Charlie Le Mindu\nPanorama Dokumente\nWeltprem
+ iere | Debütfilm | Dokumentarische Form\n102 Min\n\nhttps://www.berlinale.
+ de/de/programm/detail.html?film_id=202404884
+DTSTART;TZID=Europe/Berlin:20240222T183000
+DTEND;TZID=Europe/Berlin:20240222T201200
+LOCATION:Cubix 9
+SUMMARY:Teaches of Peaches
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202404884
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:34663462-3337-4634-b461-663661383465
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:31623833-3834-4937-b561-383364646631
+DTSTAMP:20240208T210520Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Programm 7 | Programme 7\nUntertitel: Englisch\nForum Expanded
+ \n\nIn Praise of Slowness\nvon Hicham Gardaf\nVereinigtes Königreich / Ita
+ lien 2023\nEnglisch\, Arabisch\nmit Khalid Mousmi\, Abdellah Ben Messaoud\
+ , Fatima Benabbou\nForum Expanded\nEuropäische Premiere | Dokumentarische 
+ Form\n17 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=2
+ 02414678\n\nRemote Occlusions\nvon Utkarsh\nIndien / USA 2024\nOhne Dialog
+ \nForum Expanded\nWeltpremiere | Dokumentarische Form\n16 Min\n\nhttps://w
+ ww.berlinale.de/de/programm/detail.html?film_id=202412199\n\nRoom 404\nvon
+  Elysa Wendi\, Wai Shing Lee\nPolen / Hongkong\, China 2023\nKantonesisch\
+ , Mandarin\nForum Expanded\nInternationale Premiere | Dokumentarische Form
+ \n29 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=20241
+ 5099
+DTSTART;TZID=Europe/Berlin:20240224T193000
+DTEND;TZID=Europe/Berlin:20240224T203200
+LOCATION:Arsenal 2
+SUMMARY:Programm 7 | Programme 7
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414678
+END:VEVENT
+END:VCALENDAR

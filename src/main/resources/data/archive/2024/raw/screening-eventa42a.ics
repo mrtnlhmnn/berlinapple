@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:36643065-3164-4130-b563-316634313661
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:39363465-3139-4237-b061-636139623230
+DTSTAMP:20240208T210717Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Faruk\nvon Aslı Özge\nDeutschland / Türkei / Frankreich 2024\nT
+ ürkisch\nUntertitel: Englisch\nmit Faruk Özge\, Derya Erkenci\, Gönül Geze
+ r\, Nurdan Çakmak\, Semih Arslanoğlu\nPanorama\nWeltpremiere\nBerlinale Go
+ es Kiez\n97 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_i
+ d=202405855
+DTSTART;TZID=Europe/Berlin:20240221T153000
+DTEND;TZID=Europe/Berlin:20240221T170700
+LOCATION:Babylon Kreuzberg
+SUMMARY:Faruk
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202405855
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:64303339-3665-4836-b034-316633383365
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:62363565-6535-4136-a137-656565363764
+DTSTAMP:20240208T210625Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Favoriten\nvon Ruth Beckermann\nÖsterreich 2024\nDeutsch\, Türk
+ isch\nUntertitel: Englisch\nmit Ilkay Idiskut\nEncounters\nWeltpremiere | 
+ Dokumentarische Form\n118 Min\n\nhttps://www.berlinale.de/de/programm/deta
+ il.html?film_id=202407612
+DTSTART;TZID=Europe/Berlin:20240217T220000
+DTEND;TZID=Europe/Berlin:20240217T235800
+LOCATION:Zoo Palast 2
+SUMMARY:Favoriten
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202407612
+END:VEVENT
+END:VCALENDAR

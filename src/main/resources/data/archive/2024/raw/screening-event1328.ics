@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:66636162-6366-4637-b062-376638636163
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:32323865-6134-4135-a539-376662356666
+DTSTAMP:20240208T210550Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Preisverleihung Generation Kplus | Awards Ceremony Generation K
+ plus\nGeneration Kplus\n\nVorführung der Preisträgerfilme der Gläsernen Bä
+ ren\nGeneration Kplus\n120 Min\n\nhttps://www.berlinale.de/de/programm/det
+ ail.html?film_id=202415639
+DTSTART;TZID=Europe/Berlin:20240224T153000
+DTEND;TZID=Europe/Berlin:20240224T173000
+LOCATION:HKW 1 - Miriam Makeba Auditorium
+SUMMARY:Vorführung der Preisträgerfilme der Gläsernen Bären
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415639
+END:VEVENT
+END:VCALENDAR

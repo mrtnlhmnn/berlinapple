@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:35663430-3335-4539-b465-373734353466
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:37666130-6138-4434-b961-616436646334
+DTSTAMP:20240208T210718Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Kai Shi De Qiang | She Sat There Like All Ordinary Ones\nvon Qu
+  Youjia\nVolksrepublik China 2024\nMandarin\nUntertitel: Englisch\nmit Zha
+ ng Taiwen\, Miao Jijun\nGeneration 14plus\nWeltpremiere | Debütfilm | empf
+ ohlen ab 14 Jahren\n105 Min\n\nhttps://www.berlinale.de/de/programm/detail
+ .html?film_id=202410405
+DTSTART;TZID=Europe/Berlin:20240221T190000
+DTEND;TZID=Europe/Berlin:20240221T204500
+LOCATION:HKW 1 - Miriam Makeba Auditorium
+SUMMARY:Kai Shi De Qiang | She Sat There Like All Ordinary Ones
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202410405
+END:VEVENT
+END:VCALENDAR

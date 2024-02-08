@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:66643738-6532-4734-a461-336231333637
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:34633838-6564-4338-b765-343465333535
+DTSTAMP:20240208T210436Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Denk bloß nicht\, ich heule | Just Don’t Think I’ll Cry\nvon Fr
+ ank Vogel\nDeutsche Demokratische Republik 1965 /1990\nDeutsch\nUntertitel
+ : Englisch\nmit Peter Reusse\, Anne-Kathrein Kretzschmar\, Hans Hardt-Hard
+ tloff\, Jutta Hoffmann\, Helga Göring\nRetrospektive\nAltersfreigabe FSK 1
+ 2\n91 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=2024
+ 14616
+DTSTART;TZID=Europe/Berlin:20240224T110000
+DTEND;TZID=Europe/Berlin:20240224T123100
+LOCATION:Cineplex Titania
+SUMMARY:Denk bloß nicht\, ich heule | Just Don’t Think I’ll Cry
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414616
+END:VEVENT
+END:VCALENDAR

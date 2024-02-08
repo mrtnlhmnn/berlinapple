@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:36333035-3666-4130-b137-316631613433
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:39366132-3433-4835-a639-306336666663
+DTSTAMP:20240208T210724Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Teddy Directors Exchange: (Re)Claiming Power\nSonderveranstaltu
+ ng\nEintritt frei
+DTSTART;TZID=Europe/Berlin:20240219T140000
+DTEND;TZID=Europe/Berlin:20240219T153000
+LOCATION:Manifesto Potsdamer Platz
+SUMMARY:Teddy Directors Exchange: (Re)Claiming Power
+URL:
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:36373962-3533-4639-b863-643264663433
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:61396164-3663-4738-b362-363130373331
+DTSTAMP:20240208T210526Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Gokogu no Neko | The Cats of Gokogu Shrine\nvon Kazuhiro Soda\n
+ Japan 2024\nJapanisch\nUntertitel: Englisch\nForum\nWeltpremiere | Dokumen
+ tarische Form\n119 Min\n\nhttps://www.berlinale.de/de/programm/detail.html
+ ?film_id=202401305
+DTSTART;TZID=Europe/Berlin:20240221T190000
+DTEND;TZID=Europe/Berlin:20240221T205900
+LOCATION:Zoo Palast 2
+SUMMARY:Gokogu no Neko | The Cats of Gokogu Shrine
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202401305
+END:VEVENT
+END:VCALENDAR

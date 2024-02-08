@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:62336338-3035-4333-b838-656432343638
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:61613935-6164-4830-a232-373738616430
+DTSTAMP:20240208T210428Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Zwei unter Millionen | Two Among Millions\nvon Victor Vicas\, W
+ ieland Liebske\nBundesrepublik Deutschland 1961\nDeutsch\nUntertitel: Engl
+ isch\nmit Hardy Krüger\, Loni von Friedl\, Walter Giller\, Joseph Offenbac
+ h\, Ilse Fürstenberg\nRetrospektive\nAltersfreigabe FSK 6\n96 Min\n\nhttps
+ ://www.berlinale.de/de/programm/detail.html?film_id=202414615
+DTSTART;TZID=Europe/Berlin:20240225T193000
+DTEND;TZID=Europe/Berlin:20240225T210600
+LOCATION:Zoo Palast 2
+SUMMARY:Zwei unter Millionen | Two Among Millions
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414615
+END:VEVENT
+END:VCALENDAR

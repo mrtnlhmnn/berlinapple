@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:36393162-3762-4437-b862-626533303837
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:38363331-6234-4236-a139-663938626434
+DTSTAMP:20240208T210618Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Through the Graves the Wind Is Blowing\nvon Travis Wilkerson\nU
+ SA 2024\nEnglisch\, Kroatisch\nUntertitel: Englisch\nmit Ivan Peric\, Trav
+ is Wilkerson\, Matilda Jane Wilkerson\, Dalton Wilkerson\nEncounters\nWelt
+ premiere\n84 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_
+ id=202406729
+DTSTART;TZID=Europe/Berlin:20240223T123000
+DTEND;TZID=Europe/Berlin:20240223T135400
+LOCATION:Akademie der Künste
+SUMMARY:Through the Graves the Wind Is Blowing
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202406729
+END:VEVENT
+END:VCALENDAR

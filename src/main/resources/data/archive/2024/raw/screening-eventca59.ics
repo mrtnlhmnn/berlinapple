@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:62326631-6236-4663-b135-666463303965
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:64616139-3735-4566-b939-626430376361
+DTSTAMP:20240208T210643Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Sasquatch Sunset\nvon David & Nathan Zellner\nUSA 2024\nOhne Di
+ alog\nmit Riley Keough\, Jesse Eisenberg\, Christophe Zajac-Denek\, Nathan
+  Zellner\nBerlinale Special\nInternationale Premiere\n88 Min\n\nhttps://ww
+ w.berlinale.de/de/programm/detail.html?film_id=202400954
+DTSTART;TZID=Europe/Berlin:20240225T160000
+DTEND;TZID=Europe/Berlin:20240225T172800
+LOCATION:HKW 1 - Miriam Makeba Auditorium
+SUMMARY:Sasquatch Sunset
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202400954
+END:VEVENT
+END:VCALENDAR

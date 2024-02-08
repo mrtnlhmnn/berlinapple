@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:66633439-6362-4537-b736-663433306333
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:33306631-3564-4266-a434-313731646137
+DTSTAMP:20240208T210455Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Tongo Saa | Rising Up at Night\nvon Nelson Makengo\nDemokratisc
+ he Republik Kongo / Belgien / Deutschland / Burkina Faso / Katar 2024\nLin
+ gala\nUntertitel: Englisch\nPanorama Dokumente\nWeltpremiere | Debütfilm |
+  Dokumentarische Form\n96 Min\n\nhttps://www.berlinale.de/de/programm/deta
+ il.html?film_id=202402656
+DTSTART;TZID=Europe/Berlin:20240221T220000
+DTEND;TZID=Europe/Berlin:20240221T233600
+LOCATION:Zoo Palast 2
+SUMMARY:Tongo Saa | Rising Up at Night
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202402656
+END:VEVENT
+END:VCALENDAR

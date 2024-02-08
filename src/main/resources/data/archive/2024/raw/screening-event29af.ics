@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:64363239-3132-4362-b964-346364393438
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:30356337-3930-4262-b138-666439623638
+DTSTAMP:20240208T210708Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Short on Answers: Calling Film into Question\nEnglisch\nmit Ilk
+ er Çatak\, Xabier Erkizia\, Jennifer Reeder\, Anna Henckel-Donnersmarck\nB
+ erlinale Talents Event\n90 Min\n\nhttps://www.berlinale.de/de/programm/det
+ ail.html?film_id=202415750
+DTSTART;TZID=Europe/Berlin:20240222T170000
+DTEND;TZID=Europe/Berlin:20240222T183000
+LOCATION:HAU Hebbel am Ufer (HAU2)
+SUMMARY:Short on Answers: Calling Film into Question
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415750
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:33623464-3666-4137-b538-613965333638
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:36616332-6138-4639-a264-613737616633
+DTSTAMP:20240208T210426Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Shirins Hochzeit | Shirin’s Wedding\nvon Helma Sanders-Brahms\n
+ Bundesrepublik Deutschland 1976\nDeutsch\, Türkisch\, Griechisch\nUntertit
+ el: Englisch\nmit Ayten Erten\, Jürgen Prochnow\, Aras Ören\, Jannis Kyria
+ kidis\, Peter Franke\nRetrospektive\nAltersfreigabe FSK 16\n121 Min\n\nhtt
+ ps://www.berlinale.de/de/programm/detail.html?film_id=202414611
+DTSTART;TZID=Europe/Berlin:20240218T213000
+DTEND;TZID=Europe/Berlin:20240218T233100
+LOCATION:Cubix 6
+SUMMARY:Shirins Hochzeit | Shirin’s Wedding
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414611
+END:VEVENT
+END:VCALENDAR

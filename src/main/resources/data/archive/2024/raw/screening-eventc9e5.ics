@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:31306636-3336-4237-a464-333735623432
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:30353730-6436-4336-a630-373933663263
+DTSTAMP:20240208T210620Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:La Cocina\nvon Alonso Ruizpalacios\nMexiko / USA 2024\nSpanisch
+ \, Englisch\nUntertitel: Englisch\, Deutsch\nmit Raúl Briones Carmona\, Ro
+ oney Mara\, Anna Diaz\, Motell Foster\, Oded Fehr\nWettbewerb\nWeltpremier
+ e\n139 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202
+ 408571
+DTSTART;TZID=Europe/Berlin:20240216T214500
+DTEND;TZID=Europe/Berlin:20240217T000400
+LOCATION:Berlinale Palast
+SUMMARY:La Cocina
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202408571
+END:VEVENT
+END:VCALENDAR

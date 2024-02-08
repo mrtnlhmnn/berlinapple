@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:63373739-3136-4335-a238-306633646562
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:63393638-3661-4433-b066-306535333634
+DTSTAMP:20240208T210519Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Programm 6 | Programme 6\nUntertitel: Englisch\nForum Expanded
+ \n\nThe Perfect Square\nvon Gernot Wieland\nDeutschland / Belgien 2024\nEn
+ glisch\nmit Rudolf Körner\nForum Expanded\nWeltpremiere\n8 Min\n\nhttps://
+ www.berlinale.de/de/programm/detail.html?film_id=202410273\n\nQUEBRANTE\nv
+ on Janaina Wagner\nBrasilien 2024\nPortugiesisch\nForum Expanded\nInternat
+ ionale Premiere | Dokumentarische Form\n23 Min\n\nhttps://www.berlinale.de
+ /de/programm/detail.html?film_id=202410978\n\nfor here am i sitting in a t
+ in can far above the world\nvon Gala Hernández López\nFrankreich 2024\nEng
+ lisch\nmit Olivia Delcán\, Joseph Grossi\nForum Expanded\nWeltpremiere | D
+ okumentarische Form\n18 Min\n\nhttps://www.berlinale.de/de/programm/detail
+ .html?film_id=202405099\n\nHere We Are\nvon Chanasorn Chaikitiporn\nThaila
+ nd 2023\nThai\, Englisch\nmit Jarunun Phantachat\, Suchanya Kaewsinual\nFo
+ rum Expanded\nInternationale Premiere | Dokumentarische Form\n20 Min\n\nht
+ tps://www.berlinale.de/de/programm/detail.html?film_id=202403184
+DTSTART;TZID=Europe/Berlin:20240219T130000
+DTEND;TZID=Europe/Berlin:20240219T140900
+LOCATION:Arsenal 1
+SUMMARY:Programm 6 | Programme 6
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202410273
+END:VEVENT
+END:VCALENDAR

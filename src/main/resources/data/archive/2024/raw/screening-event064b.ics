@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:38663432-6638-4038-a264-393537623762
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:65663139-3065-4862-b066-646337353230
+DTSTAMP:20240208T210530Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Techqua Ikachi\, Land – mein Leben | Techqua Ikachi\, Land – My
+  Life\nvon Anka Schmid\, Agnes Barmettler\, James Danaqyumptewa\nBundesrep
+ ublik Deutschland / Schweiz 1989\nHopi\nUntertitel: Englisch\nmit Qomahoyn
+ gma\, Sewemunewa\, Qomayumptewa\, Quavayma\, Dawangyawma\nForum Special\nD
+ okumentarische Form\n102 Min\n\nhttps://www.berlinale.de/de/programm/detai
+ l.html?film_id=202415315
+DTSTART;TZID=Europe/Berlin:20240217T100000
+DTEND;TZID=Europe/Berlin:20240217T114200
+LOCATION:Arsenal 1
+SUMMARY:Techqua Ikachi\, Land – mein Leben | Techqua Ikachi\, Land – My Lif
+ e
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415315
+END:VEVENT
+END:VCALENDAR

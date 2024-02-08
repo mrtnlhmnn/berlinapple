@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:66346339-3535-4865-a266-646239353066
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:38623863-3739-4235-b265-373863373964
+DTSTAMP:20240208T210525Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Il cassetto segreto | The Secret Drawer\nvon Costanza Quatrigli
+ o\nItalien / Schweiz 2024\nItalienisch\nUntertitel: Englisch\nForum\nWeltp
+ remiere | Dokumentarische Form\n132 Min\n\nhttps://www.berlinale.de/de/pro
+ gramm/detail.html?film_id=202403457
+DTSTART;TZID=Europe/Berlin:20240220T173000
+DTEND;TZID=Europe/Berlin:20240220T194200
+LOCATION:Delphi Filmpalast
+SUMMARY:Il cassetto segreto | The Secret Drawer
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202403457
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:63366135-6564-4538-a130-643735313464
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:33616463-6662-4434-a432-313436336263
+DTSTAMP:20240208T210457Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Pendant ce temps sur Terre | Meanwhile on Earth\nvon Jérémy Cla
+ pin\nFrankreich 2024\nFranzösisch\nUntertitel: Englisch\nmit Megan Northam
+ \, Catherine Salée\, Sam Louwyck\, Roman Williams\, Sofia Lesaffre\nPanora
+ ma\nWeltpremiere\n88 Min\n\nhttps://www.berlinale.de/de/programm/detail.ht
+ ml?film_id=202402824
+DTSTART;TZID=Europe/Berlin:20240218T214500
+DTEND;TZID=Europe/Berlin:20240218T231300
+LOCATION:Cubix 5
+SUMMARY:Pendant ce temps sur Terre | Meanwhile on Earth
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202402824
+END:VEVENT
+END:VCALENDAR

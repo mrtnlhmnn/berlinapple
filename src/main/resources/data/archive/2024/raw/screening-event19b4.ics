@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:64373130-3066-4532-b637-323265316135
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:66386236-3239-4834-b362-636361386434
+DTSTAMP:20240208T210501Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Verbrannte Erde | Scorched Earth\nvon Thomas Arslan\nDeutschlan
+ d 2024\nDeutsch\nUntertitel: Englisch\nmit Mišel Matičević\, Marie Leuenbe
+ rger\, Alexander Fehling\, Tim Seyfi\, Bilge Bingül\nPanorama\nWeltpremier
+ e\n101 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202
+ 408932
+DTSTART;TZID=Europe/Berlin:20240222T123000
+DTEND;TZID=Europe/Berlin:20240222T141100
+LOCATION:Cubix 9
+SUMMARY:Verbrannte Erde | Scorched Earth
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202408932
+END:VEVENT
+END:VCALENDAR

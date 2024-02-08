@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:38643061-3365-4437-a437-623338306263
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:65373362-6433-4863-a435-303063333932
+DTSTAMP:20240208T210642Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Wu Suo Zhu | Abiding Nowhere\nvon Tsai Ming-liang\nTaiwan / USA
+  2024\nOhne Dialog\nmit Lee Kang-Sheng\, Anong Houngheuangsy\nBerlinale Sp
+ ecial\nWeltpremiere\n79 Min\n\nhttps://www.berlinale.de/de/programm/detail
+ .html?film_id=202404173
+DTSTART;TZID=Europe/Berlin:20240222T210000
+DTEND;TZID=Europe/Berlin:20240222T221900
+LOCATION:Colosseum 1
+SUMMARY:Wu Suo Zhu | Abiding Nowhere
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202404173
+END:VEVENT
+END:VCALENDAR

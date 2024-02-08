@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:65343533-3137-4264-a461-633133373933
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:37353137-3939-4731-b365-386531303165
+DTSTAMP:20240208T210527Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:As noites ainda cheiram á pôlvora | The Nights Still Smell of G
+ unpowder\nvon Inadelso Cossa\nMosambik / Deutschland / Frankreich / Portug
+ al / Niederlande / Norwegen 2024\nTsonga\, Portugiesisch\nUntertitel: Engl
+ isch\nmit Inadelso Cossa\, Maria Estevão\, Moises Langa\, Macuacua\, Zalin
+ a\nForum\nWeltpremiere | Dokumentarische Form\n93 Min\n\nhttps://www.berli
+ nale.de/de/programm/detail.html?film_id=202403653
+DTSTART;TZID=Europe/Berlin:20240223T150000
+DTEND;TZID=Europe/Berlin:20240223T163300
+LOCATION:Delphi Filmpalast
+SUMMARY:As noites ainda cheiram á pôlvora | The Nights Still Smell of Gunpo
+ wder
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202403653
+END:VEVENT
+END:VCALENDAR

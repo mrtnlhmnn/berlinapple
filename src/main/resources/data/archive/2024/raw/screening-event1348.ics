@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:38363733-3366-4231-b435-303865643065
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:61386532-3136-4437-a234-393230306338
+DTSTAMP:20240208T210458Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:No Other Land\nvon Basel Adra\, Hamdan Ballal\, Yuval Abraham\,
+  Rachel Szor\nPalästina / Norwegen 2024\nArabisch\, Hebräisch\, Englisch\n
+ Untertitel: Englisch\nPanorama Dokumente\nWeltpremiere | Debütfilm | Dokum
+ entarische Form\n95 Min\n\nhttps://www.berlinale.de/de/programm/detail.htm
+ l?film_id=202409761
+DTSTART;TZID=Europe/Berlin:20240219T100000
+DTEND;TZID=Europe/Berlin:20240219T113500
+LOCATION:Cubix 5
+SUMMARY:No Other Land
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202409761
+END:VEVENT
+END:VCALENDAR

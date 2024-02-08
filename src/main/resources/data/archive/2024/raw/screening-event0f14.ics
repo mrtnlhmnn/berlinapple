@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:37326237-6465-4939-a362-623135396431
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:34356435-3631-4335-b932-303039313163
+DTSTAMP:20240208T210522Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Panorama Publikums-Preis | Panorama Audience Award\nPanorama\n
+ \nVorführung des prämierten Spielfilms\nPanorama\n90 Min\n\nhttps://www.be
+ rlinale.de/de/programm/detail.html?film_id=202415636
+DTSTART;TZID=Europe/Berlin:20240225T210000
+DTEND;TZID=Europe/Berlin:20240225T223000
+LOCATION:Zoo Palast 1
+SUMMARY:Vorführung des prämierten Spielfilms
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415636
+END:VEVENT
+END:VCALENDAR

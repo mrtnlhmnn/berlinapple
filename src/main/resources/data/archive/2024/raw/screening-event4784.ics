@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:36323136-6333-4635-b033-653131633034
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:65633633-3661-4163-b732-653335626136
+DTSTAMP:20240208T210516Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Programm 2\nForum Expanded\n\nNanacatepec\nvon Elena Pardo\, Az
+ ucena Losana\nMexiko / Spanien 2024\nOhne Dialog\nForum Expanded\nWeltprem
+ iere\n50 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=2
+ 02415414
+DTSTART;TZID=Europe/Berlin:20240216T200000
+DTEND;TZID=Europe/Berlin:20240216T205000
+LOCATION:Kino Betonhalle@Silent Green
+SUMMARY:Nanacatepec
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415414
+END:VEVENT
+END:VCALENDAR

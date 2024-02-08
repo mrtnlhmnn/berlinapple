@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:34366235-3065-4038-b366-626132636561
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:61636331-3633-4636-b931-346466396433
+DTSTAMP:20240208T210619Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Cuckoo\nvon Tilman Singer\nDeutschland / USA 2024\nEnglisch\, D
+ eutsch\, Französisch\nUntertitel: Englisch\, Deutsch\nmit Hunter Schafer\,
+  Dan Stevens\, Jessica Henwick\, Marton Csókás\, Jan Bluthardt\nBerlinale 
+ Special Gala\nWeltpremiere\n102 Min\n\nhttps://www.berlinale.de/de/program
+ m/detail.html?film_id=202408659
+DTSTART;TZID=Europe/Berlin:20240216T210000
+DTEND;TZID=Europe/Berlin:20240216T224200
+LOCATION:Verti Music Hall
+SUMMARY:Cuckoo
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202408659
+END:VEVENT
+END:VCALENDAR

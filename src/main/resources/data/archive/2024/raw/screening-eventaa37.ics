@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:35313130-3133-4633-b263-326134306539
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:64363933-6562-4465-b230-373134663639
+DTSTAMP:20240208T210550Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Reproduktion | Reproduction\nvon Katharina Pethke\nDeutschland 
+ 2024\nDeutsch\nUntertitel: Englisch\nForum\nWeltpremiere | Dokumentarische
+  Form\n111 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id
+ =202408323
+DTSTART;TZID=Europe/Berlin:20240217T150000
+DTEND;TZID=Europe/Berlin:20240217T165100
+LOCATION:Kino Betonhalle@Silent Green
+SUMMARY:Reproduktion | Reproduction
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202408323
+END:VEVENT
+END:VCALENDAR

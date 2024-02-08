@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:30616661-3035-4733-b234-636532393337
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:30313639-3333-4665-b532-643135623465
+DTSTAMP:20240208T210611Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Berlinale Abschlussgala – Preisverleihung\nWettbewerb\nNur auf 
+ Einladung
+DTSTART;TZID=Europe/Berlin:20240224T183000
+DTEND;TZID=Europe/Berlin:20240224T200000
+LOCATION:Berlinale Palast
+SUMMARY:Berlinale Abschlussgala – Preisverleihung
+URL:
+END:VEVENT
+END:VCALENDAR

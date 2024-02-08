@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:35336663-6365-4961-a634-386235636563
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:30656433-6634-4634-a336-366264333131
+DTSTAMP:20240208T210615Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Das leere Grab | The Empty Grave\nvon Agnes Lisa Wegner\, Cece 
+ Mlay\nDeutschland / Tansania 2024\nSwahili\, Deutsch\, Englisch\nUntertite
+ l: Englisch\nmit John Mbano\, Cesilia Mollel\, Felix Kaaya\, Ernest Kaaya\
+ , Mnyaka Sururu Mboro\nBerlinale Special\nWeltpremiere | Debütfilm | Dokum
+ entarische Form\n97 Min\n\nhttps://www.berlinale.de/de/programm/detail.htm
+ l?film_id=202407332
+DTSTART;TZID=Europe/Berlin:20240219T143000
+DTEND;TZID=Europe/Berlin:20240219T160700
+LOCATION:Haus der Berliner Festspiele
+SUMMARY:Das leere Grab | The Empty Grave
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202407332
+END:VEVENT
+END:VCALENDAR

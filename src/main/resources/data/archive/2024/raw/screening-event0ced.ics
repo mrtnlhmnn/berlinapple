@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:64303162-3130-4231-b265-336535323639
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:37313331-3736-4362-a564-333838653562
+DTSTAMP:20240208T210714Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Shahid\nvon Narges Kalhor\nDeutschland 2024\nDeutsch\, Farsi\, 
+ Englisch\nUntertitel: Englisch\nmit Baharak Abdolifard\, Nima Nazarinia\, 
+ Narges Kalhor\, Thomas Sprekelsen\, Carine Huber\nForum\nWeltpremiere | Al
+ tersfreigabe FSK 12\nBerlinale Goes Kiez\n84 Min\n\nhttps://www.berlinale.
+ de/de/programm/detail.html?film_id=202406618
+DTSTART;TZID=Europe/Berlin:20240222T180000
+DTEND;TZID=Europe/Berlin:20240222T192400
+LOCATION:Sinema Transtopia
+SUMMARY:Shahid
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202406618
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:38636435-3937-4438-a231-396165376164
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:30353662-6565-4230-a261-333336333737
+DTSTAMP:20240208T210601Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Pa-myo | Exhuma\nvon Jang Jae-hyun\nSüdkorea 2024\nKoreanisch\,
+  Japanisch\, Englisch\nUntertitel: Englisch\nmit Choi Min-sik\, Kim Go-eun
+ \, Yoo Hai-jin\, Lee Do-hyun\nForum\nWeltpremiere\n134 Min\n\nhttps://www.
+ berlinale.de/de/programm/detail.html?film_id=202409500
+DTSTART;TZID=Europe/Berlin:20240216T210000
+DTEND;TZID=Europe/Berlin:20240216T231400
+LOCATION:Zoo Palast 2
+SUMMARY:Pa-myo | Exhuma
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202409500
+END:VEVENT
+END:VCALENDAR

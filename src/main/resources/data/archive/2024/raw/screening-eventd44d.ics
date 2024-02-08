@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:31613732-6665-4130-a164-343432306561
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:33643038-3162-4931-b333-333037336336
+DTSTAMP:20240208T210521Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Programm 1 | Programme 1\nUntertitel: Englisch\nForum Expanded
+ \n\ndetours while speaking of monsters\nvon Deniz Şimşek\nDeutschland / Tü
+ rkei 2024\nTürkisch\nmit Emin Şimşek\nForum Expanded\nWeltpremiere | Dokum
+ entarische Form\n18 Min\n\nhttps://www.berlinale.de/de/programm/detail.htm
+ l?film_id=202411372\n\nGrandmamauntsistercat\nvon Zuza Banasińska\nNiederl
+ ande / Polen 2024\nPolnisch\nForum Expanded\nInternationale Premiere\n23 M
+ in\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202412806\n
+ \nI Don’t Want to Be Just a Memory | Ich will nicht nur eine Erinnerung se
+ in\nvon Sarnt Utamachote\nDeutschland 2024\nEnglisch\, Spanisch\nmit marum
+ \, René Bertune\, Andre Fau\, Katharina „Tinka“ Frommann\, RTALIN\nForum E
+ xpanded\nWeltpremiere | Dokumentarische Form\n20 Min\n\nhttps://www.berlin
+ ale.de/de/programm/detail.html?film_id=202405881
+DTSTART;TZID=Europe/Berlin:20240217T210000
+DTEND;TZID=Europe/Berlin:20240217T220100
+LOCATION:Kino Betonhalle@Silent Green
+SUMMARY:Programm 1 | Programme 1
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202411372
+END:VEVENT
+END:VCALENDAR

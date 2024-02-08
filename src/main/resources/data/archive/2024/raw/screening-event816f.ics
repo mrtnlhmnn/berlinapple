@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:39396432-3966-4431-b666-616461306138
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:36666263-6234-4232-b531-663264343666
+DTSTAMP:20240208T210723Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Forum Expanded Installationen\nForum Expanded Ausstellung\nÖffn
+ ungszeiten: 16. Februar 19 - 21:30 Uhr | 17. - 25\, Februar\, täglich 12 -
+  22 Uhr\nEintritt frei\n\nMyanmar Anatomy\nvon Prapat Jiwarangsan\nVereini
+ gte Arabische Emirate / Thailand 2023\nEnglisch\nForum Expanded Ausstellun
+ g\nInternationale Premiere | Dokumentarische Form\n22 Min\n\nhttps://www.b
+ erlinale.de/de/programm/detail.html?film_id=202413568\n\nOn the Battlefiel
+ d\nvon Theresa Delsoin\, Lisa Marie Malloy\, J.P. Sniadecki\, Ray Whitaker
+ \nUSA 2024\nEnglisch\nmit Ray Whitaker\, Rachel Burns\, Zah-Karri Levy\, T
+ owanda Macon\, Kyrie Wright\nForum Expanded Ausstellung\nWeltpremiere | Do
+ kumentarische Form\n13 Min\n\nhttps://www.berlinale.de/de/programm/detail.
+ html?film_id=202414454
+DTSTART;TZID=Europe/Berlin:20240225T120000
+DTEND;TZID=Europe/Berlin:20240225T123500
+LOCATION:Betonhalle@Silent Green
+SUMMARY:Forum Expanded Installationen
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202413568
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:33643464-3034-4064-b162-646430383837
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:33633435-3737-4964-b065-613431353031
+DTSTAMP:20240208T210441Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:The Day of the Locust | Der Tag der Heuschrecke\nvon John Schle
+ singer\nUSA 1975\nEnglisch\nmit Donald Sutherland\, Karen Black\, Burgess 
+ Meredith\, William Atherton\, Geraldine Page\nBerlinale Classics\nAltersfr
+ eigabe FSK 16\n144 Min\n\nhttps://www.berlinale.de/de/programm/detail.html
+ ?film_id=202411467
+DTSTART;TZID=Europe/Berlin:20240216T220000
+DTEND;TZID=Europe/Berlin:20240217T002400
+LOCATION:Akademie der Künste
+SUMMARY:The Day of the Locust | Der Tag der Heuschrecke
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202411467
+END:VEVENT
+END:VCALENDAR

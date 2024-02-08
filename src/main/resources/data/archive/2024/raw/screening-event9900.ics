@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:36643830-3538-4535-a335-386431613261
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:61623865-6234-4665-b065-326636366138
+DTSTAMP:20240208T210628Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Arcadia\nvon Yorgos Zois\nGriechenland / Bulgarien / USA 2024\n
+ Griechisch\nUntertitel: Englisch\nmit Vangelis Mourikis\, Angeliki Papouli
+ a\, Elena Topalidou\, Nikolas Papagiannis\, Vangelis Evangelinos\nEncounte
+ rs\nWeltpremiere\n99 Min\n\nhttps://www.berlinale.de/de/programm/detail.ht
+ ml?film_id=202403036
+DTSTART;TZID=Europe/Berlin:20240224T123000
+DTEND;TZID=Europe/Berlin:20240224T140900
+LOCATION:Akademie der Künste
+SUMMARY:Arcadia
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202403036
+END:VEVENT
+END:VCALENDAR

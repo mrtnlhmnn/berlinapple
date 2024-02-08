@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:35666235-3435-4433-b037-653666336530
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:31333565-3332-4531-b462-663839346237
+DTSTAMP:20240208T210520Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Zeit Verbrechen - Episode 1 & 2\nUntertitel: Englisch\nPanorama
+ \n\nDezember\nvon Mariko Minoguchi\nDeutschland 2024\nDeutsch\nmit Samuel 
+ Benito\, Lisa Hagmeister\, Kailas Mahadevan\, Sebastian Zimmler\, Aljoscha
+  Stadelmann\nPanorama\nWeltpremiere | Serie\n55 Min\n\nhttps://www.berlina
+ le.de/de/programm/detail.html?film_id=202415554\n\nDer Panther\nvon Jan Bo
+ nny\nDeutschland 2024\nDeutsch\nmit Lars Eidinger\, Anna Bederke\, Marc Po
+ ersken\, Sahin Eryilmaz\, Magdalena Laubisch\nPanorama\nWeltpremiere | Ser
+ ie\n76 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202
+ 415562
+DTSTART;TZID=Europe/Berlin:20240222T160000
+DTEND;TZID=Europe/Berlin:20240222T181100
+LOCATION:Zoo Palast 1
+SUMMARY:Zeit Verbrechen - Episode 1 & 2
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415554
+END:VEVENT
+END:VCALENDAR

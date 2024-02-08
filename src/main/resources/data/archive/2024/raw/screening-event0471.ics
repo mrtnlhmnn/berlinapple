@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:33333166-6164-4961-a634-363439383836
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:66383132-3239-4862-b163-653166336565
+DTSTAMP:20240208T210425Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Nicht nichts ohne Dich | Ain’t Nothing Without You\nvon Pia Fra
+ nkenberg\nBundesrepublik Deutschland 1985\nDeutsch\nUntertitel: Englisch\n
+ mit Klaus Bueb\, Pia Frankenberg\, Adeline Almeida-Sedas\, Thomas Struck\,
+  Alfred Edel\nRetrospektive\nAltersfreigabe FSK 12\n91 Min\n\nhttps://www.
+ berlinale.de/de/programm/detail.html?film_id=202414623
+DTSTART;TZID=Europe/Berlin:20240225T170000
+DTEND;TZID=Europe/Berlin:20240225T183100
+LOCATION:Cubix 6
+SUMMARY:Nicht nichts ohne Dich | Ain’t Nothing Without You
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414623
+END:VEVENT
+END:VCALENDAR

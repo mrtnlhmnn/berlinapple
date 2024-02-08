@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:66323538-3832-4035-b934-356533393230
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:32363266-3138-4362-b632-383338333366
+DTSTAMP:20240208T210632Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Demba\nvon Mamadou Dia\nSenegal / Deutschland / Katar 2024\nFul
+ fulde\nUntertitel: Englisch\nmit Ben Mahmoud Mbow\, Awa Djiga Kane\, Mamad
+ ou Sylla\, Aicha Talla\, Abdoulaye Dicko\nEncounters\nWeltpremiere\n119 Mi
+ n\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202415613
+DTSTART;TZID=Europe/Berlin:20240219T123000
+DTEND;TZID=Europe/Berlin:20240219T142900
+LOCATION:Colosseum 1
+SUMMARY:Demba
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415613
+END:VEVENT
+END:VCALENDAR

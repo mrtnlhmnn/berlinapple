@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:32363537-6535-4238-b833-663938333938
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:63316635-6135-4063-b934-396464386362
+DTSTAMP:20240208T210644Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Made in England: The Films of Powell and Pressburger\nvon David
+  Hinton\nVereinigtes Königreich 2024\nEnglisch\nmit Martin Scorsese\nBerli
+ nale Special\nWeltpremiere | Dokumentarische Form\n131 Min\n\nhttps://www.
+ berlinale.de/de/programm/detail.html?film_id=202414929
+DTSTART;TZID=Europe/Berlin:20240222T094500
+DTEND;TZID=Europe/Berlin:20240222T115600
+LOCATION:Cubix 8
+SUMMARY:Made in England: The Films of Powell and Pressburger
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414929
+END:VEVENT
+END:VCALENDAR

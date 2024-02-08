@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:61636139-3235-4363-a136-303035313637
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:38366232-6634-4661-b535-393437616331
+DTSTAMP:20240208T210532Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Diese Tage in Terezín | Those Days in Terezín\nvon Sibylle Schö
+ nemann\nDeutschland / Tschechien 1997\nDeutsch\, Englisch\, Tschechisch\nU
+ ntertitel: Englisch\nmit Victoria Hanna Gabbay\, Manka Alter\, Orni\, Hann
+ a Fialová-Malka\, Irene Ravelová\nForum Special\nDokumentarische Form\n80 
+ Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202415323
+DTSTART;TZID=Europe/Berlin:20240220T103000
+DTEND;TZID=Europe/Berlin:20240220T115000
+LOCATION:Arsenal 1
+SUMMARY:Diese Tage in Terezín | Those Days in Terezín
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415323
+END:VEVENT
+END:VCALENDAR

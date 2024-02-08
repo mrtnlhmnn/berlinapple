@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:64346235-3839-4339-b433-383366303966
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:63353937-3536-4537-b639-383737623164
+DTSTAMP:20240208T210717Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Engel aus Eisen | Angels of Iron\nvon Thomas Brasch\nBundesrepu
+ blik Deutschland 1980\nDeutsch\nUntertitel: Englisch\nmit Hilmar Thate\, K
+ atharina Thalbach\, Ulrich Wesselmann\, Karin Baal\, Ilse Pagé\nRetrospekt
+ ive\nAltersfreigabe FSK 16\nBerlinale Goes Kiez\n105 Min\n\nhttps://www.be
+ rlinale.de/de/programm/detail.html?film_id=202414620
+DTSTART;TZID=Europe/Berlin:20240223T180000
+DTEND;TZID=Europe/Berlin:20240223T194500
+LOCATION:Cosima Filmtheater
+SUMMARY:Engel aus Eisen | Angels of Iron
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414620
+END:VEVENT
+END:VCALENDAR

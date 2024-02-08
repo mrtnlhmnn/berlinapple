@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:63336266-3635-4236-b063-383838326661
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:64306666-3965-4761-b362-313539653564
+DTSTAMP:20240208T210611Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Kplus Kurzfilme 1 | Kplus Short Films 1\nUntertitel: Englisch\n
+ Generation Kplus\nDeutsche Einsprache\n\nBeurk ! | Yuck! | Igitt!\nvon Loï
+ c Espuche\nFrankreich 2024\nFranzösisch\nmit Noé Chabbat\, Katell Varvat\,
+  Enzo Desmedt\, Camille Bouisson\, Hugo Chauvel\nGeneration Kplus\nInterna
+ tionale Premiere | Animation | empfohlen ab 8 Jahren\n13 Min\n\nhttps://ww
+ w.berlinale.de/de/programm/detail.html?film_id=202406563\n\nAnaar Daana | 
+ Sour Candy | Saure Bonbons\nvon Nishi Dugar\nIndien 2024\nHindi\nmit Veda 
+ Agrawal\, Manav Hinduja\, Lavya Jain\, Manjari Saxena\, Suryakanta Bothra
+ \nGeneration Kplus\nWeltpremiere | empfohlen ab 8 Jahren\n20 Min\n\nhttps:
+ //www.berlinale.de/de/programm/detail.html?film_id=202412801\n\nGoosfand |
+  Sheep | Schaf\nvon Hadi Babaeifar\nIran 2024\nFarsi\nmit Rose Tabatabaie\
+ , Gelavij Alam\nGeneration Kplus\nWeltpremiere | empfohlen ab 8 Jahren\n13
+  Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202411929
+ \n\nAguacuario\nvon José Eduardo Castilla Ponce\nMexiko 2023\nSpanisch\nmi
+ t Hugo Benítez Guerra\, Marsell Moreno Cruz\, Claudio Jurado\nGeneration K
+ plus\nEuropäische Premiere | empfohlen ab 8 Jahren\n20 Min\n\nhttps://www.
+ berlinale.de/de/programm/detail.html?film_id=202414163
+DTSTART;TZID=Europe/Berlin:20240225T123000
+DTEND;TZID=Europe/Berlin:20240225T133600
+LOCATION:Filmtheater am Friedrichshain
+SUMMARY:Kplus Kurzfilme 1 | Kplus Short Films 1
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202406563
+END:VEVENT
+END:VCALENDAR

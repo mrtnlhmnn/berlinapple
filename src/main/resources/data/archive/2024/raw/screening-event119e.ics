@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:31306236-6636-4031-b333-636161663130
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:61396363-6165-4434-a561-386430313165
+DTSTAMP:20240208T210456Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Sayyareye dozdide shodeye man | My Stolen Planet\nvon Farahnaz 
+ Sharifi\nDeutschland / Iran 2024\nPersisch\nUntertitel: Englisch\nPanorama
+  Dokumente\nWeltpremiere | Dokumentarische Form\n82 Min\n\nhttps://www.ber
+ linale.de/de/programm/detail.html?film_id=202409254
+DTSTART;TZID=Europe/Berlin:20240222T153000
+DTEND;TZID=Europe/Berlin:20240222T165200
+LOCATION:Cubix 9
+SUMMARY:Sayyareye dozdide shodeye man | My Stolen Planet
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202409254
+END:VEVENT
+END:VCALENDAR

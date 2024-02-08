@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:35313063-3639-4961-a266-366666323632
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:35353236-3336-4965-b134-666133383138
+DTSTAMP:20240208T210440Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Offret | The Sacrifice | Opfer\nvon Andrei Tarkovsky\nSchweden 
+ / Frankreich 1986\nSchwedisch\nUntertitel: Englisch\nmit Erland Josephson\
+ , Susan Fleetwood\, Valérie Mairesse\, Allan Edwall\, Guðrún Gísladóttir\n
+ Berlinale Classics\nAltersfreigabe FSK 12\n148 Min\n\nhttps://www.berlinal
+ e.de/de/programm/detail.html?film_id=202409649
+DTSTART;TZID=Europe/Berlin:20240218T110000
+DTEND;TZID=Europe/Berlin:20240218T132800
+LOCATION:Cubix 6
+SUMMARY:Offret | The Sacrifice | Opfer
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202409649
+END:VEVENT
+END:VCALENDAR

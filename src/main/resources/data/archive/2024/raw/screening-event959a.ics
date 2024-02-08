@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:31373762-3261-4465-b037-636334303935
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:63303766-3031-4037-b966-353930643437
+DTSTAMP:20240208T210543Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Comme le feu | Who by Fire\nvon Philippe Lesage\nKanada / Frank
+ reich 2024\nFranzösisch\nUntertitel: Englisch\, Deutsch\nmit Noah Parker\,
+  Aurélia Arandi-Longpré\, Antoine Marchand-Gagnon\, Arieh Worthalter\, Pau
+ l Ahmarani\nGeneration 14plus\nWeltpremiere | empfohlen ab 14 Jahren\nAnsc
+ hließendes Filmgespräch mit Gebärdendolmetscher*in\n161 Min\n\nhttps://www
+ .berlinale.de/de/programm/detail.html?film_id=202403456
+DTSTART;TZID=Europe/Berlin:20240218T193000
+DTEND;TZID=Europe/Berlin:20240218T221100
+LOCATION:HKW 1 - Miriam Makeba Auditorium
+SUMMARY:Comme le feu | Who by Fire
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202403456
+END:VEVENT
+END:VCALENDAR

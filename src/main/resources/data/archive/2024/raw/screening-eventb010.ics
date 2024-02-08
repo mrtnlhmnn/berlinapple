@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:64363230-3163-4432-a430-666233643332
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:36343263-3666-4634-b833-383236623833
+DTSTAMP:20240208T210544Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Disco Afrika : une histoire malgache | Disco Afrika: A Malagasy
+  Story\nvon Luck Razanajaona\nFrankreich / Madagaskar / Deutschland / Maur
+ itius / Südafrika / Katar 2023\nMalagasy\nUntertitel: Englisch\nmit Parist
+ a Sambo\, Laurette Ramasinjanahary\, Joe Lerova\, Drwina Razafimahaleo\, J
+ érôme Oza\nGeneration 14plus\nEuropäische Premiere | Debütfilm | empfohlen
+  ab 14 Jahren\n81 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?
+ film_id=202401008
+DTSTART;TZID=Europe/Berlin:20240220T183000
+DTEND;TZID=Europe/Berlin:20240220T195100
+LOCATION:Cineplex Titania
+SUMMARY:Disco Afrika : une histoire malgache | Disco Afrika: A Malagasy Sto
+ ry
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202401008
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:63346166-3537-4037-b566-623265626431
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:35363630-6232-4265-b164-666436323063
+DTSTAMP:20240208T210520Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Programm 8 | Programme 8\nUntertitel: Englisch\, Spanisch\nForu
+ m Expanded\n\nbarrunto\nvon Emilia Beatriz\nVereinigtes Königreich / Puert
+ o Rico 2024\nSpanisch\, Englisch\, Schottisch-Gälisch\nmit Shanti Lalita\,
+  Harry Josephine Giles\, Alicia Matthews\, Ángela Ginorio\nForum Expanded
+ \nWeltpremiere | Dokumentarische Form\n70 Min\n\nhttps://www.berlinale.de/
+ de/programm/detail.html?film_id=202415418
+DTSTART;TZID=Europe/Berlin:20240224T100000
+DTEND;TZID=Europe/Berlin:20240224T111000
+LOCATION:Arsenal 1
+SUMMARY:barrunto
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415418
+END:VEVENT
+END:VCALENDAR

@@ -1,7 +1,7 @@
 I) Locations
     - download manually the info from
         https://www.berlinale.de/de/service/lageplan.html
-        https://www.berlinale.de/de/service/lageplan/lageplan.html?cat=venues
+        https://www.berlinale.de/de/service/lageplan.html?cat=venues
 - put data to .../resources/data/locations.json
 
 -------------------------------------------------------------------------------------------------------------------
@@ -9,12 +9,17 @@ I) Locations
 II) Program
 
 1) Download all HTML-pages manually in the browser from https://www.berlinale.de/de/programm/berlinale-programm.html
+
 2) grep -h 'ical.html' *.html|cut -d '"' -f 2 | sort  > download.txt
 
-3) Download the ics file does not work with wget or curl (no idea why)
-so instead: load download.txt to freedownloadmanager and start the download of all ics files
+3) URLs probably contain a "&amp" - but freedownloadmanager does not accept that
+replace "&amp" by "&" in a text editor
 
-4) cut the VCALENDAR header and footer, only keep the VEVENT part
+4) Downloading all ics files does not work with wget or curl (no idea why)
+so instead: load download.txt to winttrack (as freedownloadmanager has problems - stops and queues after
+several hundred downloads, no clue why?)
+
+5) cut the VCALENDAR header and footer, only keep the VEVENT part as follows:
 
 a) cat > vcalendarDelete.sh
 tail -n +10 $1 | head -n -1

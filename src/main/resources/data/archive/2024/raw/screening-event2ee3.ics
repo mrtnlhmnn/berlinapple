@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:64353663-3738-4639-a232-376136306435
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:39383836-6463-4162-b335-333061373961
+DTSTAMP:20240208T210449Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Berlinale Shorts Preisträgerfilme | Berlinale Shorts Award Winn
+ ers\nBerlinale Shorts\n\nVorführung der Preisträgerfilme\nBerlinale Shorts
+ \n75 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=20241
+ 5598
+DTSTART;TZID=Europe/Berlin:20240225T213000
+DTEND;TZID=Europe/Berlin:20240225T224500
+LOCATION:Cubix 9
+SUMMARY:Vorführung der Preisträgerfilme
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415598
+END:VEVENT
+END:VCALENDAR

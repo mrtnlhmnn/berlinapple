@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:33366666-6132-4431-b031-323063633632
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:62373731-6566-4531-a132-623232363733
+DTSTAMP:20240208T210555Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Kurzfilmprogramm Maria Lassnig | Short Film Programme Maria Las
+ snig\nUntertitel: Englisch\nForum Special\n\nBaroque Statues\nvon Maria La
+ ssnig\nÖsterreich / USA 1970 –1974\nOhne Dialog\nmit Lisbet Eberwein\, Wil
+ ly Gabriel\nForum Special\n15 Min\n\nhttps://www.berlinale.de/de/programm/
+ detail.html?film_id=202415300\n\nEncounter\nvon Maria Lassnig\nÖsterreich 
+ / USA 1970\nOhne Dialog\nForum Special\n1 Min\n\nhttps://www.berlinale.de/
+ de/programm/detail.html?film_id=202415308\n\nIris\nvon Maria Lassnig\nÖste
+ rreich / USA 1971\nOhne Dialog\nForum Special\n10 Min\n\nhttps://www.berli
+ nale.de/de/programm/detail.html?film_id=202415306\n\nChairs\nvon Maria Las
+ snig\nÖsterreich / USA 1971\nOhne Dialog\nForum Special\n2 Min\n\nhttps://
+ www.berlinale.de/de/programm/detail.html?film_id=202415305\n\nSelfportrait
+ \nvon Maria Lassnig\nÖsterreich / USA 1971\nEnglisch\nForum Special\n5 Min
+ \n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202415307\n\n
+ Shapes\nvon Maria Lassnig\nÖsterreich / USA 1972\nOhne Dialog\nForum Speci
+ al\n10 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202
+ 415304\n\nCouples\nvon Maria Lassnig\nÖsterreich / USA 1972\nEnglisch\nFor
+ um Special\n9 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film
+ _id=202415303\n\nPalmistry\nvon Maria Lassnig\nÖsterreich / USA 1973\nEngl
+ isch\nmit Dona Craig\, George Heyward\nForum Special\n10 Min\n\nhttps://ww
+ w.berlinale.de/de/programm/detail.html?film_id=202415302\n\nArt Education
+ \nvon Maria Lassnig\nÖsterreich / USA 1976\nEnglisch\nForum Special\n8 Min
+ \n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202415298\n\n
+ Maria Lassnig Kantate | The Ballad of Maria Lassnig\nvon Maria Lassnig\, H
+ ubert Sielecki\nÖsterreich 1992\nDeutsch\nmit Maria Lassnig\nForum Special
+ \n8 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202415
+ 456
+DTSTART;TZID=Europe/Berlin:20240224T200000
+DTEND;TZID=Europe/Berlin:20240224T211800
+LOCATION:Kino Betonhalle@Silent Green
+SUMMARY:Kurzfilmprogramm Maria Lassnig | Short Film Programme Maria Lassnig
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415300
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:32333033-3063-4236-b365-363363336266
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:62343434-3734-4366-a466-653337613763
+DTSTAMP:20240208T210432Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Jesus – Der Film | Jesus – The Film\nvon Michael Brynntrup\nBun
+ desrepublik Deutschland 1986\nDeutsch\nUntertitel: Englisch\nmit Michael B
+ rynntrup\, Panterah Countess\, Michael Wehmeyer\, Birgit und Wilhelm Hein\
+ , Oliver Körner von Gustorff\nRetrospektive\n128 Min\n\nhttps://www.berlin
+ ale.de/de/programm/detail.html?film_id=202414604
+DTSTART;TZID=Europe/Berlin:20240224T211500
+DTEND;TZID=Europe/Berlin:20240224T232300
+LOCATION:Cubix 6
+SUMMARY:Jesus – Der Film | Jesus – The Film
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414604
+END:VEVENT
+END:VCALENDAR

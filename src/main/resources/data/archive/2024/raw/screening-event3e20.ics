@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:34653930-3430-4832-b639-303533386364
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:31653962-3236-4939-b964-316361306362
+DTSTAMP:20240208T210725Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:TinyHouse\nSonderveranstaltung\nEintritt frei\n480 Min\n\nhttps
+ ://www.berlinale.de/de/programm/detail.html?film_id=202415890
+DTSTART;TZID=Europe/Berlin:20240218T100000
+DTEND;TZID=Europe/Berlin:20240218T180000
+LOCATION:TinyHouse
+SUMMARY:TinyHouse
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415890
+END:VEVENT
+END:VCALENDAR

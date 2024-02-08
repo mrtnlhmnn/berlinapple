@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:36656532-3665-4165-a230-636565623765
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:64613561-6264-4662-a530-363961653534
+DTSTAMP:20240208T210604Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Spuren von Bewegung vor dem Eis | Traces of Movement Before the
+  Ice\nvon René Frölke\nDeutschland 2024\nDeutsch\, Englisch\, Französisch\
+ , Schweizerdeutsch\nUntertitel: Englisch\nForum\nWeltpremiere | Dokumentar
+ ische Form\n89 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?fil
+ m_id=202411797
+DTSTART;TZID=Europe/Berlin:20240223T193000
+DTEND;TZID=Europe/Berlin:20240223T205900
+LOCATION:Akademie der Künste
+SUMMARY:Spuren von Bewegung vor dem Eis | Traces of Movement Before the Ice
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202411797
+END:VEVENT
+END:VCALENDAR

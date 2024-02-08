@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:34343166-3638-4665-b737-626561306361
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:33646166-3062-4537-b737-393739613532
+DTSTAMP:20240208T210538Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Fox and Hare Save the Forest | Fuchs und Hase retten den Wald\n
+ von Mascha Halberstad\nNiederlande / Belgien / Luxemburg 2024\nEnglisch\nm
+ it Rob Rackstraw\, Dan Skinner\, Jamie Quinn\, Teresa Galagher\, Sarah Mad
+ igan\nGeneration Kplus\nWeltpremiere | Animation | empfohlen ab 5 Jahren\n
+ Deutsche Einsprache | Kopfhörer für OV\n71 Min\n\nhttps://www.berlinale.de
+ /de/programm/detail.html?film_id=202407066
+DTSTART;TZID=Europe/Berlin:20240223T093000
+DTEND;TZID=Europe/Berlin:20240223T104100
+LOCATION:Zoo Palast 1
+SUMMARY:Fox and Hare Save the Forest | Fuchs und Hase retten den Wald
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202407066
+END:VEVENT
+END:VCALENDAR

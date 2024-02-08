@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:61396161-6139-4265-b066-333564366537
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:63306532-3165-4134-a335-306337336530
+DTSTAMP:20240208T210630Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:DIRECT ACTION\nvon Guillaume Cailleau\, Ben Russell\nDeutschlan
+ d / Frankreich 2024\nFranzösisch\, Marokkanisch-Arabisch\, Englisch\nUnter
+ titel: Englisch\nEncounters\nWeltpremiere | Dokumentarische Form\n216 Min
+ \n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202403630
+DTSTART;TZID=Europe/Berlin:20240222T193000
+DTEND;TZID=Europe/Berlin:20240222T230600
+LOCATION:International
+SUMMARY:DIRECT ACTION
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202403630
+END:VEVENT
+END:VCALENDAR

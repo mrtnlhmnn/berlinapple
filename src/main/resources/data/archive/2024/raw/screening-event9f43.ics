@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:62313437-3539-4437-b464-323830653539
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:64646138-3264-4936-a239-663939643735
+DTSTAMP:20240208T210659Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Keyke mahboobe man | My Favourite Cake\nvon Maryam Moghaddam & 
+ Behtash Sanaeeha\nIran / Frankreich / Schweden / Deutschland 2024\nFarsi\n
+ Untertitel: Englisch\, Deutsch\nmit Lily Farhadpour\, Esmail Mehrabi\nWett
+ bewerb\nWeltpremiere\n97 Min\n\nhttps://www.berlinale.de/de/programm/detai
+ l.html?film_id=202405386
+DTSTART;TZID=Europe/Berlin:20240217T214500
+DTEND;TZID=Europe/Berlin:20240217T232200
+LOCATION:Haus der Berliner Festspiele
+SUMMARY:Keyke mahboobe man | My Favourite Cake
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202405386
+END:VEVENT
+END:VCALENDAR

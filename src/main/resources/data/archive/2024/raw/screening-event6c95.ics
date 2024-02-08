@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:32343339-3038-4237-b435-306236623662
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:39616437-6466-4662-a465-326462323661
+DTSTAMP:20240208T210624Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Vogter | Sons\nvon Gustav Möller\nDänemark / Schweden 2024\nDän
+ isch\nUntertitel: Englisch\, Deutsch\nmit Sidse Babett Knudsen\, Sebastian
+  Bull\, Dar Salim\, Marina Bouras\, Olaf Johannessen\nWettbewerb\nWeltprem
+ iere\n100 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=
+ 202404654
+DTSTART;TZID=Europe/Berlin:20240222T220000
+DTEND;TZID=Europe/Berlin:20240222T234000
+LOCATION:Berlinale Palast
+SUMMARY:Vogter | Sons
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202404654
+END:VEVENT
+END:VCALENDAR

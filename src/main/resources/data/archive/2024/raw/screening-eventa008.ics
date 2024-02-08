@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:64326164-6366-4235-b731-653662633036
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:62396232-3537-4466-a634-353763646536
+DTSTAMP:20240208T210422Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Baldiga – Entsichertes Herz | Baldiga – Unlocked Heart\nvon Mar
+ kus Stein\nDeutschland 2024\nDeutsch\nUntertitel: Englisch\nmit Jürgen Bal
+ diga\, Timo Lewandovsky\, Bernd Boßmann\, Ulf Reimer\, Birgit Baldiga\nPan
+ orama Dokumente\nWeltpremiere | Dokumentarische Form\n92 Min\n\nhttps://ww
+ w.berlinale.de/de/programm/detail.html?film_id=202407743
+DTSTART;TZID=Europe/Berlin:20240221T184500
+DTEND;TZID=Europe/Berlin:20240221T201700
+LOCATION:Haus der Berliner Festspiele
+SUMMARY:Baldiga – Entsichertes Herz | Baldiga – Unlocked Heart
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202407743
+END:VEVENT
+END:VCALENDAR

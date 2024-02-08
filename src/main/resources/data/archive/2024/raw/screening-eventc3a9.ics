@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:38653039-6637-4430-b233-356437336430
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:63376164-3664-4331-b331-363438626530
+DTSTAMP:20240208T210636Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Kong fang jian li de nv ren | Some Rain Must Fall\nvon Qiu Yang
+ \nVolksrepublik China / USA / Frankreich / Singapur 2024\nWu\, Mandarin\nU
+ ntertitel: Englisch\nmit Yu Aier\, Di Shike\, Wei Yibo\, Xu Tianyi\, Gu Ti
+ ngxiu\nEncounters\nWeltpremiere | Debütfilm\n98 Min\n\nhttps://www.berlina
+ le.de/de/programm/detail.html?film_id=202403898
+DTSTART;TZID=Europe/Berlin:20240224T094500
+DTEND;TZID=Europe/Berlin:20240224T112300
+LOCATION:Cubix 8
+SUMMARY:Kong fang jian li de nv ren | Some Rain Must Fall
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202403898
+END:VEVENT
+END:VCALENDAR

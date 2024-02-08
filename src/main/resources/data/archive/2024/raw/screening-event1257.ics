@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:65613537-6233-4662-b230-373966653638
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:39343233-6134-4032-b331-386531333430
+DTSTAMP:20240208T210604Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Jenseits des Kanons – Talk zur Retrospektive\nDeutsch\nmit Pia 
+ Frankenberg\, Michael Brynntrup\, Annika Haupts\, Rainer Rother\nRetrospek
+ tive Event\nEintritt frei\n60 Min\n\nhttps://www.berlinale.de/de/programm/
+ detail.html?film_id=202415543
+DTSTART;TZID=Europe/Berlin:20240217T160000
+DTEND;TZID=Europe/Berlin:20240217T170000
+LOCATION:Deutsche Kinemathek - 4. OG
+SUMMARY:Jenseits des Kanons – Talk zur Retrospektive
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415543
+END:VEVENT
+END:VCALENDAR

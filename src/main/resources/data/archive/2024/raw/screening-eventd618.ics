@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:39666337-3130-4231-b463-383633333561
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:65663664-6666-4930-a333-356163393131
+DTSTAMP:20240208T210649Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Sterben | Dying\nvon Matthias Glasner\nDeutschland 2024\nDeutsc
+ h\nUntertitel: Englisch\nmit Lars Eidinger\, Corinna Harfouch\, Lilith Sta
+ ngenberg\, Ronald Zehrfeld\, Robert Gwisdek\nWettbewerb\nWeltpremiere\n183
+  Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202406481
+DTSTART;TZID=Europe/Berlin:20240219T171500
+DTEND;TZID=Europe/Berlin:20240219T201800
+LOCATION:Verti Music Hall
+SUMMARY:Sterben | Dying
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202406481
+END:VEVENT
+END:VCALENDAR

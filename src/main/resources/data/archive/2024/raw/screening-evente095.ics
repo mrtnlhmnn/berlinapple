@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:37663334-6265-4864-b235-633166306465
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:38363861-6236-4130-a463-353130316636
+DTSTAMP:20240208T210705Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Alternative Narratives: Art as Articulated by Tsai Ming-liang\n
+ Englisch\nmit Tsai Ming-liang\, Kevin B. Lee\nBerlinale Talents Event\n90 
+ Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202415739
+DTSTART;TZID=Europe/Berlin:20240218T170000
+DTEND;TZID=Europe/Berlin:20240218T183000
+LOCATION:HAU Hebbel am Ufer (HAU1)
+SUMMARY:Alternative Narratives: Art as Articulated by Tsai Ming-liang
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415739
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:32393438-6562-4539-b032-366238393765
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:62363132-6163-4438-a434-343938336638
+DTSTAMP:20240208T210703Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Pepe\nvon Nelson Carlos De Los Santos Arias\nDominikanische Rep
+ ublik / Namibia / Deutschland / Frankreich 2024\nSpanisch\, Afrikaans\, Mb
+ ukushu\, Deutsch\nUntertitel: Englisch\, Deutsch\nmit Jhon Narváez\, Sor M
+ aría Ríos\, Fareed Matjila\, Harmony Ahalwa\, Jorge Puntillón García\nWett
+ bewerb\nWeltpremiere\n122 Min\n\nhttps://www.berlinale.de/de/programm/deta
+ il.html?film_id=202403660
+DTSTART;TZID=Europe/Berlin:20240221T130000
+DTEND;TZID=Europe/Berlin:20240221T150200
+LOCATION:HKW 1 - Miriam Makeba Auditorium
+SUMMARY:Pepe
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202403660
+END:VEVENT
+END:VCALENDAR

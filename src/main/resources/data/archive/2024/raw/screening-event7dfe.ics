@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:36626536-6137-4336-b035-356561376633
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:35643764-3138-4832-b163-323339633366
+DTSTAMP:20240208T210625Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:The Fable\nvon Raam Reddy\nIndien / USA 2024\nHindi\, Englisch
+ \nUntertitel: Englisch\nmit Manoj Bajpayee\, Priyanka Bose\, Deepak Dobriy
+ al\, Tillotama Shome\, Hiral Sidhu\nEncounters\nWeltpremiere\nVorführung i
+ n Dolby Atmos\n119 Min\n\nhttps://www.berlinale.de/de/programm/detail.html
+ ?film_id=202409890
+DTSTART;TZID=Europe/Berlin:20240217T090000
+DTEND;TZID=Europe/Berlin:20240217T105900
+LOCATION:Zoo Palast 1
+SUMMARY:The Fable
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202409890
+END:VEVENT
+END:VCALENDAR

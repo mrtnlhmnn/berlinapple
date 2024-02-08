@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:33336266-3836-4734-b539-363165613965
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:34393830-6165-4564-a565-636237623133
+DTSTAMP:20240208T210522Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Redaktsiya | The Editorial Office\nvon Roman Bondarchuk\nUkrain
+ e / Deutschland / Slowakei / Tschechien 2024\nUkrainisch\, Englisch\nUnter
+ titel: Englisch\nmit Dmytro Bahnenko\, Zhanna Ozirna\, Rymma Ziubina\, And
+ rii Kyrylchuk\, Oleksandr Shmal\nForum\nWeltpremiere\n126 Min\n\nhttps://w
+ ww.berlinale.de/de/programm/detail.html?film_id=202401769
+DTSTART;TZID=Europe/Berlin:20240216T210000
+DTEND;TZID=Europe/Berlin:20240216T230600
+LOCATION:Delphi Filmpalast
+SUMMARY:Redaktsiya | The Editorial Office
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202401769
+END:VEVENT
+END:VCALENDAR

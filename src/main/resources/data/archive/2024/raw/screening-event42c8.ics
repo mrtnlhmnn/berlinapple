@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:33393839-6639-4533-b638-313430383739
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:65336263-3764-4362-a230-613336326331
+DTSTAMP:20240208T210711Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Des Teufels Bad | The Devil’s Bath\nvon Veronika Franz & Severi
+ n Fiala\nÖsterreich / Deutschland 2024\nDeutsch\nUntertitel: Englisch\nmit
+  Anja Plaschg\, David Scheid\, Maria Hofstätter\nWettbewerb\nWeltpremiere
+ \n121 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=2024
+ 06824
+DTSTART;TZID=Europe/Berlin:20240225T160000
+DTEND;TZID=Europe/Berlin:20240225T180100
+LOCATION:Berlinale Palast
+SUMMARY:Des Teufels Bad | The Devil’s Bath
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202406824
+END:VEVENT
+END:VCALENDAR

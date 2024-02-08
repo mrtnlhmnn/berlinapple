@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:38313163-3334-4366-b530-356332366365
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:38363637-3563-4665-a531-653837356638
+DTSTAMP:20240208T210524Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Intercepted\nvon Oksana Karpovych\nKanada / Frankreich / Ukrain
+ e 2024\nRussisch\, Ukrainisch\nUntertitel: Englisch\nForum\nWeltpremiere |
+  Dokumentarische Form\n95 Min\n\nhttps://www.berlinale.de/de/programm/deta
+ il.html?film_id=202407591
+DTSTART;TZID=Europe/Berlin:20240218T113000
+DTEND;TZID=Europe/Berlin:20240218T130500
+LOCATION:Delphi Filmpalast
+SUMMARY:Intercepted
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202407591
+END:VEVENT
+END:VCALENDAR

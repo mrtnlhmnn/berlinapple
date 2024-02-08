@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:38336137-6432-4338-b431-613463356237
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:66646365-6330-4963-b839-666165616534
+DTSTAMP:20240208T210607Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Deutsches Handwerk | German Craftmanship\nUntertitel: Englisch
+ \nRetrospektive\n\nLeuchtkraft der Ziege – Eine Naturerscheinung | The Goa
+ t’s Intensity\nvon Jochen Krausser\nDeutsche Demokratische Republik 1988\n
+ Deutsch\nRetrospektive\nDokumentarische Form\n19 Min\n\nhttps://www.berlin
+ ale.de/de/programm/detail.html?film_id=202415058\n\nDas deutsche Kettensäg
+ enmassaker | The German Chainsaw Massacre\nvon Christoph Schlingensief\nDe
+ utschland 1990\nDeutsch\nmit Karina Fallenstein\, Susanne Bredehöft\, Artu
+ r Albrecht\, Brigitte Kausch\, Volker Spengler\nRetrospektive\nAltersfreig
+ abe FSK 16\n63 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?fil
+ m_id=202414596
+DTSTART;TZID=Europe/Berlin:20240224T193000
+DTEND;TZID=Europe/Berlin:20240224T205200
+LOCATION:Akademie der Künste
+SUMMARY:Deutsches Handwerk | German Craftmanship
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415058
+END:VEVENT
+END:VCALENDAR

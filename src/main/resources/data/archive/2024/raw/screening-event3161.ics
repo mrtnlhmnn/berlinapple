@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:32643062-3962-4964-a134-613834623032
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:33633532-6333-4739-b134-356362666563
+DTSTAMP:20240208T210524Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Chroniques fidèles survenues au siècle dernier à l’hôpital psyc
+ hiatrique Blida-Joinville\, au temps où le Docteur Frantz Fanon était chef
+  de la cinquième division entre 1953 et 1956 | True Chronicles of the Blid
+ a Joinville Psychiatric Hospital in the Last Century\, when Dr Frantz Fano
+ n Was Head of the Fifth Ward between 1953 and 1956\nvon Abdenour Zahzah\nA
+ lgerien / Frankreich 2024\nArabisch\, Französisch\nUntertitel: Englisch\nm
+ it Alexandre Desane\, Gérard Dubouche\, Nicolas Dromard\, Omar Boulakirba\
+ , Amal Kateb\nForum\nWeltpremiere\n90 Min\n\nhttps://www.berlinale.de/de/p
+ rogramm/detail.html?film_id=202402038
+DTSTART;TZID=Europe/Berlin:20240223T210000
+DTEND;TZID=Europe/Berlin:20240223T223000
+LOCATION:Arsenal 1
+SUMMARY:Chroniques fidèles survenues au siècle dernier à l’hôpital psychiat
+ rique Blida-Joinville\, au temps où le Docteur Frantz Fanon était chef de 
+ la cinquième division entre 1953 et 1956 | True Chronicles of the Blida Jo
+ inville Psychiatric Hospital in the Last Century\, when Dr Frantz Fanon Wa
+ s Head of the Fifth Ward between 1953 and 1956
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202402038
+END:VEVENT
+END:VCALENDAR

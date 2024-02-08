@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:30346434-3935-4431-b666-373566633333
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:65386434-3134-4436-b932-646135333836
+DTSTAMP:20240208T210712Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:The Strangers’ Case\nvon Brandt Andersen\nJordanien 2024\nArabi
+ sch\, Englisch\, Griechisch\nUntertitel: Englisch\, Deutsch\nmit Yasmine A
+ l Massri\, Yahya Mahayni\, Omar Sy\, Ziad Bakri\, Constantine Markoulakis
+ \nBerlinale Special Gala\nWeltpremiere | Debütfilm\n97 Min\n\nhttps://www.
+ berlinale.de/de/programm/detail.html?film_id=202403330
+DTSTART;TZID=Europe/Berlin:20240225T180000
+DTEND;TZID=Europe/Berlin:20240225T193700
+LOCATION:Haus der Berliner Festspiele
+SUMMARY:The Strangers’ Case
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202403330
+END:VEVENT
+END:VCALENDAR

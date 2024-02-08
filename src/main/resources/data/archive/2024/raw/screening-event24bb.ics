@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:33343133-6565-4639-a232-393838636464
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:30373865-3737-4261-b064-313135326531
+DTSTAMP:20240208T210705Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Bros in the Woods: Learning to Talk with the Zellners\nEnglisch
+ \nmit David Zellner\, Nathan Zellner\, Dana Linssen\nBerlinale Talents Eve
+ nt\n90 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202
+ 415730
+DTSTART;TZID=Europe/Berlin:20240218T143000
+DTEND;TZID=Europe/Berlin:20240218T160000
+LOCATION:HAU Hebbel am Ufer (HAU2)
+SUMMARY:Bros in the Woods: Learning to Talk with the Zellners
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415730
+END:VEVENT
+END:VCALENDAR

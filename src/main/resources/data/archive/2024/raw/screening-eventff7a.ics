@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:32363235-3630-4536-b465-346236393162
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:61333962-3037-4362-b335-646535353763
+DTSTAMP:20240208T210708Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Mãos no fogo | Hands in the Fire\nvon Margarida Gil\nPortugal 2
+ 024\nPortugiesisch\nUntertitel: Englisch\nmit Carolina Campanela\, Marcell
+ o Urgeghe\, Adelaida Teixeira\, Rita Durão\, Sofia Vilariço\nEncounters\nW
+ eltpremiere\n109 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?f
+ ilm_id=202406898
+DTSTART;TZID=Europe/Berlin:20240224T190000
+DTEND;TZID=Europe/Berlin:20240224T204900
+LOCATION:International
+SUMMARY:Mãos no fogo | Hands in the Fire
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202406898
+END:VEVENT
+END:VCALENDAR

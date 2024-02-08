@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:31356364-3231-4233-a137-666233626162
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:33323464-3066-4936-b566-396464393834
+DTSTAMP:20240208T210719Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Heiner-Carow-Preis | Heiner Carow Prize\nSondervorführung\nVerl
+ eihung des Heiner-Carow-Preises vor der Vorführung | Erweiterte deutsche U
+ ntertitel | Audiodeskription via App GRETA | Anschließendes Filmgespräch m
+ it Gebärdendolmetscher*in\n\nBürgschaft für ein Jahr | On Probation\nvon H
+ errmann Zschoche\nDeutsche Demokratische Republik 1981\nDeutsch\nmit Katri
+ n Sass\, Monika Lennartz\, Jaecki Schwarz\, Jan Spitzer\, Christian Steyer
+ \nSondervorführung\n94 Min\n\nhttps://www.berlinale.de/de/programm/detail.
+ html?film_id=202415483
+DTSTART;TZID=Europe/Berlin:20240222T160000
+DTEND;TZID=Europe/Berlin:20240222T173400
+LOCATION:International
+SUMMARY:Bürgschaft für ein Jahr | On Probation
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415483
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:63353734-3730-4964-b936-653861633739
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:61336166-3063-4338-a439-623261393664
+DTSTAMP:20240208T210419Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Cu Li Không Bao Giờ Khóc | Cu Li Never Cries\nvon Phạm Ngọc Lân
+ \nVietnam / Singapur / Frankreich / Philippinen / Norwegen 2024\nVietnames
+ isch\nUntertitel: Englisch\nmit Minh Châu\, Hà Phương\, Xuân An\, Hoàng Hà
+ \, Cao Sang\nPanorama\nWeltpremiere | Debütfilm\n92 Min\n\nhttps://www.ber
+ linale.de/de/programm/detail.html?film_id=202402418
+DTSTART;TZID=Europe/Berlin:20240220T153000
+DTEND;TZID=Europe/Berlin:20240220T170200
+LOCATION:Zoo Palast 1
+SUMMARY:Cu Li Không Bao Giờ Khóc | Cu Li Never Cries
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202402418
+END:VEVENT
+END:VCALENDAR

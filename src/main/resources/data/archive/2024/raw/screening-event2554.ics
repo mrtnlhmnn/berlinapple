@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:39383861-3937-4633-b066-653264663437
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:62613735-6363-4138-b231-353937323463
+DTSTAMP:20240208T210629Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Ivo\nvon Eva Trobisch\nDeutschland 2024\nDeutsch\nUntertitel: E
+ nglisch\nmit Minna Wündrich\, Pia Hierzegger\, Lukas Turtur\, Lilli Lacher
+ \, Johann Campean\nEncounters\nWeltpremiere\n104 Min\n\nhttps://www.berlin
+ ale.de/de/programm/detail.html?film_id=202415458
+DTSTART;TZID=Europe/Berlin:20240223T123000
+DTEND;TZID=Europe/Berlin:20240223T141400
+LOCATION:Colosseum 1
+SUMMARY:Ivo
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415458
+END:VEVENT
+END:VCALENDAR

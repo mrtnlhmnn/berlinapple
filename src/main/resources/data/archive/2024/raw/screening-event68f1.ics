@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:62626462-3366-4562-b131-383331306439
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:64623065-6261-4337-b439-633735386461
+DTSTAMP:20240208T210706Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Collecting Voices: Ukrainian Cinema Confronting the Unspeakable
+ \nEnglisch\nmit Daria Badior\, Roman Bondarchuk\, Oksana Karpovych\, Kater
+ yna Mishchenko\nBerlinale Talents Event\n90 Min\n\nhttps://www.berlinale.d
+ e/de/programm/detail.html?film_id=202415744
+DTSTART;TZID=Europe/Berlin:20240219T170000
+DTEND;TZID=Europe/Berlin:20240219T183000
+LOCATION:HAU Hebbel am Ufer (HAU2)
+SUMMARY:Collecting Voices: Ukrainian Cinema Confronting the Unspeakable
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415744
+END:VEVENT
+END:VCALENDAR

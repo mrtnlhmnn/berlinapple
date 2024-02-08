@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:37323832-6633-4730-a162-386262376566
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:64343437-3165-4133-b035-393638393234
+DTSTAMP:20240208T210720Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Shikun\nvon Amos Gitai\nIsrael / Frankreich / Schweiz / Brasili
+ en / Vereinigtes Königreich 2024\nFranzösisch\, Hebräisch\, Arabisch\, Jid
+ disch\nUntertitel: Englisch\nmit Irène Jacob\, Hanna Laslo\, Yael Abecassi
+ s\, Bahira Ablassi\, Menashe Noy\nBerlinale Special\nWeltpremiere\n84 Min
+ \n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202415478
+DTSTART;TZID=Europe/Berlin:20240220T220000
+DTEND;TZID=Europe/Berlin:20240220T232400
+LOCATION:Akademie der Künste
+SUMMARY:Shikun
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415478
+END:VEVENT
+END:VCALENDAR

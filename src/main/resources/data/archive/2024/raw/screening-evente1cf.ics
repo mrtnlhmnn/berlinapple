@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:34653061-3831-4363-a563-303561623062
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:66376663-6638-4332-a261-633761353735
+DTSTAMP:20240208T210629Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Cidade\; Campo\nvon Juliana Rojas\nBrasilien / Deutschland / Fr
+ ankreich 2024\nPortugiesisch\nUntertitel: Englisch\nmit Fernanda Vianna\, 
+ Mirella Façanha\, Bruna Linzmeyer\, Kalleb Oliveira\, Andrea Marquee\nEnco
+ unters\nWeltpremiere\n119 Min\n\nhttps://www.berlinale.de/de/programm/deta
+ il.html?film_id=202409113
+DTSTART;TZID=Europe/Berlin:20240220T193000
+DTEND;TZID=Europe/Berlin:20240220T212900
+LOCATION:International
+SUMMARY:Cidade\; Campo
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202409113
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:30356339-6261-4031-b161-353136336166
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:32626266-6237-4264-a363-643938343461
+DTSTAMP:20240208T210418Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Crossing\nvon Levan Akin\nSchweden / Dänemark / Frankreich / Tü
+ rkei / Georgien 2024\nGeorgisch\, Türkisch\, Englisch\nUntertitel: Englisc
+ h\nmit Mzia Arabuli\, Lucas Kankava\, Deniz Dumanlı\nPanorama\nWeltpremier
+ e\nEröffnung Panorama\n105 Min\n\nhttps://www.berlinale.de/de/programm/det
+ ail.html?film_id=202415217
+DTSTART;TZID=Europe/Berlin:20240215T210000
+DTEND;TZID=Europe/Berlin:20240215T224500
+LOCATION:Zoo Palast 1
+SUMMARY:Crossing
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415217
+END:VEVENT
+END:VCALENDAR

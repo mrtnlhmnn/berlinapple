@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:39303937-3536-4661-b466-653730663265
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:37363466-6461-4565-b135-333862616565
+DTSTAMP:20240208T210520Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Programm 4 | Programme 4\nUntertitel: Englisch\nForum Expanded
+ \n\nThe Periphery of the Base\nvon Zhou Tao\nVolksrepublik China 2024\nMan
+ darin\nForum Expanded\nWeltpremiere | Dokumentarische Form\n53 Min\n\nhttp
+ s://www.berlinale.de/de/programm/detail.html?film_id=202415383
+DTSTART;TZID=Europe/Berlin:20240224T213000
+DTEND;TZID=Europe/Berlin:20240224T222300
+LOCATION:Arsenal 1
+SUMMARY:The Periphery of the Base
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415383
+END:VEVENT
+END:VCALENDAR

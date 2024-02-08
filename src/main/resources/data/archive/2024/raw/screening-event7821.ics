@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:63646531-3561-4933-b132-656661333033
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:38396137-3634-4033-a430-643434663265
+DTSTAMP:20240208T210645Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Small Things Like These | Kleine Dinge wie diese\nvon Tim Miela
+ nts\nIrland / Belgien 2024\nEnglisch\nUntertitel: Deutsch\nmit Cillian Mur
+ phy\, Eileen Walsh\, Michelle Fairley\, Emily Watson\, Clare Dunne\nWettbe
+ werb\nWeltpremiere\nZusatzvorstellung mit Übertragung der Eröffnungsgala\n
+ 96 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=2024152
+ 60
+DTSTART;TZID=Europe/Berlin:20240215T193000
+DTEND;TZID=Europe/Berlin:20240215T210600
+LOCATION:Verti Music Hall
+SUMMARY:Small Things Like These | Kleine Dinge wie diese
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415260
+END:VEVENT
+END:VCALENDAR

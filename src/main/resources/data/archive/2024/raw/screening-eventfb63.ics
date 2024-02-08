@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:65343631-6566-4164-b930-636261353439
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:66323832-3966-4130-a661-636463616364
+DTSTAMP:20240208T210701Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Hako Otoko | The Box Man\nvon Gakuryu Ishii\nJapan 2024\nJapani
+ sch\nUntertitel: Englisch\nmit Masatoshi Nagase\, Tadanobu Asano\, Koichi 
+ Sato\, Ayana Shiramoto\, Yuko Nakamura\nBerlinale Special\nWeltpremiere\n1
+ 20 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=2024145
+ 11
+DTSTART;TZID=Europe/Berlin:20240218T213000
+DTEND;TZID=Europe/Berlin:20240218T233000
+LOCATION:Cineplex Titania
+SUMMARY:Hako Otoko | The Box Man
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414511
+END:VEVENT
+END:VCALENDAR

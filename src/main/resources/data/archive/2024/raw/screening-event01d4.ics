@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:61646631-3437-4165-b332-626536623933
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:33313030-6566-4462-a339-376630303736
+DTSTAMP:20240208T210613Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:exergue – on documenta 14\nvon Dimitris Athiridis\nGriechenland
+  2024\nEnglisch\, Deutsch\nUntertitel: Englisch\nBerlinale Special\nWeltpr
+ emiere | Dokumentarische Form\nKapitel 8–14: Zweite Hälfte des 14-stündige
+ n Dokumentarfilms | Vorstellung mit einer Pause von 60 Minuten\n840 Min\n
+ \nhttps://www.berlinale.de/de/programm/detail.html?film_id=202406803
+DTSTART;TZID=Europe/Berlin:20240217T143000
+DTEND;TZID=Europe/Berlin:20240218T043000
+LOCATION:HKW 2 - Safi Faye Saal
+SUMMARY:exergue – on documenta 14
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202406803
+END:VEVENT
+END:VCALENDAR

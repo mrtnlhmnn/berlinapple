@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:66313761-6262-4232-a532-323834666135
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:30343564-3639-4136-b739-393834636635
+DTSTAMP:20240208T210650Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Architecton\nvon Victor Kossakovsky\nDeutschland / Frankreich /
+  USA 2024\nItalienisch\, Englisch\nUntertitel: Englisch\, Deutsch\nWettbew
+ erb\nWeltpremiere | Dokumentarische Form\n98 Min\n\nhttps://www.berlinale.
+ de/de/programm/detail.html?film_id=202402846
+DTSTART;TZID=Europe/Berlin:20240221T091500
+DTEND;TZID=Europe/Berlin:20240221T105300
+LOCATION:Haus der Berliner Festspiele
+SUMMARY:Architecton
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202402846
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:63613736-3539-4436-b632-363766393734
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:65336634-6465-4231-a637-343530626631
+DTSTAMP:20240208T210656Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Dostoevskij | Dostoyevsky\nvon Damiano & Fabio D’Innocenzo\nIta
+ lien 2024\nItalienisch\nUntertitel: Englisch\nmit Filippo Timi\, Gabriel M
+ ontesi\, Carlotta Gamba\, Federico Vanni\nBerlinale Special\nWeltpremiere 
+ | Serie\n6/6 Episoden\, Vorführung mit einer Pause von 20 Minuten\n270 Min
+ \n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202415064
+DTSTART;TZID=Europe/Berlin:20240221T123000
+DTEND;TZID=Europe/Berlin:20240221T170000
+LOCATION:Zoo Palast 1
+SUMMARY:Dostoevskij | Dostoyevsky
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415064
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:38356137-6261-4833-a538-666666303661
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:65623937-3834-4766-b733-386661373861
+DTSTAMP:20240208T210430Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Fegefeuer | Purgatory\nvon Haro Senft\nBundesrepublik Deutschla
+ nd 1971\nDeutsch\nUntertitel: Englisch\nmit Jost Vobeck\, Ingeborg Schöner
+ \, Paul Albert Krumm\, András Gönczöl\, Valeria Ciangottini\nRetrospektive
+ \nAltersfreigabe FSK 16\n91 Min\n\nhttps://www.berlinale.de/de/programm/de
+ tail.html?film_id=202414601
+DTSTART;TZID=Europe/Berlin:20240222T183000
+DTEND;TZID=Europe/Berlin:20240222T200100
+LOCATION:Cineplex Titania
+SUMMARY:Fegefeuer | Purgatory
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414601
+END:VEVENT
+END:VCALENDAR

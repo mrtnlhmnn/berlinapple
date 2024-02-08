@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:39306134-6434-4136-a232-373538363265
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:36343432-6436-4632-a433-356231616166
+DTSTAMP:20240208T210724Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Erster Film – Was nun?\nSonderveranstaltung\nEintritt frei
+DTSTART;TZID=Europe/Berlin:20240220T140000
+DTEND;TZID=Europe/Berlin:20240220T153000
+LOCATION:Manifesto Potsdamer Platz
+SUMMARY:Erster Film – Was nun?
+URL:
+END:VEVENT
+END:VCALENDAR

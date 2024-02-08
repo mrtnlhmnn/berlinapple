@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:33386464-3538-4332-b161-613230653862
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:32613637-3165-4634-b431-353831313133
+DTSTAMP:20240208T210514Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:I Saw the TV Glow\nvon Jane Schoenbrun\nUSA 2024\nEnglisch\nmit
+  Justice Smith\, Brigette Lundy-Paine\, Ian Foreman\, Fred Durst\, Daniell
+ e Deadwyler\nPanorama\nInternationale Premiere\nEpilepsiewarnung: Strobosk
+ opeffekt\n100 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film
+ _id=202404794
+DTSTART;TZID=Europe/Berlin:20240225T213000
+DTEND;TZID=Europe/Berlin:20240225T231000
+LOCATION:Cubix 8
+SUMMARY:I Saw the TV Glow
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202404794
+END:VEVENT
+END:VCALENDAR

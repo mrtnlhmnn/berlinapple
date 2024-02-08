@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:35323634-6266-4831-b665-363937326663
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:38643034-3131-4531-a532-633266643961
+DTSTAMP:20240208T210502Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:A Bit of a Stranger\nvon Svitlana Lishchynska\nUkraine 2024\nUk
+ rainisch\, Russisch\, Englisch\nUntertitel: Englisch\nmit Svitlana\, Valen
+ tina\, Alexandra\, Stefania\nPanorama Dokumente\nWeltpremiere | Dokumentar
+ ische Form\n90 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?fil
+ m_id=202410588
+DTSTART;TZID=Europe/Berlin:20240222T160000
+DTEND;TZID=Europe/Berlin:20240222T173000
+LOCATION:Cubix 5
+SUMMARY:A Bit of a Stranger
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202410588
+END:VEVENT
+END:VCALENDAR

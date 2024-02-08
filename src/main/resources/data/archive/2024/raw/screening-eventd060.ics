@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:33636331-3464-4861-b361-333930363335
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:63373233-3832-4233-b432-373761623737
+DTSTAMP:20240208T210513Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Between the Temples\nvon Nathan Silver\nUSA 2024\nEnglisch\nmit
+  Jason Schwartzman\, Carol Kane\, Dolly de Leon\, Caroline Aaron\, Robert 
+ Smigel\nPanorama\nInternationale Premiere\n112 Min\n\nhttps://www.berlinal
+ e.de/de/programm/detail.html?film_id=202404587
+DTSTART;TZID=Europe/Berlin:20240225T120000
+DTEND;TZID=Europe/Berlin:20240225T135200
+LOCATION:Haus der Berliner Festspiele
+SUMMARY:Between the Temples
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202404587
+END:VEVENT
+END:VCALENDAR

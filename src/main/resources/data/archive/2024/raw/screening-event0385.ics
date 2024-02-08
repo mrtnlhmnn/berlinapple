@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:31373164-3332-4432-b638-663465623336
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:39333166-6362-4531-a432-323337353063
+DTSTAMP:20240208T210529Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Republic\nvon Jin Jiang\nSingapur / Volksrepublik China 2023\nM
+ andarin\, Englisch\nUntertitel: Englisch\nmit Li Eryang\, Li\, Bai\, Jiaoj
+ iao\, VT\nForum\nEuropäische Premiere | Dokumentarische Form\n107 Min\n\nh
+ ttps://www.berlinale.de/de/programm/detail.html?film_id=202406770
+DTSTART;TZID=Europe/Berlin:20240216T213000
+DTEND;TZID=Europe/Berlin:20240216T231700
+LOCATION:Arsenal 1
+SUMMARY:Republic
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202406770
+END:VEVENT
+END:VCALENDAR

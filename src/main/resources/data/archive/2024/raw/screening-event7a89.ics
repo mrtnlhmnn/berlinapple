@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:36633033-6535-4237-b366-653930383336
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:35643333-6263-4639-b739-326434663134
+DTSTAMP:20240208T210430Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Herzsprung\nvon Helke Misselwitz\nDeutschland 1992\nDeutsch\nUn
+ tertitel: Englisch\nmit Claudia Geisler\, Günter Lamprecht\, Eva-Maria Hag
+ en\, Nino Sandow\, Tatjana Besson\nRetrospektive\nAltersfreigabe FSK 12\n8
+ 4 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=20241462
+ 4
+DTSTART;TZID=Europe/Berlin:20240218T193000
+DTEND;TZID=Europe/Berlin:20240218T205400
+LOCATION:Cubix 6
+SUMMARY:Herzsprung
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414624
+END:VEVENT
+END:VCALENDAR

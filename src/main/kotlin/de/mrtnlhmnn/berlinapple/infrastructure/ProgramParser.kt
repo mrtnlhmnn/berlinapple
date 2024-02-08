@@ -32,6 +32,8 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
     var eventsTotalCounter = 0;
     var eventsFilteredByTimeCounter = 0;
 
+    val defaultURL = "https://www.berlinale.de"
+
     // ----------------------------------------------------
     private val beginKey       = Property.DTSTART
     private val endKey         = Property.DTEND
@@ -58,17 +60,18 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
                 var locationStringFromProgram: String? = null
                 var summaryStringFromProgram = ""
                 var descriptionStringFromProgram = ""
-                var urlFromProgram: URL? = null
+                var urlFromProgram = URL(defaultURL)
 
                 // get next data from parsed calendar ics file
                 for (calEntryProps in calEntry.properties) {
 //TODO check if any of these values is still null in the end (might be ok for some , like URL but not for time values)
+//TODO migrate to switch expression
                     when {
                         (calEntryProps.name == beginKey) -> {
-                            beginZDTFromProgram = ZonedDateTime.parse(calEntryProps.value, dateTimePatternFormatterCal)
+                            beginZDTFromProgram = ZonedDateTime.parse(calEntryProps.value + "Z", dateTimePatternFormatterCal)
                         }
                         (calEntryProps.name == endKey) -> {
-                            endZDTFromProgram = ZonedDateTime.parse(calEntryProps.value, dateTimePatternFormatterCal)
+                            endZDTFromProgram = ZonedDateTime.parse(calEntryProps.value + "Z", dateTimePatternFormatterCal)
                         }
                         (calEntryProps.name == locationKey) -> {
                             locationStringFromProgram = calEntryProps.value
@@ -80,7 +83,9 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
                             descriptionStringFromProgram = calEntryProps.value
                         }
                         (calEntryProps.name == urlKey) -> {
-                            urlFromProgram = URL(calEntryProps.value); }
+                            if (calEntryProps.value != null && calEntryProps.value.isNotEmpty())
+                                urlFromProgram = URL(calEntryProps.value)
+                        }
                     }
                 }
 

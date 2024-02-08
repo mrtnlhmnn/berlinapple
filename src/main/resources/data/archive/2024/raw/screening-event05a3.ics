@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:38396639-3862-4338-b338-333966646233
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:66376464-6439-4265-b934-386537636537
+DTSTAMP:20240208T210434Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Tian bian yi duo yun | The Wayward Cloud\nvon Tsai Ming-liang\n
+ Taiwan / Frankreich 2005\nMandarin\nUntertitel: Englisch\nmit Lee Kang-She
+ ng\, Chen Shiang-chyi\, Lu Yi-Ching\, Yang Kuei-Mei\, Yozakura Sumomo\nBer
+ linale Classics Special\n115 Min\n\nhttps://www.berlinale.de/de/programm/d
+ etail.html?film_id=202402613
+DTSTART;TZID=Europe/Berlin:20240222T220000
+DTEND;TZID=Europe/Berlin:20240222T235500
+LOCATION:Akademie der Künste
+SUMMARY:Tian bian yi duo yun | The Wayward Cloud
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202402613
+END:VEVENT
+END:VCALENDAR

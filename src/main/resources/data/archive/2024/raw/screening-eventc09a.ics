@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:64663765-3861-4434-b563-333039343137
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:36376237-3337-4364-a661-623230663432
+DTSTAMP:20240208T210657Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Seven Veils\nvon Atom Egoyan\nKanada 2023\nEnglisch\, Deutsch\n
+ Untertitel: Englisch\, Deutsch\nmit Amanda Seyfried\, Rebecca Liddiard\, D
+ ouglas Smith\, Mark O’Brien\, Vinessa Antoine\nBerlinale Special Gala\nInt
+ ernationale Premiere\n109 Min\n\nhttps://www.berlinale.de/de/programm/deta
+ il.html?film_id=202415091
+DTSTART;TZID=Europe/Berlin:20240224T123000
+DTEND;TZID=Europe/Berlin:20240224T141900
+LOCATION:Zoo Palast 1
+SUMMARY:Seven Veils
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415091
+END:VEVENT
+END:VCALENDAR

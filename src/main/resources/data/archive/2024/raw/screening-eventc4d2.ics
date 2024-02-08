@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:65613763-6536-4038-a463-353765663466
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:39646132-6661-4264-b230-383861353037
+DTSTAMP:20240208T210508Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Ještě nejsem\, kým chci být | I’m Not Everything I Want to Be\n
+ von Klára Tasovská\nTschechien / Slowakei / Österreich 2024\nTschechisch\n
+ Untertitel: Englisch\nmit Libuše Jarcovjáková\nPanorama Dokumente\nWeltpre
+ miere | Dokumentarische Form\n90 Min\n\nhttps://www.berlinale.de/de/progra
+ mm/detail.html?film_id=202403155
+DTSTART;TZID=Europe/Berlin:20240224T220000
+DTEND;TZID=Europe/Berlin:20240224T233000
+LOCATION:Zoo Palast 2
+SUMMARY:Ještě nejsem\, kým chci být | I’m Not Everything I Want to Be
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202403155
+END:VEVENT
+END:VCALENDAR

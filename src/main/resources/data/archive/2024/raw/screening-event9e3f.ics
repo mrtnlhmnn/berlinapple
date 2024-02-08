@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:63613539-6263-4430-b461-386538326363
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:33643264-6230-4262-b434-303931666662
+DTSTAMP:20240208T210710Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:L’ Empire | The Empire\nvon Bruno Dumont\nFrankreich / Italien 
+ / Deutschland / Belgien / Portugal 2024\nFranzösisch\nUntertitel: Englisch
+ \, Deutsch\nmit Lyna Khoudri\, Anamaria Vartolomei\, Camille Cottin\, Fabr
+ ice Luchini\, Brandon Vlieghe\nWettbewerb\nWeltpremiere\n110 Min\n\nhttps:
+ //www.berlinale.de/de/programm/detail.html?film_id=202408944
+DTSTART;TZID=Europe/Berlin:20240225T123000
+DTEND;TZID=Europe/Berlin:20240225T142000
+LOCATION:Verti Music Hall
+SUMMARY:L’ Empire | The Empire
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202408944
+END:VEVENT
+END:VCALENDAR

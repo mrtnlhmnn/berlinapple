@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:38326638-3961-4661-a235-366462623233
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:65656133-3838-4831-b164-666630356633
+DTSTAMP:20240208T210643Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Treasure\nvon Julia von Heinz\nDeutschland / Frankreich 2024\nE
+ nglisch\, Polnisch\nUntertitel: Englisch\, Deutsch\nmit Lena Dunham\, Step
+ hen Fry\, Zbigniew Zamachowski\nBerlinale Special Gala\nWeltpremiere\n112 
+ Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202412299
+DTSTART;TZID=Europe/Berlin:20240222T214500
+DTEND;TZID=Europe/Berlin:20240222T233700
+LOCATION:HKW 1 - Miriam Makeba Auditorium
+SUMMARY:Treasure
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202412299
+END:VEVENT
+END:VCALENDAR

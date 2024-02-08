@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:36333437-3262-4565-a262-326433326563
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:30306431-6263-4537-a633-613639643934
+DTSTAMP:20240208T210532Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Voices of the Silenced\nvon Park Soo-nam\, Park Maeui\nJapan / 
+ Südkorea 2023\nJapanisch\, Koreanisch\nUntertitel: Englisch\nmit Kim Seong
+ -soo\, Hirano Nobuto\, Jeon Dong-rye\, Lee Yong-im\, Seo Jeong-woo\nForum 
+ Special\nInternationale Premiere | Dokumentarische Form\n142 Min\n\nhttps:
+ //www.berlinale.de/de/programm/detail.html?film_id=202409504
+DTSTART;TZID=Europe/Berlin:20240220T183000
+DTEND;TZID=Europe/Berlin:20240220T205200
+LOCATION:Arsenal 1
+SUMMARY:Voices of the Silenced
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202409504
+END:VEVENT
+END:VCALENDAR

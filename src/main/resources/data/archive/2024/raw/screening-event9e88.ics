@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:32313039-6437-4430-b262-373561393032
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:33336634-6333-4662-a666-383033316136
+DTSTAMP:20240208T210439Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Gojira | Godzilla\nvon Ishirō Honda\nJapan 1954\nJapanisch\nUnt
+ ertitel: Englisch\nmit Akira Takarada\, Momoko Kōchi\, Akihiko Hirata\, Ta
+ kashi Shimura\, Fuyuki Murakami\nBerlinale Classics\nAltersfreigabe FSK 12
+ \n97 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=20240
+ 4881
+DTSTART;TZID=Europe/Berlin:20240216T193000
+DTEND;TZID=Europe/Berlin:20240216T210700
+LOCATION:Akademie der Künste
+SUMMARY:Gojira | Godzilla
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202404881
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:66663336-6562-4461-b365-333961616563
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:35663337-3134-4463-a136-373663313434
+DTSTAMP:20240208T210545Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:It’s Okay! | Es ist okay!\nvon Kim Hye-young\nSüdkorea 2023\nKo
+ reanisch\, Englisch\nUntertitel: Englisch\nmit Lee Re\, Jin Seo-yeon\, Chu
+ ng Su-bin\, Son Suk-ku\, Lee Jung-ha\nGeneration Kplus\nInternationale Pre
+ miere | Debütfilm\nDeutsche Einsprache | Kopfhörer für OV\n102 Min\n\nhttp
+ s://www.berlinale.de/de/programm/detail.html?film_id=202404801
+DTSTART;TZID=Europe/Berlin:20240225T130000
+DTEND;TZID=Europe/Berlin:20240225T144200
+LOCATION:HKW 1 - Miriam Makeba Auditorium
+SUMMARY:It’s Okay! | Es ist okay!
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202404801
+END:VEVENT
+END:VCALENDAR

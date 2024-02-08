@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:34616537-3563-4336-a665-643462646535
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:38623736-6364-4632-a466-623566646261
+DTSTAMP:20240208T210516Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Programm 3 | Programme 3\nUntertitel: Englisch\nForum Expanded
+ \n\nhold on to her\nvon Robin Vanbesien\nBelgien 2024\nKurdisch\, Niederlä
+ ndisch\, Französisch\, Englisch\nmit Henriette Essami-Khaullot\, Aïsta Bah
+ \, Thierno Dia\, Ahmed Rzgar\, Mirra Markhaeva\nForum Expanded\nWeltpremie
+ re | Dokumentarische Form\n80 Min\n\nhttps://www.berlinale.de/de/programm/
+ detail.html?film_id=202412146
+DTSTART;TZID=Europe/Berlin:20240217T160000
+DTEND;TZID=Europe/Berlin:20240217T172000
+LOCATION:Arsenal 1
+SUMMARY:hold on to her
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202412146
+END:VEVENT
+END:VCALENDAR

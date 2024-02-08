@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:37313639-3236-4566-b031-373761306464
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:31373065-6162-4163-a532-623164626231
+DTSTAMP:20240208T210431Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Im Land meiner Eltern | In the Country of My Parents\nvon Jeani
+ ne Meerapfel\nBundesrepublik Deutschland 1981\nDeutsch\nUntertitel: Englis
+ ch\nmit Anna Levine\, Luc Bondy\, Meier Breslav\, Eva Ebner\, Sarah Haffne
+ r\nRetrospektive\nDokumentarische Form\n87 Min\n\nhttps://www.berlinale.de
+ /de/programm/detail.html?film_id=202414603
+DTSTART;TZID=Europe/Berlin:20240220T190000
+DTEND;TZID=Europe/Berlin:20240220T202700
+LOCATION:Cubix 6
+SUMMARY:Im Land meiner Eltern | In the Country of My Parents
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414603
+END:VEVENT
+END:VCALENDAR

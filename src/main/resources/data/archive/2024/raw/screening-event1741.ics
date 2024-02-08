@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:38383832-3338-4639-b036-376330383065
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:39633537-6239-4166-b863-383664353764
+DTSTAMP:20240208T210541Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Raíz | Through Rocks and Clouds | Durch Felsen und Wolken\nvon 
+ Franco García Becerra\nPeru / Chile 2024\nQuechua\, Spanisch\nUntertitel: 
+ Englisch\nmit Alberth Merma\, Nely Huayta\, Richard Taipe\, José Merma\, R
+ ubén Huillca\nGeneration Kplus\nWeltpremiere | empfohlen ab 7 Jahren\nUkra
+ inische Einsprache\n83 Min\n\nhttps://www.berlinale.de/de/programm/detail.
+ html?film_id=202406370
+DTSTART;TZID=Europe/Berlin:20240224T093000
+DTEND;TZID=Europe/Berlin:20240224T105300
+LOCATION:Filmtheater am Friedrichshain
+SUMMARY:Raíz | Through Rocks and Clouds | Durch Felsen und Wolken
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202406370
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:39353635-3138-4331-b839-643663373030
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:62653336-3434-4838-a263-393362643236
+DTSTAMP:20240208T210513Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Memorias de un cuerpo que arde | Memories of a Burning Body\nvo
+ n Antonella Sudasassi Furniss\nCosta Rica / Spanien 2024\nSpanisch\nUntert
+ itel: Englisch\nmit Sol Carballo\, Paulina Bernini\, Juliana Filloy\, Lili
+ ana Biamonte\, Juan Luis Araya\nPanorama\nWeltpremiere\n90 Min\n\nhttps://
+ www.berlinale.de/de/programm/detail.html?film_id=202406760
+DTSTART;TZID=Europe/Berlin:20240224T130000
+DTEND;TZID=Europe/Berlin:20240224T143000
+LOCATION:Cubix 9
+SUMMARY:Memorias de un cuerpo que arde | Memories of a Burning Body
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202406760
+END:VEVENT
+END:VCALENDAR

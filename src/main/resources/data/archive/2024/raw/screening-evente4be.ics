@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:65343438-3832-4638-a330-643739363039
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:65346531-3638-4430-a531-653531353334
+DTSTAMP:20240208T210710Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Gloria!\nvon Margherita Vicario\nItalien / Schweiz 2024\nItalie
+ nisch\nUntertitel: Englisch\, Deutsch\nmit Galatéa Bellugi\, Carlotta Gamb
+ a\, Veronica Lucchesi\, Maria Vittoria Dallasta\, Sara Mafodda\nWettbewerb
+ \nWeltpremiere | Debütfilm\n100 Min\n\nhttps://www.berlinale.de/de/program
+ m/detail.html?film_id=202414848
+DTSTART;TZID=Europe/Berlin:20240225T190000
+DTEND;TZID=Europe/Berlin:20240225T204000
+LOCATION:Verti Music Hall
+SUMMARY:Gloria!
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414848
+END:VEVENT
+END:VCALENDAR

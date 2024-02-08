@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:39613732-3532-4365-b535-303332323730
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:35393261-6261-4363-b936-333266396434
+DTSTAMP:20240208T210505Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:À quand l’Afrique? | Which Way Africa?\nvon David-Pierre Fila\n
+ Republik Kongo / Angola / Kamerun 2024\nFranzösisch\, Sango\, Spanisch\nUn
+ tertitel: Englisch\nmit Samuel Fosso\, Joseph Ki-zerbo\, Simon Njami\, Ima
+ m Souleymane\nPanorama Dokumente\nWeltpremiere | Dokumentarische Form\n90 
+ Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202413048
+DTSTART;TZID=Europe/Berlin:20240224T100000
+DTEND;TZID=Europe/Berlin:20240224T113000
+LOCATION:Zoo Palast 2
+SUMMARY:À quand l’Afrique? | Which Way Africa?
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202413048
+END:VEVENT
+END:VCALENDAR

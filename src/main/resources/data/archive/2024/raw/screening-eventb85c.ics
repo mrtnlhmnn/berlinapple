@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:62643037-3333-4362-b830-643963653564
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:65633435-6363-4438-b330-393162633137
+DTSTAMP:20240208T210533Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:The Wrong Movie\nvon Keren Cytter\nUSA / Belgien 2024\nEnglisch
+ \nmit Laura Hajek\, Ashby Bland\, Elijah Lajmer\, Jordan Raf\, Edward Bake
+ r\nForum\nWeltpremiere\n96 Min\n\nhttps://www.berlinale.de/de/programm/det
+ ail.html?film_id=202401458
+DTSTART;TZID=Europe/Berlin:20240221T120000
+DTEND;TZID=Europe/Berlin:20240221T133600
+LOCATION:Kino Betonhalle@Silent Green
+SUMMARY:The Wrong Movie
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202401458
+END:VEVENT
+END:VCALENDAR

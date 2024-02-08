@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:32323334-3138-4364-b935-616664623030
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:65303266-3330-4161-b431-306537366363
+DTSTAMP:20240208T210434Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:The Love Parade | Liebesparade\nvon Ernst Lubitsch\nUSA 1929\nE
+ nglisch\nUntertitel: Deutsch\nmit Maurice Chevalier\, Jeanette MacDonald\,
+  Lupino Lane\, Lillian Roth\, Eugene Pallette\nBerlinale Classics\n110 Min
+ \n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202409295
+DTSTART;TZID=Europe/Berlin:20240220T183000
+DTEND;TZID=Europe/Berlin:20240220T202000
+LOCATION:HKW 2 - Safi Faye Saal
+SUMMARY:The Love Parade | Liebesparade
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202409295
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:35633436-6634-4533-b938-666537366537
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:38653937-3338-4566-a364-316261323432
+DTSTAMP:20240208T210435Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Banale Tage | Banal Days\nvon Peter Welz\nDeutschland 1991\nDeu
+ tsch\nUntertitel: Englisch\nmit Christian Kuchenbuch\, Florian Lukas\, Kur
+ t Naumann\, Jörg Panknin\, Ronald M. Schernikau\nRetrospektive\nAltersfrei
+ gabe FSK 12\n92 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?fi
+ lm_id=202414585
+DTSTART;TZID=Europe/Berlin:20240220T163000
+DTEND;TZID=Europe/Berlin:20240220T180200
+LOCATION:Cubix 6
+SUMMARY:Banale Tage | Banal Days
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414585
+END:VEVENT
+END:VCALENDAR

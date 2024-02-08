@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:35663934-6464-4161-b761-643263373865
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:63323637-3634-4237-a363-383839393733
+DTSTAMP:20240208T210636Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Dormir de olhos abertos | Sleep with Your Eyes Open\nvon Nele W
+ ohlatz\nBrasilien / Taiwan / Argentinien / Deutschland 2024\nMandarin\, Po
+ rtugiesisch\, Spanisch\, Englisch\nUntertitel: Englisch\nmit Chen Xiao Xin
+ \, Wang Shin-Hong\, Liao Kai Ro\, Nahuel Pérez Biscayart\, Lu Yang Zong\nE
+ ncounters\nWeltpremiere\n97 Min\n\nhttps://www.berlinale.de/de/programm/de
+ tail.html?film_id=202415567
+DTSTART;TZID=Europe/Berlin:20240225T153000
+DTEND;TZID=Europe/Berlin:20240225T170700
+LOCATION:Colosseum 1
+SUMMARY:Dormir de olhos abertos | Sleep with Your Eyes Open
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415567
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:37626566-3131-4435-b832-316333366366
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:36396439-3339-4233-a236-663930326361
+DTSTAMP:20240208T210533Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Resonance Spiral\nvon Filipa César\, Marinho de Pina\nPortugal 
+ / Guinea-Bissau / Deutschland 2024\nGuineabissauisches Kreol\, Kapverdisch
+ es Kreol\, Französisch\, Portugiesisch\nUntertitel: Englisch\nmit Bedan na
+  Onça\, Bidan Quelenque\, Cristina Mendes\, Mû Mbana\, Nsai Ndiba\nForum\n
+ Weltpremiere | Dokumentarische Form\n92 Min\n\nhttps://www.berlinale.de/de
+ /programm/detail.html?film_id=202407035
+DTSTART;TZID=Europe/Berlin:20240221T130000
+DTEND;TZID=Europe/Berlin:20240221T143200
+LOCATION:Arsenal 1
+SUMMARY:Resonance Spiral
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202407035
+END:VEVENT
+END:VCALENDAR

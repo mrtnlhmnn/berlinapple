@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:65323865-3734-4462-a138-396365313130
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:66643961-3462-4735-a233-356334303130
+DTSTAMP:20240208T210700Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Black Tea\nvon Abderrahmane Sissako\nFrankreich / Mauretanien /
+  Luxemburg / Taiwan / Côte d'Ivoire 2024\nMandarin\, Französisch\, Englisc
+ h\, Portugiesisch\nUntertitel: Englisch\, Deutsch\nmit Nina Mélo\, Chang H
+ an\, Wu Ke-Xi\, Michael Chang\nWettbewerb\nWeltpremiere\n111 Min\n\nhttps:
+ //www.berlinale.de/de/programm/detail.html?film_id=202411231
+DTSTART;TZID=Europe/Berlin:20240222T214500
+DTEND;TZID=Europe/Berlin:20240222T233600
+LOCATION:Haus der Berliner Festspiele
+SUMMARY:Black Tea
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202411231
+END:VEVENT
+END:VCALENDAR

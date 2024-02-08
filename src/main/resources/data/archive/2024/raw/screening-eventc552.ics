@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:34386139-6633-4664-a664-653432343838
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:34656365-3331-4664-b562-383661363661
+DTSTAMP:20240208T210444Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Berlinale Shorts 2\nUntertitel: Englisch\nBerlinale Shorts\nSho
+ rts Take Their Time: Ausführliches Q&A nach jedem Film\n\nRe tian wu hou |
+  Remains of the Hot Day\nvon Wenqian Zhang\nVolksrepublik China 2024\nMand
+ arin\, Wu\nmit Yuyi Wan\, Jinkui Jiang\, Yi Shi\, Yiwen Gu\, Zhengye Chen
+ \nBerlinale Shorts\nWeltpremiere\n24 Min\n\nhttps://www.berlinale.de/de/pr
+ ogramm/detail.html?film_id=202412084\n\nKaalkapje | Baldilocks\nvon Marthe
+  Peters\nBelgien 2023\nNiederländisch\nBerlinale Shorts\nInternationale Pr
+ emiere | Dokumentarische Form\n25 Min\n\nhttps://www.berlinale.de/de/progr
+ amm/detail.html?film_id=202404955\n\nAl sol\, lejos del centro | Towards t
+ he Sun\, Far from the Center\nvon Luciana Merino\, Pascal Viveros\nChile 2
+ 024\nOhne Dialog\nmit Fernanda Vicens\, Jimena Albarrán\nBerlinale Shorts
+ \nWeltpremiere | Dokumentarische Form\n17 Min\n\nhttps://www.berlinale.de/
+ de/programm/detail.html?film_id=202404898\n\nJing guo | Goodbye First Love
+ \nvon Shuli Huang\nUSA 2024\nMandarin\nmit Simu Chen\, Shuli Huang\nBerlin
+ ale Shorts\nWeltpremiere\n13 Min\n\nhttps://www.berlinale.de/de/programm/d
+ etail.html?film_id=202401701
+DTSTART;TZID=Europe/Berlin:20240221T150000
+DTEND;TZID=Europe/Berlin:20240221T161900
+LOCATION:Kino Betonhalle@Silent Green
+SUMMARY:Berlinale Shorts 2
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202412084
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:35346130-6333-4634-a536-306235663931
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:35393132-3739-4935-a232-386233363430
+DTSTAMP:20240208T210439Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Kohlhiesels Töchter | Kohlhiesel’s Daughters\nvon Ernst Lubitsc
+ h\nDeutschland 1920\ndeutsche Zwischentitel\nUntertitel: Englisch\nmit Hen
+ ny Porten\, Emil Jannings\, Gustav von Wangenheim\, Jakob Tiedtke\, Willy 
+ Prager\nBerlinale Classics\nlive begleitet von Mitgliedern der Berliner Ph
+ ilharmoniker\, Leitung: Simon Rössler\n65 Min\n\nhttps://www.berlinale.de/
+ de/programm/detail.html?film_id=202405603
+DTSTART;TZID=Europe/Berlin:20240218T110000
+DTEND;TZID=Europe/Berlin:20240218T120500
+LOCATION:HKW 1 - Miriam Makeba Auditorium
+SUMMARY:Kohlhiesels Töchter | Kohlhiesel’s Daughters
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202405603
+END:VEVENT
+END:VCALENDAR

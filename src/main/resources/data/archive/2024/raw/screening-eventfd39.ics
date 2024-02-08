@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:37396433-6630-4336-b965-383837646233
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:36386162-3431-4339-b065-376639393635
+DTSTAMP:20240208T210554Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Preisverleihung Caligari-Filmpreis | Caligari Film Award Ceremo
+ ny\nForum\n\nVorführung des Preisträgerfilms\nForum\n130 Min\n\nhttps://ww
+ w.berlinale.de/de/programm/detail.html?film_id=202415641
+DTSTART;TZID=Europe/Berlin:20240223T203000
+DTEND;TZID=Europe/Berlin:20240223T224000
+LOCATION:Kino Betonhalle@Silent Green
+SUMMARY:Vorführung des Preisträgerfilms
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415641
+END:VEVENT
+END:VCALENDAR

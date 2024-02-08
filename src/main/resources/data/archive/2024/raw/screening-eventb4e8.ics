@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:34613165-3231-4331-b663-343331326365
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:61663661-6661-4231-b937-333932613532
+DTSTAMP:20240208T210453Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Les gens d’à côté | My New Friends\nvon André Téchiné\nFrankrei
+ ch 2024\nFranzösisch\nUntertitel: Englisch\nmit Isabelle Huppert\, Nahuel 
+ Pérez Biscayart\, Hafsia Herzi\, Romane Meunier\nPanorama\nWeltpremiere\n8
+ 5 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=20241524
+ 1
+DTSTART;TZID=Europe/Berlin:20240220T120000
+DTEND;TZID=Europe/Berlin:20240220T132500
+LOCATION:Haus der Berliner Festspiele
+SUMMARY:Les gens d’à côté | My New Friends
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415241
+END:VEVENT
+END:VCALENDAR

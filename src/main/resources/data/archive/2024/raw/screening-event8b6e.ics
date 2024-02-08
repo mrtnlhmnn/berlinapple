@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:31353036-3862-4938-b362-356639336437
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:63383864-3334-4664-b430-646636343231
+DTSTAMP:20240208T210704Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Beom-Joe-do-si 4 | The Roundup: Punishment\nvon Heo Myeong-haen
+ g\nSüdkorea 2024\nKoreanisch\, Englisch\, Filipino\nUntertitel: Englisch\,
+  Deutsch\nmit Don Lee\, Kim Moo-yul\, Park Ji-hwan\, Lee Dong-hwi\nBerlina
+ le Special Gala\nWeltpremiere\n109 Min\n\nhttps://www.berlinale.de/de/prog
+ ramm/detail.html?film_id=202414924
+DTSTART;TZID=Europe/Berlin:20240224T220000
+DTEND;TZID=Europe/Berlin:20240224T234900
+LOCATION:HKW 1 - Miriam Makeba Auditorium
+SUMMARY:Beom-Joe-do-si 4 | The Roundup: Punishment
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414924
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:31333433-6434-4865-b231-643334323663
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:30386566-3863-4435-a633-383530333464
+DTSTAMP:20240208T210546Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Ellbogen | Elbow\nvon Aslı Özarslan\nDeutschland / Türkei / Fra
+ nkreich 2024\nDeutsch\, Türkisch\nUntertitel: Englisch\nmit Melia Kara\, D
+ oğa Gürer\, Jale Arıkan\, Haydar Şahin\, Orhan Kiliç\nGeneration 14plus\nW
+ eltpremiere | empfohlen ab 14 Jahren\nErweiterte deutsche Untertitel | Ans
+ chließendes Filmgespräch mit Gebärdendolmetscher*in\n86 Min\n\nhttps://www
+ .berlinale.de/de/programm/detail.html?film_id=202402994
+DTSTART;TZID=Europe/Berlin:20240225T190000
+DTEND;TZID=Europe/Berlin:20240225T202600
+LOCATION:HKW 1 - Miriam Makeba Auditorium
+SUMMARY:Ellbogen | Elbow
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202402994
+END:VEVENT
+END:VCALENDAR

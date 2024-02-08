@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:65646135-3933-4238-a635-623963333636
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:33666565-3330-4538-a363-393266393634
+DTSTAMP:20240208T210554Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:La hojarasca | The Undergrowth\nvon Macu Machín\nSpanien 2024\n
+ Spanisch\nUntertitel: Englisch\nmit Carmen Machín\, Elsa Machín\, Maura Pé
+ rez\nForum\nWeltpremiere | Debütfilm | Dokumentarische Form\n72 Min\n\nhtt
+ ps://www.berlinale.de/de/programm/detail.html?film_id=202411020
+DTSTART;TZID=Europe/Berlin:20240224T173000
+DTEND;TZID=Europe/Berlin:20240224T184200
+LOCATION:Kino Betonhalle@Silent Green
+SUMMARY:La hojarasca | The Undergrowth
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202411020
+END:VEVENT
+END:VCALENDAR

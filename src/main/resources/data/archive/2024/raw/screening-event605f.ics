@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:61613863-6631-4633-a462-323865386266
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:31333930-3131-4137-b834-646562643761
+DTSTAMP:20240208T210614Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Averroès & Rosa Parks | At Averroes & Rosa Parks\nvon Nicolas P
+ hilibert\nFrankreich 2024\nFranzösisch\nUntertitel: Englisch\nBerlinale Sp
+ ecial\nWeltpremiere | Dokumentarische Form\n143 Min\n\nhttps://www.berlina
+ le.de/de/programm/detail.html?film_id=202404883
+DTSTART;TZID=Europe/Berlin:20240216T150000
+DTEND;TZID=Europe/Berlin:20240216T172300
+LOCATION:Haus der Berliner Festspiele
+SUMMARY:Averroès & Rosa Parks | At Averroes & Rosa Parks
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202404883
+END:VEVENT
+END:VCALENDAR

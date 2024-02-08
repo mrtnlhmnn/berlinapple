@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:62656664-3939-4766-a464-613266613533
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:38346664-6235-4866-a261-366334366364
+DTSTAMP:20240208T210700Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Yeohaengjaui pilyo | A Traveler’s Needs\nvon Hong Sangsoo\nSüdk
+ orea 2024\nKoreanisch\, Französisch\, Englisch\nUntertitel: Englisch\, Deu
+ tsch\nmit Isabelle Huppert\, Lee Hyeyoung\, Kwon Haehyo\, Cho Yunhee\, Ha 
+ Seongguk\nWettbewerb\nWeltpremiere\n90 Min\n\nhttps://www.berlinale.de/de/
+ programm/detail.html?film_id=202408802
+DTSTART;TZID=Europe/Berlin:20240220T214500
+DTEND;TZID=Europe/Berlin:20240220T231500
+LOCATION:Haus der Berliner Festspiele
+SUMMARY:Yeohaengjaui pilyo | A Traveler’s Needs
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202408802
+END:VEVENT
+END:VCALENDAR

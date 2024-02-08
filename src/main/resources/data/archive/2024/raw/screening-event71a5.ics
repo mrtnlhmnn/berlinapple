@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:38383833-6466-4361-a661-613562343466
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:30316430-3834-4830-b632-383532303064
+DTSTAMP:20240208T210655Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:A Kind of Freedom\nUntertitel: Englisch\nBerlinale Special\n\nA
+ ugust My Heaven\nvon Riho Kudo\nJapan 2024\nJapanisch\nmit Yukino Murakami
+ \, Shuri Suwa\, Takuma Fujie\nBerlinale Special\nWeltpremiere\n40 Min\n\nh
+ ttps://www.berlinale.de/de/programm/detail.html?film_id=202414923\n\nChime
+ \nvon Kiyoshi Kurosawa\nJapan 2024\nJapanisch\nmit Mutsuo Yoshioka\, Tomok
+ o Tabata\, Ikkei Watanabe\nBerlinale Special\nWeltpremiere\n45 Min\n\nhttp
+ s://www.berlinale.de/de/programm/detail.html?film_id=202414894
+DTSTART;TZID=Europe/Berlin:20240220T103000
+DTEND;TZID=Europe/Berlin:20240220T115500
+LOCATION:Cubix 8
+SUMMARY:A Kind of Freedom
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414923
+END:VEVENT
+END:VCALENDAR

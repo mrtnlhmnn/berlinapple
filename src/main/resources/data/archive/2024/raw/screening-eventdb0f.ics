@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:33333431-3232-4132-b633-353461626661
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:36643535-3837-4264-a530-353037386666
+DTSTAMP:20240208T210721Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Huling Palabas | Fin\nvon Ryan Machado\nPhilippinen 2023\nTagal
+ og\, Onhan\nUntertitel: Englisch\nmit Shun Mark Gomez\, Bon Andrew Lenteja
+ s\, Cedrick Juan\, Serena Magiliw\, Jay Gonzaga\nGeneration 14plus\nIntern
+ ationale Premiere | Debütfilm | empfohlen ab 14 Jahren\nVorstellung für Pr
+ esse und Fachpublikum | Nur für Akkreditierte\n97 Min\n\nhttps://www.berli
+ nale.de/de/programm/detail.html?film_id=202410034
+DTSTART;TZID=Europe/Berlin:20240217T160000
+DTEND;TZID=Europe/Berlin:20240217T173700
+LOCATION:Cubix 8
+SUMMARY:Huling Palabas | Fin
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202410034
+END:VEVENT
+END:VCALENDAR

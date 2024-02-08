@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:39636231-6631-4735-b537-353238623261
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:33303330-3861-4337-b031-343834313835
+DTSTAMP:20240208T210645Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Reflections: Five Queer Short Films of the 74th Berlinale\nUnte
+ rtitel: Englisch\nBerlinale Shorts\n\nJing guo | Goodbye First Love\nvon S
+ huli Huang\nUSA 2024\nMandarin\nmit Simu Chen\, Shuli Huang\nBerlinale Sho
+ rts\nWeltpremiere\n13 Min\n\nhttps://www.berlinale.de/de/programm/detail.h
+ tml?film_id=202401701\n\nUli\nvon Mariana Gil Ríos\nKolumbien 2023\nSpanis
+ ch\nmit Ulith Giraldo\, María Camila Alarcón\, Amelia Mejía Escobar\, Eman
+ uel Vélez Hernández\nGeneration Kplus\nInternationale Premiere | empfohlen
+  ab 12 Jahren\n17 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?
+ film_id=202411276\n\nI Don’t Want to Be Just a Memory | Ich will nicht nur
+  eine Erinnerung sein\nvon Sarnt Utamachote\nDeutschland 2024\nEnglisch\, 
+ Spanisch\nmit marum\, René Bertune\, Andre Fau\, Katharina „Tinka“ Fromman
+ n\, RTALIN\nForum Expanded\nWeltpremiere | Dokumentarische Form\n20 Min\n
+ \nhttps://www.berlinale.de/de/programm/detail.html?film_id=202405881\n\nUn
+  movimiento extraño | An Odd Turn\nvon Francisco Lezama\nArgentinien 2024
+ \nSpanisch\nmit Laila Maltz\, Paco Gorriz\, Sofía Palomino\, Cecilia Raine
+ ro\, Marcela Guerty\nBerlinale Shorts\nWeltpremiere\n22 Min\n\nhttps://www
+ .berlinale.de/de/programm/detail.html?film_id=202411729\n\nUn invincible é
+ té | Invincible Summer\nvon Arnaud Dufeys\nBelgien 2024\nFranzösisch\, Spa
+ nisch\nmit Charles Lebrun\, Vadiel Gonzalez\, Victor Meurice\nGeneration 1
+ 4plus\nWeltpremiere | empfohlen ab 14 Jahren\n19 Min\n\nhttps://www.berlin
+ ale.de/de/programm/detail.html?film_id=202412892
+DTSTART;TZID=Europe/Berlin:20240222T193000
+DTEND;TZID=Europe/Berlin:20240222T210100
+LOCATION:Cubix 7
+SUMMARY:Reflections: Five Queer Short Films of the 74th Berlinale
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202401701
+END:VEVENT
+END:VCALENDAR

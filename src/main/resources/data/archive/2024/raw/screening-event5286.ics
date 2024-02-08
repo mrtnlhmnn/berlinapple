@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:34333630-6331-4738-b563-363030353961
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:33653134-6563-4731-a333-343537663265
+DTSTAMP:20240208T210549Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Maydegol\nvon Sarvnaz Alambeigi\nIran / Deutschland / Frankreic
+ h 2024\nFarsi\, Dari\nUntertitel: Englisch\nmit Maydegol\, Mohadesseh\, Fa
+ rzaneh\nGeneration 14plus\nWeltpremiere | Dokumentarische Form | empfohlen
+  ab 14 Jahren\n73 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?
+ film_id=202414269
+DTSTART;TZID=Europe/Berlin:20240220T160000
+DTEND;TZID=Europe/Berlin:20240220T171300
+LOCATION:HKW 1 - Miriam Makeba Auditorium
+SUMMARY:Maydegol
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414269
+END:VEVENT
+END:VCALENDAR

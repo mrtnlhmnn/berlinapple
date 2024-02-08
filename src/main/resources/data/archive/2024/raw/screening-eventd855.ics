@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:61306536-6261-4933-a338-333764643933
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:36646333-6534-4163-b430-313266353736
+DTSTAMP:20240208T210440Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Reifezeit | Time of Maturity\nvon Sohrab Shahid Saless\nBundesr
+ epublik Deutschland 1976\nDeutsch\nUntertitel: Englisch\nmit Mike Henning\
+ , Eva Manhardt\, Charles Hans Vogt\, Eva Lissa\, Lothar Köster\nBerlinale 
+ Classics\nAltersfreigabe FSK 18\n108 Min\n\nhttps://www.berlinale.de/de/pr
+ ogramm/detail.html?film_id=202408257
+DTSTART;TZID=Europe/Berlin:20240221T183000
+DTEND;TZID=Europe/Berlin:20240221T201800
+LOCATION:HKW 2 - Safi Faye Saal
+SUMMARY:Reifezeit | Time of Maturity
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202408257
+END:VEVENT
+END:VCALENDAR

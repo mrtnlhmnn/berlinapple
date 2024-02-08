@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:30306136-3232-4231-b538-353931663539
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:66353465-3235-4137-b463-313039666232
+DTSTAMP:20240208T210547Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Xiao Ban Jie | The Great Phuket\nvon Liu Yaonan\nHongkong\, Chi
+ na / Frankreich / Deutschland / Belgien 2024\nMandarin\nUntertitel: Englis
+ ch\nmit Li Rongkun\, Yang Xuan\, Kang Hang\, You Junfen\, Liu Huiyun\nGene
+ ration 14plus\nWeltpremiere | Debütfilm | empfohlen ab 14 Jahren\n97 Min\n
+ \nhttps://www.berlinale.de/de/programm/detail.html?film_id=202405933
+DTSTART;TZID=Europe/Berlin:20240222T184500
+DTEND;TZID=Europe/Berlin:20240222T202200
+LOCATION:Cubix 8
+SUMMARY:Xiao Ban Jie | The Great Phuket
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202405933
+END:VEVENT
+END:VCALENDAR

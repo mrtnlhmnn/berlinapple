@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:33623034-3633-4864-a135-363435303262
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:66393737-6462-4865-b934-373237306432
+DTSTAMP:20240208T210646Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:A Different Man\nvon Aaron Schimberg\nUSA 2023\nEnglisch\nUnter
+ titel: Deutsch\nmit Sebastian Stan\, Renate Reinsve\, Adam Pearson\nWettbe
+ werb\nInternationale Premiere\n112 Min\n\nhttps://www.berlinale.de/de/prog
+ ramm/detail.html?film_id=202404780
+DTSTART;TZID=Europe/Berlin:20240217T100000
+DTEND;TZID=Europe/Berlin:20240217T115200
+LOCATION:Cubix 9
+SUMMARY:A Different Man
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202404780
+END:VEVENT
+END:VCALENDAR

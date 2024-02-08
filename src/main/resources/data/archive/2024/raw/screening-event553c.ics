@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:38646361-3032-4135-b531-366632626664
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:34633062-6538-4139-a261-386339353861
+DTSTAMP:20240208T210608Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:14plus Kurzfilme 1 | 14plus Short Films 1\nUntertitel: Englisch
+ \nGeneration 14plus\n\nObraza | Resentment\nvon Gleb Osatinski\nUSA / Lita
+ uen 2024\nUkrainisch\, Russisch\nmit Vladyslav Baliuk\, Sergey Zdoronkov\,
+  Liudmila Gnatenko\, Ariana Rimkutė\, Vaidotas Martinaitis\nGeneration 14p
+ lus\nWeltpremiere | empfohlen ab 14 Jahren\n30 Min\n\nhttps://www.berlinal
+ e.de/de/programm/detail.html?film_id=202401040\n\nThe Girl Who Lived in th
+ e Loo\nvon Subarna Dash\nIndien 2024\nEnglisch\, Bengali\nmit Sneha Das\, 
+ Pratyusha Mitra\nGeneration 14plus\nWeltpremiere | Animation | empfohlen a
+ b 14 Jahren\n12 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?fi
+ lm_id=202404350\n\nUn pájaro voló | A Bird Flew\nvon Leinad Pájaro De la H
+ oz\nKolumbien / Kuba 2024\nSpanisch\nmit Yasser Ramírez Boloy\, Alejandra 
+ de Jesús Garcell\, Jesús Angel Cruz López\, Jose Ramón Gómez Reyes\, Jakdi
+ el Contreras Acosta\nGeneration 14plus\nWeltpremiere | empfohlen ab 14 Jah
+ ren\n20 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=20
+ 2403865\n\nCura sana\nvon Lucía G. Romero\nSpanien 2024\nSpanisch\nmit Ros
+ er Rendon Ena\, Rasvely Lissette Donaire Restituyo\, Yaneys Cabrera Ramíre
+ z\, Leisam Ramos Rodríguez\, Ana Barja\nGeneration 14plus\nWeltpremiere | 
+ empfohlen ab 14 Jahren\n18 Min\n\nhttps://www.berlinale.de/de/programm/det
+ ail.html?film_id=202412874
+DTSTART;TZID=Europe/Berlin:20240223T123000
+DTEND;TZID=Europe/Berlin:20240223T135000
+LOCATION:Filmtheater am Friedrichshain
+SUMMARY:14plus Kurzfilme 1 | 14plus Short Films 1
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202401040
+END:VEVENT
+END:VCALENDAR

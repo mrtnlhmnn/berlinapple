@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:62373239-3332-4139-b066-613664626365
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:38326532-3436-4339-b131-616231333962
+DTSTAMP:20240208T210557Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Gedenkabend Safi Faye zum ersten Todestag | Commemorative Eveni
+ ng for Safi Faye on the First Anniversary of her Death\nUntertitel: Englis
+ ch\nForum Special\n\nKaddu Beykat | Letter from My Village\nvon Safi Faye
+ \nSenegal 1975\nFranzösisch\, Wolof\nmit Assane Faye\, Maguette Gueye\nFor
+ um Special\nDokumentarische Form\n93 Min\n\nhttps://www.berlinale.de/de/pr
+ ogramm/detail.html?film_id=202415484
+DTSTART;TZID=Europe/Berlin:20240222T203000
+DTEND;TZID=Europe/Berlin:20240222T220300
+LOCATION:HKW 2 - Safi Faye Saal
+SUMMARY:Kaddu Beykat | Letter from My Village
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415484
+END:VEVENT
+END:VCALENDAR

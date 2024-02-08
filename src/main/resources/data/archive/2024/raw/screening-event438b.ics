@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:37363330-6431-4332-a436-303736643437
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:39663864-6137-4330-a238-323034393232
+DTSTAMP:20240208T210551Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Deda-Shvili an rame ar aris arasodes bolomde bneli | Mother and
+  Daughter\, or the Night Is Never Complete\nvon Lana Gogoberidze\nGeorgien
+  / Frankreich 2023\nGeorgisch\nUntertitel: Englisch\nForum Special\nIntern
+ ationale Premiere | Dokumentarische Form\n89 Min\n\nhttps://www.berlinale.
+ de/de/programm/detail.html?film_id=202414464
+DTSTART;TZID=Europe/Berlin:20240217T180000
+DTEND;TZID=Europe/Berlin:20240217T192900
+LOCATION:Kino Betonhalle@Silent Green
+SUMMARY:Deda-Shvili an rame ar aris arasodes bolomde bneli | Mother and Dau
+ ghter\, or the Night Is Never Complete
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414464
+END:VEVENT
+END:VCALENDAR

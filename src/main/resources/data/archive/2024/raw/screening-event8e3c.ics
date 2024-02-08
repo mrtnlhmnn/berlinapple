@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:61376135-6637-4137-a537-323166623832
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:35376230-3934-4564-b361-346666613361
+DTSTAMP:20240208T210557Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Oasis\nvon Tamara Uribe\, Felipe Morgado\nChile 2024\nSpanisch
+ \nUntertitel: Englisch\nForum\nWeltpremiere | Debütfilm | Dokumentarische 
+ Form\n80 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=2
+ 02409678
+DTSTART;TZID=Europe/Berlin:20240221T123000
+DTEND;TZID=Europe/Berlin:20240221T135000
+LOCATION:HKW 2 - Safi Faye Saal
+SUMMARY:Oasis
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202409678
+END:VEVENT
+END:VCALENDAR

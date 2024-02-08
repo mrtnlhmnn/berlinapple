@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:63376534-3665-4236-a432-373834333434
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:63653436-3133-4066-b838-616431333466
+DTSTAMP:20240208T210621Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Hors du temps | Suspended Time\nvon Olivier Assayas\nFrankreich
+  2024\nFranzösisch\nUntertitel: Englisch\, Deutsch\nmit Vincent Macaigne\,
+  Micha Lescot\, Nine D’Urso\, Nora Hamzawi\, Maud Wyler\nWettbewerb\nWeltp
+ remiere\n105 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_
+ id=202407361
+DTSTART;TZID=Europe/Berlin:20240217T220000
+DTEND;TZID=Europe/Berlin:20240217T234500
+LOCATION:Berlinale Palast
+SUMMARY:Hors du temps | Suspended Time
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202407361
+END:VEVENT
+END:VCALENDAR

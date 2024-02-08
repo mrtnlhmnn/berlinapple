@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:33383133-3265-4065-b239-316464343031
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:64623530-6166-4134-b434-626662373931
+DTSTAMP:20240208T210527Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:La piel en primavera | Skin in Spring\nvon Yennifer Uribe Alzat
+ e\nKolumbien / Chile 2024\nSpanisch\nUntertitel: Englisch\nmit Alba Lilian
+ a Agudelo Posada\, Eduardo Arango\, Cristian López\, Laura Zapata\nForum\n
+ Weltpremiere | Debütfilm\n100 Min\n\nhttps://www.berlinale.de/de/programm/
+ detail.html?film_id=202402239
+DTSTART;TZID=Europe/Berlin:20240223T180000
+DTEND;TZID=Europe/Berlin:20240223T194000
+LOCATION:Delphi Filmpalast
+SUMMARY:La piel en primavera | Skin in Spring
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202402239
+END:VEVENT
+END:VCALENDAR

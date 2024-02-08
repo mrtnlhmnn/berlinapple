@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:62393862-3533-4132-b564-323232613139
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:33613666-3831-4131-a230-623634383531
+DTSTAMP:20240208T210707Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Speaking Out: Film as a Culture of Memory\nEnglisch\nmit Mati D
+ iop\, Cece Mlay\, Agnes Lisa Wegner\, Dorothee Wenner\nBerlinale Talents E
+ vent\n90 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=2
+ 02415745
+DTSTART;TZID=Europe/Berlin:20240220T170000
+DTEND;TZID=Europe/Berlin:20240220T183000
+LOCATION:HAU Hebbel am Ufer (HAU1)
+SUMMARY:Speaking Out: Film as a Culture of Memory
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415745
+END:VEVENT
+END:VCALENDAR

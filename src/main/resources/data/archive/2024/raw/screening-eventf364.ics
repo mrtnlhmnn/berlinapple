@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:34336365-3461-4731-b437-366139383363
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:65383861-3862-4337-b534-616231663035
+DTSTAMP:20240208T210609Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:14plus Kurzfilme 2 | 14plus Short Films 2\nUntertitel: Englisch
+ \nGeneration 14plus\n\nLapso | Lapse\nvon Caroline Cavalcanti\nBrasilien 2
+ 023\nPortugiesisch\, Portugiesische Gebärdensprache\nmit Beatriz Oliveira\
+ , Juan Queiroz\, Dora Rosa\, Thayanne Lima\nGeneration 14plus\nEuropäische
+  Premiere | empfohlen ab 14 Jahren\n25 Min\n\nhttps://www.berlinale.de/de/
+ programm/detail.html?film_id=202403698\n\nSongs of Love and Hate\nvon Saur
+ av Ghimire\nNepal / Belgien 2024\nNepali\nmit Saurav Ghimire\, Shraddha Gh
+ imire\, Bardan Basnet\, Kewal Rijal\nGeneration 14plus\nWeltpremiere | Dok
+ umentarische Form | empfohlen ab 14 Jahren\n17 Min\n\nhttps://www.berlinal
+ e.de/de/programm/detail.html?film_id=202403050\n\nMuna\nvon Warda Mohamed
+ \nVereinigtes Königreich 2023\nEnglisch\, Somali\nmit Kosar Ali\, Raha Iss
+ e Farah\, Elmi Rashid Elmi\, Ahmed Nur\, Meena Mohamed\nGeneration 14plus
+ \nInternationale Premiere | empfohlen ab 14 Jahren\n19 Min\n\nhttps://www.
+ berlinale.de/de/programm/detail.html?film_id=202401056\n\nUn invincible ét
+ é | Invincible Summer\nvon Arnaud Dufeys\nBelgien 2024\nFranzösisch\, Span
+ isch\nmit Charles Lebrun\, Vadiel Gonzalez\, Victor Meurice\nGeneration 14
+ plus\nWeltpremiere | empfohlen ab 14 Jahren\n19 Min\n\nhttps://www.berlina
+ le.de/de/programm/detail.html?film_id=202412892
+DTSTART;TZID=Europe/Berlin:20240221T184500
+DTEND;TZID=Europe/Berlin:20240221T200500
+LOCATION:Cubix 8
+SUMMARY:14plus Kurzfilme 2 | 14plus Short Films 2
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202403698
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:62646135-3738-4637-a334-313337626264
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:63323532-3934-4130-b566-333239363336
+DTSTAMP:20240208T210524Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Der unsichtbare Zoo | The Invisible Zoo\nvon Romuald Karmakar\n
+ Deutschland 2024\nDeutsch\, Schweizerdeutsch\, Englisch\nUntertitel: Engli
+ sch\nForum\nWeltpremiere | Dokumentarische Form\n178 Min\n\nhttps://www.be
+ rlinale.de/de/programm/detail.html?film_id=202406206
+DTSTART;TZID=Europe/Berlin:20240219T150000
+DTEND;TZID=Europe/Berlin:20240219T175800
+LOCATION:Delphi Filmpalast
+SUMMARY:Der unsichtbare Zoo | The Invisible Zoo
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202406206
+END:VEVENT
+END:VCALENDAR

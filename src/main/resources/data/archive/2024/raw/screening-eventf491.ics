@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:61333833-3538-4338-a139-333738646435
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:61373435-6364-4136-b361-633666656439
+DTSTAMP:20240208T210509Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Les Paradis de Diane | Paradises of Diane\nvon Carmen Jaquier\,
+  Jan Gassmann\nSchweiz 2024\nFranzösisch\, Deutsch\, Englisch\nUntertitel:
+  Englisch\nmit Dorothée de Koon\, Aurore Clément\, Roland Bonjour\, Omar A
+ yuso\, Stéphanie Lagarde\nPanorama\nInternationale Premiere\n97 Min\n\nhtt
+ ps://www.berlinale.de/de/programm/detail.html?film_id=202407169
+DTSTART;TZID=Europe/Berlin:20240225T153000
+DTEND;TZID=Europe/Berlin:20240225T170700
+LOCATION:Cubix 9
+SUMMARY:Les Paradis de Diane | Paradises of Diane
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202407169
+END:VEVENT
+END:VCALENDAR

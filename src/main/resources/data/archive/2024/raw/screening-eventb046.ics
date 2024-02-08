@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:36393635-6266-4563-a665-386465663865
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:38613133-6231-4238-b036-636637666635
+DTSTAMP:20240208T210455Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Jia ting jian shi | Brief History of a Family\nvon Lin Jianjie
+ \nVolksrepublik China / Frankreich / Dänemark / Katar 2024\nMandarin\nUnte
+ rtitel: Englisch\nmit Zu Feng\, Guo Keyu\, Sun Xilun\, Lin Muran\nPanorama
+ \nEuropäische Premiere | Debütfilm\n99 Min\n\nhttps://www.berlinale.de/de/
+ programm/detail.html?film_id=202402436
+DTSTART;TZID=Europe/Berlin:20240222T114500
+DTEND;TZID=Europe/Berlin:20240222T132400
+LOCATION:Haus der Berliner Festspiele
+SUMMARY:Jia ting jian shi | Brief History of a Family
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202402436
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:35323062-6165-4166-b835-623834383932
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:32393031-6563-4066-b465-393863346433
+DTSTAMP:20240208T210610Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Kplus Kurzfilme 2 | Kplus Short Films 2\nUntertitel: Englisch\n
+ Generation Kplus\nDeutsche Einsprache | Kopfhörer für OV\n\nPorzellan | Po
+ rcelain\nvon Annika Birgel\nDeutschland 2024\nDeutsch\nmit Nell Marie Haac
+ k\, Liv Heleen Haack\, Niklas Leifert\nGeneration Kplus\nWeltpremiere | em
+ pfohlen ab 12 Jahren\n16 Min\n\nhttps://www.berlinale.de/de/programm/detai
+ l.html?film_id=202403921\n\nSukoun | Amplified | In die Stille\nvon Dina N
+ aser\nJordanien / Ägypten / Palästina 2024\nArabisch\, Jordanische Gebärde
+ nsprache\nmit Malak Nassar\, Suhad Khatib\, Nadeem Al-Rimawi\, Hanna Georg
+ e Sakkab\nGeneration Kplus\nWeltpremiere | empfohlen ab 12 Jahren\n19 Min
+ \n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202403617\n\n
+ Uli\nvon Mariana Gil Ríos\nKolumbien 2023\nSpanisch\nmit Ulith Giraldo\, M
+ aría Camila Alarcón\, Amelia Mejía Escobar\, Emanuel Vélez Hernández\nGene
+ ration Kplus\nInternationale Premiere | empfohlen ab 12 Jahren\n17 Min\n\n
+ https://www.berlinale.de/de/programm/detail.html?film_id=202411276\n\nPapi
+ llon | Butterfly | Schmetterling\nvon Florence Miailhe\nFrankreich 2024\nF
+ ranzösisch\, Arabisch\, Deutsch\nmit Fayçal Zafi\, Yassine Mestaoui\, Alex
+ andre Liebe\, Johannes Olivier Hamm\, Hocine Ben\nGeneration Kplus\nWeltpr
+ emiere | Animation | empfohlen ab 12 Jahren\n15 Min\n\nhttps://www.berlina
+ le.de/de/programm/detail.html?film_id=202413056\n\nA Summer’s End Poem | S
+ ommer\, Ende\nvon Lam Can-zhao\nVolksrepublik China / Schweiz / Malaysia 2
+ 024\nMin Nan\nmit Cai Jingbo\, Cai Liyu\, Lan Zhongqing\nGeneration Kplus
+ \nWeltpremiere | empfohlen ab 12 Jahren\n15 Min\n\nhttps://www.berlinale.d
+ e/de/programm/detail.html?film_id=202403603
+DTSTART;TZID=Europe/Berlin:20240221T093000
+DTEND;TZID=Europe/Berlin:20240221T105200
+LOCATION:Zoo Palast 1
+SUMMARY:Kplus Kurzfilme 2 | Kplus Short Films 2
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202403921
+END:VEVENT
+END:VCALENDAR

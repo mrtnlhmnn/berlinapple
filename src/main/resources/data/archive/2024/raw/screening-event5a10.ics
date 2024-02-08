@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:64656162-3230-4264-b934-373734393034
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:38623733-6661-4366-a630-356262636362
+DTSTAMP:20240208T210634Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Tú me abrasas | You Burn Me | Du verbrennst mich\nvon Matías Pi
+ ñeiro\nArgentinien / Spanien 2024\nSpanisch\nUntertitel: Englisch\nmit Gab
+ i Saidón\, María Villar\, María Inês Gonçalves\, Agustina Muñoz\, Ana Cris
+  Barragán\nEncounters\nWeltpremiere\n64 Min\n\nhttps://www.berlinale.de/de
+ /programm/detail.html?film_id=202409749
+DTSTART;TZID=Europe/Berlin:20240224T124500
+DTEND;TZID=Europe/Berlin:20240224T134900
+LOCATION:Cubix 8
+SUMMARY:Tú me abrasas | You Burn Me | Du verbrennst mich
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202409749
+END:VEVENT
+END:VCALENDAR

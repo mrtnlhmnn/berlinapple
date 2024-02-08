@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:39353335-3530-4238-b530-653562303364
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:33316137-6137-4435-b166-646331633030
+DTSTAMP:20240208T210444Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Berlinale Shorts 3\nUntertitel: Englisch\nBerlinale Shorts\n\nK
+ awauso\nvon Akihito Izuhara\nJapan 2023\nJapanisch\nBerlinale Shorts\nInte
+ rnationale Premiere | Animation\n15 Min\n\nhttps://www.berlinale.de/de/pro
+ gramm/detail.html?film_id=202407932\n\nThe Moon Also Rises\nvon Yuyan Wang
+ \nFrankreich 2024\nMandarin\nBerlinale Shorts\nWeltpremiere | Dokumentaris
+ che Form\n24 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_
+ id=202405426\n\nUngewollte Verwandtschaft | Unwanted Kinship\nvon Pavel Mo
+ zhar\nDeutschland 2024\nUkrainisch\, Deutsch\, Russisch\nmit André Mewis\,
+  Christiane Sill\, Steffen Roll\, Iryna Poplavska\, Oleksandr Kryvosheiev
+ \nBerlinale Shorts\nWeltpremiere | Dokumentarische Form\n30 Min\n\nhttps:/
+ /www.berlinale.de/de/programm/detail.html?film_id=202412297\n\nPreoperatio
+ nal Model\nvon Philip Ullman\nNiederlande 2024\nEnglisch\nmit Mette Marie 
+ Fisker\, Tine Street Andersen\nBerlinale Shorts\nInternationale Premiere |
+  Animation\n13 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?fil
+ m_id=202405371
+DTSTART;TZID=Europe/Berlin:20240221T133000
+DTEND;TZID=Europe/Berlin:20240221T145200
+LOCATION:Cineplex Titania
+SUMMARY:Berlinale Shorts 3
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202407932
+END:VEVENT
+END:VCALENDAR

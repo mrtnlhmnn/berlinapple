@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:38383837-3139-4763-b531-373732363239
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:62656263-3436-4139-a365-306631613739
+DTSTAMP:20240208T210454Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Diaries from Lebanon\nvon Myriam El Hajj\nLibanon / Frankreich 
+ / Katar / Saudi-Arabien 2024\nArabisch\nUntertitel: Englisch\nmit Joumana 
+ Haddad\, Perla Joe Maalouli\, Georges Moufarrej\nPanorama Dokumente\nWeltp
+ remiere | Dokumentarische Form\n110 Min\n\nhttps://www.berlinale.de/de/pro
+ gramm/detail.html?film_id=202401960
+DTSTART;TZID=Europe/Berlin:20240220T220000
+DTEND;TZID=Europe/Berlin:20240220T235000
+LOCATION:Zoo Palast 2
+SUMMARY:Diaries from Lebanon
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202401960
+END:VEVENT
+END:VCALENDAR

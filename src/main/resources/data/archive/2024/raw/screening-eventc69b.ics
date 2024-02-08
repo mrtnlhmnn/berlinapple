@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:61383662-6563-4634-b862-653130653531
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:34363862-3436-4232-b237-636330343766
+DTSTAMP:20240208T210605Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Reinas\nvon Klaudia Reynicke\nSchweiz / Spanien / Peru 2024\nSp
+ anisch\, Quechua\nUntertitel: Englisch\nmit Abril Gjurinovic\, Luana Vega\
+ , Jimena Lindo\, Gonzalo Molina\, Susi Sánchez\nGeneration Kplus\nEuropäis
+ che Premiere | empfohlen ab 12 Jahren\nDeutsche Einsprache | Kopfhörer für
+  OV\n102 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=2
+ 02408439
+DTSTART;TZID=Europe/Berlin:20240221T160000
+DTEND;TZID=Europe/Berlin:20240221T174200
+LOCATION:HKW 1 - Miriam Makeba Auditorium
+SUMMARY:Reinas
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202408439
+END:VEVENT
+END:VCALENDAR

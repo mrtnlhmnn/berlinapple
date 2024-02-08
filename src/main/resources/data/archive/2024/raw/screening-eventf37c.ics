@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:65623539-6135-4930-b436-363533623037
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:61633530-6564-4034-a563-623461333264
+DTSTAMP:20240208T210701Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Shambhala\nvon Min Bahadur Bham\nNepal / Frankreich / Norwegen 
+ / Hongkong\, China / Türkei / Taiwan / USA / Katar 2024\nTibetisch\, Nepal
+ i\nUntertitel: Englisch\, Deutsch\nmit Thinley Lhamo\, Sonam Topden\, Tenz
+ in Dalha\, Karma Wangyal Gurung\, Karma Shakya\nWettbewerb\nWeltpremiere\n
+ 150 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202408
+ 746
+DTSTART;TZID=Europe/Berlin:20240224T210000
+DTEND;TZID=Europe/Berlin:20240224T233000
+LOCATION:Haus der Berliner Festspiele
+SUMMARY:Shambhala
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202408746
+END:VEVENT
+END:VCALENDAR

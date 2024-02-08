@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:62336361-3832-4636-a239-643236376234
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:34306539-6566-4263-a562-373031646535
+DTSTAMP:20240208T210621Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Another End\nvon Piero Messina\nItalien 2024\nEnglisch\, Spanis
+ ch\nUntertitel: Englisch\, Deutsch\nmit Gael García Bernal\, Renate Reinsv
+ e\, Bérénice Bejo\, Olivia Williams\, Pal Aron\nWettbewerb\nWeltpremiere\n
+ 129 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202414
+ 892
+DTSTART;TZID=Europe/Berlin:20240217T190000
+DTEND;TZID=Europe/Berlin:20240217T210900
+LOCATION:Berlinale Palast
+SUMMARY:Another End
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414892
+END:VEVENT
+END:VCALENDAR

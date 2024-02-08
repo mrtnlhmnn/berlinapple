@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:65323532-3939-4533-a130-653438653633
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:33373931-3135-4539-b338-353563356633
+DTSTAMP:20240208T210540Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Los tonos mayores | The Major Tones | Tonspuren\nvon Ingrid Pok
+ ropek\nArgentinien / Spanien 2023\nSpanisch\nUntertitel: Englisch\nmit Sof
+ ía Clausen\, Pablo Seijo\, Lina Ziccarello\, Mercedes Halfon\, Santiago Fe
+ rreira\nGeneration Kplus\nInternationale Premiere | Debütfilm | empfohlen 
+ ab 10 Jahren\nDeutsche Einsprache\n101 Min\n\nhttps://www.berlinale.de/de/
+ programm/detail.html?film_id=202402016
+DTSTART;TZID=Europe/Berlin:20240221T123000
+DTEND;TZID=Europe/Berlin:20240221T141100
+LOCATION:Filmtheater am Friedrichshain
+SUMMARY:Los tonos mayores | The Major Tones | Tonspuren
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202402016
+END:VEVENT
+END:VCALENDAR

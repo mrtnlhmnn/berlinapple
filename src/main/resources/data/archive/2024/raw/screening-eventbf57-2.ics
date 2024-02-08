@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:64336431-3734-4663-b064-396566386134
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:35306236-3261-4233-a130-646236383965
+DTSTAMP:20240208T210711Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Dahomey\nvon Mati Diop\nFrankreich / Senegal / Benin 2024\nFran
+ zösisch\, Fon\, Englisch\nUntertitel: Englisch\, Deutsch\nWettbewerb\nWelt
+ premiere | Dokumentarische Form\n67 Min\n\nhttps://www.berlinale.de/de/pro
+ gramm/detail.html?film_id=202414781
+DTSTART;TZID=Europe/Berlin:20240225T213000
+DTEND;TZID=Europe/Berlin:20240225T223700
+LOCATION:Berlinale Palast
+SUMMARY:Dahomey
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414781
+END:VEVENT
+END:VCALENDAR

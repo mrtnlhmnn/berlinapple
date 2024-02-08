@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:33306632-3135-4061-a262-303136356136
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:35653332-3038-4637-b436-313838356636
+DTSTAMP:20240208T210542Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Young Hearts | Junge Herzen\nvon Anthony Schatteman\nBelgien / 
+ Niederlande 2024\nNiederländisch\, Französisch\nUntertitel: Englisch\, Deu
+ tsch\nmit Lou Goossens\, Marius De Saeger\, Geert Van Rampelberg\, Emilie 
+ De Roo\, Dirk Van Dijck\nGeneration Kplus\nWeltpremiere | Debütfilm | empf
+ ohlen ab 11 Jahren\nAnschließendes Filmgespräch mit Gebärdendolmetscher*in
+ \n97 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=20241
+ 2978
+DTSTART;TZID=Europe/Berlin:20240217T160000
+DTEND;TZID=Europe/Berlin:20240217T173700
+LOCATION:HKW 1 - Miriam Makeba Auditorium
+SUMMARY:Young Hearts | Junge Herzen
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202412978
+END:VEVENT
+END:VCALENDAR

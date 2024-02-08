@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:35333030-6132-4535-a330-333439316237
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:34643662-3665-4431-a331-366564336539
+DTSTAMP:20240208T210523Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Săptămâna Mare | Holy Week\nvon Andrei Cohn\nRumänien / Schweiz
+  2024\nRumänisch\nUntertitel: Englisch\nmit Doru Bem\, Nicoleta Lefter\, C
+ iprian Chiricheș\, Mario Gheorghe Dinu\, Ana Cioneta\nForum\nWeltpremiere
+ \n133 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=2024
+ 15459
+DTSTART;TZID=Europe/Berlin:20240217T143000
+DTEND;TZID=Europe/Berlin:20240217T164300
+LOCATION:Delphi Filmpalast
+SUMMARY:Săptămâna Mare | Holy Week
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415459
+END:VEVENT
+END:VCALENDAR

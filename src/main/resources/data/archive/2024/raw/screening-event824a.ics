@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:36636432-6630-4336-b964-356464633635
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:64373631-6366-4935-b032-343338393339
+DTSTAMP:20240208T210525Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:The Human Hibernation\nvon Anna Cornudella Castro\nSpanien 2024
+ \nEnglisch\nmit Clara Muck Dietrich\, Demetrius Hollimon\, Jane Hubbell\, 
+ Brian Stevens\, Neil O’Neil\nForum\nWeltpremiere | Debütfilm\n90 Min\n\nht
+ tps://www.berlinale.de/de/programm/detail.html?film_id=202407093
+DTSTART;TZID=Europe/Berlin:20240220T210000
+DTEND;TZID=Europe/Berlin:20240220T223000
+LOCATION:Delphi Filmpalast
+SUMMARY:The Human Hibernation
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202407093
+END:VEVENT
+END:VCALENDAR

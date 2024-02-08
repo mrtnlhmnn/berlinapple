@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:62303436-6339-4030-b633-616531636637
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:65666365-6137-4231-b631-623764303366
+DTSTAMP:20240208T210437Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:After Hours | Die Zeit nach Mitternacht\nvon Martin Scorsese\nU
+ SA 1985\nEnglisch\nmit Griffin Dunne\, Rosanna Arquette\, Verna Bloom\, Th
+ omas Chong\, Linda Fiorentino\nBerlinale Classics\nAltersfreigabe FSK 12\n
+ 97 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=2024083
+ 10
+DTSTART;TZID=Europe/Berlin:20240225T131500
+DTEND;TZID=Europe/Berlin:20240225T145200
+LOCATION:HKW 2 - Safi Faye Saal
+SUMMARY:After Hours | Die Zeit nach Mitternacht
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202408310
+END:VEVENT
+END:VCALENDAR

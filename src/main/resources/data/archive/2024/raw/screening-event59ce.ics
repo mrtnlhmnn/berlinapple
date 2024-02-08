@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:66343534-3466-4839-a333-383534373966
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:65383633-3139-4561-b566-333431346665
+DTSTAMP:20240208T210707Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Cinema in Translation: Understanding Beyond Barriers\nEnglisch
+ \nmit Abderrahmane Sissako\, Anas Sareen\nBerlinale Talents Event\n90 Min
+ \n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202415749
+DTSTART;TZID=Europe/Berlin:20240222T143000
+DTEND;TZID=Europe/Berlin:20240222T160000
+LOCATION:HAU Hebbel am Ufer (HAU2)
+SUMMARY:Cinema in Translation: Understanding Beyond Barriers
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415749
+END:VEVENT
+END:VCALENDAR

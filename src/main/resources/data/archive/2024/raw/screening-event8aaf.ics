@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:65613939-3634-4038-b739-626534316630
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:31376366-6630-4566-b639-653063316337
+DTSTAMP:20240208T210509Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Betânia\nvon Marcelo Botta\nBrasilien 2024\nPortugiesisch\, Fra
+ nzösisch\nUntertitel: Englisch\nmit Diana Mattos\, Tião Carvalho\, Caçula 
+ Rodrigues\, Nádia D’Cássia\, Ulysses Azevedo\nPanorama\nWeltpremiere | Deb
+ ütfilm\n120 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_i
+ d=202402364
+DTSTART;TZID=Europe/Berlin:20240222T100000
+DTEND;TZID=Europe/Berlin:20240222T120000
+LOCATION:Cubix 5
+SUMMARY:Betânia
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202402364
+END:VEVENT
+END:VCALENDAR

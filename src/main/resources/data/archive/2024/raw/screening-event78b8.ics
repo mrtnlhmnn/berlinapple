@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:33336562-3436-4930-a363-633235626163
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:33373335-3138-4664-a238-373737303732
+DTSTAMP:20240208T210442Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Berlinale Shorts 1\nUntertitel: Englisch\nBerlinale Shorts\n\nS
+ tadtmuseum / Moi Rai | City Museum / My Paradise\nvon Boris Dewjatkin\nDeu
+ tschland 2024\nDeutsch\nBerlinale Shorts\nWeltpremiere | Dokumentarische F
+ orm\n26 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=20
+ 2402765\n\nCircle\nvon Joung Yumi\nSüdkorea 2024\nOhne Dialog\nBerlinale S
+ horts\nWeltpremiere | Animation\n7 Min\n\nhttps://www.berlinale.de/de/prog
+ ramm/detail.html?film_id=202402564\n\nAdieu tortue | Bye Bye Turtle\nvon S
+ elin Öksüzoğlu\nFrankreich / Türkei 2024\nTürkisch\nmit Nursema Çepni\, Me
+ ltem Ünel\, Neriman Çilingiroğlu\, Ibrahim Çolakoğlu\, Serhat Şahin\nBerli
+ nale Shorts\nWeltpremiere\n24 Min\n\nhttps://www.berlinale.de/de/programm/
+ detail.html?film_id=202414399\n\nOiseau de passage | Wandering Bird\nvon V
+ ictor Dupuis\nBelgien 2023\nFranzösisch\nmit Ilias Largo\, Guillaume Fooy
+ \nBerlinale Shorts\nInternationale Premiere\n15 Min\n\nhttps://www.berlina
+ le.de/de/programm/detail.html?film_id=202412251
+DTSTART;TZID=Europe/Berlin:20240223T183000
+DTEND;TZID=Europe/Berlin:20240223T194200
+LOCATION:Colosseum 1
+SUMMARY:Berlinale Shorts 1
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202402765
+END:VEVENT
+END:VCALENDAR

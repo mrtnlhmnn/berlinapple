@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:62366162-3466-4564-b633-366133343563
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:66613864-3433-4236-b138-626135313061
+DTSTAMP:20240208T210630Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Khamyazeye bozorg | The Great Yawn\nvon Aliyar Rasti\nIran 2024
+ \nFarsi\nUntertitel: Englisch\nmit Mohammad Aghebati\, Amirhossein Hossein
+ i\, Saber Abar\, Mahin Sadri\, Mehrdad Ziaie\nEncounters\nWeltpremiere | D
+ ebütfilm\n93 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_
+ id=202405193
+DTSTART;TZID=Europe/Berlin:20240224T220000
+DTEND;TZID=Europe/Berlin:20240224T233300
+LOCATION:Cubix 7
+SUMMARY:Khamyazeye bozorg | The Great Yawn
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202405193
+END:VEVENT
+END:VCALENDAR

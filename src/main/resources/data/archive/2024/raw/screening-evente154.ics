@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:30636136-6236-4330-a134-366534306131
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:36623032-6435-4631-b130-313937663665
+DTSTAMP:20240208T210601Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Ihre ergebenste Fräulein | Well Ordered Nature\nvon Eva C. Held
+ mann\nDeutschland 2024\nDeutsch\nUntertitel: Englisch\nForum\nWeltpremiere
+  | Dokumentarische Form\n73 Min\n\nhttps://www.berlinale.de/de/programm/de
+ tail.html?film_id=202407936
+DTSTART;TZID=Europe/Berlin:20240225T160000
+DTEND;TZID=Europe/Berlin:20240225T171300
+LOCATION:Cubix 7
+SUMMARY:Ihre ergebenste Fräulein | Well Ordered Nature
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202407936
+END:VEVENT
+END:VCALENDAR

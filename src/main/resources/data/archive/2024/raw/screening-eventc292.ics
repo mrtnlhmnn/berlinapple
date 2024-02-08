@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:30646263-3465-4934-b435-393634653065
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:31386238-6135-4064-b636-363364616337
+DTSTAMP:20240208T210517Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Programm 5 | Programme 5\nUntertitel: Englisch\nForum Expanded
+ \n\nSarcophagus of Drunken Loves\nvon Joana Hadjithomas & Khalil Joreige\n
+ Frankreich / Libanon 2024\nOhne Dialog\nForum Expanded\nWeltpremiere | Dok
+ umentarische Form\n8 Min\n\nhttps://www.berlinale.de/de/programm/detail.ht
+ ml?film_id=202404370\n\nCERTAIN WINDS FROM THE SOUTH\nvon Eric Gyamfi\nGha
+ na 2023\nDagbani\, Twi\, Arabisch\, Englisch\nmit Ayi Amadu\, Nenesenor Ab
+ loso\, Nasiba Mbabe Bawa\, Pure Akan\, Dj Yamz\nForum Expanded\nEuropäisch
+ e Premiere\n43 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?fil
+ m_id=202406916\n\nO Seeker\nvon Gavati Wad\nUSA / Indien 2024\nHindi\, Eng
+ lisch\nmit Varun Sahni\, Rajashree Sawant Wad\, Bhavik Shah\, Utkarsh\, Ga
+ vati Wad\nForum Expanded\nWeltpremiere\n19 Min\n\nhttps://www.berlinale.de
+ /de/programm/detail.html?film_id=202406034
+DTSTART;TZID=Europe/Berlin:20240218T210000
+DTEND;TZID=Europe/Berlin:20240218T221000
+LOCATION:Kino Betonhalle@Silent Green
+SUMMARY:Programm 5 | Programme 5
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202404370
+END:VEVENT
+END:VCALENDAR

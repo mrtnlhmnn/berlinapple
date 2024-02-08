@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:39333862-6334-4435-b331-653739353332
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:33386337-6362-4133-b737-646563306432
+DTSTAMP:20240208T210504Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Janet Planet\nvon Annie Baker\nUSA / Vereinigtes Königreich 202
+ 3\nEnglisch\nmit Julianne Nicholson\, Zoe Ziegler\, Elias Koteas\, Will Pa
+ tton\, Sophie Okonedo\nPanorama\nInternationale Premiere | Debütfilm\n110 
+ Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202407517
+DTSTART;TZID=Europe/Berlin:20240225T163000
+DTEND;TZID=Europe/Berlin:20240225T182000
+LOCATION:International
+SUMMARY:Janet Planet
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202407517
+END:VEVENT
+END:VCALENDAR

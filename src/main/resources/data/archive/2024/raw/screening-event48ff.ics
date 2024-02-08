@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:62646164-6439-4362-b662-353237383765
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:63623833-6533-4164-b039-386663633664
+DTSTAMP:20240208T210451Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:All Shall Be Well\nvon Ray Yeung\nHongkong\, China 2024\nKanton
+ esisch\nUntertitel: Englisch\nmit Patra Au Ga Man\, Maggie Li Lin Lin\, Ta
+ i Bo\, Leung Chung Hang\, Fish Liew Chi Yu\nPanorama\nWeltpremiere\n93 Min
+ \n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202402642
+DTSTART;TZID=Europe/Berlin:20240217T213000
+DTEND;TZID=Europe/Berlin:20240217T230300
+LOCATION:Cubix 8
+SUMMARY:All Shall Be Well
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202402642
+END:VEVENT
+END:VCALENDAR

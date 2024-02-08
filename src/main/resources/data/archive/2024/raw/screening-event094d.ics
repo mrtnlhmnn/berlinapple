@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:39343935-3563-4637-a265-343936376536
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:39653864-3634-4732-a662-353937646161
+DTSTAMP:20240208T210523Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Mit einem Tiger schlafen | Sleeping with a Tiger\nvon Anja Salo
+ monowitz\nÖsterreich 2024\nDeutsch\, Englisch\, Französisch\nUntertitel: E
+ nglisch\nmit Birgit Minichmayr\, Johanna Orsini\, Maria Nicolini\, Lukas W
+ atzl\, Oskar Haag\nForum\nWeltpremiere\n107 Min\n\nhttps://www.berlinale.d
+ e/de/programm/detail.html?film_id=202404487
+DTSTART;TZID=Europe/Berlin:20240217T180000
+DTEND;TZID=Europe/Berlin:20240217T194700
+LOCATION:Delphi Filmpalast
+SUMMARY:Mit einem Tiger schlafen | Sleeping with a Tiger
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202404487
+END:VEVENT
+END:VCALENDAR

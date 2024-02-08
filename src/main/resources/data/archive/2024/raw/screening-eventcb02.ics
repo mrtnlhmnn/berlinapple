@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:61313330-6130-4564-b630-376139666366
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:65313736-3833-4035-b234-613334313133
+DTSTAMP:20240208T210704Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Elf Mal Morgen: Berlinale Meets Fußball | Eleven Tomorrows: Ber
+ linale Meets Football\nDeutschland 2024\nDeutsch\, Obersorbisch\, Ukrainis
+ ch\, Russisch\nUntertitel: Englisch\, Deutsch\nBerlinale Special\nWeltprem
+ iere | Dokumentarische Form | Altersfreigabe FSK 0\n106 Min\n\nhttps://www
+ .berlinale.de/de/programm/detail.html?film_id=202415007
+DTSTART;TZID=Europe/Berlin:20240222T130000
+DTEND;TZID=Europe/Berlin:20240222T144600
+LOCATION:HKW 1 - Miriam Makeba Auditorium
+SUMMARY:Elf Mal Morgen: Berlinale Meets Fußball | Eleven Tomorrows: Berlina
+ le Meets Football
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415007
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:38613164-6263-4231-a437-356430656166
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:30393730-3439-4538-b932-326337663439
+DTSTAMP:20240208T210723Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Filmmaking in Times of Conflict\nEnglisch\nSonderveranstaltung
+ \nEintritt frei - Besucher*innen benötigen ein Ticket für 0\,00 € aus dem 
+ Onlineshop\n90 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?fil
+ m_id=202415960
+DTSTART;TZID=Europe/Berlin:20240219T110000
+DTEND;TZID=Europe/Berlin:20240219T123000
+LOCATION:HAU Hebbel am Ufer (HAU1)
+SUMMARY:Filmmaking in Times of Conflict
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415960
+END:VEVENT
+END:VCALENDAR

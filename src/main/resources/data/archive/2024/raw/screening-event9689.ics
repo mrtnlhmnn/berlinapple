@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:66653265-3332-4537-a431-656564353562
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:30303134-3436-4264-b233-353365383733
+DTSTAMP:20240208T210535Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Henry Fonda for President\nvon Alexander Horwath\nÖsterreich / 
+ Deutschland 2024\nEnglisch\, Deutsch\nUntertitel: Englisch\, Deutsch\nForu
+ m\nWeltpremiere | Debütfilm | Dokumentarische Form\n184 Min\n\nhttps://www
+ .berlinale.de/de/programm/detail.html?film_id=202401127
+DTSTART;TZID=Europe/Berlin:20240223T100000
+DTEND;TZID=Europe/Berlin:20240223T130400
+LOCATION:Arsenal 1
+SUMMARY:Henry Fonda for President
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202401127
+END:VEVENT
+END:VCALENDAR

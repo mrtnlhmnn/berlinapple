@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:63326366-3762-4066-b463-356230353034
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:66313761-3333-4832-a661-323232343335
+DTSTAMP:20240208T210623Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Spaceman\nvon Johan Renck\nUSA 2024\nEnglisch\, Tschechisch\, K
+ oreanisch\nUntertitel: Englisch\, Deutsch\nmit Adam Sandler\, Carey Mullig
+ an\, Kunal Nayyar\, Lena Olin\, Isabella Rossellini\nBerlinale Special Gal
+ a\nWeltpremiere\n106 Min\n\nhttps://www.berlinale.de/de/programm/detail.ht
+ ml?film_id=202402164
+DTSTART;TZID=Europe/Berlin:20240221T190000
+DTEND;TZID=Europe/Berlin:20240221T204600
+LOCATION:Berlinale Palast
+SUMMARY:Spaceman
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202402164
+END:VEVENT
+END:VCALENDAR

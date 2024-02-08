@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:66366661-3031-4063-a363-656561333339
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:39643864-3030-4433-b339-636533633265
+DTSTAMP:20240208T210611Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Kplus Kurzfilme 2 | Kplus Short Films 2\nUntertitel: Englisch\n
+ Generation Kplus\nDeutsche Einsprache\n\nPorzellan | Porcelain\nvon Annika
+  Birgel\nDeutschland 2024\nDeutsch\nmit Nell Marie Haack\, Liv Heleen Haac
+ k\, Niklas Leifert\nGeneration Kplus\nWeltpremiere | empfohlen ab 12 Jahre
+ n\n16 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=2024
+ 03921\n\nSukoun | Amplified | In die Stille\nvon Dina Naser\nJordanien / Ä
+ gypten / Palästina 2024\nArabisch\, Jordanische Gebärdensprache\nmit Malak
+  Nassar\, Suhad Khatib\, Nadeem Al-Rimawi\, Hanna George Sakkab\nGeneratio
+ n Kplus\nWeltpremiere | empfohlen ab 12 Jahren\n19 Min\n\nhttps://www.berl
+ inale.de/de/programm/detail.html?film_id=202403617\n\nUli\nvon Mariana Gil
+  Ríos\nKolumbien 2023\nSpanisch\nmit Ulith Giraldo\, María Camila Alarcón\
+ , Amelia Mejía Escobar\, Emanuel Vélez Hernández\nGeneration Kplus\nIntern
+ ationale Premiere | empfohlen ab 12 Jahren\n17 Min\n\nhttps://www.berlinal
+ e.de/de/programm/detail.html?film_id=202411276\n\nPapillon | Butterfly | S
+ chmetterling\nvon Florence Miailhe\nFrankreich 2024\nFranzösisch\, Arabisc
+ h\, Deutsch\nmit Fayçal Zafi\, Yassine Mestaoui\, Alexandre Liebe\, Johann
+ es Olivier Hamm\, Hocine Ben\nGeneration Kplus\nWeltpremiere | Animation |
+  empfohlen ab 12 Jahren\n15 Min\n\nhttps://www.berlinale.de/de/programm/de
+ tail.html?film_id=202413056\n\nA Summer’s End Poem | Sommer\, Ende\nvon La
+ m Can-zhao\nVolksrepublik China / Schweiz / Malaysia 2024\nMin Nan\nmit Ca
+ i Jingbo\, Cai Liyu\, Lan Zhongqing\nGeneration Kplus\nWeltpremiere | empf
+ ohlen ab 12 Jahren\n15 Min\n\nhttps://www.berlinale.de/de/programm/detail.
+ html?film_id=202403603
+DTSTART;TZID=Europe/Berlin:20240224T123000
+DTEND;TZID=Europe/Berlin:20240224T135200
+LOCATION:Filmtheater am Friedrichshain
+SUMMARY:Kplus Kurzfilme 2 | Kplus Short Films 2
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202403921
+END:VEVENT
+END:VCALENDAR

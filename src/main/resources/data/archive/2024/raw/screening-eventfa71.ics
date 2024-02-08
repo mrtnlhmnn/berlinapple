@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:38656435-3938-4234-b462-613239623530
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:31333636-3637-4739-b766-366137663964
+DTSTAMP:20240208T210528Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:In the Belly of a Tiger\nvon Siddartha Jatla\nIndien / USA / Vo
+ lksrepublik China / Indonesien / Taiwan 2024\nHindi\nUntertitel: Englisch
+ \nmit Lawrence Francis\, Poonam Tiwari\, Sorabh Jaiswar\, Jyoti\, Sonali\n
+ Forum\nWeltpremiere\n91 Min\n\nhttps://www.berlinale.de/de/programm/detail
+ .html?film_id=202408962
+DTSTART;TZID=Europe/Berlin:20240223T210000
+DTEND;TZID=Europe/Berlin:20240223T223100
+LOCATION:Delphi Filmpalast
+SUMMARY:In the Belly of a Tiger
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202408962
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:35633431-6661-4263-a266-616361396338
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:31303939-3832-4364-a365-393232343539
+DTSTAMP:20240208T210623Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:The Departed | Departed – Unter Feinden\nvon Martin Scorsese\nU
+ SA 2006\nEnglisch\nUntertitel: Deutsch\nmit Leonardo DiCaprio\, Matt Damon
+ \, Jack Nicholson\, Mark Wahlberg\, Martin Sheen\nHommage\nVerleihung des 
+ Goldenen Ehrenbären an Martin Scorsese vor der Vorführung\n151 Min\n\nhttp
+ s://www.berlinale.de/de/programm/detail.html?film_id=202415445
+DTSTART;TZID=Europe/Berlin:20240220T213000
+DTEND;TZID=Europe/Berlin:20240221T000100
+LOCATION:Berlinale Palast
+SUMMARY:The Departed | Departed – Unter Feinden
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415445
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:39383864-6664-4233-b135-613664636531
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:33373136-6338-4430-a462-313131363535
+DTSTAMP:20240208T210436Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Dark Spring\nvon Ingemo Engström\nBundesrepublik Deutschland 19
+ 70\nDeutsch\nUntertitel: Englisch\nmit Edda Köchl\, Ilona Schult\, Irene W
+ ittek\, Klara Zet\, Gerhard Theuring\nRetrospektive\nAltersfreigabe FSK 18
+ \n89 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=20241
+ 4586
+DTSTART;TZID=Europe/Berlin:20240219T164500
+DTEND;TZID=Europe/Berlin:20240219T181400
+LOCATION:Cubix 6
+SUMMARY:Dark Spring
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414586
+END:VEVENT
+END:VCALENDAR

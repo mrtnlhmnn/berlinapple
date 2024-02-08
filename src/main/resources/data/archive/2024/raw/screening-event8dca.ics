@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:65663761-3930-4231-b132-633136643163
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:64326335-3731-4237-b930-353561363661
+DTSTAMP:20240208T210522Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Panorama Publikums-Preis | Panorama Audience Award\nPanorama\nP
+ reisverleihung durch radioeins und rbb Fernsehen\n\nVorführung des prämier
+ ten Dokumentarfilms\nPanorama\n90 Min\n\nhttps://www.berlinale.de/de/progr
+ amm/detail.html?film_id=202415637
+DTSTART;TZID=Europe/Berlin:20240225T173000
+DTEND;TZID=Europe/Berlin:20240225T190000
+LOCATION:Zoo Palast 1
+SUMMARY:Vorführung des prämierten Dokumentarfilms
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415637
+END:VEVENT
+END:VCALENDAR

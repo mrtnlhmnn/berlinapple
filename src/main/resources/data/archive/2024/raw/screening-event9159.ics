@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:33336365-3030-4366-a437-643562636461
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:30326662-3937-4462-a638-336162303632
+DTSTAMP:20240208T210613Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Berlinale Shorts Go Kiez\nUntertitel: Englisch\nBerlinale Goes 
+ Kiez\nBerlinale Goes Kiez\n\nTako Tsubo\nvon Fanny Sorgo\, Eva Pedroza\nÖs
+ terreich / Deutschland 2024\nDeutsch\nmit Len Jakobsen\, Anne Kulbatzki\, 
+ Benjamin Martin\nBerlinale Shorts\nWeltpremiere | Animation\n6 Min\n\nhttp
+ s://www.berlinale.de/de/programm/detail.html?film_id=202403100\n\nJing guo
+  | Goodbye First Love\nvon Shuli Huang\nUSA 2024\nMandarin\nmit Simu Chen\
+ , Shuli Huang\nBerlinale Shorts\nWeltpremiere\n13 Min\n\nhttps://www.berli
+ nale.de/de/programm/detail.html?film_id=202401701\n\nCircle\nvon Joung Yum
+ i\nSüdkorea 2024\nOhne Dialog\nBerlinale Shorts\nWeltpremiere | Animation
+ \n7 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202402
+ 564\n\nCity of Poets\nvon Sara Rajaei\nNiederlande 2024\nEnglisch\, Farsi
+ \nBerlinale Shorts\nWeltpremiere | Dokumentarische Form\n21 Min\n\nhttps:/
+ /www.berlinale.de/de/programm/detail.html?film_id=202410161\n\nUngewollte 
+ Verwandtschaft | Unwanted Kinship\nvon Pavel Mozhar\nDeutschland 2024\nUkr
+ ainisch\, Deutsch\, Russisch\nmit André Mewis\, Christiane Sill\, Steffen 
+ Roll\, Iryna Poplavska\, Oleksandr Kryvosheiev\nBerlinale Shorts\nWeltprem
+ iere | Dokumentarische Form\n30 Min\n\nhttps://www.berlinale.de/de/program
+ m/detail.html?film_id=202412297
+DTSTART;TZID=Europe/Berlin:20240222T210000
+DTEND;TZID=Europe/Berlin:20240222T221700
+LOCATION:Sinema Transtopia
+SUMMARY:Berlinale Shorts Go Kiez
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202403100
+END:VEVENT
+END:VCALENDAR

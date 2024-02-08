@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:37346237-6631-4832-b361-303633376263
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:30343037-3038-4765-b030-383164303035
+DTSTAMP:20240208T210706Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Common Tongues: The International Jury\nEnglisch\nmit Lupita Ny
+ ong'o\, Florian Weghorn\nBerlinale Talents Event\n90 Min\n\nhttps://www.be
+ rlinale.de/de/programm/detail.html?film_id=202415742
+DTSTART;TZID=Europe/Berlin:20240219T170000
+DTEND;TZID=Europe/Berlin:20240219T183000
+LOCATION:HAU Hebbel am Ufer (HAU1)
+SUMMARY:Common Tongues: The International Jury
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415742
+END:VEVENT
+END:VCALENDAR

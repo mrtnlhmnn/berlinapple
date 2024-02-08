@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:65363439-3132-4562-a262-396565373465
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:32636539-3664-4862-b637-336566313264
+DTSTAMP:20240208T210451Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:The Outrun\nvon Nora Fingscheidt\nVereinigtes Königreich / Deut
+ schland 2024\nEnglisch\nmit Saoirse Ronan\, Paapa Essiedu\, Stephen Dillan
+ e\, Saskia Reeves\, Nabil Elouahabi\nPanorama\nEuropäische Premiere\nEpile
+ psiewarnung: Stroboskopeffekt\n117 Min\n\nhttps://www.berlinale.de/de/prog
+ ramm/detail.html?film_id=202400987
+DTSTART;TZID=Europe/Berlin:20240218T120000
+DTEND;TZID=Europe/Berlin:20240218T135700
+LOCATION:Haus der Berliner Festspiele
+SUMMARY:The Outrun
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202400987
+END:VEVENT
+END:VCALENDAR

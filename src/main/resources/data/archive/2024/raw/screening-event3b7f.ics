@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:39353665-6236-4537-b431-376462666334
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:61613663-3363-4635-b366-383861393562
+DTSTAMP:20240208T210706Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Words of Mouth: A Film Character’s Journey in Writing\nEnglisch
+ \nmit Nora Fingscheidt\, Meryam Joobeur\, Nele Wohlatz\, Rabih El-Khoury\n
+ Berlinale Talents Event\n90 Min\n\nhttps://www.berlinale.de/de/programm/de
+ tail.html?film_id=202415741
+DTSTART;TZID=Europe/Berlin:20240218T170000
+DTEND;TZID=Europe/Berlin:20240218T183000
+LOCATION:HAU Hebbel am Ufer (HAU2)
+SUMMARY:Words of Mouth: A Film Character’s Journey in Writing
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415741
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:63383530-3836-4163-b665-303032303831
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:31666561-6464-4365-b735-383834326238
+DTSTAMP:20240208T210716Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Sex\nvon Dag Johan Haugerud\nNorwegen 2024\nNorwegisch\nUnterti
+ tel: Englisch\nmit Jan Gunnar Røise\, Thorbjørn Harr\, Siri Forberg\, Birg
+ itte Larsen\nPanorama\nWeltpremiere\nBerlinale Goes Kiez\n125 Min\n\nhttps
+ ://www.berlinale.de/de/programm/detail.html?film_id=202410056
+DTSTART;TZID=Europe/Berlin:20240219T180000
+DTEND;TZID=Europe/Berlin:20240219T200500
+LOCATION:Kino Zukunft
+SUMMARY:Sex
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202410056
+END:VEVENT
+END:VCALENDAR

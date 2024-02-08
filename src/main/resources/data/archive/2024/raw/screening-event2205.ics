@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:36353032-6637-4164-b630-386132396337
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:61333839-3632-4566-b833-623166633136
+DTSTAMP:20240208T210533Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Oasis of Now\nvon Chee Sum Chia\nMalaysia / Singapur / Frankrei
+ ch 2023\nKantonesisch\, Vietnamesisch\, Malaiisch\, Mandarin\, Tamil\, Bur
+ mesisch\nUntertitel: Englisch\nmit Thi Diu Ta\, Aster Ee Yeow\, Abd Manaf 
+ Bin Rejab\nForum\nEuropäische Premiere | Debütfilm\n90 Min\n\nhttps://www.
+ berlinale.de/de/programm/detail.html?film_id=202415511
+DTSTART;TZID=Europe/Berlin:20240221T213000
+DTEND;TZID=Europe/Berlin:20240221T230000
+LOCATION:Arsenal 1
+SUMMARY:Oasis of Now
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415511
+END:VEVENT
+END:VCALENDAR

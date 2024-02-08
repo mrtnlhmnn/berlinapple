@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:62303334-6562-4135-b831-653162393833
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:36313061-3232-4365-b939-626664393062
+DTSTAMP:20240208T210532Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Was hast du gestern geträumt\, Parajanov? | What Did You Dream 
+ Last Night\, Parajanov?\nvon Faraz Fesharaki\nDeutschland 2024\nFarsi\, De
+ utsch\nUntertitel: Englisch\nmit Mitra Kia\, Hasan Fesharaki\, Faraz Fesha
+ raki\, Rahi Sinaki\nForum\nWeltpremiere | Debütfilm | Dokumentarische Form
+ \n82 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=20240
+ 4488
+DTSTART;TZID=Europe/Berlin:20240220T130000
+DTEND;TZID=Europe/Berlin:20240220T142200
+LOCATION:Arsenal 1
+SUMMARY:Was hast du gestern geträumt\, Parajanov? | What Did You Dream Last
+  Night\, Parajanov?
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202404488
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:66306462-3537-4939-b563-626466326631
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:38383032-3838-4634-b865-373463313532
+DTSTAMP:20240208T210716Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Alle die Du bist | Every You Every Me\nvon Michael Fetter Natha
+ nsky\nDeutschland / Spanien 2024\nDeutsch\nUntertitel: Englisch\nmit Aenne
+  Schwarz\, Carlo Ljubek\, Youness Aabbaz\, Sara Fazilat\, Naila Schuberth
+ \nPanorama\nWeltpremiere\nBerlinale Goes Kiez\n108 Min\n\nhttps://www.berl
+ inale.de/de/programm/detail.html?film_id=202402118
+DTSTART;TZID=Europe/Berlin:20240220T203000
+DTEND;TZID=Europe/Berlin:20240220T221800
+LOCATION:Kino Toni
+SUMMARY:Alle die Du bist | Every You Every Me
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202402118
+END:VEVENT
+END:VCALENDAR

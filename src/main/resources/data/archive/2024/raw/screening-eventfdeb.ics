@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:36376137-3631-4565-a439-666539643636
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:36386334-6231-4261-b163-653464373161
+DTSTAMP:20240208T210707Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Weighing Words: The Editing of Saint Omer\nEnglisch\nmit Amrita
+  David\, Susan Korda\nBerlinale Talents Event\n90 Min\n\nhttps://www.berli
+ nale.de/de/programm/detail.html?film_id=202415746
+DTSTART;TZID=Europe/Berlin:20240220T170000
+DTEND;TZID=Europe/Berlin:20240220T183000
+LOCATION:HAU Hebbel am Ufer (HAU2)
+SUMMARY:Weighing Words: The Editing of Saint Omer
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415746
+END:VEVENT
+END:VCALENDAR

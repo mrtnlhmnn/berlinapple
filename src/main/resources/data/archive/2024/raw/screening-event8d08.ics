@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:62663361-3133-4239-b962-353035303833
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:62316161-3631-4136-a536-323630303036
+DTSTAMP:20240208T210718Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Wo Tu | Above the Dust\nvon Wang Xiaoshuai\nVolksrepublik China
+  / Niederlande 2024\nMandarin\nUntertitel: Englisch\nmit Ouyang Wenxin\, Y
+ ong Mei\, Zu Feng\, Li Jun\, Wang Zichuan\nGeneration Kplus\nWeltpremiere 
+ | empfohlen ab 10 Jahren\nDeutsche Einsprache | Kopfhörer für OV\n123 Min
+ \n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202409035
+DTSTART;TZID=Europe/Berlin:20240220T120000
+DTEND;TZID=Europe/Berlin:20240220T140300
+LOCATION:Zoo Palast 1
+SUMMARY:Wo Tu | Above the Dust
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202409035
+END:VEVENT
+END:VCALENDAR

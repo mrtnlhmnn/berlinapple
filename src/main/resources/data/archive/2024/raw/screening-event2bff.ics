@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:61373434-3635-4661-b162-356238386366
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:30343836-3564-4630-b962-626366656332
+DTSTAMP:20240208T210612Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:GWFF Preis Bester Erstlingsfilm | GWFF Best First Feature Award
+ \nSondervorführung\n\nVorführung des Preisträgerfilms\nSondervorführung\n1
+ 20 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=2024156
+ 72
+DTSTART;TZID=Europe/Berlin:20240225T163000
+DTEND;TZID=Europe/Berlin:20240225T183000
+LOCATION:Akademie der Künste
+SUMMARY:Vorführung des Preisträgerfilms
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415672
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:37623461-3438-4633-a665-333534333231
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:34393462-6632-4235-b839-633266653231
+DTSTAMP:20240208T210427Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Tobby\nvon Hansjürgen Pohland\nBundesrepublik Deutschland 1961
+ \nDeutsch\, Englisch\nUntertitel: Englisch\nmit Tobias Fichelscher\, Anik 
+ Fichelscher\, Ed Fichelscher\, Danny Fichelscher\, Eva Häußler\nRetrospekt
+ ive\nAltersfreigabe FSK 18\n75 Min\n\nhttps://www.berlinale.de/de/programm
+ /detail.html?film_id=202414595
+DTSTART;TZID=Europe/Berlin:20240225T191500
+DTEND;TZID=Europe/Berlin:20240225T203000
+LOCATION:Cubix 6
+SUMMARY:Tobby
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414595
+END:VEVENT
+END:VCALENDAR

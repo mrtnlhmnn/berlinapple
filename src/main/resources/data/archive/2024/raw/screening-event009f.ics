@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:63646234-3031-4665-b236-623839323435
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:36653336-3038-4732-b566-343331383733
+DTSTAMP:20240208T210510Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Afterwar\nvon Birgitte Stærmose\nDänemark / Kosovo / Schweden /
+  Finnland 2024\nAlbanisch\nUntertitel: Englisch\nmit Gëzim Kelmendi\, Xhev
+ ahire Abdullahu\, Shpresim Azemi\, Besnik Hyseni\, Luan Jaha\nPanorama Dok
+ umente\nWeltpremiere | Dokumentarische Form\n85 Min\n\nhttps://www.berlina
+ le.de/de/programm/detail.html?film_id=202405169
+DTSTART;TZID=Europe/Berlin:20240222T220000
+DTEND;TZID=Europe/Berlin:20240222T232500
+LOCATION:Zoo Palast 2
+SUMMARY:Afterwar
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202405169
+END:VEVENT
+END:VCALENDAR

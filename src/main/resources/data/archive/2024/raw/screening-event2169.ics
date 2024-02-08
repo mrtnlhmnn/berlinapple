@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:36386536-6636-4135-b435-376133313764
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:61316339-6164-4361-b931-613335353730
+DTSTAMP:20240208T210521Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Zeit Verbrechen - Episode 3 & 4\nUntertitel: Englisch\nPanorama
+ \n\nDeine Brüder\nvon Helene Hegemann\nDeutschland 2024\nDeutsch\nmit Zeth
+ phan Smith-Gneist\, Lavinia Wilson\, Luna Wedler\, Eren M. Güvercin\, Adri
+ an Vasile But\nPanorama\nWeltpremiere | Serie\n67 Min\n\nhttps://www.berli
+ nale.de/de/programm/detail.html?film_id=202415561\n\nLove by Proxy\nvon Fa
+ raz Shariat\nDeutschland 2024\nEnglisch\, Deutsch\, Twi\nmit Maja Simonsen
+ \, Fiifi Jefferson Pratt\, Jan Henrik Stahlberg\, Sandra Hüller\, Briggitt
+ e Akosua Appiah\nPanorama\nWeltpremiere | Serie\n58 Min\n\nhttps://www.ber
+ linale.de/de/programm/detail.html?film_id=202415556
+DTSTART;TZID=Europe/Berlin:20240223T183000
+DTEND;TZID=Europe/Berlin:20240223T203500
+LOCATION:Cubix 9
+SUMMARY:Zeit Verbrechen - Episode 3 & 4
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415561
+END:VEVENT
+END:VCALENDAR

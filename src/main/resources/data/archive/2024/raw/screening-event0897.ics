@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:31333034-3263-4563-b833-383330373439
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:34343734-3030-4338-b438-303364643663
+DTSTAMP:20240208T210724Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Gute Stoffe – Schlechte Stoffe\nSonderveranstaltung\nEintritt f
+ rei
+DTSTART;TZID=Europe/Berlin:20240220T160000
+DTEND;TZID=Europe/Berlin:20240220T173000
+LOCATION:Manifesto Potsdamer Platz
+SUMMARY:Gute Stoffe – Schlechte Stoffe
+URL:
+END:VEVENT
+END:VCALENDAR

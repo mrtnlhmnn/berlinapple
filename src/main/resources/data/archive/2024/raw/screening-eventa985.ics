@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:61386233-6338-4031-b337-626430623130
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:36303163-3437-4366-a634-393565633635
+DTSTAMP:20240208T210429Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Die Deutschen und ihre Männer – Bericht aus Bonn | The Germans 
+ and Their Men\nvon Helke Sander\nBundesrepublik Deutschland 1989\nDeutsch
+ \nUntertitel: Englisch\nmit Renée Felden\, Luise F. Pusch\, Claudia von Al
+ emann\, Helke Sander\nRetrospektive\nDokumentarische Form | Altersfreigabe
+  FSK 0\n98 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id
+ =202414598
+DTSTART;TZID=Europe/Berlin:20240219T130000
+DTEND;TZID=Europe/Berlin:20240219T143800
+LOCATION:Cineplex Titania
+SUMMARY:Die Deutschen und ihre Männer – Bericht aus Bonn | The Germans and 
+ Their Men
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414598
+END:VEVENT
+END:VCALENDAR

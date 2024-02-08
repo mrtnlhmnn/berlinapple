@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:34643230-6164-4365-b933-366235663531
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:34663636-3535-4566-a432-323763653635
+DTSTAMP:20240208T210435Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Chapeau Claque\nvon Ulrich Schamoni\nBundesrepublik Deutschland
+  1974\nDeutsch\nUntertitel: Englisch\nmit Ulrich Schamoni\, Anna Henkel\, 
+ Karl Dall\, Wolfgang Neuss\, Rolf Zacher\nRetrospektive\nAltersfreigabe FS
+ K 12\n91 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=2
+ 02412413
+DTSTART;TZID=Europe/Berlin:20240225T144500
+DTEND;TZID=Europe/Berlin:20240225T161600
+LOCATION:Cubix 6
+SUMMARY:Chapeau Claque
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202412413
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:31396264-3238-4135-a635-356234663037
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:37303237-3765-4734-b637-323666376561
+DTSTAMP:20240208T210620Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Supersex\nvon Matteo Rovere\, Francesco Carrozzini\, Francesca 
+ Mazzoleni\nItalien 2024\nItalienisch\nUntertitel: Englisch\nmit Alessandro
+  Borghi\, Jasmine Trinca\, Adriano Giannini\, Jade Pedri\, Linda Caridi\nB
+ erlinale Special\nWeltpremiere | Serie\n3/7 Episoden\n145 Min\n\nhttps://w
+ ww.berlinale.de/de/programm/detail.html?film_id=202408885
+DTSTART;TZID=Europe/Berlin:20240222T210000
+DTEND;TZID=Europe/Berlin:20240222T232500
+LOCATION:Verti Music Hall
+SUMMARY:Supersex
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202408885
+END:VEVENT
+END:VCALENDAR

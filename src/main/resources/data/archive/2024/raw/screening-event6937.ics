@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:64313931-3835-4436-b566-346364666330
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:37306362-6262-4165-b263-363032326532
+DTSTAMP:20240208T210642Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Filmstunde_23 | Subject: Filmmaking\nvon Edgar Reitz\, Jörg Ado
+ lph\nDeutschland 2024\nDeutsch\nUntertitel: Englisch\nBerlinale Special\nW
+ eltpremiere | Dokumentarische Form\n89 Min\n\nhttps://www.berlinale.de/de/
+ programm/detail.html?film_id=202408841
+DTSTART;TZID=Europe/Berlin:20240223T220000
+DTEND;TZID=Europe/Berlin:20240223T232900
+LOCATION:Cubix 7
+SUMMARY:Filmstunde_23 | Subject: Filmmaking
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202408841
+END:VEVENT
+END:VCALENDAR

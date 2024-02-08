@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:63373965-3035-4235-b436-653863316433
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:61666530-3534-4139-b834-363434343362
+DTSTAMP:20240208T210452Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Yo vi tres luces negras | I Saw Three Black Lights\nvon Santiag
+ o Lozano Álvarez\nKolumbien / Mexiko / Frankreich / Deutschland 2024\nSpan
+ isch\nUntertitel: Englisch\nmit Jesús María Mina\, Julián Ramirez\, Carol 
+ Hurtado\, John Alex Castillo\nPanorama\nWeltpremiere | Debütfilm\n87 Min\n
+ \nhttps://www.berlinale.de/de/programm/detail.html?film_id=202401265
+DTSTART;TZID=Europe/Berlin:20240219T220000
+DTEND;TZID=Europe/Berlin:20240219T232700
+LOCATION:Zoo Palast 2
+SUMMARY:Yo vi tres luces negras | I Saw Three Black Lights
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202401265
+END:VEVENT
+END:VCALENDAR

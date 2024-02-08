@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:64313132-6165-4935-a135-336462396461
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:64653262-6532-4433-a137-643638323937
+DTSTAMP:20240208T210617Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Matt and Mara | Matt und Mara\nvon Kazik Radwanski\nKanada 2024
+ \nEnglisch\nmit Deragh Campbell\, Matt Johnson\, Mounir Al Shami\, Emma He
+ aley\, Avery Nayman\nEncounters\nWeltpremiere\n80 Min\n\nhttps://www.berli
+ nale.de/de/programm/detail.html?film_id=202404698
+DTSTART;TZID=Europe/Berlin:20240220T123000
+DTEND;TZID=Europe/Berlin:20240220T135000
+LOCATION:Akademie der Künste
+SUMMARY:Matt and Mara | Matt und Mara
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202404698
+END:VEVENT
+END:VCALENDAR

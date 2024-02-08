@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:66313864-3366-4662-a164-353331663434
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:61646132-3732-4333-a133-373535306337
+DTSTAMP:20240208T210432Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Kismet\, Kismet\nvon Ismet Elçi\nBundesrepublik Deutschland 198
+ 7\nDeutsch\, Türkisch\nUntertitel: Englisch\nmit Ismet Elçi\, Alisan Kezib
+ an\, Wieland Speck\, Lothar Lambert\, Ulrike S. [= Schirm]\nRetrospektive
+ \n62 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=20241
+ 4606
+DTSTART;TZID=Europe/Berlin:20240218T130000
+DTEND;TZID=Europe/Berlin:20240218T140200
+LOCATION:Cineplex Titania
+SUMMARY:Kismet\, Kismet
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414606
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:30383461-3666-4435-a537-376635373661
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:33363036-3766-4435-b439-353738653337
+DTSTAMP:20240208T210433Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Macumba\nvon Elfi Mikesch\nBundesrepublik Deutschland 1982\nDeu
+ tsch\nUntertitel: Englisch\nmit Magdalena Montezuma\, Bernd Broaderup\, He
+ inz Emigholz\, Fritz Mikesch\, Carola Regnier\nRetrospektive\nAltersfreiga
+ be FSK 18\n88 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film
+ _id=202414610
+DTSTART;TZID=Europe/Berlin:20240217T130000
+DTEND;TZID=Europe/Berlin:20240217T142800
+LOCATION:Cineplex Titania
+SUMMARY:Macumba
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202414610
+END:VEVENT
+END:VCALENDAR

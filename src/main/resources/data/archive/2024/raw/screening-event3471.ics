@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:37653131-3737-4336-b330-343562626135
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:39626631-3961-4131-b337-656438343531
+DTSTAMP:20240208T210620Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:In Liebe\, Eure Hilde | From Hilde\, with Love\nvon Andreas Dre
+ sen\nDeutschland 2024\nDeutsch\nUntertitel: Englisch\nmit Liv Lisa Fries\,
+  Johannes Hegemann\, Lisa Wagner\, Alexander Scheer\, Emma Bading\nWettbew
+ erb\nWeltpremiere\nAudiodeskription via App GRETA\n124 Min\n\nhttps://www.
+ berlinale.de/de/programm/detail.html?film_id=202415117
+DTSTART;TZID=Europe/Berlin:20240217T153000
+DTEND;TZID=Europe/Berlin:20240217T173400
+LOCATION:Berlinale Palast
+SUMMARY:In Liebe\, Eure Hilde | From Hilde\, with Love
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415117
+END:VEVENT
+END:VCALENDAR

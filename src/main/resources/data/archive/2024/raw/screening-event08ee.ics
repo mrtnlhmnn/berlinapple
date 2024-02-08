@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:66666364-6133-4433-b335-376134623238
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:34346430-3564-4330-b838-366164386461
+DTSTAMP:20240208T210507Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:The Visitor\nvon Bruce LaBruce\nVereinigtes Königreich 2024\nEn
+ glisch\nmit Bishop Black\, Macklin Kowal\, Amy Kingsmill\, Kurtis Lincoln\
+ , Ray Filar\nPanorama\nWeltpremiere\nEpilepsiewarnung: Stroboskopeffekt\n1
+ 01 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=2024071
+ 44
+DTSTART;TZID=Europe/Berlin:20240218T153000
+DTEND;TZID=Europe/Berlin:20240218T171100
+LOCATION:Cubix 9
+SUMMARY:The Visitor
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202407144
+END:VEVENT
+END:VCALENDAR

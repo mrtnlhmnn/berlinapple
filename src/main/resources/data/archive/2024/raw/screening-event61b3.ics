@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:38353634-3066-4363-a663-373037353832
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:62616166-3735-4839-b831-613730396636
+DTSTAMP:20240208T210536Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Yoake no subete | All the Long Nights\nvon Shô Miyake\nJapan 20
+ 24\nJapanisch\nUntertitel: Englisch\nmit Hokuto Matsumura\, Mone Kamishira
+ ishi\, Kiyohiko Shibukawa\, Ryo\, Ken Mitsuishi\nForum\nInternationale Pre
+ miere\n119 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id
+ =202403438
+DTSTART;TZID=Europe/Berlin:20240224T123000
+DTEND;TZID=Europe/Berlin:20240224T142900
+LOCATION:Arsenal 1
+SUMMARY:Yoake no subete | All the Long Nights
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202403438
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:32656664-3735-4265-b930-303437623964
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:66663137-3436-4936-b562-333530333566
+DTSTAMP:20240208T210541Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Sieger sein | Winners\nvon Soleen Yusef\nDeutschland 2024\nDeut
+ sch\, Kurdisch\nUntertitel: Englisch\nmit Dileyla Agirman\, Andreas Döhler
+ \, Sherine Ciara Merai\, Tamira Bwibo\, Halima Ilter\nGeneration Kplus\nWe
+ ltpremiere | empfohlen ab 9 Jahren\nEröffnung Generation Kplus | Audiodesk
+ ription via App GRETA\n119 Min\n\nhttps://www.berlinale.de/de/programm/det
+ ail.html?film_id=202403796
+DTSTART;TZID=Europe/Berlin:20240216T153000
+DTEND;TZID=Europe/Berlin:20240216T172900
+LOCATION:HKW 1 - Miriam Makeba Auditorium
+SUMMARY:Sieger sein | Winners
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202403796
+END:VEVENT
+END:VCALENDAR

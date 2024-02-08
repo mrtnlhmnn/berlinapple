@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:64306135-6661-4066-b034-626533363133
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:61306331-6334-4564-b232-663930633735
+DTSTAMP:20240208T210448Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Berlinale Shorts 5\nUntertitel: Englisch\nBerlinale Shorts\n\nT
+ ako Tsubo\nvon Fanny Sorgo\, Eva Pedroza\nÖsterreich / Deutschland 2024\nD
+ eutsch\nmit Len Jakobsen\, Anne Kulbatzki\, Benjamin Martin\nBerlinale Sho
+ rts\nWeltpremiere | Animation\n6 Min\n\nhttps://www.berlinale.de/de/progra
+ mm/detail.html?film_id=202403100\n\nWe Will Not Be the Last of Our Kind\nv
+ on Mili Pecherer\nFrankreich 2024\nFranzösisch\nmit Mili Pecherer\, Adrien
+  Dupuis-Hepner\nBerlinale Shorts\nInternationale Premiere | Animation\n24 
+ Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202415490
+ \n\nCity of Poets\nvon Sara Rajaei\nNiederlande 2024\nEnglisch\, Farsi\nBe
+ rlinale Shorts\nWeltpremiere | Dokumentarische Form\n21 Min\n\nhttps://www
+ .berlinale.de/de/programm/detail.html?film_id=202410161\n\nShi ri fang gu 
+ | Sojourn to Shangri-La\nvon Lin Yihan\nVolksrepublik China 2023\nMandarin
+ \, Englisch\nmit Fu Yunfei\, Jonathan Mulcahy\, Kang Jun\, Wang Zi\, Li Lu
+ \nBerlinale Shorts\nInternationale Premiere\n20 Min\n\nhttps://www.berlina
+ le.de/de/programm/detail.html?film_id=202403656
+DTSTART;TZID=Europe/Berlin:20240223T213000
+DTEND;TZID=Europe/Berlin:20240223T224100
+LOCATION:Cubix 9
+SUMMARY:Berlinale Shorts 5
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202403100
+END:VEVENT
+END:VCALENDAR

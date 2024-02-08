@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:33353766-3336-4663-a338-316164356332
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:64393263-6430-4937-b531-373861306237
+DTSTAMP:20240208T210724Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Teddy Directors Exchange: Family Ties\, the Inherited and the C
+ hosen\nSonderveranstaltung\nEintritt frei
+DTSTART;TZID=Europe/Berlin:20240219T160000
+DTEND;TZID=Europe/Berlin:20240219T173000
+LOCATION:Manifesto Potsdamer Platz
+SUMMARY:Teddy Directors Exchange: Family Ties\, the Inherited and the Chose
+ n
+URL:
+END:VEVENT
+END:VCALENDAR

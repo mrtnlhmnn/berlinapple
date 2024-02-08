@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:63656466-3462-4435-b461-303335376631
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:38333632-3735-4634-a638-616164336362
+DTSTAMP:20240208T210459Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Andrea lässt sich scheiden | Andrea Gets a Divorce\nvon Josef H
+ ader\nÖsterreich 2024\nDeutsch\nUntertitel: Englisch\nmit Birgit Minichmay
+ r\, Josef Hader\, Thomas Schubert\, Robert Stadlober\, Thomas Stipsits\nPa
+ norama\nWeltpremiere\n93 Min\n\nhttps://www.berlinale.de/de/programm/detai
+ l.html?film_id=202401778
+DTSTART;TZID=Europe/Berlin:20240220T100000
+DTEND;TZID=Europe/Berlin:20240220T113300
+LOCATION:Cubix 5
+SUMMARY:Andrea lässt sich scheiden | Andrea Gets a Divorce
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202401778
+END:VEVENT
+END:VCALENDAR

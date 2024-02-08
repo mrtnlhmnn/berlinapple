@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:62653334-6231-4263-b535-373862386462
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:62336237-3939-4432-b537-643737393230
+DTSTAMP:20240208T210658Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Love Lies Bleeding\nvon Rose Glass\nUSA / Vereinigtes Königreic
+ h 2023\nEnglisch\nUntertitel: Deutsch\nmit Kristen Stewart\, Katy O’Brian\
+ , Ed Harris\, Dave Franco\, Jena Malone\nBerlinale Special Gala\nInternati
+ onale Premiere\n104 Min\n\nhttps://www.berlinale.de/de/programm/detail.htm
+ l?film_id=202407207
+DTSTART;TZID=Europe/Berlin:20240219T091500
+DTEND;TZID=Europe/Berlin:20240219T105900
+LOCATION:Haus der Berliner Festspiele
+SUMMARY:Love Lies Bleeding
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202407207
+END:VEVENT
+END:VCALENDAR

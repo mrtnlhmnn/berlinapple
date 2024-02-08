@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:30353265-6363-4664-b432-393764386437
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:34366563-3631-4561-b934-653834366661
+DTSTAMP:20240208T210612Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Berlinale Dokumentarfilmpreis | Berlinale Documentary Award\nSo
+ ndervorführung\n\nVorführung des Preisträgerfilms\nSondervorführung\n120 M
+ in\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=202415674
+DTSTART;TZID=Europe/Berlin:20240225T213000
+DTEND;TZID=Europe/Berlin:20240225T233000
+LOCATION:International
+SUMMARY:Vorführung des Preisträgerfilms
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415674
+END:VEVENT
+END:VCALENDAR

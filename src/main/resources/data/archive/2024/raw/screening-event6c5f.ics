@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:31646561-3661-4263-a633-656365306438
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:37653937-3131-4630-a666-623662656332
+DTSTAMP:20240208T210607Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Quell’estate con Irène | My Summer with Irène\nvon Carlo Sironi
+ \nItalien / Frankreich 2024\nItalienisch\, Französisch\nUntertitel: Englis
+ ch\nmit Noée Abita\, Maria Camilla Brandenburg\, Claudio Segaluscio\, Gabr
+ iele Rollo\, Beatrice Puccilli\nGeneration 14plus\nWeltpremiere | empfohle
+ n ab 14 Jahren\n90 Min\n\nhttps://www.berlinale.de/de/programm/detail.html
+ ?film_id=202410707
+DTSTART;TZID=Europe/Berlin:20240225T154500
+DTEND;TZID=Europe/Berlin:20240225T171500
+LOCATION:Cubix 8
+SUMMARY:Quell’estate con Irène | My Summer with Irène
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202410707
+END:VEVENT
+END:VCALENDAR

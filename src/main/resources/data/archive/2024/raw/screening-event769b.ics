@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:65623862-3035-4339-a563-343461643137
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:30346131-3261-4337-b566-323364316235
+DTSTAMP:20240208T210437Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Batalla en el cielo | Battle in Heaven\nvon Carlos Reygadas\nMe
+ xiko / Deutschland / Belgien / Frankreich 2005\nSpanisch\nUntertitel: Engl
+ isch\nmit Marcos Hernandez\, Anapola Mushkadiz\, Berta Ruiz\, David Bornst
+ ein\, Rosalinda Ramirez\nBerlinale Classics Special\n98 Min\n\nhttps://www
+ .berlinale.de/de/programm/detail.html?film_id=202403060
+DTSTART;TZID=Europe/Berlin:20240223T220000
+DTEND;TZID=Europe/Berlin:20240223T233800
+LOCATION:Akademie der Künste
+SUMMARY:Batalla en el cielo | Battle in Heaven
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202403060
+END:VEVENT
+END:VCALENDAR

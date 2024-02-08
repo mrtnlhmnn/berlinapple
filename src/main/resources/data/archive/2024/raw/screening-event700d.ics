@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:34353031-6331-4361-b461-653961613637
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:35636565-3162-4034-a537-633037376333
+DTSTAMP:20240208T210446Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Berlinale Shorts 4\nUntertitel: Englisch\nBerlinale Shorts\n\nT
+ hat’s All from Me | So viel von mir\nvon Eva Könnemann\nDeutschland 2024\n
+ Englisch\, Deutsch\nmit Charlotte Munck\, Eleanor Forbes\, Jannis Dimmlich
+ \nBerlinale Shorts\nWeltpremiere\n23 Min\n\nhttps://www.berlinale.de/de/pr
+ ogramm/detail.html?film_id=202412994\n\nUn movimiento extraño | An Odd Tur
+ n\nvon Francisco Lezama\nArgentinien 2024\nSpanisch\nmit Laila Maltz\, Pac
+ o Gorriz\, Sofía Palomino\, Cecilia Rainero\, Marcela Guerty\nBerlinale Sh
+ orts\nWeltpremiere\n22 Min\n\nhttps://www.berlinale.de/de/programm/detail.
+ html?film_id=202411729\n\nPacific Vein\nvon Ulu Braun\nDeutschland 2024\nE
+ nglisch\nmit Niina Lehtonen Braun\, Lily Cummings\, Joachim Stargard\, Dav
+ id Ristau\, Valentin Lorenz\nBerlinale Shorts\nWeltpremiere | Animation\n1
+ 2 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_id=20241413
+ 0\n\nLes animaux vont mieux | Lick a Wound\nvon Nathan Ghali\nFrankreich 2
+ 024\nOhne Dialog\nBerlinale Shorts\nWeltpremiere | Animation\n25 Min\n\nht
+ tps://www.berlinale.de/de/programm/detail.html?film_id=202404180
+DTSTART;TZID=Europe/Berlin:20240221T213000
+DTEND;TZID=Europe/Berlin:20240221T225200
+LOCATION:HKW 2 - Safi Faye Saal
+SUMMARY:Berlinale Shorts 4
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202412994
+END:VEVENT
+END:VCALENDAR

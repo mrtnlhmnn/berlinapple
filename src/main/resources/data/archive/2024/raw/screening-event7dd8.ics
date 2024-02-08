@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:39326432-3532-4865-a561-313137636637
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:32306637-6432-4165-b630-366237393630
+DTSTAMP:20240208T210622Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Langue Étrangère\nvon Claire Burger\nFrankreich / Deutschland /
+  Belgien 2024\nFranzösisch\, Deutsch\, Englisch\nUntertitel: Englisch\, De
+ utsch\nmit Lilith Grasmug\, Josefa Heinsius\, Nina Hoss\, Chiara Mastroian
+ ni\, Jalal Altawil\nWettbewerb\nWeltpremiere\nPräsentation der European Sh
+ ooting Stars 2024 vor der Vorführung\n105 Min\n\nhttps://www.berlinale.de/
+ de/programm/detail.html?film_id=202407611
+DTSTART;TZID=Europe/Berlin:20240219T183000
+DTEND;TZID=Europe/Berlin:20240219T201500
+LOCATION:Berlinale Palast
+SUMMARY:Langue Étrangère
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202407611
+END:VEVENT
+END:VCALENDAR

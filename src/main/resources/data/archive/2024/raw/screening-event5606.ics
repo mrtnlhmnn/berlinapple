@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:37303866-6636-4637-a266-646661363764
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:32346631-3935-4834-b439-626361663935
+DTSTAMP:20240208T210525Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Marijas klusums | Maria’s Silence\nvon Dāvis Sīmanis\nLettland 
+ / Litauen 2024\nLettisch\, Russisch\, Deutsch\nUntertitel: Englisch\nmit O
+ lga Šepicka-Slapjuma\, Artūrs Skrastiņš\, Vilis Daudziņš\, Inese Kučinska\
+ , Ģirts Ķesteris\nForum\nWeltpremiere\n104 Min\n\nhttps://www.berlinale.de
+ /de/programm/detail.html?film_id=202406756
+DTSTART;TZID=Europe/Berlin:20240220T143000
+DTEND;TZID=Europe/Berlin:20240220T161400
+LOCATION:Delphi Filmpalast
+SUMMARY:Marijas klusums | Maria’s Silence
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202406756
+END:VEVENT
+END:VCALENDAR

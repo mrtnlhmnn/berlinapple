@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:31666563-6439-4836-b466-303333303831
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:64333639-6530-4330-b634-343630306666
+DTSTAMP:20240208T210709Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Mé el Aïn | Who Do I Belong To\nvon Meryam Joobeur\nTunesien / 
+ Frankreich / Kanada 2024\nArabisch\nUntertitel: Englisch\, Deutsch\nmit Sa
+ lha Nasraoui\, Mohamed Hassine Grayaa\, Malek Mechergui\, Adam Bessa\, Dea
+  Liane\nWettbewerb\nWeltpremiere | Debütfilm\n117 Min\n\nhttps://www.berli
+ nale.de/de/programm/detail.html?film_id=202410310
+DTSTART;TZID=Europe/Berlin:20240224T213000
+DTEND;TZID=Europe/Berlin:20240224T232700
+LOCATION:Cineplex Titania
+SUMMARY:Mé el Aïn | Who Do I Belong To
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202410310
+END:VEVENT
+END:VCALENDAR

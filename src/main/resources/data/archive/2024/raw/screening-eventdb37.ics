@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:62623736-6665-4563-b965-306535366666
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:61663062-3832-4036-a631-643434363832
+DTSTAMP:20240208T210430Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Die endlose Nacht | The Endless Night\nvon Will Tremper\nBundes
+ republik Deutschland 1963\nDeutsch\nUntertitel: Englisch\nmit Karin Hübner
+ \, Harald Leipnitz\, Hannelore Elsner\, Louise Martini\, Paul Esser\nRetro
+ spektive\nAltersfreigabe FSK 16\n85 Min\n\nhttps://www.berlinale.de/de/pro
+ gramm/detail.html?film_id=202415055
+DTSTART;TZID=Europe/Berlin:20240225T110000
+DTEND;TZID=Europe/Berlin:20240225T122500
+LOCATION:Cineplex Titania
+SUMMARY:Die endlose Nacht | The Endless Night
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415055
+END:VEVENT
+END:VCALENDAR

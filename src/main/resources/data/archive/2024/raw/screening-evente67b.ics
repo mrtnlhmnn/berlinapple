@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:32663663-6365-4330-b432-356139383865
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:35373436-3165-4330-b032-613532336161
+DTSTAMP:20240208T210557Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Kottukkaali | The Adamant Girl\nvon Vinothraj PS\nIndien 2024\n
+ Tamil\nUntertitel: Englisch\nmit Soori Muthuchamy\, Anna Ben\nForum\nWeltp
+ remiere\n100 Min\n\nhttps://www.berlinale.de/de/programm/detail.html?film_
+ id=202404155
+DTSTART;TZID=Europe/Berlin:20240225T210000
+DTEND;TZID=Europe/Berlin:20240225T224000
+LOCATION:HKW 2 - Safi Faye Saal
+SUMMARY:Kottukkaali | The Adamant Girl
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202404155
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.berlinale.de//NONSGML kigkonsult.se iCalcreator 2.41.90//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+UID:38613539-6363-4565-a135-313437396630
+URL:https://www.berlinale.de/
+DESCRIPTION:74. Berlinale
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:38613831-3039-4238-b566-333533303036
+DTSTAMP:20240208T210608Z
+CATEGORIES:74. Internationale Filmfestspiele Berlin
+DESCRIPTION:Ich & Godard | Me & Godard\nUntertitel: Englisch\nRetrospektive
+ \n\nIch | Me\nvon Bettina Flitner\nBundesrepublik Deutschland 1988\nDeutsc
+ h\nmit Hella von Sinnen\, Bettina Flitner\nRetrospektive\n16 Min\n\nhttps:
+ //www.berlinale.de/de/programm/detail.html?film_id=202415056\n\nDer kleine
+  Godard. An das Kuratorium Junger Deutscher Film | Little Godard\nvon Hell
+ muth Costard\nBundesrepublik Deutschland 1978\nDeutsch\, Französisch\nmit 
+ Hellmuth Costard\, Marie-Luise Scherer\, Jean-Luc Godard\, Hark Bohm\, Rai
+ ner Werner Fassbinder\nRetrospektive\nDokumentarische Form\n85 Min\n\nhttp
+ s://www.berlinale.de/de/programm/detail.html?film_id=202414618
+DTSTART;TZID=Europe/Berlin:20240222T190000
+DTEND;TZID=Europe/Berlin:20240222T204100
+LOCATION:Cubix 6
+SUMMARY:Ich & Godard | Me & Godard
+URL:https://www.berlinale.de/de/programm/detail.html?film_id=202415056
+END:VEVENT
+END:VCALENDAR
