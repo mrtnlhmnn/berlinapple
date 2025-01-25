@@ -17,10 +17,11 @@ WORKDIR /app
 
 # Copy the JAR file from the build stage
 COPY --from=build /app/target/berlinapple-*.jar /app/berlinapple.jar
-ADD ./src/docker/entrypoint.sh /app/entrypoint.sh
+# ADD ./src/docker/entrypoint.sh /app/entrypoint.sh
 
 RUN set -ex && chmod 755 /app/entrypoint.sh /app/berlinapple.jar && mkdir -p /app/config /app/logs
 
 EXPOSE 8080
 
-ENTRYPOINT ["/app/entrypoint.sh"]
+# ENTRYPOINT ["/app/entrypoint.sh"]
+CMD java -showversion -Xmx1G -jar /app/berlinapple.jar
