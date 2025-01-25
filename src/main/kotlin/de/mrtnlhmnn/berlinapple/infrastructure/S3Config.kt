@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.util.StringUtils
 
-@Configuration
+// TODO no more S3 @Configuration
 open class S3Config {
 
     @Value("\${aws.s3.access_key:}")

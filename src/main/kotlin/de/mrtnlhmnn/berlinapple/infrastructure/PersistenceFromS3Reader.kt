@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component
 import java.io.InputStream
 import java.nio.charset.StandardCharsets
 
-@Component
+// TODO no more S3 @Component
 class PersistenceFromS3Reader(val s3Config: S3Config) {
     private val LOGGER = LoggerFactory.getLogger(this.javaClass)
 
