@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.util.StringUtils
 
-// TODO no more S3 @Configuration
+@Configuration
 open class S3Config {
 
     @Value("\${aws.s3.access_key:}")
@@ -23,8 +23,8 @@ open class S3Config {
     private val s3Region: String? = null
 
 
-    @Value("\${offline:false}")
-    val offline = false
+    @Value("\${offline:true}")
+    val offline = true
 
     @Value("\${aws.s3.bucketname}")
     val s3BucketName: String? = null

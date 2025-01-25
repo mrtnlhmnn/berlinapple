@@ -3,7 +3,7 @@ package de.mrtnlhmnn.berlinapple
 import de.mrtnlhmnn.berlinapple.infrastructure.LocationParser
 import de.mrtnlhmnn.berlinapple.data.MovieRepo
 import de.mrtnlhmnn.berlinapple.infrastructure.ProgramParser
-//TODO no more S3 import de.mrtnlhmnn.berlinapple.infrastructure.PersistenceFromS3Reader
+import de.mrtnlhmnn.berlinapple.infrastructure.PersistenceFromS3Reader
 import de.mrtnlhmnn.berlinapple.application.BookingService
 import org.springframework.stereotype.Component
 
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component
 class DataInitializer(
     private val locationParser: LocationParser,
     private val programParser: ProgramParser,
-    // TODO no more S3! private val persistenceFromS3Reader: PersistenceFromS3Reader,
+    private val persistenceFromS3Reader: PersistenceFromS3Reader,
     private val movieRepo: MovieRepo,
     private val bookingService: BookingService)
 {
@@ -22,8 +22,6 @@ class DataInitializer(
         // parse program file and fill the movie repo
         programParser.parseProgramICSFile2Repo()
 
-//TODO no more S3!
-/*
         // read last movie list from S3
 
         val movieListFromS3 = persistenceFromS3Reader.getLastMovieListFromS3()
@@ -44,6 +42,5 @@ class DataInitializer(
                 }
             }
         }
- */
     }
 }
