@@ -3,11 +3,11 @@ FROM maven:3.9.6-eclipse-temurin-17 AS build
 WORKDIR /app
 # Copy the Maven project files (pom.xml and source code)
 COPY pom.xml .
-RUN mvn dependency:go-offline
+# RUN mvn dependency:go-offline
 # Copy the source code to the container
 COPY src ./src
 # Build the project
-RUN mvn package -DskipTests
+RUN mvn verify -DskipTests
 
 # Use a lightweight JDK image for running the application
 FROM eclipse-temurin:17-jdk-alpine
