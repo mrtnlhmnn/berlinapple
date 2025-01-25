@@ -19,7 +19,8 @@
 # local files
 *.ksc
 *.mle
-application*.properties
+src/main/resources/secret-s3.mle
+src/main/resources/application-local.properties
 
 # Compiled class file
 *.class
