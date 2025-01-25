@@ -5,8 +5,9 @@ import de.mrtnlhmnn.berlinapple.infrastructure.PersistenceToS3Scheduler
 import org.springframework.stereotype.Component
 
 @Component
-class BookingService(val movieRepo: MovieRepo,
-                     val persistenceToS3Scheduler: PersistenceToS3Scheduler) {
+class BookingService(val movieRepo: MovieRepo
+                     //TODO no more S3 // ,val persistenceToS3Scheduler: PersistenceToS3Scheduler
+) {
 
     fun fixStatusEvents(movie: Movie, bookedEvent: Event) {
         movie.events
@@ -30,7 +31,7 @@ class BookingService(val movieRepo: MovieRepo,
         }
         setAllOverlappingEventsToUnvailable(bookedMovie, bookedEvent)
 
-        persistenceToS3Scheduler.changed()
+        //TODO no more S3 persistenceToS3Scheduler.changed()
     }
 
     // ---------------------------------------------------------------------------------------------------
@@ -51,7 +52,7 @@ class BookingService(val movieRepo: MovieRepo,
         }
         setAllOverlappingEventsToPotentiallyUnvailable(bookmarkedMovie, bookmarkedEvent)
 
-        persistenceToS3Scheduler.changed()
+        //TODO no more S3 persistenceToS3Scheduler.changed()
     }
 
     // ---------------------------------------------------------------------------------------------------
@@ -96,7 +97,7 @@ class BookingService(val movieRepo: MovieRepo,
             setAllOverlappingEventsToUnvailable(it.first, it.second)
         }
 
-        persistenceToS3Scheduler.changed()
+        //TODO no more S3 persistenceToS3Scheduler.changed()
     }
 
     // ---------------------------------------------------------------------------------------------------
