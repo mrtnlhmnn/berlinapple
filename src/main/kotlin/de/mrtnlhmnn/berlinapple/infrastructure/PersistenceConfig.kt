@@ -9,6 +9,6 @@ class PersistenceConfig {
     @Value("\${offline:false}")
     val offline = false
 
-    @Value(value = "\${persistence.savetos3.toggle:false}")
+    @Value(value = "\${persistence.savetodisk.toggle:false}")
     var persistenceToggle: Boolean = false
 }

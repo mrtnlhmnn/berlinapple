@@ -1,21 +1,24 @@
 package de.mrtnlhmnn.berlinapple.infrastructure
 
-import com.amazonaws.services.s3.model.ObjectMetadata
-import com.amazonaws.services.s3.model.PutObjectRequest
-import com.amazonaws.util.StringUtils
 import de.mrtnlhmnn.berlinapple.data.*
 import org.slf4j.LoggerFactory
 import org.springframework.scheduling.annotation.EnableScheduling
 import org.springframework.scheduling.annotation.Scheduled
 import org.springframework.stereotype.Component
-import java.io.ByteArrayInputStream
+import java.io.File
+import java.io.FileWriter
+import java.nio.file.Files
+import java.nio.file.Path
+import java.nio.file.Paths
 import java.time.Instant
+import kotlin.io.path.createDirectories
+
 
 @Component
 @EnableScheduling
-class PersistenceToS3Scheduler(val movieRepo: MovieRepo,
-                               val s3Config: S3Config,
-                               val persistenceConfig: PersistenceConfig) {
+class PersistenceScheduler(val movieRepo: MovieRepo,
+                           val persistenceToDiskConfig: PersistenceToDiskConfig,
+                           val persistenceConfig: PersistenceConfig) {
     private val LOGGER = LoggerFactory.getLogger(this.javaClass)
 
     // ---------------------------------------------------------------------------------------------------
@@ -31,36 +34,36 @@ class PersistenceToS3Scheduler(val movieRepo: MovieRepo,
     // ---------------------------------------------------------------------------------------------------
 
     @Scheduled(cron = "\${persistenceSchedule:0 0/5 * * * *}")
-    fun saveMoviesToS3() {
-        if (! needToSaveToS3()) {
-            LOGGER.debug("PersistenceScheduler is not saving to S3, because toggled to false - or not necessary, as no changes done")
+    fun saveMoviesToDisk() {
+        if (! needToSaveToDisk()) {
+            LOGGER.info("PersistenceScheduler is not saving to disk, because toggled to false - or not necessary, as no changes done")
         }
         else {
             val movieRepoAsJson = movieRepo.toJSON()
-            val bytes = movieRepoAsJson.toByteArray(StringUtils.UTF8)
-            val bis = ByteArrayInputStream(bytes)
 
             val now = Instant.now().toEpochMilli().toString()
-            val s3Key = s3Config.movieKeyPrefix + now + ".json"
+            val fileName =
+                persistenceToDiskConfig.filePathPrefix + "/" +
+                persistenceToDiskConfig.fileNamePrefix + now +
+                persistenceToDiskConfig.fileSuffix
+            val filePath = Paths.get(fileName)
 
-            val metadata = ObjectMetadata()
-            metadata.contentLength = bytes.size.toLong()
+            Files.createDirectories(filePath.parent)
 
+            val file = FileWriter(fileName)
             try {
-                val putRequest = PutObjectRequest(s3Config.s3BucketName, s3Key, ByteArrayInputStream(bytes), metadata)
-                s3Config.s3Client().putObject(putRequest)
+                file.write(movieRepoAsJson)
                 timeStampOfLatestSave = Instant.now()
             }
             finally {
-                bis.close()
+                file.close()
             }
 
-            LOGGER.info("PersistenceScheduler is writing {} movies with {} events as JSON file to S3 ... (to bucket/key {}/{}, {} bytes)",
+            LOGGER.info("PersistenceScheduler is writing {} movies with {} events as JSON file to disk ... (to {}, {} bytes)",
                     movieRepo.getNumberOfMovies(),
                     movieRepo.getNumberOfEvents(),
-                    s3Config.s3BucketName,
-                    s3Key,
-                    metadata.contentLength)
+                    File(fileName).canonicalPath,
+                    movieRepoAsJson.length)
         }
     }
 
@@ -69,8 +72,8 @@ class PersistenceToS3Scheduler(val movieRepo: MovieRepo,
         LOGGER.info("PersistenceScheduler toggle now switched to {}", persistenceConfig.persistenceToggle)
     }
 
-    fun needToSaveToS3(): Boolean =
-               !persistenceConfig.offline
-            && persistenceConfig.persistenceToggle
-            && hasChanged()
+    fun needToSaveToDisk(): Boolean =
+        !persistenceConfig.offline
+                && persistenceConfig.persistenceToggle
+                && hasChanged()
 }

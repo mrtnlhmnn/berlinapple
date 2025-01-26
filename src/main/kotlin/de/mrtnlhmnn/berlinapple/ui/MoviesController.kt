@@ -1,7 +1,7 @@
 package de.mrtnlhmnn.berlinapple.ui
 
 import de.mrtnlhmnn.berlinapple.data.DayRepo
-import de.mrtnlhmnn.berlinapple.infrastructure.PersistenceToS3Scheduler
+import de.mrtnlhmnn.berlinapple.infrastructure.PersistenceScheduler
 import de.mrtnlhmnn.berlinapple.data.MovieRepo
 import de.mrtnlhmnn.berlinapple.data.Prio
 import org.apache.commons.lang3.math.NumberUtils.toInt
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*
 import org.springframework.web.servlet.view.RedirectView
 
 @Controller
-class MoviesController(val movieRepo: MovieRepo, val dayRepo: DayRepo, val persistenceScheduler: PersistenceToS3Scheduler) {
+class MoviesController(val movieRepo: MovieRepo, val dayRepo: DayRepo, val persistenceScheduler: PersistenceScheduler) {
     @RequestMapping("/allMovies")
     fun allMovies(model: Model,
                   @RequestParam(required=false, name="filterDay") filterDay: String?): String {

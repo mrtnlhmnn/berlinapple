@@ -3,7 +3,7 @@ package de.mrtnlhmnn.berlinapple
 import de.mrtnlhmnn.berlinapple.infrastructure.LocationParser
 import de.mrtnlhmnn.berlinapple.data.MovieRepo
 import de.mrtnlhmnn.berlinapple.infrastructure.ProgramParser
-import de.mrtnlhmnn.berlinapple.infrastructure.PersistenceFromS3Reader
+import de.mrtnlhmnn.berlinapple.infrastructure.PersistenceFromDiskReader
 import de.mrtnlhmnn.berlinapple.application.BookingService
 import org.springframework.stereotype.Component
 
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component
 class DataInitializer(
     private val locationParser: LocationParser,
     private val programParser: ProgramParser,
-    private val persistenceFromS3Reader: PersistenceFromS3Reader,
+    private val persistenceFromDiskReader: PersistenceFromDiskReader,
     private val movieRepo: MovieRepo,
     private val bookingService: BookingService)
 {
@@ -22,19 +22,19 @@ class DataInitializer(
         // parse program file and fill the movie repo
         programParser.parseProgramICSFile2Repo()
 
-        // read last movie list from S3
+        // read last movie list from Disk
 
-        val movieListFromS3 = persistenceFromS3Reader.getLastMovieListFromS3()
+        val movieListFromDisk = persistenceFromDiskReader.getLastMovieListFromDisk()
 
-        // merge prios and event status from S3 (override the values from program)
-        for (movieFromS3 in movieListFromS3) {
-            movieRepo.get(movieFromS3)?.let { movieFromProgram ->
-                movieFromProgram.prio = movieFromS3.prio
+        // merge prios and event status from Disk (override the values from program)
+        for (movieFromDisk in movieListFromDisk) {
+            movieRepo.get(movieFromDisk)?.let { movieFromProgram ->
+                movieFromProgram.prio = movieFromDisk.prio
 
                 // merge events and their state correctly
                 for (eventInMovieFromProgram in movieFromProgram.events) {
-                    val eventFromS3 = movieFromS3.events.findLast { it == eventInMovieFromProgram }
-                    eventFromS3?.let { eventInMovieFromProgram.status = it.status }
+                    val eventFromDisk = movieFromDisk.events.findLast { it == eventInMovieFromProgram }
+                    eventFromDisk?.let { eventInMovieFromProgram.status = it.status }
                 }
 
                 if (movieFromProgram.booked || movieFromProgram.bookmarked) {
