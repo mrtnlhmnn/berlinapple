@@ -20,6 +20,11 @@ class PersistenceFromDiskReader(val persistenceToDiskConfig: PersistenceToDiskCo
     private fun readLastMovieListFromDisk (): String? {
         try {
             val path = Paths.get(persistenceToDiskConfig.filePathPrefix)
+            if (!Files.exists(path)) {
+                LOGGER.warn("Could not find any movie list on disk (path does not even exist)")
+                return null
+            }
+
             val lastMovieListFromDisk = Files.list(path)
                 .filter { Files.isRegularFile(it) }
                 .filter { Files.size(it) > 0 }
