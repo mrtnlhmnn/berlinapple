@@ -4,9 +4,24 @@
     "address": "Hanseatenweg 10, 10557 Berlin",
     "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=akademie-der-kuenste"
   },
+  {
+    "name": "Akademie der Künste (AdK)",
+    "address": "Hanseatenweg 10, 10557 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=akademie-der-kuenste"
+  },
 
   {
     "name": "Kino Arsenal",
+    "address": "Potsdamer Straße 2, 10785 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=kino-arsenal"
+  },
+  {
+    "name": "Arsenal 1",
+    "address": "Potsdamer Straße 2, 10785 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=kino-arsenal"
+  },
+  {
+    "name": "Arsenal 2",
     "address": "Potsdamer Straße 2, 10785 Berlin",
     "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=kino-arsenal"
   },
@@ -71,6 +86,10 @@
     "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=haus-der-berliner-festspiele"
   },
 
+  { "name": "HKW 1 - Miriam Makeba Auditorium",
+    "address": "John-Foster-Dulles-Allee 10, 10557 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=haus-der-kulturen-der-welt"
+  },
   { "name": "Haus der Kulturen der Welt",
     "address": "John-Foster-Dulles-Allee 10, 10557 Berlin",
     "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=haus-der-kulturen-der-welt"
@@ -102,6 +121,14 @@
   },
 
   { "name": "Silent Green",
+    "address": "Gerichtstraße 35, 13347 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=silent-green"
+  },
+  { "name": "Kino Betonhalle@Silent Green",
+    "address": "Gerichtstraße 35, 13347 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=silent-green"
+  },
+  { "name": "Betonhalle@Silent Green",
     "address": "Gerichtstraße 35, 13347 Berlin",
     "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=silent-green"
   },

@@ -24,8 +24,8 @@ class LocationRepo: HashMap<String, Location>(), JSONConvertable {
         }
 
         // fallback if not found
-        LOGGER.warn("Could not find ${locationStringFromProgram} in the location repo, hence using as fallback. " +
-                "Please check location.json, might want to add ${locationStringFromProgram} ...")
+        LOGGER.warn("Could not find '${locationStringFromProgram}' in the location repo, hence using as fallback. " +
+                "Please check location.json, might want to add '${locationStringFromProgram}' ...")
 
         return Location(name = locationStringFromProgram, address = null, url = null)
     }

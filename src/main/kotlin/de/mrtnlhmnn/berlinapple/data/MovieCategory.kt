@@ -28,6 +28,8 @@ enum class MovieCategory(val categoryName: String) {
     BerlinaleGoesKiez("Berlinale Goes Kiez"),
     Hommage("Hommage"),
     PerspektiveMatch("Perspektive Match"),
+    Perspectives("Perspectives"),
+    HUB75("HUB75"),
     UNKNOWN( /* do not show anything */ "" );
 
     override fun toString() = categoryName
