@@ -20,11 +20,11 @@ class ProgramParserTest {
 
     @Test
     fun canReadProgramIcsFile() {
-        // in 2024 we have 847 movies/events in total, 348 in our filter time range
+        // in 2025 we have 890 movies/events in total, 340 in our filter time range
 
-        assertThat(parser.eventsTotalCounter).isEqualTo(847)
+        assertThat(parser.eventsTotalCounter).isEqualTo(890)
 
-        assertThat(parser.eventsFilteredByTimeCounter).isEqualTo(348)
-        assertThat(movieRepo.getMovies().map { it.events.size }.sum()).isEqualTo(348)
+        assertThat(parser.eventsFilteredByTimeCounter).isEqualTo(340)
+        assertThat(movieRepo.getMovies().map { it.events.size }.sum()).isEqualTo(340)
     }
 }
