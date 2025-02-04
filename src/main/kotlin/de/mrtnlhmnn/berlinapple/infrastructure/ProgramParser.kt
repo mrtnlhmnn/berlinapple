@@ -69,9 +69,11 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
                     when {
                         (calEntryProps.name == beginKey) -> {
                             beginZDTFromProgram = ZonedDateTime.parse(calEntryProps.value + "Z", dateTimePatternFormatterCal)
+                                .minusHours(1) // set to German timezone
                         }
                         (calEntryProps.name == endKey) -> {
                             endZDTFromProgram = ZonedDateTime.parse(calEntryProps.value + "Z", dateTimePatternFormatterCal)
+                                .minusHours(1) // set to German timezone
                         }
                         (calEntryProps.name == locationKey) -> {
                             locationStringFromProgram = calEntryProps.value
