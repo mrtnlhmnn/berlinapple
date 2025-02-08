@@ -91,7 +91,7 @@
                </form>
            </td>
 
-           <td th:if="${event.available}">
+           <td th:if="${event.available} or ${event.potentiallyUnavailable}">
                <form action="/movie/bookmarkEvent" autocomplete="off" method="post">
                    <input type="hidden" name="movieId" id="movieId3" required="required" th:value="${movie.id}" class="readonly" />
                    <input type="hidden" name="eventId" id="eventId3" required="required" th:value="${event.id}" class="readonly" />
