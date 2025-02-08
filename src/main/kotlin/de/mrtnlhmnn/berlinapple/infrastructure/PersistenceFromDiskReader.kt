@@ -38,7 +38,7 @@ class PersistenceFromDiskReader(val persistenceToDiskConfig: PersistenceToDiskCo
                 return null
             }
 
-            LOGGER.info("Now reading {} from disk", lastMovieListFromDisk.fileName)
+            LOGGER.info("Now reading {} from disk", lastMovieListFromDisk.toAbsolutePath().toString())
             return lastMovieListFromDisk.toFile().readText(Charsets.UTF_8)
         }
         catch (e: Exception) {
