@@ -19,7 +19,7 @@
 </div>
 
 <div class="container" th:if="${not #lists.isEmpty(bookedMoviesPerDay)}">
-    <h1>Our Schedule contains <th:block th:text="${totalBookings}"/> Booked Events
+    <h1>Our Schedule contains <th:block th:text="${totalBookings}"/> Events
         <th:block th:if="${filterDay}!=null"> on <th:block th:text="${filterDay}"/></th:block></h1>
     </h1>
 
@@ -29,7 +29,8 @@
            <h3>
                <th:block th:text="${movieListOfDay.size()}"/> Events
                on <th:block th:text="${movieListOfDay.get(0).getBookedOrBookmarkedEvent().getBookingDay()}">
-           </th:block></h3>
+                </th:block>
+           </h3>
            <table class="BAmovieList">
                 <tr>
                     <th class="BAmoviePrio">Prio</th>
@@ -57,21 +58,28 @@
 
                     <td th:if="${movie.booked}">
                         <form action="/movie/unbookEvent" autocomplete="off" method="post">
-                            <input type="hidden" name="movieId" id="movieId" required="required" th:value="${movie.id}" class="readonly" />
+                            <input type="hidden" name="movieId" id="movieId0" required="required" th:value="${movie.id}" class="readonly" />
                             <input type="submit" value="unbook" class="BAbutton"/>
                         </form>
                     </td>
 
                     <td th:if="${movie.bookmarked}">
+                        <form action="/movie/bookEvent" autocomplete="off" method="post">
+                            <input type="hidden" name="movieId" id="movieId1a" required="required" th:value="${movie.id}" class="readonly" />
+                            <input type="hidden" name="eventId" id="eventId1a" required="required" th:value="${movie.getBookedOrBookmarkedEvent().id}" class="readonly" />
+                            <input type="submit" value="force book" class="BAbutton red"/>
+                        </form>
+                        &nbsp;
                         <form action="/movie/unbookmarkEvent" autocomplete="off" method="post">
                             <input type="hidden" name="movieId" id="movieId1" required="required" th:value="${movie.id}" class="readonly" />
                             <input type="submit" value="unbookmark" class="BAbutton lightblue"/>
                         </form>
+
                     </td>
 
                     <td>
                         <form action="calendar" autocomplete="off" method="get">
-                            <input type="hidden" name="movieId" id="movieId2" required="required" th:value="${movie.id}" class="readonly" />
+                            <input type="hidden" name="movieId" id="movieId3" required="required" th:value="${movie.id}" class="readonly" />
                             <input type="submit" value="Calendar" class="BAbutton green"/>
                         </form>
                     </td>
