@@ -57,10 +57,13 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
                 //TODO put these parameters to a separate class
                 var beginZDTFromProgram: ZonedDateTime? = null
                 var endZDTFromProgram: ZonedDateTime? = null
+                var endStringFromProgram: String
                 var locationStringFromProgram: String? = null
                 var summaryStringFromProgram = ""
                 var descriptionStringFromProgram = ""
                 var urlFromProgram = URL(defaultURL)
+                var lengthFromProgram: Long? = null
+
 
                 // get next data from parsed calendar ics file
                 for (calEntryProps in calEntry.properties) {
@@ -72,7 +75,8 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
                                 .minusHours(1) // set to German timezone
                         }
                         (calEntryProps.name == endKey) -> {
-                            endZDTFromProgram = ZonedDateTime.parse(calEntryProps.value + "Z", dateTimePatternFormatterCal)
+                            endStringFromProgram = calEntryProps.value
+                            endZDTFromProgram = ZonedDateTime.parse(endStringFromProgram + "Z", dateTimePatternFormatterCal)
                                 .minusHours(1) // set to German timezone
                         }
                         (calEntryProps.name == locationKey) -> {
@@ -83,6 +87,10 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
                         }
                         (calEntryProps.name == descriptionKey) -> {
                             descriptionStringFromProgram = calEntryProps.value
+
+                            val lengthFromProgramRegex = """(\d+)\s+Min""".toRegex() // regexp to find first occurence with "... Min"
+                            val lengthMatch = lengthFromProgramRegex.find(calEntryProps.value)
+                            lengthFromProgram = lengthMatch?.groups?.get(1)?.value?.toLongOrNull()
                         }
                         (calEntryProps.name == urlKey) -> {
                             if (calEntryProps.value != null && calEntryProps.value.isNotEmpty())
@@ -92,6 +100,11 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
                 }
 
                 eventsTotalCounter++
+
+                // correct end time, if length could be found
+                if (lengthFromProgram != null) {
+                    endZDTFromProgram = beginZDTFromProgram!!.plusMinutes(lengthFromProgram)
+                }
 
                 if (beginZDTFromProgram != null && endZDTFromProgram != null && locationStringFromProgram != null) {
                     // only relevant events are used, filtered by time
