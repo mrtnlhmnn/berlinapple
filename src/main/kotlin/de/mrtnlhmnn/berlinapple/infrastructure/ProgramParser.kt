@@ -101,8 +101,8 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
 
                 eventsTotalCounter++
 
-                // correct end time, if length could be found
-                if (lengthFromProgram != null) {
+                // correct end time, if length could be found and is > 0
+                if (lengthFromProgram != null && lengthFromProgram > 0) {
                     endZDTFromProgram = beginZDTFromProgram!!.plusMinutes(lengthFromProgram)
                 }
 
