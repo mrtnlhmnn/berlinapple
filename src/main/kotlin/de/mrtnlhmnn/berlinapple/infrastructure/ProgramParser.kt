@@ -101,12 +101,15 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
 
                 eventsTotalCounter++
 
-                // correct end time, if length could be found and is > 0
-                if (lengthFromProgram != null && lengthFromProgram > 0) {
-                    endZDTFromProgram = beginZDTFromProgram!!.plusMinutes(lengthFromProgram)
-                }
-
-                if (beginZDTFromProgram != null && endZDTFromProgram != null && locationStringFromProgram != null) {
+                // only use data which has start/end time and a location...
+                if (beginZDTFromProgram != null && endZDTFromProgram != null && locationStringFromProgram != null
+                    // ... and only use events which are not "pressetermine"
+                    // Reason: Some events in the ICAL/ICS file have a URL like
+                    //     https://www.berlinale.de/de/presse/pressetermine/pressevorfuehrungen/detail.html?filmId=202504921
+                    // which is not what we are interested in
+                    // Note that the URL in the description text is even different from this URL. WTF
+                    && !urlFromProgram.toString().contains("pressetermine")
+                ) {
                     // only relevant events are used, filtered by time
                     if (isInStartEndTimeframe(beginZDTFromProgram, endZDTFromProgram, summaryStringFromProgram)) {
                         eventsFilteredByTimeCounter++
