@@ -88,9 +88,9 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
                         (calEntryProps.name == descriptionKey) -> {
                             descriptionStringFromProgram = calEntryProps.value
 
-                            val lengthFromProgramRegex = """(\d+)\s+Min""".toRegex() // regexp to find first occurence with "... Min"
-                            val lengthMatch = lengthFromProgramRegex.find(calEntryProps.value)
-                            lengthFromProgram = lengthMatch?.groups?.get(1)?.value?.toLongOrNull()
+                            val lengthFromProgramRegex = """(\d+)(?=\s+Min)""".toRegex() // regexp to find occurences with "... Min" where (?= Min) is a Lookahead to only read the number before " Min".
+                            val lengthMatch = lengthFromProgramRegex.findAll(calEntryProps.value)
+                            lengthFromProgram = lengthMatch?.map { it.value.toInt() }.sum().toLong()
                         }
                         (calEntryProps.name == urlKey) -> {
                             if (calEntryProps.value != null && calEntryProps.value.isNotEmpty())
@@ -101,8 +101,8 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
 
                 eventsTotalCounter++
 
-                // correct end time, if length could be found
-                if (lengthFromProgram != null) {
+                // correct end time, if length could be found and is > 0
+                if (lengthFromProgram != null && lengthFromProgram > 0) {
                     endZDTFromProgram = beginZDTFromProgram!!.plusMinutes(lengthFromProgram)
                 }
 
