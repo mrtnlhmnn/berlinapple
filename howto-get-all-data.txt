@@ -53,10 +53,12 @@ cat > footer.txt
 END:VCALENDAR
 EOF
 
-f) cat header.txt result1.txt footer.txt > result.txt
+f) manually correct result1.txt: URLs might go over 2 lines, needs to get corrected manually.
+Find all lines where the first character(s) are blank: Delete starting blanks and move url into one line
 
-----
--> Final result is in result.txt. Rename to program.ics
+g) cat header.txt result1.txt footer.txt > result.txt
+
+h) Final result is in result.txt. Rename to program.ics
 
 -------------------------------------------------------------------------------------------------------------------
 
