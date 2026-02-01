@@ -9,7 +9,7 @@ open class PersistenceToDiskConfig {
     @Value("\${offline:true}")
     val offline = true
 
-    @Value("\${movieFile.filePathPrefix:/var/data/berlinapple2025/movies}")
+    @Value("\${movieFile.filePathPrefix:/var/data/berlinapple2026/movies}")
     val filePathPrefix = "/var/data" // as configured in Render's persistent disk
 
     @Value("\${movieFile.fileNamePrefix:movies-}")

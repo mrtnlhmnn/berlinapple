@@ -49,6 +49,8 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
         try {
             fis = ProgramParser::class.java.classLoader.getResourceAsStream(config.programICSFileName)
 
+            LOGGER.info("reading file {}", config.programICSFileName)
+
             val builder = CalendarBuilder()
             val calendar = builder.build(fis)
 
@@ -90,7 +92,7 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
 
                             val lengthFromProgramRegex = """(\d+)(?=\s+Min)""".toRegex() // regexp to find occurences with "... Min" where (?= Min) is a Lookahead to only read the number before " Min".
                             val lengthMatch = lengthFromProgramRegex.findAll(calEntryProps.value)
-                            lengthFromProgram = lengthMatch?.map { it.value.toInt() }.sum().toLong()
+                            lengthFromProgram = lengthMatch?.map { it.value.toInt() }?.sum()?.toLong()
                         }
                         (calEntryProps.name == urlKey) -> {
                             if (calEntryProps.value != null && calEntryProps.value.isNotEmpty())
@@ -157,9 +159,7 @@ class ProgramParser(val movieRepo: MovieRepo, val locationRepo: LocationRepo, va
                   && eventEnd.toLocalDateTime().isAfter(berlinaleStartDateAsLDT.minusHours(1))
                   && eventEnd.toLocalDateTime().isBefore(berlinaleEndDateAsLDT.plusHours(1))
 
-        if (!result) {
-            LOGGER.debug("Filtered out {} event with start={} and end={}", eventSummary, eventBegin, eventEnd)
-        }
+        LOGGER.info("Filtered out {} event with start={} and end={}", eventSummary, eventBegin, eventEnd)
 
         return result
     }
