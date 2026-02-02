@@ -19,6 +19,7 @@ enum class MovieCategory(val categoryName: String) {
     BerlinaleClassics("Berlinale Classics"),
     Generation14plus("Generation 14plus"),
     GenerationKplus("Generation Kplus"),
+    Generation("Generation"),
     Retrospektive("Retrospektive"),
     RetrospektiveEvent("Retrospektive Event"),
     BerlinaleSpecialGala("Berlinale Special Gala"),
@@ -30,6 +31,7 @@ enum class MovieCategory(val categoryName: String) {
     PerspektiveMatch("Perspektive Match"),
     Perspectives("Perspectives"),
     HUB75("HUB75"),
+    SONDERVORFUEHRUNGEN("Sondervorführungen & -veranstaltungen"),
     UNKNOWN( /* do not show anything */ "" );
 
     override fun toString() = categoryName
