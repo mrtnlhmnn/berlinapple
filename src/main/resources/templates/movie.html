@@ -57,9 +57,17 @@
            <td th:text="${event.printBeginDateTime()}"></td>
            <td th:text="${event.printEndDateTime()}"></td>
 
-           <td><a th:href="${event.location.url}" target="_blank">
-               <th:block th:text="${event.location.toStringWithAddress()}"/>
-           </a></td>
+           <td th:if="${event.location.url == null}">
+               <!-- Fallback, if  location url is not known -->
+               <a href="https://www.berlinale.de/de/service/lageplan.html" target="_blank">
+                   <th:block th:text="${event.location.toStringWithAddress()}"/>, no details
+               </a>
+           </td>
+           <td th:if="${event.location.url != null}">
+               <a th:href="${event.location.url}" target="_blank">
+                   <th:block th:text="${event.location.toStringWithAddress()}"/>
+               </a>
+           </td>
 
            <td th:switch="true">
                <p th:case="${event.available}">available!</p>
