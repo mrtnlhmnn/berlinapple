@@ -33,9 +33,12 @@ EOF
 
 b) delete all blanks in the ics filenames (eg with Totalcommander)
 
-c) find . -name "*.ics" | xargs -i ./vcalendarDelete.sh {} > result1.txt
+c) find . -name "*.ics" | xargs -i ./vcalendarDelete.sh {} > body.txt
 
-d) add header
+d) manually correct result1.txt: URLs might go over 2 lines, needs to get corrected manually.
+Find all lines where the first character(s) are blank: Delete starting blanks and move url into one line
+
+e) add header
 cat > header.txt
 BEGIN:VCALENDAR
 CALSCALE:GREGORIAN
@@ -48,15 +51,12 @@ URL:https://www.berlinale.de/
 DESCRIPTION:75. Berlinale
 EOF
 
-e) add footer
+f) add footer
 cat > footer.txt
 END:VCALENDAR
 EOF
 
-f) manually correct result1.txt: URLs might go over 2 lines, needs to get corrected manually.
-Find all lines where the first character(s) are blank: Delete starting blanks and move url into one line
-
-g) cat header.txt result1.txt footer.txt > result.txt
+g) cat header.txt body.txt footer.txt > result.txt
 
 h) Final result is in result.txt. Rename to program.ics
 
@@ -92,3 +92,4 @@ d) Also, SUMMARY over two lines does not work properly: The URL on the next line
 
 V) Add missing locations manually (any Kino with prefix like "Cubix" for "Cubix 1,2,3..." is done automatically
 but some Kinos are missing on the locations list or written differently.
+Easiest solution: Add the different locations names all to locations.json (or implement an alias algorithm)

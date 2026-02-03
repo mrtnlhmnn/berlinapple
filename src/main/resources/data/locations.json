@@ -1,5 +1,10 @@
 [
   {
+    "name": "Akademie der Künste",
+    "address": "Hanseatenweg 10, 10557 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=akademie-der-kuenste"
+  },
+  {
     "name": "Akademie der Künste am Hanseatenweg",
     "address": "Hanseatenweg 10, 10557 Berlin",
     "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=akademie-der-kuenste"
@@ -7,6 +12,11 @@
 
   {
     "name": "Kino Arsenal",
+    "address": "Potsdamer Straße 2, 10785 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=kino-arsenal"
+  },
+  {
+    "name": "Arsenal 1",
     "address": "Potsdamer Straße 2, 10785 Berlin",
     "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=kino-arsenal"
   },
@@ -154,6 +164,10 @@
   },
 
   { "name": "Silent Green",
+    "address": "Gerichtstraße 35, 13347 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=silent-green"
+  },
+  { "name": "Kino Betonhalle@Silent Green",
     "address": "Gerichtstraße 35, 13347 Berlin",
     "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=silent-green"
   },
