@@ -1,0 +1,223 @@
+[
+  {
+    "name": "Akademie der Künste",
+    "address": "Hanseatenweg 10, 10557 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=akademie-der-kuenste"
+  },
+  {
+    "name": "Akademie der Künste am Hanseatenweg",
+    "address": "Hanseatenweg 10, 10557 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=akademie-der-kuenste"
+  },
+
+  {
+    "name": "Kino Arsenal",
+    "address": "Potsdamer Straße 2, 10785 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=kino-arsenal"
+  },
+  {
+    "name": "Arsenal 1",
+    "address": "Potsdamer Straße 2, 10785 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=kino-arsenal"
+  },
+
+  {
+    "name": "BALI Kino",
+    "address": "Teltower Damm 33, 14169 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=bali-kino"
+  },
+
+  { "name": "Berlinale Palast",
+    "address": "Marlene-Dietrich-Platz 1, 10785 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=berlinale-palast"
+  },
+
+  {
+    "name": "Bluemax Theater",
+    "address": "Marlene-Dietrich-Platz 4, 10785 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=bluemax-theater"
+  },
+  { "name": "Stage Bluemax Theater",
+    "address": "Marlene-Dietrich-Platz 4, 10785 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=stage-bluemax-theater"
+  },
+
+  { "name": "Botschaft von Kanada - Marshall McLuhan Salon",
+    "address": "Leipziger Platz 17, 10117 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=botschaft-von-kanada-marshall-mcluhan-salon"
+  },
+
+  { "name": "CinemaxX am Potsdamer Platz",
+    "address": "Voxstr. 1, 10785 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=cinemaxx-am-potsdamer-platz"
+  },
+
+  {
+    "name": "Cinema Paris",
+    "address": "Kurfürstendamm 211, 10719 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=cinema-paris"
+  },
+
+  { "name": "City Kino Wedding",
+    "address": "im Centre Français de Berlin, Müllerstraße 74, 13349 Berlin (Wedding)",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=city-kino-wedding"
+  },
+
+  { "name": "Colosseum",
+    "address": "Schönhauser Allee 123, 10437 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=colosseum"
+  },
+
+  { "name": "Cubix",
+    "address": "Rathausstraße 1, 10178 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=cubix"
+  },
+
+  { "name": "Delphi Filmpalast",
+    "address": "Kantstraße 12A, 10623 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=delphi-filmpalast"
+  },
+
+  { "name": "Deutsche Kinemathek / E-Werk",
+    "address": "Mauerstr. 78, 10119 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=e-werk"
+  },
+
+  { "name": "Deutsche Kinemathek",
+    "address": "Mauerstr. 78, 10119 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=deutsche-kinemathek"
+  },
+
+  { "name": "Filmtheater am Friedrichshain",
+    "address": "Bötzowstraße 1-5, 10407 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=filmtheater-am-friedrichshain"
+  },
+
+  { "name": "HAU Hebbel am Ufer (HAU1)",
+    "address": "Stresemannstraße 29, 10963 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=hau1"
+  },
+  { "name": "HAU Hebbel am Ufer (HAU2)",
+    "address": "Hallesches Ufer 34, 10963 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=hau2"
+  },
+
+  { "name": "Haus der Berliner Festspiele",
+    "address": "Schaperstraße 24, 10719 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=haus-der-berliner-festspiele"
+  },
+
+  { "name": "Haus der Kulturen der Welt",
+    "address": "John-Foster-Dulles-Allee 10, 10557 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=haus-der-kulturen-der-welt"
+  },
+  { "name": "HKW 1 - Miriam Makeba Auditorium",
+    "address": "John-Foster-Dulles-Allee 10, 10557 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=haus-der-kulturen-der-welt"
+  },
+
+  { "name": "HUB75 – The Berlinale Festival Center",
+    "address": "Marlene-Dietrich-Platz, 10785 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=hub-75"
+  },
+  { "name": "Berlinale HUB",
+    "address": "Marlene-Dietrich-Platz, 10785 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=berlinale-hub"
+  },
+
+  {
+    "name": "Kino Casablanca",
+    "address": "Friedenstraße 12 / 13, 12489 Berlin (Adlershof)",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=kino-casablanca"
+  },
+
+  {
+    "name": "Filmtheater am Friedrichshain",
+    "address": "Bötzowstraße 1-5, 10407 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=filmtheater-am-friedrichshain"
+  },
+
+  { "name": "KLICK Kino",
+    "address": "Windscheidstraße 19, 10627 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=klick-kino"
+  },
+
+  { "name": "Justizvollzugsanstalt Plötzensee",
+    "address": "Friedrich-Olbricht-Damm 16 (Zugang über Pforte II), 13627 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=jva-ploetzensee"
+  },
+
+  { "name": "Manifesto Market",
+    "address": "Alte Potsdamer Straße 7, 10785 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=manifesto"
+  },
+
+  { "name": "Odeon",
+    "address": "Hauptstraße 116, 10827 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=odeon"
+  },
+
+  {
+    "name": "Radialsystem",
+    "address": "Holzmarktstraße 33, 10243 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=radialsystem"
+  },
+
+  { "name": "Silent Green",
+    "address": "Gerichtstraße 35, 13347 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=silent-green"
+  },
+  { "name": "Kino Betonhalle@Silent Green",
+    "address": "Gerichtstraße 35, 13347 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=silent-green"
+  },
+
+  { "name": "SİNEMA TRANSTOPIA",
+    "address": "Lindower Str. 20/22 Haus C, 13347 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=sinema-transtopia"
+  },
+
+  { "name": "Thalia - Das Programmkino",
+    "address": "Rudolf-Breitscheid-Straße 50, 14482 Potsdam",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=thalia-programmkino"
+  },
+
+  { "name": "Urania",
+    "address": "An der Urania 17, 10787 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=urania"
+  },
+
+  { "name": "Uber Eats Music Hall",
+    "address": "Mercedes-Platz 2, 10243 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=uber-eats-music-hall"
+  },
+
+  { "name": "Wolf Kino",
+    "address": "Weserstraße 59, 12045 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=wolf-kino"
+  },
+
+  {
+    "name": "Xenon Kino",
+    "address": "Kolonnenstraße 5-6, 10827 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=xenon-kino"
+  },
+
+  {
+    "name": "Yorck Kino",
+    "address": "Yorckstraße 86, 10965 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=yorck-kino"
+  },
+
+  { "name": "Zeiss-Großplanetarium",
+    "address": "Prenzlauer Allee 80, 10405 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=zeiss-grossplanetarium"
+  },
+
+  {
+    "name": "Zoo Palast",
+    "address": "Hardenbergstraße 29A, 10623 Berlin",
+    "url": "https://www.berlinale.de/de/service/lageplan.html?cat=venues&loc=zoo-palast"
+  }
+
+]

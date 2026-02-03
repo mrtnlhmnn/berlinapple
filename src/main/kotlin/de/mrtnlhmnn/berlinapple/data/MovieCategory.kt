@@ -12,6 +12,7 @@ enum class MovieCategory(val categoryName: String) {
     ForumExpanded("Forum Expanded"),
     ForumExpandedAusstellung("Forum Expanded Ausstellung"),
     Forum50("Forum 50"),
+    ForumSpecial("Forum Special"),
     Forum("Forum"),
     BerlinaleOpenHouse("Berlinale Open House"),
     BerlinaleOpenHouseWithTypo("BerlinaleOpen House"),  // Typo, grrr
@@ -23,6 +24,9 @@ enum class MovieCategory(val categoryName: String) {
     Retrospektive("Retrospektive"),
     RetrospektiveEvent("Retrospektive Event"),
     BerlinaleSpecialGala("Berlinale Special Gala"),
+    BerlinaleSpecialPresentation("Berlinale Special Presentation"),
+    BerlinaleSpecialMidnight("Berlinale Special Midnight"),
+    BerlinaleSpecialSeries("Berlinale Special Series"),
     BerlinaleSpecial("Berlinale Special"),
     BerlinaleSpecialWithTypo("BerlinaleSpecial"),  // Typo, grrr
     PerspektiveDeutschesKino("Perspektive Deutsches Kino"),
@@ -31,8 +35,13 @@ enum class MovieCategory(val categoryName: String) {
     PerspektiveMatch("Perspektive Match"),
     Perspectives("Perspectives"),
     HUB75("HUB75"),
-    SONDERVORFUEHRUNGEN("Sondervorführungen & -veranstaltungen"),
-    UNKNOWN( /* do not show anything */ "" );
+    Sondervorfuehrung("Sondervorführung"),
+    Sondervorfuehrungen("Sondervorführungen & -veranstaltungen"),
+    Veranstaltung("Veranstaltung"),
+    Preisverleihung("Preisverleihung"),
+    TEDDY40("TEDDY 40"),
+    UNKNOWN( /* do not show anything */ "" )
+    ;
 
     override fun toString() = categoryName
 
