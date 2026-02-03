@@ -15,4 +15,4 @@ WORKDIR /app
 COPY --from=build /app/target/berlinapple-*.jar /app/berlinapple.jar
 RUN set -ex && chmod 755 /app/berlinapple.jar && mkdir -p /app/config /app/logs
 EXPOSE 8080
-CMD java -showversion -Xmx1G -jar /app/berlinapple.jar
+CMD java -showversion -Xmx1G -Dfile.encoding=UTF-8 -jar /app/berlinapple.jar
