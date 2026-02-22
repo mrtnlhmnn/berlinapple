@@ -97,7 +97,16 @@ Querschnitt & Infrastruktur
 [ ] Auf https umstellen S. https://www.tutorialspoint.com/spring_boot/spring_boot_enabling_https.htm, https in AWS: ???
 
 Technik
-[x] Migration nach Java 17
+[x] Migration nach Java 17 / 21 / 25
 [ ] Update auf Kotlin aktuelle Version
-[ ] Update auf Spring Boot 3
+[ ] Update auf Spring Boot 3 / 4
 [ ] Migration nach Graal
+
+Neu von 2026
+[ ] Volltextsuche nach Titel und Inhalt
+[ ] Massenpriorisierung bzgl. Kategorien auf einen Schlag: zB "Alle Wettbewerb nach 80, alle Retrospektiven nach 10"
+[ ] IMDB-Link dazufügen
+[ ] Beim Bookmarken zulassen, dass mehr als ein Bookmark möglich ist
+[ ] Szenarien taggen: Pro Tag kann man bookmarken, um so Szenarien wie "Vormittags Film X oder Y oder Z", "Abends A oder B oder C" vornehmen. Am besten Tags vergeben, in dem der Tag drinsteht und dann verschiedene Szenarien erlaurben. Neue Seite mit den Szenarien pro Tag anzeigen
+[ ] Auf der Schedule-Seite erlauben, nur die gebuchten Filme zu zeigen. Am besten über einen Filter
+
